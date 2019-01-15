@@ -13,6 +13,7 @@ module.exports = {
   },
   modules: {
     '@folio/users': {},
+    '@folio/rs': {},
   },
   branding: {
     logo: {
