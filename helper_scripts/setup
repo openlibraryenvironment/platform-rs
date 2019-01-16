@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # The intention is to have a script that can run with 
-#    curl -s "https://raw.githubusercontent.com/openlibraryenvironment/platform-rs/master/scripts/setup" | bash
+#    curl -s "https://raw.githubusercontent.com/openlibraryenvironment/platform-rs/master/helper_scripts/setup" | bash
 # Which will configure a ux env
 
 mkdir rs_ui
 cd rs_ui
 
 # Copy the workspace package.json
-wget https://raw.githubusercontent.com/openlibraryenvironment/platform-rs/master/scripts/package.json
+wget https://raw.githubusercontent.com/openlibraryenvironment/platform-rs/master/helper_scripts/package.json
 
 git clone git@github.com:openlibraryenvironment/platform-rs.git
 git clone git@github.com:openlibraryenvironment/ui-rs.git
