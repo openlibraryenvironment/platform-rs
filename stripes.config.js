@@ -14,6 +14,7 @@ module.exports = {
   modules: {
     '@folio/users': {},
     '@folio/rs': {},
+    '@folio/directory': {},
   },
   branding: {
     logo: {
