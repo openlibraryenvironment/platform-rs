@@ -5,6 +5,13 @@ Copyright (C) 2015-2018 The Open Library Foundation
 This software is distributed under the terms of the Apache License,
 Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
 
+## TL;DR
+
+    curl -s "https://raw.githubusercontent.com/openlibraryenvironment/platform-rs/master/helper_scripts/setup" | bash
+    cd rs_ui/platform_rs
+    yarn install
+    stripes serve ./stripes.config.js --hasAllPerms
+
 ## Introduction
 
 This is the Resource SHaring Stripes "platform". It consists simply of an
