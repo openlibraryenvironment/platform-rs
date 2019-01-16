@@ -1,11 +1,30 @@
 {
-  "private": true,
-  "workspaces": [
-      "*"
-  ],
-  "devDependencies": {
-    "@folio/stripes-cli": "^1.2.0"
+  "name": "@folio/platform-rs",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "repository": "openlibraryenvironment/platform-rs",
+  "publishConfig": {
+    "registry": "https://repository.folio.org/repository/npm-folio/"
+  },
+  "scripts": {
+    "build": "export NODE_OPTIONS=\"--max-old-space-size=2048 $NODE_OPTIONS\"; stripes build stripes.config.js",
+    "stripes": "stripes",
+    "start": "stripes serve stripes.config.js",
+    "build-module-descriptors": "node ./build-module-descriptors.js",
+    "local": "f=stripes.config.js; test -f $f.local && f=$f.local; echo Using config $f; stripes serve $f",
+    "test": "echo 'No unit tests implemented'",
+    "test-int": "stripes test nightmare stripes.config.js",
+    "lint": "eslint test/ui-testing"
   },
   "dependencies": {
+    "@folio/stripes": "~1.0.0",
+    "@folio/users": "~2.19.0",
+    "@folio/rs": "~1.0.0",
+    "react": "^16.3.0"
+  },
+  "devDependencies": {
+    "@folio/eslint-config-stripes": "^3.2.0",
+    "@folio/stripes-cli": "^1.6.0",
+    "moment": "^2.22.2"
   }
 }
