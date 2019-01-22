@@ -16,4 +16,4 @@ git clone git@github.com:openlibraryenvironment/ui-directory.git
 
 
 echo Completed clone and setup
-echo cd rs_ui/platform-rs and run "yarn install" to download deps, then "stripes serve ./stripes.config.js --hasAllPerms" to start the UX
+echo cd rs_ui/platform-rs and run "yarn install" to download deps, then "stripes serve ./stripes.config.js --hasAllPerms" to start the UI
