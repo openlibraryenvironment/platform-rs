@@ -17,7 +17,7 @@
     "lint": "eslint test/ui-testing"
   },
   "dependencies": {
-    "@folio/stripes": "~1.1.0",
+    "@folio/stripes": "~2.0.0",
     "@folio/users": "~2.19.0",
     "@folio/rs": "~1.0.0",
     "@folio/directory": "~1.0.0",
