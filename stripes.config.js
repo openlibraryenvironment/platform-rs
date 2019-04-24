@@ -6,7 +6,7 @@ module.exports = {
     // logPrefix: 'stripes'
     // logTimestamp: false
     // showPerms: false
-    showHomeLink: false,
+    showHomeLink: true,
     // listInvisiblePerms: false
     // disableAuth: false
     hasAllPerms: true
