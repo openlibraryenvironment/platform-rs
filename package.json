@@ -17,8 +17,8 @@
     "lint": "eslint test/ui-testing"
   },
   "dependencies": {
-    "@folio/stripes": "~2.0.0",
-    "@folio/users": "~2.19.0",
+    "@folio/stripes": "~2.4.0",
+    "@folio/users": "~2.21.0",
     "@folio/rs": "~1.0.0",
     "@folio/directory": "~1.0.0",
     "@folio/stripes-erm-components": "^1.1.0",
@@ -28,8 +28,8 @@
     "redux": "~3.7.2"
   },
   "devDependencies": {
-    "@folio/eslint-config-stripes": "^3.2.0",
-    "@folio/stripes-cli": "^1.8.0",
+    "@folio/eslint-config-stripes": "^4.1.0",
+    "@folio/stripes-cli": "^1.10.0",
     "eslint": "^5.12.0",
     "moment": "^2.22.2"
   }
