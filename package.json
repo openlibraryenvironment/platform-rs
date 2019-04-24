@@ -21,6 +21,7 @@
     "@folio/users": "~2.19.0",
     "@folio/rs": "~1.0.0",
     "@folio/directory": "~1.0.0",
+    "@folio/stripes-erm-components": "^1.1.0",
     "react": "~16.7.0",
     "react-dom": "~16.7.0",
     "react-redux": "~5.1.1",
