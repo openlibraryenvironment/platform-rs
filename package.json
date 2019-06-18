@@ -17,7 +17,7 @@
     "lint": "eslint test/ui-testing"
   },
   "dependencies": {
-    "@folio/stripes": "~2.4.0",
+    "@folio/stripes": "^2.4.0",
     "@folio/users": "~2.21.0",
     "@folio/rs": "~1.0.0",
     "@folio/directory": "~1.0.0",
@@ -25,7 +25,7 @@
     "react": "~16.7.0",
     "react-dom": "~16.7.0",
     "react-redux": "~5.1.1",
-    "redux": "~3.7.2"
+    "redux": "^3.0.0 || ^4.0.0"
   },
   "devDependencies": {
     "@folio/eslint-config-stripes": "^4.1.0",
