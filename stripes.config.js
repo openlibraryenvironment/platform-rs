@@ -13,8 +13,11 @@ module.exports = {
   },
   modules: {
     '@folio/users': {},
+    '@folio/request': {},
+    '@folio/supply': {},
     '@folio/rs': {},
     '@folio/directory': {},
+    '@folio/developer': {},
   },
   branding: {
     logo: {
