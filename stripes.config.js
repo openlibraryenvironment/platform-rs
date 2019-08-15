@@ -9,6 +9,7 @@ module.exports = {
     showHomeLink: true,
     // listInvisiblePerms: false
     // disableAuth: false
+    welcomeMessage: 'ui-rs.front.welcome',
     hasAllPerms: true
   },
   modules: {
