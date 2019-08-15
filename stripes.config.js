@@ -9,6 +9,7 @@ module.exports = {
     showHomeLink: true,
     // listInvisiblePerms: false
     // disableAuth: false
+    welcomeMessage: 'ui-rs.front.welcome',
     hasAllPerms: true
   },
   modules: {
@@ -18,6 +19,13 @@ module.exports = {
     '@folio/rs': {},
     '@folio/directory': {},
     '@folio/developer': {},
+    '@folio/box': {},
+    "@folio/consortia": {},
+    "@folio/receive": {},
+    "@folio/send": {},
+    "@folio/shipping": {},
+    "@folio/si": {},
+    "@folio/unbox": {},
   },
   branding: {
     logo: {
