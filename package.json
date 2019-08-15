@@ -31,7 +31,7 @@
     "@folio/send": "^1.0.0",
     "@folio/shipping": "^1.0.0",
     "@folio/si": "^1.0.0",
-    "@folio/unbox": "^1.0.0"
+    "@folio/unbox": "^1.0.0",
     "react": "~16.7.0",
     "react-dom": "~16.7.0",
     "react-redux": "~5.1.1",
