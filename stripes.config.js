@@ -12,6 +12,8 @@ module.exports = {
     // listInvisiblePerms: false
     // disableAuth: false
     welcomeMessage: 'ui-rs.front.welcome',
+    platformName: 'ReShare',
+    platformDescription: 'ReShare platform',
     hasAllPerms: true
   },
   modules: {
