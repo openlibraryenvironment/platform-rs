@@ -18,10 +18,10 @@ module.exports = {
   },
   modules: {
     '@folio/users': {},
+    '@folio/directory': {},
     '@folio/request': {},
     '@folio/supply': {},
     '@folio/rs': {},
-    '@folio/directory': {},
     '@folio/developer': {},
     '@folio/box': {},
     "@folio/consortia": {},
