@@ -19,7 +19,7 @@
   "dependencies": {
     "@folio/box": "^1.0.0",
     "@folio/consortia": "^1.0.0",
-    "@folio/developer": "~1.9.0",
+    "@folio/developer": "~1.10.1",
     "@folio/directory": "^1.0.0",
     "@folio/receive": "^1.0.0",
     "@folio/request": "^1.0.0",
