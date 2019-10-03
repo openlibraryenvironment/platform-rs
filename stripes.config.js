@@ -14,7 +14,9 @@ module.exports = {
     welcomeMessage: 'ui-rs.front.welcome',
     platformName: 'ReShare',
     platformDescription: 'ReShare platform',
-    hasAllPerms: true
+    hasAllPerms: true,
+    sharedIndexUI: 'http://shared-index.reshare-dev.indexdata.com',
+    sharedIndexWS: 'http://shared-index.reshare-dev.indexdata.com:9130',
   },
   modules: {
     '@folio/users': {},
