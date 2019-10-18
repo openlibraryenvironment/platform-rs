@@ -15,6 +15,7 @@ git clone git@github.com:openlibraryenvironment/ui-rs.git
 git clone git@github.com:openlibraryenvironment/ui-directory.git
 git clone git@github.com:openlibraryenvironment/make-skeleton-app.git
 git clone git@github.com:openlibraryenvironment/ui-request.git
+git clone git@github.com:openlibraryenvironment/ui-scan.git
 git clone git@github.com:openlibraryenvironment/ui-supply.git
 git clone git@github.com:openlibraryenvironment/ui-shipping.git
 
@@ -22,9 +23,10 @@ git clone git@github.com:openlibraryenvironment/ui-shipping.git
 echo Making skeleton apps
 echo si might also be an app - not sure
 cd make-skeleton-app
-./generate-app box consortia receive send si unbox  
+./generate-app box consortia si unbox
 
 cd ..
+mv ./make-skeleton-app/output/* .
 
 
 echo Completed clone and setup
