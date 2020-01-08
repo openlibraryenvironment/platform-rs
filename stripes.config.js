@@ -17,6 +17,7 @@ module.exports = {
     hasAllPerms: true,
     sharedIndexUI: 'http://shared-index.reshare-dev.indexdata.com',
     sharedIndexWS: 'http://shared-index.reshare-dev.indexdata.com:9130',
+    showDevInfo: false,
   },
   modules: {
     '@folio/users': {},
