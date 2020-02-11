@@ -52,8 +52,8 @@ if (false) {
   module.exports.okapi =
   // { 'url':'https://okapi-reshare.apps.k-int.com', 'tenant':'reshare' }
   // { 'url':'http://demo.reshare-dev.indexdata.com:9130', 'tenant':'reshare' } // reshare_admin/admin
-  { 'url':'http://reshare.reshare-dev.indexdata.com:9130', 'tenant':'millersville' } // millersville_admin/admin1350
-  // { 'url':'http://reshare.reshare-dev.indexdata.com:9130', 'tenant':'temple' } // temple_admin/admin1325
+  // { 'url':'http://reshare.reshare-dev.indexdata.com:9130', 'tenant':'millersville' } // millersville_admin/admin1350
+     { 'url':'http://reshare.reshare-dev.indexdata.com:9130', 'tenant':'temple' } // temple_admin/admin1325
   // { 'url':'http://localhost:9130', 'tenant':'diku' }
   ;
 } else {
