@@ -32,6 +32,7 @@ module.exports = {
     "@folio/shipping": {},
     "@folio/si": {},
     "@folio/unbox": {},
+    "@folio/tenant-settings": {},
   },
   branding: {
     logo: {
