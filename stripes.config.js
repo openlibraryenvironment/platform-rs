@@ -69,6 +69,7 @@ if (false) {
       delete module.exports.modules[`@folio/${name}`];
     });
   module.exports.okapi =
+  // { 'url':'http://tmobile2.dyndns.biz:9130', 'tenant': 'diku' } // Kurt's development server
      { 'url':'https://simmons-test-cr-okapi.hosted-folio.indexdata.com', 'tenant': 'sim' } // sim_admin edelweiss012020
   // { 'url':'https://okapi-flo.folio-dev.indexdata.com', 'tenant':'sim_daisy' }
   // { 'url':'https://folio-snapshot-okapi.aws.indexdata.com', 'tenant':'diku' }
