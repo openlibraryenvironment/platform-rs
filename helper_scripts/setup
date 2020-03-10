@@ -18,6 +18,7 @@ git clone git@github.com:openlibraryenvironment/ui-request.git
 git clone git@github.com:openlibraryenvironment/ui-scan.git
 git clone git@github.com:openlibraryenvironment/ui-supply.git
 git clone git@github.com:openlibraryenvironment/ui-shipping.git
+git clone git@github.com:openlibraryenvironment/stripes-reshare.git
 
 
 echo Making skeleton apps
