@@ -48,31 +48,11 @@ module.exports = {
 
 // stripes serve --devtool eval-source-map stripes.config.js
 module.exports.config.showDevInfo = true;
-// module.exports.config.logCategories = 'substitute';
-if (false) {
-  module.exports.config.platformName = 'Mike ReShare';
-  module.exports.okapi =
-  // { 'url':'https://okapi-reshare.apps.k-int.com', 'tenant':'reshare' }
-  // { 'url':'http://demo.reshare-dev.indexdata.com:9130', 'tenant':'reshare' } // reshare_admin/admin
-  // { 'url':'http://reshare.reshare-dev.indexdata.com:9130', 'tenant':'millersville' } // millersville_admin/admin1350
-     { 'url':'http://reshare.reshare-dev.indexdata.com:9130', 'tenant':'temple' } // temple_admin/admin1325
-  // { 'url':'http://localhost:9130', 'tenant':'diku' }
-  ;
-} else {
-  module.exports.config.welcomeMessage = 'ui-courses.front.welcome',
-  module.exports.config.platformName = 'Mike CR';
-  module.exports.modules['@folio/courses'] = {};
-  module.exports.modules['@folio/inventory'] = {};
-  'directory,request,supply,rs,box,consortia,scan,shipping,si,unbox'
-    .split(',')
-    .forEach(name => {
-      delete module.exports.modules[`@folio/${name}`];
-    });
-  module.exports.okapi =
-  // { 'url':'http://tmobile2.dyndns.biz:9130', 'tenant': 'diku' } // Kurt's development server
-     { 'url':'https://simmons-test-cr-okapi.hosted-folio.indexdata.com', 'tenant': 'sim' } // sim_admin edelweiss012020
-  // { 'url':'https://okapi-flo.folio-dev.indexdata.com', 'tenant':'sim_daisy' }
-  // { 'url':'https://folio-snapshot-okapi.aws.indexdata.com', 'tenant':'diku' }
-  // { 'url':'http://shared-index.reshare-dev.indexdata.com:9130', 'tenant':'diku' }
-  ;
-}
+module.exports.config.platformName = 'Mike ReShare';
+module.exports.okapi =
+// { 'url':'https://okapi-reshare.apps.k-int.com', 'tenant':'reshare' }
+// { 'url':'http://demo.reshare-dev.indexdata.com:9130', 'tenant':'reshare' } // reshare_admin/admin
+// { 'url':'http://reshare.reshare-dev.indexdata.com:9130', 'tenant':'millersville' } // millersville_admin/admin1350
+   { 'url':'http://reshare.reshare-dev.indexdata.com:9130', 'tenant':'temple' } // temple_admin/admin1325
+// { 'url':'http://localhost:9130', 'tenant':'diku' }
+;
