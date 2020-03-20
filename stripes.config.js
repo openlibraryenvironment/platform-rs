@@ -50,9 +50,9 @@ module.exports = {
 module.exports.config.showDevInfo = true;
 module.exports.config.platformName = 'Mike ReShare';
 module.exports.okapi =
-// { 'url':'https://okapi-reshare.apps.k-int.com', 'tenant':'reshare' }
+   { 'url':'https://okapi-reshare.apps.k-int.com', 'tenant':'reshare' } // admin/rE0gNx7m2o
 // { 'url':'http://demo.reshare-dev.indexdata.com:9130', 'tenant':'reshare' } // reshare_admin/admin
 // { 'url':'http://reshare.reshare-dev.indexdata.com:9130', 'tenant':'millersville' } // millersville_admin/admin1350
-   { 'url':'http://reshare.reshare-dev.indexdata.com:9130', 'tenant':'temple' } // temple_admin/admin1325
+// { 'url':'http://reshare.reshare-dev.indexdata.com:9130', 'tenant':'temple' } // temple_admin/admin1325
 // { 'url':'http://localhost:9130', 'tenant':'diku' }
 ;
