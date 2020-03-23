@@ -22,7 +22,7 @@
     "@folio/developer": "~1.10.1",
     "@folio/directory": "^1.1.0",
     "@folio/rs": "^1.1.0",
-    "@folio/scan": "^1.0.0",
+    "@folio/update": "^1.0.0",
     "@folio/shipping": "^1.0.0",
     "@folio/tenant-settings": "^2.14.100077",
     "@folio/unbox": "^1.0.0",

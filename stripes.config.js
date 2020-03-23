@@ -28,7 +28,7 @@ module.exports = {
     '@folio/developer': {},
     '@folio/box': {},
     "@folio/consortia": {},
-    "@folio/scan": {},
+    "@folio/update": {},
     "@folio/shipping": {},
     "@folio/si": {},
     "@folio/unbox": {},
