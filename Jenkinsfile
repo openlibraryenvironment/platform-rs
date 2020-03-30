@@ -1,8 +1,13 @@
-@Library ('folio_jenkins_shared_libs') _
+pipeline {
+  agent	 {
+    docker {
+      image: 'node:10.10.0'
+    }
+  }
 
-buildNPM {
-  publishModDescriptor = 'no'
-  runRegression = 'no'
-  runLint = 'no'
-  runTest = 'no'
+  stages {
+    stage('build') {
+      sh 'yarn --version'
+    }
+  }
 }
