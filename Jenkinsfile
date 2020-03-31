@@ -1,26 +1,19 @@
 pipeline {
   agent	 {
-    docker {
-      image 'node:10.19.0'
-    }
+    label 'folio-jenkins'
   }
-
   stages {
     stage('build') {
       steps{
-        script{
-          sh "mkdir ci"
-          sh "${env.WORKSPACE}/helper_scripts/* ci/"
-        }
-        dir("${env.WORKSPACE}/ci") {
-          script{
-            sh "chmod +x setup"
-            sh "yarn set registry https://repository.folio.org/repository/npm-ci-all"
+          sh "cp helper_scripts/* ."
+
+          sh "chmod +x setup"
+          sh "./setup"
+          dir("rs_ui/platform-rs") {
             sh "yarn install"
             sh "yarn build output --okapi http://reshare.reshare-dev.indexdata.com:9130 --tenant millersville --sourcemap"
+            sh "mv output output-millersville"
           }
-
-        }
       }
     }
   }
