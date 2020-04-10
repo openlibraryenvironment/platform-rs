@@ -1,3 +1,6 @@
+@Library('indexdata-jsl') _
+def id = new com.indexdata.s3commands()
+
 pipeline {
   agent	 {
     label 'folio-jenkins'
@@ -12,20 +15,25 @@ pipeline {
         dir("rs_ui/platform-rs") {
           sh "yarn install"
           sh "yarn build output --okapi http://reshare.reshare-dev.indexdata.com:9130 --tenant millersville --sourcemap"
-          sh "mv output output-millersville"
+          sh "mv output millersville"
         }
       }
     }
     stage('upload') {
       steps {
-        // drafts for shared libaries
-        sh "pwd"
-        // create bucket if does not exist
-        withAWS(credentials: 'indexdata-dev', region: 'us-east-1') {
-          sh 'aws iam get-user'
+        script {
+          withAWS(credentials: 'indexdata-dev', region: 'us-east-1') {
+            // create bucket if does not exist
+            check_bucket = id.checkBucketExists('reshare-bundles')
+            if (!check_bucket) {
+              id.createPublicBucket('reshare-bundles')
+            }
+            id.syncBucket('reshare-bundles', 'millersville', 's3://reshare-bundles/millersville')
+          }
         }
-        // create folder for reshare frontends
-        // make cf distro
+        script {
+          echo 'make cf distro placeholder'
+        }
       }
     }
   }
