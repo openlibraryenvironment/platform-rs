@@ -21,14 +21,16 @@ pipeline {
     }
     stage('upload') {
       steps {
-        script {
-          withAWS(credentials: 'indexdata-dev', region: 'us-east-1') {
-            // create bucket if does not exist
-            check_bucket = id.checkBucketExists('reshare-bundles')
-            if (!check_bucket) {
-              id.createPublicBucket('reshare-bundles')
+        dir("rs_ui/platform-rs") {
+          script {
+            withAWS(credentials: 'indexdata-dev', region: 'us-east-1') {
+              // create bucket if does not exist
+              check_bucket = id.checkBucketExists('reshare-bundles')
+              if (!check_bucket) {
+                id.createPublicBucket('reshare-bundles')
+              }
+              id.syncBucket('reshare-bundles', 'millersville', 's3://reshare-bundles/millersville')
             }
-            id.syncBucket('reshare-bundles', 'millersville', 's3://reshare-bundles/millersville')
           }
         }
         script {
