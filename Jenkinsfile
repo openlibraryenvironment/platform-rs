@@ -1,5 +1,5 @@
 @Library('indexdata-jsl') _
-def id = new com.indexdata.s3commands()
+def id = new com.indexdata.idCommands()
 
 pipeline {
   agent	 {
