@@ -14,8 +14,10 @@ pipeline {
         sh "./setup"
         dir("rs_ui/platform-rs") {
           sh "yarn install"
-          sh "yarn build output --okapi http://reshare.reshare-dev.indexdata.com:9130 --tenant millersville --sourcemap"
-          sh "mv output millersville"
+          sh "yarn build output --okapi https://east-okapi.folio-dev.indexdata.com --tenant reshare_east --sourcemap"
+          sh "mv output east"
+          sh "yarn build output --okapi https://west-okapi.folio-dev.indexdata.com --tenant reshare_west --sourcemap"
+          sh "mv output west"
         }
       }
     }
@@ -29,12 +31,10 @@ pipeline {
               if (!check_bucket) {
                 id.createPublicBucket('reshare-bundles')
               }
-              id.syncBucket('reshare-bundles', 'millersville', 's3://reshare-bundles/millersville')
+              id.syncBucket('reshare-bundles', 'east', 's3://reshare-bundles/millersville')
+              id.syncBucket('reshare-bundles', 'west', 's3://reshare-bundles/millersville')
             }
           }
-        }
-        script {
-          echo 'make cf distro placeholder'
         }
       }
     }
