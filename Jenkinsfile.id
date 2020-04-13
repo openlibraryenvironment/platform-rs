@@ -1,4 +1,4 @@
-@Library('indexdata-jsl@reshare-frontends') _
+@Library('indexdata-jsl') _
 
 pipeline {
   agent	 {
