@@ -31,8 +31,8 @@ pipeline {
               if (!check_bucket) {
                 id.createPublicBucket('reshare-bundles')
               }
-              id.syncBucket('reshare-bundles', 'east', 's3://reshare-bundles/millersville')
-              id.syncBucket('reshare-bundles', 'west', 's3://reshare-bundles/millersville')
+              id.syncBucket('reshare-bundles', 'east', 's3://reshare-bundles/east')
+              id.syncBucket('reshare-bundles', 'west', 's3://reshare-bundles/west')
             }
           }
         }
