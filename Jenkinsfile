@@ -6,7 +6,7 @@ pipeline {
   }
   stages {
     stage("rebuild frontends") {
-      script {
+      steps {
         idDevFrontend()
       }
     }
