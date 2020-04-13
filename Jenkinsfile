@@ -5,6 +5,11 @@ pipeline {
     label 'folio-jenkins'
   }
   stages {
+    stage("set env") {
+      steps {
+        constants()
+      }
+    }
     stage("rebuild frontends") {
       steps {
         idDevFrontend()
