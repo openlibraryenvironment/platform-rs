@@ -5,8 +5,10 @@ pipeline {
     label 'folio-jenkins'
   }
   stages {
-    script {
-      idDevFrontend()
+    stage("rebuild frontends") {
+      script {
+        idDevFrontend()
+      }
     }
   }
 }
