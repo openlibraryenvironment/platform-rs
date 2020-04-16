@@ -1,7 +1,7 @@
 module.exports = {
-  okapi: { 'url':'http://localhost:9130', 'tenant':'diku' },
+  // okapi: { 'url':'http://localhost:9130', 'tenant':'diku' },
   // okapi: { 'url':'https://folio-snapshot-okapi.aws.indexdata.com', 'tenant':'diku' },
-  // okapi: { 'url':'https://okapi-reshare.apps.k-int.com', 'tenant':'reshare' },
+  okapi: { 'url':'https://okapi-reshare.apps.k-int.com', 'tenant':'reshare' },
   config: {
     // autoLogin: { username: 'diku_admin', password: 'admin' }
     // logCategories: 'core,redux,connect,connect-fetch,substitute,path,mpath,mquery,action,event,perm,interface,xhr'
@@ -24,14 +24,8 @@ module.exports = {
     '@folio/directory': {},
     '@folio/request': {},
     '@folio/supply': {},
-    '@folio/rs': {},
     '@folio/developer': {},
-    '@folio/box': {},
-    "@folio/consortia": {},
     "@folio/update": {},
-    "@folio/shipping": {},
-    "@folio/si": {},
-    "@folio/unbox": {},
     "@folio/tenant-settings": {},
   },
   branding: {
