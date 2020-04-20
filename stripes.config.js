@@ -22,6 +22,8 @@ module.exports = {
   modules: {
     '@folio/users': {},
     '@folio/directory': {},
+    '@folio/rs': {},
+    '@folio/request': {},
     '@folio/request': {},
     '@folio/supply': {},
     '@folio/developer': {},
