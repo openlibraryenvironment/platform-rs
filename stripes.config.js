@@ -26,13 +26,9 @@ module.exports = {
     '@folio/supply': {},
     '@folio/rs': {},
     '@folio/developer': {},
-    '@folio/box': {},
-    "@folio/consortia": {},
-    "@folio/scan": {},
     "@folio/shipping": {},
-    "@folio/si": {},
-    "@folio/unbox": {},
     "@folio/tenant-settings": {},
+    "@folio/update": {},
   },
   branding: {
     logo: {
