@@ -25,7 +25,6 @@
     "@folio/update": "^1.0.0",
     "@folio/tenant-settings": "^2.14.100077",
     "@folio/users": "^2.24.2",
-    "@folio/update": "^1.0.0",
     "@folio/stripes": "^3.0.0",
     "@folio/stripes-erm-components": "^2.0.0",
     "react": "~16.8.0",
