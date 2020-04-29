@@ -4,13 +4,17 @@
 #    curl -s "https://raw.githubusercontent.com/openlibraryenvironment/platform-rs/master/helper_scripts/setup" | bash
 # Which will configure a ux env
 
+# determine current branch
+platform_branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
+
 mkdir rs_ui
 cd rs_ui
 
 # Copy the workspace package.json
 wget https://raw.githubusercontent.com/openlibraryenvironment/platform-rs/master/helper_scripts/package.json
 
-git clone https://github.com/openlibraryenvironment/platform-rs.git
+# clone current branch of platform to get pinned ui modules
+git clone -b $platform_branch  https://github.com/openlibraryenvironment/platform-rs.git
 git clone https://github.com/openlibraryenvironment/ui-rs.git
 git clone https://github.com/openlibraryenvironment/ui-directory.git
 git clone https://github.com/openlibraryenvironment/ui-request.git
