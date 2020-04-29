@@ -13,22 +13,10 @@ wget https://raw.githubusercontent.com/openlibraryenvironment/platform-rs/master
 git clone https://github.com/openlibraryenvironment/platform-rs.git
 git clone https://github.com/openlibraryenvironment/ui-rs.git
 git clone https://github.com/openlibraryenvironment/ui-directory.git
-git clone https://github.com/openlibraryenvironment/make-skeleton-app.git
 git clone https://github.com/openlibraryenvironment/ui-request.git
 git clone https://github.com/openlibraryenvironment/ui-update.git
 git clone https://github.com/openlibraryenvironment/ui-supply.git
-git clone https://github.com/openlibraryenvironment/ui-shipping.git
 git clone https://github.com/openlibraryenvironment/stripes-reshare.git
-
-
-echo Making skeleton apps
-echo si might also be an app - not sure
-cd make-skeleton-app
-./generate-app box consortia si unbox
-
-cd ..
-mv ./make-skeleton-app/output/* .
-
 
 echo Completed clone and setup
 echo cd rs_ui/platform-rs and run "yarn install" to download deps, then "stripes serve ./stripes.config.js --hasAllPerms" to start the UI

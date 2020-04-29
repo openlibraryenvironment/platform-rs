@@ -1,3 +1,6 @@
+# Builds
+helper_scripts/rs_ui/
+
 # Logs
 logs
 *.log
