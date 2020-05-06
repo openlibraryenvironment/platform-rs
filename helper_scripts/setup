@@ -4,19 +4,22 @@
 #    curl -s "https://raw.githubusercontent.com/openlibraryenvironment/platform-rs/master/helper_scripts/setup" | bash
 # Which will configure a ux env
 
+# determine current branch
+platform_branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
+
 mkdir rs_ui
 cd rs_ui
 
 # Copy the workspace package.json
-wget https://raw.githubusercontent.com/openlibraryenvironment/platform-rs/master/helper_scripts/package.json
+wget "https://raw.githubusercontent.com/openlibraryenvironment/platform-rs/$platform_branch/helper_scripts/package.json"
 
-git clone git@github.com:openlibraryenvironment/platform-rs.git
-git clone git@github.com:openlibraryenvironment/ui-rs.git
-git clone git@github.com:openlibraryenvironment/ui-directory.git
-git clone git@github.com:openlibraryenvironment/ui-request.git
-git clone git@github.com:openlibraryenvironment/ui-update.git
-git clone git@github.com:openlibraryenvironment/ui-supply.git
-git clone git@github.com:openlibraryenvironment/stripes-reshare.git
+git clone -b $platform_branch  https://github.com/openlibraryenvironment/platform-rs.git
+git clone https://github.com/openlibraryenvironment/ui-rs.git
+git clone https://github.com/openlibraryenvironment/ui-directory.git
+git clone https://github.com/openlibraryenvironment/ui-request.git
+git clone https://github.com/openlibraryenvironment/ui-update.git
+git clone https://github.com/openlibraryenvironment/ui-supply.git
+git clone https://github.com/openlibraryenvironment/stripes-reshare.git
 
 echo Completed clone and setup
 echo cd rs_ui/platform-rs and run "yarn install" to download deps, then "stripes serve ./stripes.config.js --hasAllPerms" to start the UI

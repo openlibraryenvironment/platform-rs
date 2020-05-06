@@ -17,14 +17,14 @@
     "lint": "eslint test/ui-testing"
   },
   "dependencies": {
-    "@folio/developer": "~1.10.1",
+    "@folio/developer": "2.0.0",
     "@folio/directory": "^1.1.0",
     "@folio/rs": "^1.1.0",
     "@folio/request": "^1.0.0",
     "@folio/supply": "^1.0.0",
     "@folio/update": "^1.0.0",
-    "@folio/tenant-settings": "^3.0.0",
-    "@folio/users": "^2.24.2",
+    "@folio/tenant-settings": "3.0.0",
+    "@folio/users": "3.0.4",
     "@folio/stripes": "^3.0.0",
     "@folio/stripes-erm-components": "^2.0.0",
     "react": "~16.8.0",
