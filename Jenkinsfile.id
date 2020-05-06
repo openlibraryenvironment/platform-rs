@@ -1,0 +1,19 @@
+@Library('indexdata-jsl') _
+
+pipeline {
+  agent	 {
+    label 'folio-jenkins'
+  }
+  stages {
+    stage("set env") {
+      steps {
+        constants()
+      }
+    }
+    stage("rebuild frontends") {
+      steps {
+        idDevFrontend()
+      }
+    }
+  }
+}
