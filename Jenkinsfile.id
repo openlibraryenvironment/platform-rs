@@ -1,4 +1,4 @@
-@Library('indexdata-jsl') _
+@Library('indexdata-jsl@PR-676-frontend-perms') _
 
 pipeline {
   agent	 {
