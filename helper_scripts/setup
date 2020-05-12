@@ -6,15 +6,15 @@
 
 # to use a branch other than master, pass it in as the first argument (./setup my-branch)
 platform_branch=${1:-master}
-echo $platform_branch
+branch_name=${platform_branch#*\/}
 
 mkdir rs_ui
 cd rs_ui
 
 # Copy the workspace package.json
-wget "https://raw.githubusercontent.com/openlibraryenvironment/platform-rs/$platform_branch/helper_scripts/package.json"
+wget "https://raw.githubusercontent.com/openlibraryenvironment/platform-rs/$branch_name/helper_scripts/package.json"
 
-git clone -b $platform_branch  https://github.com/openlibraryenvironment/platform-rs.git
+git clone -b $branch_name  https://github.com/openlibraryenvironment/platform-rs.git
 git clone https://github.com/openlibraryenvironment/ui-rs.git
 git clone https://github.com/openlibraryenvironment/ui-directory.git
 git clone https://github.com/openlibraryenvironment/ui-request.git
