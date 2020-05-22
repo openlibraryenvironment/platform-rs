@@ -1,0 +1,19 @@
+@Library('indexdata-jsl@PR-676-frontend-perms') _
+
+pipeline {
+  agent  {
+    label 'folio-jenkins'
+  }
+  stages {
+    stage("set env") {
+      steps {
+        constants()
+      }
+    }
+    stage("rebuild frontends") {
+      steps {
+        idDevFrontend()
+      }
+    }
+  }
+}
