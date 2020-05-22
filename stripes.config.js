@@ -51,4 +51,6 @@ module.exports.okapi =
    { 'url':'http://reshare.reshare-dev.indexdata.com:9130', 'tenant':'millersville' } // millersville_admin/admin1350
 // { 'url':'http://reshare.reshare-dev.indexdata.com:9130', 'tenant':'temple' } // temple_admin/admin1325
 // { 'url':'http://localhost:9130', 'tenant':'diku' }
+// { 'url':'https://east-okapi.folio-dev.indexdata.com', 'tenant':'reshare_east' } // east_admin/east5231
+// { 'url':'https://west-okapi.folio-dev.indexdata.com', 'tenant':'reshare_west' } // west_admin/west5231
 ;
