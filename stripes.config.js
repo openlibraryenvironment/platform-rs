@@ -2,6 +2,8 @@ module.exports = {
   // okapi: { 'url':'http://localhost:9130', 'tenant':'diku' },
   // okapi: { 'url':'https://folio-snapshot-okapi.aws.indexdata.com', 'tenant':'diku' },
   okapi: { 'url':'https://okapi-reshare.apps.k-int.com', 'tenant':'reshare' },
+  // okapi: { 'url':'https://east-okapi.folio-dev.indexdata.com', 'tenant':'reshare_east' },
+  // okapi: { 'url':'https://west-okapi.folio-dev.indexdata.com', 'tenant':'reshare_west' },
   config: {
     // autoLogin: { username: 'diku_admin', password: 'admin' }
     // logCategories: 'core,redux,connect,connect-fetch,substitute,path,mpath,mquery,action,event,perm,interface,xhr'
