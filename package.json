@@ -1,13 +1,14 @@
 {
   "name": "@folio/platform-rs",
   "version": "1.0.0",
+  "description": "Top-level platform for ReShare UI",
   "license": "Apache-2.0",
   "repository": "openlibraryenvironment/platform-rs",
   "publishConfig": {
     "registry": "https://repository.folio.org/repository/npm-folio/"
   },
   "scripts": {
-    "build": "export NODE_OPTIONS=\"--max-old-space-size=2048 $NODE_OPTIONS\"; stripes build stripes.config.js",
+    "build": "export NODE_OPTIONS=\"--max-old-space-size=4096 $NODE_OPTIONS\"; stripes build stripes.config.js",
     "stripes": "stripes",
     "start": "stripes serve stripes.config.js",
     "build-module-descriptors": "node ./build-module-descriptors.js",
@@ -27,7 +28,7 @@
     "@folio/users": "^3.0.0",
     "@folio/stripes": "^4.0.0",
     "@folio/stripes-erm-components": "^3.0.0",
-    "react": "~16.8.0",
+    "react": "^16.13.1",
     "react-dom": "~16.8.0",
     "react-intl": "^4.0.0",
     "react-redux": "~5.1.1",
