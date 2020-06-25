@@ -1,6 +1,7 @@
 {
   "name": "@folio/platform-rs",
   "version": "1.0.0",
+  "description": "Top-level platform for ReShare UI",
   "license": "Apache-2.0",
   "repository": "openlibraryenvironment/platform-rs",
   "publishConfig": {
