@@ -16,9 +16,9 @@ module.exports = {
     welcomeMessage: 'ui-rs.front.welcome',
     platformName: 'ReShare',
     platformDescription: 'ReShare platform',
-    hasAllPerms: true,
-    sharedIndexUI: 'http://shared-index.reshare-dev.indexdata.com',
-    sharedIndexWS: 'http://shared-index.reshare-dev.indexdata.com:9130',
+    hasAllPerms: false,
+    sharedIndexUI: 'https://si-cardinal.reshare-dev.indexdata.com',
+    sharedIndexWS: 'https://si-cardinal-okapi.folio-dev.indexdata.com',
     showDevInfo: false,
   },
   modules: {
