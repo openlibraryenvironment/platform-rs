@@ -19,7 +19,7 @@ module.exports = {
     hasAllPerms: false,
     sharedIndexUI: 'https://si-cardinal.reshare-dev.indexdata.com',
     sharedIndexWS: 'https://si-cardinal-okapi.folio-dev.indexdata.com',
-    showDevInfo: false,
+    showDevInfo: true,
   },
   modules: {
     '@folio/users': {},
