@@ -18,23 +18,23 @@
     "lint": "eslint test/ui-testing"
   },
   "dependencies": {
-    "@folio/developer": "^2.0.0",
+    "@folio/developer": "^3.0.0",
     "@folio/directory": "^1.1.0",
     "@folio/rs": "^1.1.0",
     "@folio/request": "^1.0.0",
     "@folio/supply": "^1.0.0",
     "@folio/update": "^1.0.0",
-    "@folio/tenant-settings": "^3.0.0",
-    "@folio/users": "^3.0.0",
-    "@folio/stripes": "^4.0.0",
-    "@folio/stripes-erm-components": "^3.0.0",
+    "@folio/tenant-settings": "^4.0.0",
+    "@folio/users": "^5.0.0",
+    "@folio/stripes": "^5.0.0",
+    "@folio/stripes-erm-components": "^4.0.0",
     "react": "^16.13.1",
     "react-dom": "~16.8.0",
     "react-intl": "^4.0.0",
     "react-redux": "~5.1.1",
     "redux": "^3.0.0 || ^4.0.0",
-    "react-router": "^4.1.1",
-    "react-router-dom": "^4.1.1"
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "@folio/eslint-config-stripes": "^4.1.0",
