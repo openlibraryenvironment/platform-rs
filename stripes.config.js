@@ -20,6 +20,7 @@ module.exports = {
     sharedIndexUI: 'https://si-cardinal.reshare-dev.indexdata.com',
     sharedIndexWS: 'https://si-cardinal-okapi.folio-dev.indexdata.com',
     showDevInfo: true,
+    // suppressIntlErrors: true,
   },
   modules: {
     '@folio/users': {},
