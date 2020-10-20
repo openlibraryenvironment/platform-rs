@@ -1,4 +1,4 @@
-@Library ('folio_jenkins_shared_libs') _
+@Library ('folio_jenkins_shared_libs@perms') _
 
 buildNPM {
   publishModDescriptor = 'no'
