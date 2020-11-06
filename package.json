@@ -5,7 +5,7 @@
   "license": "Apache-2.0",
   "repository": "openlibraryenvironment/platform-rs",
   "publishConfig": {
-    "registry": "https://repository.folio.org/repository/npm-folio/"
+    "registry": "https://repository.dev-us-east-1.indexdata.com/repository/reshare-all"
   },
   "scripts": {
     "build": "export NODE_OPTIONS=\"--max-old-space-size=4096 $NODE_OPTIONS\"; stripes build stripes.config.js",

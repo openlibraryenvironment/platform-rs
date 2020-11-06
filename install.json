@@ -1,0 +1,94 @@
+[ {
+  "id" : "folio_developer-3.0.0",
+  "action" : "enable"
+}, {
+  "id" : "folio_directory-1.1.0",
+  "action" : "enable"
+}, {
+  "id" : "folio_request-1.0.0",
+  "action" : "enable"
+}, {
+  "id" : "folio_rs-1.1.0",
+  "action" : "enable"
+}, {
+  "id" : "mod-users-17.2.2",
+  "action" : "enable"
+}, {
+  "id" : "mod-permissions-5.12.2",
+  "action" : "enable"
+}, {
+  "id" : "mod-login-7.1.1",
+  "action" : "enable"
+}, {
+  "id" : "mod-inventory-storage-19.4.2",
+  "action" : "enable"
+}, {
+  "id" : "mod-password-validator-1.8.2",
+  "action" : "enable"
+}, {
+  "id" : "mod-authtoken-2.6.0",
+  "action" : "enable"
+}, {
+  "id" : "mod-event-config-1.6.0",
+  "action" : "enable"
+}, {
+  "id" : "mod-configuration-5.5.0",
+  "action" : "enable"
+}, {
+  "id" : "mod-circulation-storage-12.1.2",
+  "action" : "enable"
+}, {
+  "id" : "mod-template-engine-1.10.0",
+  "action" : "enable"
+}, {
+  "id" : "mod-email-1.9.0",
+  "action" : "enable"
+}, {
+  "id" : "mod-sender-1.4.0",
+  "action" : "enable"
+}, {
+  "id" : "mod-notify-2.7.0",
+  "action" : "enable"
+}, {
+  "id" : "mod-users-bl-6.1.1",
+  "action" : "enable"
+}, {
+  "id" : "folio_stripes-core-6.0.0",
+  "action" : "enable"
+}, {
+  "id" : "mod-notes-2.10.2",
+  "action" : "enable"
+}, {
+  "id" : "mod-tags-0.7.2",
+  "action" : "enable"
+}, {
+  "id" : "folio_stripes-smart-components-5.0.1",
+  "action" : "enable"
+}, {
+  "id" : "folio_supply-1.0.0",
+  "action" : "enable"
+}, {
+  "id" : "mod-login-saml-2.0.1",
+  "action" : "enable"
+}, {
+  "id" : "folio_tenant-settings-4.0.0",
+  "action" : "enable"
+}, {
+  "id" : "folio_update-1.0.0",
+  "action" : "enable"
+}, {
+  "id" : "mod-pubsub-1.3.3",
+  "action" : "enable"
+}, {
+  "id" : "mod-patron-blocks-1.1.0",
+  "action" : "enable"
+}, {
+  "id" : "folio_users-5.0.3",
+  "action" : "enable"
+}, {
+  "id" : "mod-rs-1.11.0",
+  "action" : "enable"
+}, {
+  "id" : "mod-directory-1.2.2",
+  "action" : "enable"
+} ]
