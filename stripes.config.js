@@ -21,7 +21,7 @@ module.exports = {
     sharedIndexWS: 'https://si-cardinal-okapi.folio-dev.indexdata.com',
     showDevInfo: true,
     languages: ['en'],
-    // suppressIntlErrors: true,
+    suppressIntlErrors: true,
   },
   modules: {
     '@folio/users': {},
