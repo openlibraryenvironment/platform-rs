@@ -1,0 +1,17 @@
+[ {
+  "id" : "mod-source-record-storage-4.1.2",
+  "action" : "uptodate"
+}, {
+  "id" : "mod-inventory-16.1.2",
+  "action" : "uptodate"
+}, {
+  "id" : "mod-feesfines-15.9.2",
+  "action" : "uptodate"
+}, {
+  "id" : "mod-calendar-1.10.1",
+  "action" : "enable"
+}, {
+  "id" : "mod-circulation-19.2.6",
+  "action" : "enable"
+} ]
+
