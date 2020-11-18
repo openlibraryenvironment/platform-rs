@@ -1,9 +1,5 @@
 module.exports = {
-  // okapi: { 'url':'http://localhost:9130', 'tenant':'diku' },
-  // okapi: { 'url':'https://folio-snapshot-okapi.aws.indexdata.com', 'tenant':'diku' },
-  okapi: { 'url':'https://okapi-reshare.apps.k-int.com', 'tenant':'reshare' },
-  // okapi: { 'url':'https://east-okapi.folio-dev.indexdata.com', 'tenant':'reshare_east' },
-  // okapi: { 'url':'https://west-okapi.folio-dev.indexdata.com', 'tenant':'reshare_west' },
+  okapi: { 'url':'http://localhost:9130', 'tenant':'reshare' },
   config: {
     // autoLogin: { username: 'diku_admin', password: 'admin' }
     // logCategories: 'core,redux,connect,connect-fetch,substitute,path,mpath,mquery,action,event,perm,interface,xhr'
@@ -34,11 +30,11 @@ module.exports = {
   },
   branding: {
     logo: {
-      src: './tenant-assets/opentown-libraries-logo.png',
+      src: './tenant-assets/reshare-logo.png',
       alt: 'Opentown Libraries',
     },
     favicon: {
-      src: './tenant-assets/opentown-libraries-favicon.png',
+      src: './tenant-assets/reshare-favicon.png',
     },
   },
 };
