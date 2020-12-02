@@ -9,7 +9,5 @@
   "dependencies": {
   },
   "resolutions": {
-    "moment": "2.24.0",
-    "@folio/users": "5.0.10001200"
   }
 }

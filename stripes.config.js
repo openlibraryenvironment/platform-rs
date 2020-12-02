@@ -35,11 +35,11 @@ module.exports = {
   },
   branding: {
     logo: {
-      src: './tenant-assets/opentown-libraries-logo.png',
+      src: './tenant-assets/reshare-logo.png',
       alt: 'Opentown Libraries',
     },
     favicon: {
-      src: './tenant-assets/opentown-libraries-favicon.png',
+      src: './tenant-assets/reshare-favicon.jpg',
     },
   },
 };
