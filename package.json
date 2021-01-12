@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@folio/developer": "4.0.0",
-    "@folio/directory": "^1.2.0",
+    "@folio/directory": "^1.2.1",
     "@folio/rs": "^1.2.0",
     "@folio/request": "^1.1.0",
     "@folio/supply": "^1.0.0",
