@@ -6,6 +6,11 @@
   "repository": "openlibraryenvironment/platform-rs",
   "scripts": {
     "build": "export NODE_OPTIONS=\"--max-old-space-size=4096 $NODE_OPTIONS\"; stripes build stripes.config.js",
+    "build-millersville": "export NODE_OPTIONS=\"--max-old-space-size=4096 $NODE_OPTIONS\"; stripes build millersville.stripes.config.js && mv output millersville-webpack",
+    "build-temple": "export NODE_OPTIONS=\"--max-old-space-size=4096 $NODE_OPTIONS\"; stripes build temple.stripes.config.js && mv output temple-webpack",
+    "build-rowan": "export NODE_OPTIONS=\"--max-old-space-size=4096 $NODE_OPTIONS\"; stripes build rowan.stripes.config.js && mv output rowan-webpack",
+    "build-setonhall": "export NODE_OPTIONS=\"--max-old-space-size=4096 $NODE_OPTIONS\"; stripes build setonhall.stripes.config.js && mv output setonhall-webpack",
+    "build-newschool": "export NODE_OPTIONS=\"--max-old-space-size=4096 $NODE_OPTIONS\"; stripes build newschool.stripes.config.js && mv output newschool-webpack",
     "stripes": "stripes",
     "start": "stripes serve stripes.config.js",
     "build-module-descriptors": "node ./build-module-descriptors.js",
