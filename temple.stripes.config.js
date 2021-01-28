@@ -9,6 +9,7 @@ module.exports = {
     sharedIndexUI: 'https://palci-si.reshare.indexdata.com',
     sharedIndexWS: 'https://palci-si-okapi.reshare.indexdata.com',
     showDevInfo: true,
+    languages: ['en'],
   },
   modules: {
     '@folio/users': {},
