@@ -2,7 +2,7 @@
   "id" : "folio_developer-4.0.0",
   "action" : "enable"
 }, {
-  "id" : "mod-rs-2.0.0",
+  "id" : "mod-rs-2.0.1",
   "action" : "enable"
 }, {
   "id" : "mod-directory-2.0.0",
