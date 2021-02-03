@@ -1,0 +1,7 @@
+[ {
+  "id" : "mod-rs-2.0.0",
+  "action" : "enable"
+}, {
+  "id" : "mod-directory-2.0.0",
+  "action" : "enable"
+}] 
