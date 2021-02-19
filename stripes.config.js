@@ -19,6 +19,14 @@ module.exports = {
     hasAllPerms: false,
     sharedIndexUI: 'https://si-cardinal.reshare-dev.indexdata.com',
     sharedIndexWS: 'https://si-cardinal-okapi.folio-dev.indexdata.com',
+    reshare: {
+      sharedIndex: {
+        type: 'folio',
+        ui: 'https://si-cardinal.reshare-dev.indexdata.com',
+        ws: 'https://si-cardinal-okapi.folio-dev.indexdata.com',
+        query: 'rs/sharedIndexQuery',
+      }
+    },
     showDevInfo: true,
     languages: ['en'],
   },
@@ -32,6 +40,7 @@ module.exports = {
     '@folio/developer': {},
     "@folio/update": {},
     "@folio/tenant-settings": {},
+    "@folio/plugin-rs-siquery-folio": {},
   },
   branding: {
     logo: {
