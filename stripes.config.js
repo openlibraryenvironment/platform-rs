@@ -17,8 +17,6 @@ module.exports = {
     platformName: 'ReShare',
     platformDescription: 'ReShare platform',
     hasAllPerms: false,
-    sharedIndexUI: 'https://si-cardinal.reshare-dev.indexdata.com',
-    sharedIndexWS: 'https://si-cardinal-okapi.folio-dev.indexdata.com',
     reshare: {
       sharedIndex: {
         type: 'folio',
