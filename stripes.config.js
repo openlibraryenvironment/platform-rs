@@ -30,15 +30,14 @@ module.exports = {
   },
   modules: {
     '@folio/users': {},
-    '@folio/directory': {},
-    '@folio/rs': {},
-    '@folio/request': {},
-    '@folio/request': {},
-    '@folio/supply': {},
     '@folio/developer': {},
-    "@folio/update": {},
     "@folio/tenant-settings": {},
-    "@folio/plugin-rs-siquery-folio": {},
+    '@reshare/directory': {},
+    "@reshare/plugin-rs-siquery-folio": {},
+    '@reshare/request': {},
+    '@reshare/rs': {},
+    '@reshare/supply': {},
+    "@reshare/update": {},
   },
   branding: {
     logo: {
