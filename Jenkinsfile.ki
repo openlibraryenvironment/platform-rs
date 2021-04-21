@@ -1,23 +1,13 @@
 @Library ('kifolio') _
 
+parameters {
+  text(name: 'YARN_WORKSPACES', defaultValue: '', description: 'JSON String of workspaces in the format {"workspace-name":"https://git.url"}.')
+}
+
 final Map args=[:]
 
 // Add workspaces via build params
 final String ws_str = params.YARN_WORKSPACES?.trim()
 if (ws_str) args['workspaces'] = readJSON(text: ws_str) as Map
 
-buildStripesPlatform(
-  workspaces: [
-    "ui-rs":"https://github.com/openlibraryenvironment/ui-rs.git",
-    "ui-directory":"https://github.com/openlibraryenvironment/ui-directory.git",
-    "ui-request":"https://github.com/openlibraryenvironment/ui-request.git",
-    "ui-update":"https://github.com/openlibraryenvironment/ui-update.git",
-    "ui-supply":"https://github.com/openlibraryenvironment/ui-supply.git",
-    "stripes-reshare":"https://github.com/openlibraryenvironment/stripes-reshare.git",
-    "address-utils":"https://github.com/openlibraryenvironment/address-utils.git",
-    "address-plugin-generic":"https://github.com/openlibraryenvironment/address-plugin-generic.git",
-    "address-plugin-north-america":"https://github.com/openlibraryenvironment/address-plugin-north-america.git",
-    "address-plugin-british-isles":"https://github.com/openlibraryenvironment/address-plugin-british-isles.git",
-    "ui-plugin-rs-siquery-folio":"https://github.com/openlibraryenvironment/ui-plugin-rs-siquery-folio.git"
-  ]
-)
+buildStripesPlatform(args)
