@@ -1,8 +1,13 @@
 @Library ('kifolio') _
 
-Map args=[:]
+parameters {
+  text(name: 'YARN_WORKSPACES', defaultValue: '', description: 'JSON String of workspaces in the format {"workspace-name":"https://git.url"}.')
+}
 
-// yarn --verbose publish --non-interactive --new-version 2.5.0
-// yarn run setPublishRegistry -- "https://nexus.libsdev.k-int.com/repository/libsdev-npm-hosted/"
+final Map args=[:]
+
+// Add workspaces via build params
+final String ws_str = params.YARN_WORKSPACES?.trim()
+if (ws_str) args['workspaces'] = readJSON(text: ws_str) as Map
 
 buildStripesPlatform(args)
