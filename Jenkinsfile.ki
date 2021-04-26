@@ -7,6 +7,7 @@ final String ws_str = params.YARN_WORKSPACES?.trim()
 if (ws_str) args['workspaces'] = readJSON(text: ws_str) as Map
 
 buildStripesPlatform(
+  imageTag: 'docker.libsdev.k-int.com/knowledgeintegration/reshare-ui:latest-dev',
   workspaces: [
     "ui-rs":"https://github.com/openlibraryenvironment/ui-rs.git",
     "ui-directory":"https://github.com/openlibraryenvironment/ui-directory.git",
