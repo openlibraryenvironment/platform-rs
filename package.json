@@ -15,10 +15,10 @@
     "local": "f=stripes.config.js; test -f $f.local && f=$f.local; echo Using config $f; stripes serve $f"
   },
   "dependencies": {
-    "@folio/developer": "4.0.0",
+    "@folio/developer": "^4.0.0",
     "@folio/inventory": "^5.0.6",
-    "@folio/tenant-settings": "5.0.1",
-    "@folio/users": "5.0.7",
+    "@folio/tenant-settings": "^5.0.1",
+    "@folio/users": "^5.0.7",
     "@folio/stripes": "^5.0.7",
     "@reshare/directory": "^1.3.0",
     "@reshare/plugin-rs-siquery-folio": "*",
