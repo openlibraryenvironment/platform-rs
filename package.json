@@ -22,7 +22,7 @@
     "@folio/stripes": "~6.1.2",
     "@reshare/directory": "~1.4.0",
     "@reshare/plugin-rs-siquery-folio": "~1.1.0",
-    "@reshare/request": "~1.0.0",
+    "@reshare/request": "~1.1.0",
     "@reshare/rs": "~1.4.0",
     "@reshare/supply": "~1.1.0",
     "@reshare/update": "~1.4.0",
