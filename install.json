@@ -1,4 +1,11 @@
-[ {
+[ 
+{
+  "id": "mod-directory-2.1.0",
+  "action": "enable"
+},{
+  "id": "mod-rs-2.1.0",
+  "action": "enable"
+},{
   "id" : "folio_developer-4.0.0",
   "action" : "enable"
 }, {
