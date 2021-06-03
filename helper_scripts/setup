@@ -1,9 +1,13 @@
 #!/bin/bash
 
+# This script is for developer workstations
+#
 # The intention is to have a script that can run with 
 #    curl -s "https://raw.githubusercontent.com/openlibraryenvironment/platform-rs/master/helper_scripts/setup" | bash
 # Which will configure a ux env
+# 
 
+# Make a directory for us to work inside - this is our workspace
 mkdir rs_ui
 cd rs_ui
 
@@ -21,6 +25,7 @@ git clone https://github.com/openlibraryenvironment/address-utils
 git clone https://github.com/openlibraryenvironment/address-plugin-generic
 git clone https://github.com/openlibraryenvironment/address-plugin-north-america
 git clone https://github.com/openlibraryenvironment/address-plugin-british-isles
+git clone https://github.com/openlibraryenvironment/ui-plugin-rs-siquery-folio
 
 echo Completed clone and setup
 echo cd rs_ui/platform-rs and run "yarn install" to download deps, then "stripes serve ./stripes.config.js --hasAllPerms" to start the UI
