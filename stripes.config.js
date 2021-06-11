@@ -26,8 +26,6 @@ module.exports = {
       }
     },
     showDevInfo: true,
-    languages: ['en'],
-    suppressIntlErrors: true,
   },
   modules: {
     '@folio/users': {},
