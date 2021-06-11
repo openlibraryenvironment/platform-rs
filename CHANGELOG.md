@@ -1,5 +1,9 @@
 # Change history for platform-rs
 
+## (IN PROGRESS)
+
+* Remove `language: ['en']` from Stripes configuration. Fixes PR-1003.
+
 ## [1.3.0](https://github.com/openlibraryenvironment/platform-rs/tree/v1.3.0) (2021-05-05)
 
 * Upgrade to Iris
