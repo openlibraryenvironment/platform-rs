@@ -21,11 +21,11 @@ git clone https://github.com/openlibraryenvironment/ui-request.git
 git clone https://github.com/openlibraryenvironment/ui-update.git
 git clone https://github.com/openlibraryenvironment/ui-supply.git
 git clone https://github.com/openlibraryenvironment/stripes-reshare.git
-git clone https://github.com/openlibraryenvironment/address-utils
-git clone https://github.com/openlibraryenvironment/address-plugin-generic
-git clone https://github.com/openlibraryenvironment/address-plugin-north-america
-git clone https://github.com/openlibraryenvironment/address-plugin-british-isles
-git clone https://github.com/openlibraryenvironment/ui-plugin-rs-siquery-folio
+git clone https://github.com/openlibraryenvironment/address-utils.git
+git clone https://github.com/openlibraryenvironment/address-plugin-generic.git
+git clone https://github.com/openlibraryenvironment/address-plugin-north-america.git
+git clone https://github.com/openlibraryenvironment/address-plugin-british-isles.git
+git clone https://github.com/openlibraryenvironment/ui-plugin-rs-siquery-folio.git
 
 echo Completed clone and setup
 echo cd rs_ui/platform-rs and run "yarn install" to download deps, then "stripes serve ./stripes.config.js --hasAllPerms" to start the UI
