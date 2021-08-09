@@ -1,6 +1,6 @@
 {
   "name": "@reshare/platform-rs",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Top-level platform for ReShare UI",
   "license": "Apache-2.0",
   "repository": "openlibraryenvironment/platform-rs",
@@ -20,12 +20,13 @@
     "@folio/tenant-settings": "~6.0.0",
     "@folio/users": "~6.0.5",
     "@folio/stripes": "~6.1.2",
-    "@reshare/directory": "~1.4.0",
-    "@reshare/plugin-rs-siquery-folio": "~1.1.0",
-    "@reshare/request": "~1.1.0",
-    "@reshare/rs": "~1.4.0",
-    "@reshare/supply": "~1.1.0",
-    "@reshare/update": "~1.4.0",
+    "@reshare/directory": "openlibraryenvironment/ui-directory#release-1.5.x",
+    "@reshare/plugin-rs-siquery-folio": "openlibraryenvironment/ui-plugin-rs-siquery-folio#release-1.1.x",
+    "@reshare/request": "openlibraryenvironment/ui-request#release-1.2.x",
+    "@reshare/rs": "openlibraryenvironment/ui-rs#release-1.5.x",
+    "@reshare/supply": "openlibraryenvironment/ui-supply#release-1.2.x",
+    "@reshare/update": "openlibraryenvironment/ui-update#release-1.4.x",
+    "@reshare/stripes-reshare" : "openlibraryenvironment/stripes-reshare#release-1.5.x",
     "moment": "~2.29.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -39,5 +40,17 @@
   },
   "devDependencies": {
     "@folio/stripes-cli": "~2.1.0"
+  },
+  "resolutions": { 
+    "@folio/address-utils": "openlibraryenvironment/address-utils#release-1.2.x", 
+    "@folio/address-plugin-british-isles": "openlibraryenvironment/address-plugin-british-isles#release-1.3.x", 
+    "@folio/address-plugin-north-america": "openlibraryenvironment/address-plugin-north-america#release-1.3.x", 
+    "@folio/address-plugin-generic": "openlibraryenvironment/address-plugin-generic#release-1.4.x", 
+    "@reshare/plugin-rs-siquery-folio": "openlibraryenvironment/ui-plugin-rs-siquery-folio#release-1.1.x", 
+    "@reshare/request": "openlibraryenvironment/ui-request#release-1.2.x", 
+    "@reshare/rs": "openlibraryenvironment/ui-rs#release-1.5.x", 
+    "@reshare/supply": "openlibraryenvironment/ui-supply#release-1.2.x", 
+    "@reshare/update": "openlibraryenvironment/ui-update#release-1.4.x", 
+    "@reshare/stripes-reshare" : "openlibraryenvironment/stripes-reshare#release-1.5.x" 
   }
 }
