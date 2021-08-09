@@ -8,8 +8,8 @@
     "registry": "https://repository.folio.org/repository/npm-folio/"
   },
   "scripts": {
-    "build": "export NODE_OPTIONS=\"--max-old-space-size=4096 $NODE_OPTIONS\"; stripes build stripes.config.js",
-    "stripes": "stripes",
+    "build": "export STRIPES_TRANSPILE_TOKENS=\"@reshare\"; export NODE_OPTIONS=\"--max-old-space-size=4096 $NODE_OPTIONS\"; stripes build stripes.config.js",
+    "stripes": "./node_modules/bin/stripes",
     "start": "stripes serve stripes.config.js",
     "build-module-descriptors": "node ./build-module-descriptors.js",
     "local": "f=stripes.config.js; test -f $f.local && f=$f.local; echo Using config $f; stripes serve $f"
@@ -39,7 +39,7 @@
     "rrule": "2.6.4"
   },
   "devDependencies": {
-    "@folio/stripes-cli": "~2.1.0"
+    "@folio/stripes-cli": "^2.1.0"
   },
   "resolutions": { 
     "@folio/address-utils": "openlibraryenvironment/address-utils#release-1.2.x", 
