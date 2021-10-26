@@ -38,6 +38,6 @@
     "rrule": "2.6.4"
   },
   "devDependencies": {
-    "@folio/stripes-cli": "~2.1.0"
+    "@folio/stripes-cli": "^2.1.0"
   }
 }
