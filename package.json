@@ -18,7 +18,7 @@
     "@folio/developer": "~5.0.0",
     "@folio/inventory": "~6.0.0",
     "@folio/tenant-settings": "~6.0.0",
-    "@folio/users": "~6.0.5",
+    "@folio/users": "~6.1.4",
     "@folio/stripes": "~6.1.2",
     "@reshare/directory": "^1.5.0",
     "@reshare/plugin-rs-siquery-folio": "^1.2.0",
