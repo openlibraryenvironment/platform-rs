@@ -1,0 +1,27 @@
+[
+    {
+        "action": "enable",
+        "id": "mod-inventory-storage-21.0.9"
+    },
+    {
+        "action": "enable",
+        "id": "mod-source-record-storage-5.2.3"
+    },
+    {
+        "action": "enable",
+        "id": "mod-inventory-17.0.7"
+    },
+    {
+        "action": "enable",
+        "id": "mod-users-18.1.1"
+    },
+    {
+        "action": "enable",
+        "id": "mod-search-1.5.2"
+    },
+    {
+        "action": "enable",
+        "id": "mod-data-export-4.2.3"
+    }
+]
+
