@@ -25,10 +25,6 @@
     },
     {
         "action": "enable",
-        "id": "mod-search-1.5.2"
-    },
-    {
-        "action": "enable",
         "id": "mod-data-export-4.2.3"
     },
     {
