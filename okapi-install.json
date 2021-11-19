@@ -94,5 +94,13 @@
   {
     "id": "mod-circulation-19.2.8",
     "action": "enable"
+  },
+  {
+    "id": "mod-directory-2.4.0",
+    "action": "enable"
+  },
+  {
+    "id": "mod-rs-2.4.0",
+    "action": "enable"
   }
 ]
