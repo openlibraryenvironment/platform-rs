@@ -1,0 +1,31 @@
+[ {
+  "id" : "folio_developer-4.0.0",
+  "action" : "enable"
+}, {
+  "id" : "reshare_directory-1.5.0",
+  "action" : "enable"
+}, {
+  "id" : "reshare_request-1.2.0",
+  "action" : "enable"
+}, {
+  "id" : "reshare_rs-1.6.0",
+  "action" : "enable"
+}, {
+  "id" : "folio_stripes-core-6.0.0",
+  "action" : "enable"
+}, {
+  "id" : "folio_stripes-smart-components-5.0.1",
+  "action" : "enable"
+}, {
+  "id" : "reshare_supply-1.2.0",
+  "action" : "enable"
+}, {
+  "id" : "folio_tenant-settings-4.0.0",
+  "action" : "enable"
+}, {
+  "id" : "reshare_update-1.4.1",
+  "action" : "enable"
+}, {
+  "id" : "folio_users-5.0.3",
+  "action" : "enable"
+} ]
