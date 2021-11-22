@@ -1,0 +1,18 @@
+[
+  {
+    "id": "folio_users-6.1.4",
+    "action": "enable"
+  },
+  {
+    "id": "folio_tenant-settings-6.1.2",
+    "action": "enable"
+  },
+  {
+    "id": "folio_inventory-7.1.4",
+    "action": "enable"
+  },
+  {
+    "id": "folio_developer-5.2.2",
+    "action": "enable"
+  }
+]
