@@ -12,11 +12,19 @@
         "id": "mod-inventory-17.0.7"
     },
     {
+      "id": "mod-authtoken-2.8.0",
+      "action": "enable"
+    },
+    {
       "id": "mod-login-7.4.0",
       "action": "enable"
     },
     {
       "id": "mod-configuration-5.7.2",
+      "action": "enable"
+    },
+    {
+      "id": "mod-permissions-5.14.2",
       "action": "enable"
     },
     {
