@@ -12,8 +12,28 @@
         "id": "mod-inventory-17.0.7"
     },
     {
+      "id": "mod-login-7.4.0",
+      "action": "enable"
+    },
+    {
         "action": "enable",
         "id": "mod-users-18.1.1"
+    },
+    {
+      "id": "mod-users-bl-7.0.0",
+      "action": "enable"
+    },
+    {
+      "id": "mod-email-1.11.0",
+      "action": "enable"
+    },
+    {
+      "id": "mod-sender-1.6.0",
+      "action": "enable"
+    },
+    {
+      "id": "mod-graphql-1.9.0",
+      "action": "enable"
     },
     {
         "action": "enable",
