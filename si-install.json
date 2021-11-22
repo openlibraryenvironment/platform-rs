@@ -12,6 +12,10 @@
         "id": "folio_inventory-7.1.4"
     },
     {
+      "id": "mod-configuration-5.7.2",
+      "action": "enable"
+    },
+    {
         "action": "enable",
         "id": "folio_developer-5.2.2"
     },
