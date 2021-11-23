@@ -28,6 +28,10 @@
       "action": "enable"
     },
     {
+      "id": "mod-password-validator-2.1.0",
+      "action": "enable"
+    },
+    {
         "action": "enable",
         "id": "mod-users-18.1.1"
     },
