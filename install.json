@@ -8,7 +8,7 @@
   "id" : "reshare_request-1.2.0",
   "action" : "enable"
 }, {
-  "id" : "reshare_rs-1.6.0",
+  "id" : "reshare_rs-1.7.0",
   "action" : "enable"
 }, {
   "id" : "mod-users-17.2.2",
@@ -101,9 +101,9 @@
   "id" : "mod-circulation-19.2.8",
   "action" : "enable"
 }, {
-  "id" : "mod-rs-2.4.0",
+  "id" : "mod-rs-2.5.0",
   "action" : "enable"
 }, {
-  "id" : "mod-directory-2.4.0",
+  "id" : "mod-directory-2.5.0",
   "action" : "enable"
 } ]
