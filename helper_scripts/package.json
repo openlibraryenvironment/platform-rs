@@ -4,7 +4,9 @@
       "*"
   ],
   "devDependencies": {
-    "@folio/stripes-cli": "~2.1.0"
+    "@folio/stripes-cli": "~2.1.0",
+    "colors": "1.4.0"
+
   },
   "dependencies": {
   },
