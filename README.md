@@ -8,7 +8,7 @@ Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
 ## TL;DR
 
     curl -s "https://raw.githubusercontent.com/openlibraryenvironment/platform-rs/master/helper_scripts/setup" | bash
-    cd rs_ui/platform_rs
+    cd rs_ui/platform-rs
     yarn install
     stripes serve ./stripes.config.js --hasAllPerms
 
