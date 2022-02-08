@@ -4,14 +4,12 @@
       "*"
   ],
   "devDependencies": {
-    "@folio/stripes-cli": "^2.1.0"
+    "@folio/stripes-cli": "^2.4.0"
 
   },
   "dependencies": {
   },
   "resolutions": {
-    "@folio/stripes-webpack": "~1.3.0",
-    "postcss-loader": "~3.0.0",
     "colors": "1.4.0",
     "faker": "4.1.0"
   }
