@@ -20,7 +20,7 @@
     "@folio/tenant-settings": "~7.0.0",
     "@folio/users": "~7.0.0",
     "@folio/stripes": "~7.0.0",
-    "@folio/stripes-webpack": "*",
+    "@folio/stripes-webpack": "2.0.0",
     "@reshare/directory": "^1.5.0",
     "@reshare/plugin-rs-siquery-folio": "^1.2.0",
     "@reshare/request": "^1.2.0",
