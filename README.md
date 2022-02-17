@@ -15,7 +15,7 @@ Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
 
 ## Introduction
 
-This is the Resource SHaring Stripes "platform". It consists simply of an
+This is the Resource Sharing Stripes "platform". It consists simply of an
 NPM [`package.json`](https://docs.npmjs.com/files/package.json) that
 specifies the version of `@folio/stripes-core` and of any Stripes
 modules you wish to make available as part of the Resource Sharing platform
