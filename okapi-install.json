@@ -71,9 +71,9 @@
   "id" : "mod-circulation-19.2.8",
   "action" : "enable"
 }, {
-  "id" : "mod-rs-2.5.0",
+  "id" : "mod-rs-2.6.1",
   "action" : "enable"
 }, {
-  "id" : "mod-directory-2.5.0",
+  "id" : "mod-directory-2.6.1",
   "action" : "enable"
 } ]
