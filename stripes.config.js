@@ -26,6 +26,7 @@ module.exports = {
       }
     },
     showDevInfo: true,
+    staleBundleWarning: { path: '/index.html', header: 'last-modified', interval: 5 },
   },
   modules: {
     '@folio/users': {},
