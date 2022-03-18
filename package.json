@@ -8,7 +8,7 @@
     "registry": "https://repository.folio.org/repository/npm-folio/"
   },
   "scripts": {
-    "build": "STRIPES_TRANSPILE_TOKENS=\"@k-int\"; export NODE_OPTIONS=\"--max-old-space-size=4096 $NODE_OPTIONS\"; stripes build stripes.config.js",
+    "build": "export NODE_OPTIONS=\"--max-old-space-size=4096 $NODE_OPTIONS\"; stripes build stripes.config.js",
     "stripes": "stripes",
     "start": "stripes serve stripes.config.js",
     "build-module-descriptors": "node ./build-module-descriptors.js",
