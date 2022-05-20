@@ -1,6 +1,6 @@
 # STRIPES Resource Sharing platform
 
-Copyright (C) 2015-2018 The Open Library Foundation
+Copyright (C) 2015-2022 The Open Library Foundation
 
 This software is distributed under the terms of the Apache License,
 Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
@@ -9,15 +9,16 @@ Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
 
     curl -s "https://raw.githubusercontent.com/openlibraryenvironment/platform-rs/master/helper_scripts/setup" | bash
     cd rs_ui/platform-rs
-    yarn config set @folio:registry https://repository.folio.org/repository/npm-folioci/
+    yarn config set @folio:registry https://repository.folio.org/repository/npm-folio/
+    yarn config set @reshare:registry https://nexus.libsdev.k-int.com/repository/libsdev-npm-group
     yarn install
-    stripes serve ./stripes.config.js --hasAllPerms
+    stripes serve ./stripes.config.js
 
 ## Introduction
 
 This is the Resource Sharing Stripes "platform". It consists simply of an
 NPM [`package.json`](https://docs.npmjs.com/files/package.json) that
-specifies the version of `@folio/stripes-core` and of any Stripes
+specifies the version of `@folio/stripes` and of any Stripes
 modules you wish to make available as part of the Resource Sharing platform
 to generate client bundles along with a utility for generating
 module descriptors for each Stripes module.
@@ -36,13 +37,14 @@ configuration file.
 
 Install platform dependencies
 ```
-$ yarn config set @folio:registry https://repository.folio.org/repository/npm-folioci/
+$ yarn config set @folio:registry https://repository.folio.org/repository/npm-folio/
+$ yarn config set @reshare:registry https://nexus.libsdev.k-int.com/repository/libsdev-npm-group
 $ yarn install
 ```
 
 ## Build and serve
 
-To build and serve `platform-erm` in isolation for development purposes, run the "start" package script.
+To build and serve `platform-rs` in isolation for development purposes, run the "start" package script.
 ```
 $ yarn start
 ```
@@ -52,7 +54,7 @@ The default configuration assumes an Okapi instance is running on http://localho
 $ yarn start --okapi http://localhost:9130 --tenant diku
 ```
 
-To build a `platform-erm` bundle for production, modify `stripes.config.js` with your Okapi and tenant, then run the "build" script, passing it the name of the desired directory to place build artifacts.
+To build a `platform-rs` bundle for production, modify `stripes.config.js` with your Okapi and tenant, then run the "build" script, passing it the name of the desired directory to place build artifacts.
 ```
 $ yarn build ./output
 ```
@@ -61,55 +63,33 @@ See the [build](https://github.com/folio-org/stripes-cli/blob/master/doc/command
 
 ## Tests
 
-### Integration tests
+### End-to-end tests
 
-Integration tests require a running Okapi.  The default configuration expects Okapi running on http://localhost:9130 with tenant "diku".  To build and run integration tests for `platform-erm` with these defaults, run the `test-int` script.
+Full system integration tests require a running Okapi appropriately configured as a reshare system.  The default configuration expects Okapi running on http://localhost:9130 with tenant "diku".  To build and run integration tests for `platform-rs` with these defaults, invoke `cypress run` via the `cypress` yarn script.
 ```
-$ yarn test-int
-```
-
-To view tests while they are run, provide the `--show` option.
-```
-$ yarn test-int --show
+$ yarn cypress run
 ```
 
-To skip the build step and run integration tests against a build that is already running, provide the URL.
+To view and interact with tests while they are run:
 ```
-$ yarn test-int --url http://folio-testing.aws.indexdata.com/
-```
-
-As a convenience, `--local` can be used in place of `--url http://localhost:3000` for running tests against a development server that has already been started.
-```
-$ yarn test-int --local
+$ yarn cypress open
 ```
 
-### Regression tests
-
-Integration tests for the entire platform and its apps can be run with the "test-regression" script.  This will invoke both cross-module tests defined in this platform's repository as well as all integration tests defined for the individual apps.
-
+To run a specific test use `--spec`.
 ```
-$ yarn test-regression --url http://folio-testing.aws.indexdata.com/
+$ yarn cypress run --spec cypress/integration/visit-apps.js
 ```
 
-### Running specific tests
-
-The `test-int` package script, when combined with the `--run` option, can be used for running specific tests for the platform and/or apps.  Use `WD` (working directory) when referencing platform tests, otherwise use the module app module name.
-
-Example running "loan_renewal" test in `platform-erm`:
+To run the tests against another system, copy `cypress.json` and modify to suit then indicate the alternative configuration via `--config-file`
 ```
-$ yarn test-int --run WD:loan_renewal
-```
-
-Example running "new_user" test in `ui-users`:
-```
-$ yarn test-regression --run users:new_user
+$ yarn cypress run --config-file cypress.json.local
 ```
 
 ## Additional information
 
-See project [FOLIO](https://issues.folio.org/browse/FOLIO)
-at the [FOLIO issue tracker](https://dev.folio.org/guidelines/issue-tracker/).
+See project [PR](https://openlibraryfoundation.atlassian.net/browse/PR)
+at the [Open Library Foundation issue tracker](https://openlibraryfoundation.atlassian.net/).
 
-Other FOLIO Developer documentation is at [dev.folio.org](https://dev.folio.org/)
+Other [ReShare](https://projectreshare.org) documentation is in [the project's Confluence wiki](https://openlibraryfoundation.atlassian.net/wiki/spaces/PR)
 
 
