@@ -4,14 +4,9 @@
       "*"
   ],
   "devDependencies": {
-    "@folio/stripes-cli": "~2.4.0"
-
   },
   "dependencies": {
   },
   "resolutions": {
-    "@folio/eslint-config-stripes": "6.0.0",
-    "colors": "1.4.0",
-    "faker": "4.1.0"
   }
 }
