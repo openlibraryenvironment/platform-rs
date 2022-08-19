@@ -24,6 +24,7 @@
     "@folio/users": "~7.0.0",
     "@reshare/directory": "^1.5.0",
     "@reshare/plugin-rs-siquery-folio": "^1.2.0",
+    "@reshare/plugin-rs-siquery-vufind": "^1.0.0",
     "@reshare/request": "^1.2.0",
     "@reshare/rs": "^1.4.0",
     "@reshare/supply": "^1.2.0",

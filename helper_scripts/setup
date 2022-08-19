@@ -22,6 +22,7 @@ git clone https://github.com/openlibraryenvironment/ui-update.git
 git clone https://github.com/openlibraryenvironment/ui-supply.git
 git clone https://github.com/openlibraryenvironment/stripes-reshare.git
 git clone https://github.com/openlibraryenvironment/ui-plugin-rs-siquery-folio
+git clone https://github.com/openlibraryenvironment/ui-plugin-rs-siquery-vufind
 
 echo Completed clone and setup
 echo cd rs_ui/platform-rs and run "yarn install" to download deps, then "stripes serve ./stripes.config.js --hasAllPerms" to start the UI
