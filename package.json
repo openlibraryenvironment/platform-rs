@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@folio/stripes-cli": "~2.5.0",
-    "@folio/stripes-testing": "^4.2.1",
+    "@folio/stripes-testing": "4.2.1",
     "@interactors/html": "^1.0.0-rc1.2",
     "@interactors/with-cypress": "^1.0.0-rc1.1",
     "cypress": "^9.6.1"
