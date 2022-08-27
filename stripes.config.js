@@ -33,6 +33,7 @@ module.exports = {
     "@folio/tenant-settings": {},
     '@reshare/directory': {},
     "@reshare/plugin-rs-siquery-folio": {},
+    "@reshare/plugin-rs-siquery-vufind": {},
     '@reshare/request': {},
     '@reshare/rs': {},
     '@reshare/supply': {},

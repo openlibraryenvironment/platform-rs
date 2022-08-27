@@ -1,68 +1,90 @@
 [
   {
-    "id": "mod-authtoken-2.8.2"
+    "id": "mod-authtoken-2.8.2",
+    "action": "install"
   },
   {
-    "id": "mod-calendar-1.12.1"
+    "id": "mod-calendar-1.12.1",
+    "action": "install"
   },
   {
-    "id": "mod-circulation-storage-13.0.1"
+    "id": "mod-circulation-storage-13.0.1",
+    "action": "install"
   },
   {
-    "id": "mod-configuration-5.7.4"
+    "id": "mod-configuration-5.7.4",
+    "action": "install"
   },
   {
-    "id": "mod-email-1.11.1"
+    "id": "mod-email-1.11.1",
+    "action": "install"
   },
   {
-    "id": "mod-event-config-2.1.1"
+    "id": "mod-event-config-2.1.1",
+    "action": "install"
   },
   {
-    "id": "mod-inventory-17.0.9"
+    "id": "mod-inventory-17.0.9",
+    "action": "install"
   },
   {
-    "id": "mod-inventory-storage-21.0.10"
+    "id": "mod-inventory-storage-21.0.10",
+    "action": "install"
   },
   {
-    "id": "mod-login-7.5.1"
+    "id": "mod-login-7.5.1",
+    "action": "install"
   },
   {
-    "id": "mod-login-saml-2.4.0"
+    "id": "mod-login-saml-2.4.0",
+    "action": "install"
   },
   {
-    "id": "mod-notes-2.12.1"
+    "id": "mod-notes-2.12.1",
+    "action": "install"
   },
   {
-    "id": "mod-notify-2.9.1"
+    "id": "mod-notify-2.9.1",
+    "action": "install"
   },
   {
-    "id": "mod-password-validator-2.1.1"
+    "id": "mod-password-validator-2.1.1",
+    "action": "install"
   },
   {
-    "id": "mod-patron-blocks-1.1.4"
+    "id": "mod-patron-blocks-1.1.4",
+    "action": "install"
   },
   {
-    "id": "mod-permissions-5.14.2"
+    "id": "mod-permissions-5.14.2",
+    "action": "install"
   },
   {
-    "id": "mod-pubsub-2.3.5"
+    "id": "mod-pubsub-2.3.5",
+    "action": "install"
   },
   {
-    "id": "mod-sender-1.6.1"
+    "id": "mod-sender-1.6.1",
+    "action": "install"
   },
   {
-    "id": "mod-source-record-storage-5.1.9"
+    "id": "mod-source-record-storage-5.1.9",
+    "action": "install"
   },
   {
-    "id": "mod-tags-0.9.1"
+    "id": "mod-tags-0.9.1",
+    "action": "install"
   },
   {
-    "id": "mod-template-engine-1.14.1"
+    "id": "mod-template-engine-1.14.1",
+    "action": "install"
   },
   {
-    "id": "mod-users-18.0.2"
+    "id": "mod-users-18.0.2",
+    "action": "install"
   },
   {
-    "id": "mod-users-bl-7.0.1"
-  },
+    "id": "mod-users-bl-7.0.1",
+    "action": "install"
+  }
 ]
