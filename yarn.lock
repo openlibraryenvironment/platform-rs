@@ -2323,15 +2323,14 @@
   resolved "https://registry.npmjs.org/@rehooks/local-storage/-/local-storage-2.4.4.tgz#ccf40f60c2dcbab86dc88f9e3ea898d1fb8bea2d"
   integrity sha512-zE+kfOkG59n/1UTxdmbwktIosclr67Nlbf2MzUJ9mNtCSypVscNHeD1qT6JCSo5Pjj8DO893IKWNLJqKKzDL/Q==
 
-"@reshare/directory@openlibraryenvironment/ui-directory#release-1.7.x":
+"@reshare/directory@openlibraryenvironment/ui-directory#release-1.8.x":
   version "1.8.0"
-  resolved "https://codeload.github.com/openlibraryenvironment/ui-directory/tar.gz/745e158a7c1e2b560bd34d4cfbb62c259656d951"
+  resolved "https://codeload.github.com/openlibraryenvironment/ui-directory/tar.gz/2db5e187ab7e36787ca7353e8374ed9eeed36c02"
   dependencies:
     "@folio/address-plugin-british-isles" "^1.3.0"
     "@folio/address-plugin-generic" "^1.4.0"
     "@folio/address-plugin-north-america" "^1.3.0"
     "@folio/address-utils" "^1.2.0"
-    "@folio/react-intl-safe-html" "^3.0.0"
     "@folio/stripes-erm-components" "^5.0.0"
     "@k-int/stripes-kint-components" "^2.1.2"
     compose-function "^3.0.3"
@@ -2343,25 +2342,24 @@
     react-final-form-arrays "^3.1.1"
     uuid "^7.0.3"
 
-"@reshare/plugin-rs-siquery-folio@openlibraryenvironment/ui-plugin-rs-siquery-folio#release-1.2.x":
-  version "1.2.0"
-  resolved "https://codeload.github.com/openlibraryenvironment/ui-plugin-rs-siquery-folio/tar.gz/5e5f8ada426a781df81ab1ff6e8ba3aa2d45cd23"
+"@reshare/plugin-rs-siquery-folio@openlibraryenvironment/ui-plugin-rs-siquery-folio#release-1.3.x":
+  version "1.3.0"
+  resolved "https://codeload.github.com/openlibraryenvironment/ui-plugin-rs-siquery-folio/tar.gz/c6d292b95992de3f2cf15297f3bc6dc4686725a9"
   dependencies:
     classnames "^2.2.6"
     lodash "^4.17.11"
     prop-types "^15.6.0"
 
-"@reshare/request@openlibraryenvironment/ui-request#release-1.4.x":
-  version "1.4.0"
-  resolved "https://codeload.github.com/openlibraryenvironment/ui-request/tar.gz/94b060524e49a8d43293ce60da0e8ec0738defd7"
+"@reshare/request@openlibraryenvironment/ui-request#release-1.5.x":
+  version "1.5.0"
+  resolved "https://codeload.github.com/openlibraryenvironment/ui-request/tar.gz/e55dcbff4556d97767f03b283625936ff786607b"
   dependencies:
     "@reshare/rs" "^1.6.0"
 
-"@reshare/rs@^1.6.0", "@reshare/rs@openlibraryenvironment/ui-rs#release-1.9.x":
-  version "1.9.0"
-  resolved "https://codeload.github.com/openlibraryenvironment/ui-rs/tar.gz/59043e93dd0f79705fb8bfed865005ab5878e9a2"
+"@reshare/rs@^1.6.0", "@reshare/rs@openlibraryenvironment/ui-rs#release-1.10.x":
+  version "1.10.0"
+  resolved "https://codeload.github.com/openlibraryenvironment/ui-rs/tar.gz/fc2a45a5ea06c706fd731954ce237167cae55ff4"
   dependencies:
-    "@folio/react-intl-safe-html" "^3.0.0"
     "@folio/stripes-erm-components" "^5.0.0"
     "@folio/stripes-template-editor" "^3.0.0"
     "@k-int/stripes-kint-components" "^2.1.2"
@@ -2388,16 +2386,16 @@
     rrule "2.6.4"
     xmldom "^0.1.27"
 
-"@reshare/stripes-reshare@^1.0.0", "@reshare/stripes-reshare@^1.7.0", "@reshare/stripes-reshare@openlibraryenvironment/stripes-reshare#release-1.7.x":
-  version "1.7.0"
-  resolved "https://codeload.github.com/openlibraryenvironment/stripes-reshare/tar.gz/3c826223bd6f49aaa7205e8ad00ef8204e249be6"
+"@reshare/stripes-reshare@^1.0.0", "@reshare/stripes-reshare@^1.7.0", "@reshare/stripes-reshare@openlibraryenvironment/stripes-reshare#release-1.8.x":
+  version "1.8.0"
+  resolved "https://codeload.github.com/openlibraryenvironment/stripes-reshare/tar.gz/ae598a5a871d3dd2e6600ab28afd209ce21009e5"
   dependencies:
     lodash "^4.17.4"
     prop-types "^15.6.0"
 
-"@reshare/supply@openlibraryenvironment/ui-supply#release-1.4.x":
-  version "1.4.0"
-  resolved "https://codeload.github.com/openlibraryenvironment/ui-supply/tar.gz/2177adfae38f9b42d87a625ab4840c550025d373"
+"@reshare/supply@openlibraryenvironment/ui-supply#release-1.5.x":
+  version "1.5.0"
+  resolved "https://codeload.github.com/openlibraryenvironment/ui-supply/tar.gz/4f184cbb24792dd736c3078d11c3efb73f101794"
   dependencies:
     "@reshare/rs" "^1.6.0"
 
