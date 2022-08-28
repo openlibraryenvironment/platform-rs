@@ -1,9 +1,11 @@
 import Button from '@folio/stripes-testing/interactors/button';
 import Checkbox from '@folio/stripes-testing/interactors/checkbox';
 import Pane from '@folio/stripes-testing/interactors/pane';
+import { setInteractorTimeout } from '@interactors/html';
 
 describe('Visit settings', () => {
   before(() => {
+    setInteractorTimeout(5000);
     cy.loginAsAdmin();
   });
 
@@ -27,21 +29,21 @@ describe('Visit settings', () => {
     cy.visit('/settings/rs/lmslocations');
     cy.expect(Pane({ title: 'Host LMS locations' }).exists());
     cy.do(Button('Create').click());
-    cy.expect(Button('Save').is({ disabled: true }));
+    cy.expect(Button('Save & close').is({ disabled: true }));
   });
 
   it('displays host lms patron profile settings', () => {
     cy.visit('/settings/rs/lmsprofiles');
     cy.expect(Pane({ title: 'Host LMS patron profiles' }).exists());
     cy.do(Button('Create').click());
-    cy.expect(Button('Save').is({ disabled: true }));
+    cy.expect(Button('Save & close').is({ disabled: true }));
   });
 
   it('displays host lms shelving location settings', () => {
     cy.visit('/settings/rs/lmsshelving');
     cy.expect(Pane({ title: 'Host LMS shelving locations' }).exists());
     cy.do(Button('Create').click());
-    cy.expect(Button('Save').is({ disabled: true }));
+    cy.expect(Button('Save & close').is({ disabled: true }));
   });
 
   it('displays notice policy settings', () => {
