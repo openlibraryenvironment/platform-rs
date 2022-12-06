@@ -8,13 +8,13 @@
     "registry": "https://repository.folio.org/repository/npm-folio/"
   },
   "scripts": {
-    "build": "export STRIPES_TRANSPILE_TOKENS=\"@k-int @reshare\"; export NODE_OPTIONS=\"--max-old-space-size=4096 $NODE_OPTIONS\"; stripes build stripes.config.js",
+    "build": "sh -c 'export STRIPES_TRANSPILE_TOKENS=\"@k-int @reshare\"; export NODE_OPTIONS=\"--max-old-space-size=4096 $NODE_OPTIONS\"; stripes build ${0}.stripes.config.js && mv output ${0}'",
     "stripes": "stripes",
     "start": "stripes serve stripes.config.js",
     "cypress": "cypress",
     "build-module-descriptors": "node ./build-module-descriptors.js",
     "local": "f=stripes.config.js; test -f $f.local && f=$f.local; echo Using config $f; stripes serve $f",
-	"start-local-diku": " set STRIPES_TRANSPILE_TOKENS=\"@k-int @reshare\" && stripes serve ./stripes.config.js --okapi=http://localhost:9130 --tenant=diku"
+    "start-local-diku": " set STRIPES_TRANSPILE_TOKENS=\"@k-int @reshare\" && stripes serve ./stripes.config.js --okapi=http://localhost:9130 --tenant=diku"
   },
   "dependencies": {
     "@folio/developer": "~6.1.0",
