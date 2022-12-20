@@ -1,6 +1,6 @@
 {
   "name": "@reshare/platform-rs",
-  "version": "1.10.2",
+  "version": "1.12.0",
   "description": "Top-level platform for ReShare UI",
   "license": "Apache-2.0",
   "repository": "openlibraryenvironment/platform-rs",
@@ -17,11 +17,10 @@
 	"start-local-diku": " set STRIPES_TRANSPILE_TOKENS=\"@k-int @reshare\" && stripes serve ./stripes.config.js --okapi=http://localhost:9130 --tenant=diku"
   },
   "dependencies": {
-    "@folio/developer": "~6.1.0",
-    "@folio/inventory": "~6.0.0",
-    "@folio/stripes": "~7.1.0",
-    "@folio/tenant-settings": "~7.1.0",
-    "@folio/users": "~7.0.0",
+    "@folio/developer": "~6.3.0",
+    "@folio/stripes": "~7.3.0",
+    "@folio/tenant-settings": "~7.3.0",
+    "@folio/users": "~8.2.0",
     "@reshare/directory": "^1.5.0",
     "@reshare/plugin-rs-siquery-folio": "^1.2.0",
     "@reshare/plugin-rs-siquery-vufind": "^1.0.0",
@@ -41,7 +40,7 @@
     "rrule": "2.6.4"
   },
   "devDependencies": {
-    "@folio/stripes-cli": "~2.5.0",
+    "@folio/stripes-cli": "~2.6.0",
     "@folio/stripes-testing": "4.2.1",
     "@interactors/html": "^1.0.0-rc1.2",
     "@interactors/with-cypress": "^1.0.0-rc1.1",
