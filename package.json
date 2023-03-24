@@ -1,6 +1,6 @@
 {
   "name": "@reshare/platform-rs",
-  "version": "1.10.2",
+  "version": "1.11.0",
   "description": "Top-level platform for ReShare UI",
   "license": "Apache-2.0",
   "repository": "openlibraryenvironment/platform-rs",
