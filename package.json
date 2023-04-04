@@ -22,7 +22,7 @@
     "@folio/stripes": "~7.1.0",
     "@folio/tenant-settings": "~7.1.0",
     "@folio/users": "~7.0.0",
-    "@reshare/directory": "openlibraryenvironment/ui-directory#release-1.8.x",
+    "@reshare/directory": "openlibraryenvironment/ui-directory#release-1.9.x",
     "@reshare/plugin-rs-siquery-folio": "openlibraryenvironment/ui-plugin-rs-siquery-folio#release-1.3.x",
     "@reshare/plugin-rs-siquery-vufind": "openlibraryenvironment/ui-plugin-rs-siquery-vufind#release-v1.0.x",
     "@reshare/request": "openlibraryenvironment/ui-request#release-1.5.x",
@@ -42,6 +42,7 @@
     "rrule": "2.6.4"
   },
   "resolutions": {
+    "@apollo/client": "3.6.10",
     "@folio/address-utils": "openlibraryenvironment/address-utils#release-1.2.x",
     "@folio/address-plugin-british-isles": "openlibraryenvironment/address-plugin-british-isles#release-1.3.x",
     "@folio/address-plugin-north-america": "openlibraryenvironment/address-plugin-north-america#release-1.4.x",
