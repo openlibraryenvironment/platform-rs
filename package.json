@@ -23,6 +23,7 @@
     "@folio/users": "~8.2.0",
     "@reshare/directory": "openlibraryenvironment/ui-directory#release-1.10.x",
     "@reshare/plugin-rs-siquery-vufind": "openlibraryenvironment/ui-plugin-rs-siquery-vufind#release-v1.0.x",
+    "@reshare/plugin-rs-siquery-folio": "openlibraryenvironment/ui-plugin-rs-siquery-folio#release-1.3.x",
     "@reshare/request": "openlibraryenvironment/ui-request#release-1.6.x",
     "@reshare/rs": "openlibraryenvironment/ui-rs#release-1.13.x",
     "@reshare/stripes-reshare": "openlibraryenvironment/stripes-reshare#release-1.10.x",
@@ -42,6 +43,7 @@
   "resolutions": {
     "@folio/stripes-testing": "4.2.1",
     "@reshare/plugin-rs-siquery-vufind": "openlibraryenvironment/ui-plugin-rs-siquery-vufind#release-v1.0.x",
+    "@reshare/plugin-rs-siquery-folio": "openlibraryenvironment/ui-plugin-rs-siquery-folio#release-1.3.x",
     "@reshare/request": "openlibraryenvironment/ui-request#release-1.6.x",
     "@reshare/rs": "openlibraryenvironment/ui-rs#release-1.13.x",
     "@reshare/supply": "openlibraryenvironment/ui-supply#release-1.6.x",
