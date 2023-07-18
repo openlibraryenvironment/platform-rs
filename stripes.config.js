@@ -19,10 +19,9 @@ module.exports = {
     hasAllPerms: false,
     reshare: {
       sharedIndex: {
-        type: 'folio',
-        ui: 'https://si-cardinal.reshare-dev.indexdata.com',
-        ws: 'https://si-cardinal-okapi.folio-dev.indexdata.com',
-        query: 'rs/sharedIndexQuery',
+        type: 'vufind',
+        ui: 'https://vufind.reshare-dev.indexdata.com/east',
+        query: 'https://vufind.reshare-dev.indexdata.com/east',
       }
     },
     showDevInfo: true,
@@ -34,6 +33,7 @@ module.exports = {
     "@folio/tenant-settings": {},
     '@reshare/directory': {},
     "@reshare/plugin-rs-siquery-folio": {},
+    "@reshare/plugin-rs-siquery-vufind": {},
     '@reshare/request': {},
     '@reshare/rs': {},
     '@reshare/supply': {},
