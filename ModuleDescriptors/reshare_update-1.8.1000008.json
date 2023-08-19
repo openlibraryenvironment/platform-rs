@@ -1,0 +1,11 @@
+{
+  "id": "reshare_update-1.8.1000008",
+  "name": "Quickly change the status of items. Part of the ReShare project.",
+  "permissionSets": [
+    {
+      "permissionName": "module.update.enabled",
+      "displayName": "UI: update module is enabled",
+      "visible": true
+    }
+  ]
+}

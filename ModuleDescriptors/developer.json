@@ -1,0 +1,186 @@
+{
+  "id": "folio_developer-6.3.0",
+  "name": "Developer settings",
+  "permissionSets": [
+    {
+      "permissionName": "module.developer.enabled",
+      "displayName": "UI: Developer module is enabled"
+    },
+    {
+      "permissionName": "settings.developer.enabled",
+      "displayName": "Settings (Developer): display list of settings pages",
+      "subPermissions": [
+        "settings.enabled"
+      ]
+    },
+    {
+      "permissionName": "ui-developer.settings.configuration",
+      "displayName": "Settings (Developer): configuration",
+      "subPermissions": [
+        "settings.developer.enabled"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-developer.settings.perms",
+      "displayName": "Settings (Developer): perms",
+      "subPermissions": [
+        "perms.permissions.get",
+        "settings.developer.enabled"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-developer.settings.token",
+      "displayName": "Settings (Developer): manage JWT authentication token",
+      "subPermissions": [
+        "settings.developer.enabled"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-developer.settings.locale",
+      "displayName": "Settings (Developer): set session locale",
+      "subPermissions": [
+        "settings.developer.enabled"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-developer.settings.okapiConfiguration",
+      "displayName": "Settings (developer): Can view tenant configuration values",
+      "subPermissions": [
+        "configuration.entries.collection.get",
+        "configuration.entries.item.get",
+        "settings.developer.enabled"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-developer.settings.passwd",
+      "displayName": "Settings (developer): Can change users' passwords",
+      "subPermissions": [
+        "settings.developer.enabled",
+        "login.credentials-existence.get",
+        "login.item.post",
+        "login.item.delete"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-developer.settings.okapiQuery",
+      "displayName": "Settings (developer): Can run queries",
+      "subPermissions": [
+        "settings.developer.enabled"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-developer.settings.dependencies",
+      "displayName": "Settings (developer): Can display dependency charts",
+      "subPermissions": [
+        "settings.developer.enabled",
+        "okapi.proxy.tenants.modules.list"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-developer.settings.translations",
+      "displayName": "Settings (developer): Can display list of loaded translations",
+      "subPermissions": [
+        "settings.developer.enabled"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-developer.settings.plugin-surface",
+      "displayName": "Settings (developer): plugin surface for developing plugins",
+      "subPermissions": [
+        "settings.developer.enabled"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-developer.settings.handler-surface",
+      "displayName": "Settings (developer): handler surface for developing handlers",
+      "subPermissions": [
+        "settings.developer.enabled"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-developer.settings.stripesInspector",
+      "displayName": "Settings (developer): Can display the contents of the stripes object",
+      "subPermissions": [
+        "settings.developer.enabled"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-developer.settings.permissionsInspector",
+      "displayName": "Settings (developer): Can display the system's permissions",
+      "subPermissions": [
+        "settings.developer.enabled",
+        "perms.permissions.get"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-developer.settings.okapiConsole",
+      "displayName": "Settings (developer): Can display the Okapi console",
+      "subPermissions": [
+        "settings.developer.enabled",
+        "okapi.version.get"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-developer.settings.okapiConsole.environment",
+      "displayName": "Settings (developer): Can use the Okapi console's Environment tab",
+      "subPermissions": [
+        "ui-developer.settings.okapiConsole",
+        "okapi.env.list"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-developer.settings.okapiConsole.modules",
+      "displayName": "Settings (developer): Can use the Okapi console's Modules tab",
+      "subPermissions": [
+        "ui-developer.settings.okapiConsole",
+        "okapi.proxy.modules.list",
+        "okapi.proxy.tenants.modules.list",
+        "okapi.proxy.tenants.modules.post",
+        "okapi.proxy.tenants.modules.enabled.delete",
+        "okapi.discovery.get"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-developer.settings.userLocale",
+      "displayName": "Settings (developer): Can edit user configuration values",
+      "subPermissions": [
+        "settings.developer.enabled",
+        "configuration.entries.collection.get",
+        "configuration.entries.item.post",
+        "configuration.entries.item.put"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-developer.settings.okapiTimers",
+      "displayName": "Settings (developer): Can view Okapi timers",
+      "subPermissions": [],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-developer.settings.app-manager",
+      "displayName": "Settings (developer): Can use the app manager",
+      "subPermissions": [
+        "app-manager.apps.collection.get",
+        "app-manager.config.sources.all"
+      ],
+      "visible": true
+    }
+  ]
+}

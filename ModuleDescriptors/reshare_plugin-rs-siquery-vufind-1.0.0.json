@@ -1,0 +1,5 @@
+{
+  "id": "reshare_plugin-rs-siquery-vufind-1.0.0",
+  "name": "Plugin to find an instance from an SI via the Vufind API",
+  "permissionSets": []
+}
