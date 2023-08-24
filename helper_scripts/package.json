@@ -9,6 +9,6 @@
   },
   "resolutions": {
     "react": "^17.0.0",
-    "postcss-nesting": "~10.0.0"
+    "@rehooks/local-storage": "2.4.4"
   }
 }
