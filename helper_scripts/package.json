@@ -8,6 +8,7 @@
   "dependencies": {
   },
   "resolutions": {
-    "react": "^17.0.0"
+    "react": "^17.0.0",
+    "postcss-nesting": "~10.0.0"
   }
 }
