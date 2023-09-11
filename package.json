@@ -1,6 +1,6 @@
 {
   "name": "@reshare/platform-rs",
-  "version": "1.12.0",
+  "version": "1.13.0",
   "description": "Top-level platform for ReShare UI",
   "license": "Apache-2.0",
   "repository": "openlibraryenvironment/platform-rs",
@@ -14,19 +14,20 @@
     "cypress": "cypress",
     "build-module-descriptors": "node ./build-module-descriptors.js",
     "local": "f=stripes.config.js; test -f $f.local && f=$f.local; echo Using config $f; stripes serve $f",
-	"start-local-diku": " set STRIPES_TRANSPILE_TOKENS=\"@k-int @reshare\" && stripes serve ./stripes.config.js --okapi=http://localhost:9130 --tenant=diku"
+    "start-local-diku": " set STRIPES_TRANSPILE_TOKENS=\"@k-int @reshare\" && stripes serve ./stripes.config.js --okapi=http://localhost:9130 --tenant=diku"
   },
   "dependencies": {
     "@folio/developer": "~6.3.0",
     "@folio/stripes": "~7.3.0",
     "@folio/tenant-settings": "~7.3.0",
     "@folio/users": "~8.2.0",
-    "@reshare/directory": "^1.5.0",
+    "@reshare/directory": "openlibraryenvironment/ui-directory#release-1.10.x",
     "@reshare/plugin-rs-siquery-vufind": "openlibraryenvironment/ui-plugin-rs-siquery-vufind#release-v1.0.x",
-    "@reshare/request": "^1.2.0",
-    "@reshare/rs": "^1.4.0",
-    "@reshare/supply": "^1.2.0",
-    "@reshare/update": "^1.4.0",
+    "@reshare/request": "openlibraryenvironment/ui-request#release-1.6.x",
+    "@reshare/rs": "openlibraryenvironment/ui-rs#release-1.14.x",
+    "@reshare/stripes-reshare": "openlibraryenvironment/stripes-reshare#release-1.10.x",
+    "@reshare/supply": "openlibraryenvironment/ui-supply#release-1.6.x",
+    "@reshare/update": "openlibraryenvironment/ui-update#release-1.8.x",
     "moment": "~2.29.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
@@ -39,8 +40,14 @@
     "rrule": "2.6.4"
   },
   "resolutions": {
-        "@reshare/plugin-rs-siquery-vufind": "openlibraryenvironment/ui-plugin-rs-siquery-vufind#release-v1.0.x",
-        "@rehooks/local-storage": "2.4.4"
+    "@folio/stripes-testing": "4.2.1",
+    "@rehooks/local-storage" :"2.4.4",
+    "@reshare/plugin-rs-siquery-vufind": "openlibraryenvironment/ui-plugin-rs-siquery-vufind#release-v1.0.x",
+    "@reshare/request": "openlibraryenvironment/ui-request#release-1.6.x",
+    "@reshare/rs": "openlibraryenvironment/ui-rs#release-1.14.x",
+    "@reshare/supply": "openlibraryenvironment/ui-supply#release-1.6.x",
+    "@reshare/update": "openlibraryenvironment/ui-update#release-1.8.x",
+    "@reshare/stripes-reshare": "openlibraryenvironment/stripes-reshare#release-1.10.x"
   },
   "devDependencies": {
     "@folio/stripes-cli": "~2.6.0",
