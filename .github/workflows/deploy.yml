@@ -1,0 +1,51 @@
+name: deploy
+
+on:
+  workflow_dispatch:
+
+env:
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  AWS_DEFAULT_REGION: 'us-east-1'
+
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout module
+        uses: actions/checkout@v3
+
+      - name: prepare
+        run: |
+          yarn config set @folio:registry https://repository.folio.org/repository/npm-folio/ &&
+          cp helper_scripts/* . &&
+          sh "chmod +x setup"
+
+      - name: run setup
+        run: ./setup
+
+      - name: run setup scripts
+        working-directory: ./rs_ui/platform-rs
+        run: |
+          ./node_modules/.bin/stripes mod descriptor stripes.config.js --output ./ModuleDescriptors" &&
+          STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://east-okapi.folio-dev.indexdata.com --tenant reshare_east --sourcemap &&
+          mv output east &&
+          STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://west-okapi.folio-dev.indexdata.com --tenant reshare_west --sourcemap &&
+          mv output west
+
+      - name: Post new module descriptors
+        run: |
+          /usr/bin/python3 .github/workflows/scripts/reshare_ui_mds.py \
+            -u "okapi_admin" \
+            -p ${{ secrets.OKAPI_ADMIN_PW }} \
+
+      - name: upload builds
+        run: |
+          aws s3 sync ./east s3://reshare-bundles/east --acl public-read --delete &&
+          aws s3 sync ./west s3://reshare-bundles/west --acl public-read --delete
+# HERE
+      #- name: Invalidate CF
+      #  run: |
+      #    /usr/local/bin/aws s3 sync ./east s3://reshare-bundles/east --acl public-read --delete &&
+      #    /usr/local/bin/aws s3 sync ./west s3://reshare-bundles/west --acl public-read --delete
