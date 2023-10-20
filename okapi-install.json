@@ -20,11 +20,23 @@
     "action": "enable"
   },
   {
+    "id": "mod-inventory-storage-25.0.4",
+    "action": "enable"
+  },
+  {
     "id": "mod-authtoken-2.12.0",
     "action": "enable"
   },
   {
     "id": "mod-login-7.8.0",
+    "action": "enable"
+  },
+  {
+    "id" : "mod-email-1.15.3",
+    "action": "enable"
+  },
+  {
+    "id" : "mod-login-saml-2.5.1",
     "action": "enable"
   },
   {
