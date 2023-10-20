@@ -20,9 +20,9 @@
     "@folio/developer": "~6.3.0",
     "@folio/stripes": "~7.3.0",
     "@folio/tenant-settings": "~7.3.0",
-    "@folio/users": "~8.2.0",
+    "@folio/users": "~8.2.0",l
     "@reshare/directory": "^1.10.0",
-    "@reshare/plugin-rs-siquery-vufind": "openlibraryenvironment/ui-plugin-rs-siquery-vufind#release-v1.0.x",
+    "@reshare/plugin-rs-siquery-vufind": "^1.1.0",
     "@reshare/request": "^1.6.0",
     "@reshare/rs": "^1.13.0",
     "@reshare/supply": "^1.6.0",
@@ -39,7 +39,7 @@
     "rrule": "2.6.4"
   },
   "resolutions": {
-        "@reshare/plugin-rs-siquery-vufind": "openlibraryenvironment/ui-plugin-rs-siquery-vufind#release-v1.0.x"
+        "@rehooks/local-storage": "2.4.4"
   },
   "devDependencies": {
     "@folio/stripes-cli": "~2.6.0",
