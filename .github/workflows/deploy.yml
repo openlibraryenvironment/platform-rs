@@ -45,36 +45,36 @@ jobs:
           name: yarn.lock
           path: ./rs_ui/platform-rs/yarn.lock
 
-      - name: run setup scripts
-        working-directory: ./rs_ui/platform-rs
-        run: |
-          ./node_modules/.bin/stripes mod descriptor stripes.config.js --output ./ModuleDescriptors &&
-          STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://east-okapi.folio-dev.indexdata.com --tenant reshare_east --sourcemap &&
-          mv output east &&
-          STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://west-okapi.folio-dev.indexdata.com --tenant reshare_west --sourcemap &&
-          mv output west
+     # - name: run setup scripts
+     #   working-directory: ./rs_ui/platform-rs
+     #   run: |
+     #     ./node_modules/.bin/stripes mod descriptor stripes.config.js --output ./ModuleDescriptors &&
+     #     STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://east-okapi.folio-dev.indexdata.com --tenant reshare_east --sourcemap &&
+     #     mv output east &&
+     #     STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://west-okapi.folio-dev.indexdata.com --tenant reshare_west --sourcemap &&
+     #     mv output west
 
-      #- name: Post new module descriptors
-      #  run: |
-      #    /usr/bin/python3 .github/workflows/scripts/reshare_ui_mds.py \
-      #      -u "okapi_admin" \
-      #      -p ${{ secrets.OKAPI_ADMIN_PW }} \
+     # #- name: Post new module descriptors
+     # #  run: |
+     # #    /usr/bin/python3 .github/workflows/scripts/reshare_ui_mds.py \
+     # #      -u "okapi_admin" \
+     # #      -p ${{ secrets.OKAPI_ADMIN_PW }} \
 
-      - name: upload builds
-        working-directory: ./rs_ui/platform-rs
-        run: |
-          ls &&
-          aws s3 sync ./east s3://reshare-bundles/east --acl public-read --delete &&
-          aws s3 sync ./west s3://reshare-bundles/west --acl public-read --delete
+     # - name: upload builds
+     #   working-directory: ./rs_ui/platform-rs
+     #   run: |
+     #     ls &&
+     #     aws s3 sync ./east s3://reshare-bundles/east --acl public-read --delete &&
+     #     aws s3 sync ./west s3://reshare-bundles/west --acl public-read --delete
 
-      - name: Invalidate CF East
-        run: |
-          aws cloudfront create-invalidation \
-              --distribution-id E10ONJ5UMHJSTF \
-              --paths "/*"
+     # - name: Invalidate CF East
+     #   run: |
+     #     aws cloudfront create-invalidation \
+     #         --distribution-id E10ONJ5UMHJSTF \
+     #         --paths "/*"
 
-      - name: Invalidate CF West
-        run: |
-          aws cloudfront create-invalidation \
-              --distribution-id E21W57Y11ZF9P \
-              --paths "/*"
+     # - name: Invalidate CF West
+     #   run: |
+     #     aws cloudfront create-invalidation \
+     #         --distribution-id E21W57Y11ZF9P \
+     #         --paths "/*"
