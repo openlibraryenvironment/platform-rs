@@ -43,9 +43,9 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: yarn.lock
-          path: ./yarn.lock
+          path: ./rs_ui/yarn.lock
 
-      - name: run setup scripts
+      - name: run build scripts
         working-directory: ./rs_ui/platform-rs
         run: |
           ./node_modules/.bin/stripes mod descriptor stripes.config.js --output ./ModuleDescriptors &&
