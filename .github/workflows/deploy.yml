@@ -26,6 +26,9 @@ jobs:
       - name: prepare
         run: yarn config set @folio:registry https://repository.folio.org/repository/npm-folio/
 
+      - name: setup workspace
+        run: cp ./helper_scripts/* .
+
       - name: run setup
         run: chmod +x ./setup && ./setup
 
