@@ -37,7 +37,7 @@ jobs:
         run: yarn install
 
       - name: debug
-        rung: find . -name yarn.lock
+        run: find . -name yarn.lock
 
       - name: Upload yarn.lock
         uses: actions/upload-artifact@v3
