@@ -26,23 +26,17 @@ jobs:
       - name: prepare
         run: yarn config set @folio:registry https://repository.folio.org/repository/npm-folio/
 
-      - name: whereami
-        run: cp ./helper_scripts/* .
-
       - name: run setup
         run: chmod +x ./setup && ./setup
 
       - name: Do yarn install
         run: yarn install
 
-      - name: whereami
-        run: find . -name yarn.lock
-
       - name: Upload yarn.lock
         uses: actions/upload-artifact@v3
         with:
           name: yarn.lock
-          path: ./rs_ui/yarn.lock
+          path: ./yarn.lock
 
      # - name: run setup scripts
      #   working-directory: ./rs_ui/platform-rs
