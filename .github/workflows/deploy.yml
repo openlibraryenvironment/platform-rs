@@ -36,9 +36,6 @@ jobs:
         working-directory: ./rs_ui/platform-rs
         run: yarn install
 
-      - name: debug
-        run: find . -name yarn.lock
-
       - name: Upload yarn.lock
         uses: actions/upload-artifact@v3
         with:
