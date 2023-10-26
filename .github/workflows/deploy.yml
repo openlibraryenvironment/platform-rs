@@ -36,10 +36,7 @@ jobs:
         run: yarn install
 
       - name: whereami
-        run: ls ./rs_ui/
-
-      - name: whereami
-        run: head -n 50 ./rs_ui/yarn.lock
+        run: find . -name yarn.lock
 
       - name: Upload yarn.lock
         uses: actions/upload-artifact@v3
