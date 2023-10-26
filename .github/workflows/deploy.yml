@@ -26,20 +26,23 @@ jobs:
       - name: prepare
         run: yarn config set @folio:registry https://repository.folio.org/repository/npm-folio/
 
-      - name: whereami
+      - name: setup workspace
         run: cp ./helper_scripts/* .
 
       - name: run setup
         run: chmod +x ./setup && ./setup
 
-      - name: whereami
-        run: pwd && ls
-
       - name: Do yarn install
         working-directory: ./rs_ui/platform-rs
         run: yarn install
 
-      - name: run setup scripts
+      - name: Upload yarn.lock
+        uses: actions/upload-artifact@v3
+        with:
+          name: yarn.lock
+          path: ./rs_ui/yarn.lock
+
+      - name: run build scripts
         working-directory: ./rs_ui/platform-rs
         run: |
           ./node_modules/.bin/stripes mod descriptor stripes.config.js --output ./ModuleDescriptors &&
