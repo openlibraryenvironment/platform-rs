@@ -33,7 +33,6 @@ jobs:
         run: chmod +x ./setup && ./setup
 
       - name: Do yarn install
-        working-directory: ./rs_ui/platform-rs
         run: yarn install
 
       - name: whereami
@@ -42,10 +41,9 @@ jobs:
 
       - name: Upload yarn.lock
         uses: actions/upload-artifact@v3
-        working-directory: ./rs_ui/platform-rs
         with:
           name: yarn.lock
-          path: yarn.lock
+          path: ./rs_ui/platform-rs/yarn.lock
 
      # - name: run setup scripts
      #   working-directory: ./rs_ui/platform-rs
