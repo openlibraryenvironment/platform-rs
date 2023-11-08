@@ -39,7 +39,8 @@
     "rrule": "2.6.4"
   },
   "resolutions": {
-        "@rehooks/local-storage": "2.4.4"
+        "@rehooks/local-storage": "2.4.4",
+        "postcss-nesting" : "^10.0.0"
   },
   "devDependencies": {
     "@folio/stripes-cli": "~2.6.0",
