@@ -92,7 +92,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-rs-2.13.0",
+    "id": "mod-rs-2.14.0",
     "action": "enable"
   },
   {
@@ -132,7 +132,7 @@
     "action": "enable"
   },
   {
-    "id": "reshare_rs-1.14.0",
+    "id": "reshare_rs-1.15.0",
     "action": "enable"
   },
   {

@@ -21,11 +21,11 @@
     "@folio/stripes": "~7.3.0",
     "@folio/tenant-settings": "~7.3.0",
     "@folio/users": "~8.2.0",
-    "@reshare/directory": "openlibraryenvironment/ui-directory#release-1.10.x",
-    "@reshare/plugin-rs-siquery-vufind": "openlibraryenvironment/ui-plugin-rs-siquery-vufind#release-v1.0.x",
+    "@reshare/directory": "openlibraryenvironment/ui-directory#release-1.11.x",
+    "@reshare/plugin-rs-siquery-vufind": "openlibraryenvironment/ui-plugin-rs-siquery-vufind#release-v1.1.x",
     "@reshare/request": "openlibraryenvironment/ui-request#release-1.6.x",
-    "@reshare/rs": "openlibraryenvironment/ui-rs#release-1.14.x",
-    "@reshare/stripes-reshare": "openlibraryenvironment/stripes-reshare#release-1.10.x",
+    "@reshare/rs": "openlibraryenvironment/ui-rs#release-1.15.x",
+    "@reshare/stripes-reshare": "openlibraryenvironment/stripes-reshare#release-1.11.x",
     "@reshare/supply": "openlibraryenvironment/ui-supply#release-1.6.x",
     "@reshare/update": "openlibraryenvironment/ui-update#release-1.8.x",
     "moment": "~2.29.0",
@@ -42,12 +42,14 @@
   "resolutions": {
     "@folio/stripes-testing": "4.2.1",
     "@rehooks/local-storage" :"2.4.4",
-    "@reshare/plugin-rs-siquery-vufind": "openlibraryenvironment/ui-plugin-rs-siquery-vufind#release-v1.0.x",
+    "@reshare/plugin-rs-siquery-vufind": "openlibraryenvironment/ui-plugin-rs-siquery-vufind#release-v1.1.x",
+    "@reshare/directory": "openlibraryenvironment/ui-directory#release-1.11.x",
     "@reshare/request": "openlibraryenvironment/ui-request#release-1.6.x",
-    "@reshare/rs": "openlibraryenvironment/ui-rs#release-1.14.x",
+    "@reshare/rs": "openlibraryenvironment/ui-rs#release-1.15.x",
     "@reshare/supply": "openlibraryenvironment/ui-supply#release-1.6.x",
     "@reshare/update": "openlibraryenvironment/ui-update#release-1.8.x",
-    "@reshare/stripes-reshare": "openlibraryenvironment/stripes-reshare#release-1.10.x"
+    "@reshare/stripes-reshare": "openlibraryenvironment/stripes-reshare#release-1.11.x",
+    "postcss-nesting" : "^10.0.0"
   },
   "devDependencies": {
     "@folio/stripes-cli": "~2.6.0",

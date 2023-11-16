@@ -39,6 +39,7 @@ module.exports = {
     "@reshare/update": {},
   },
   branding: {
+    style: {},
     logo: {
       src: './tenant-assets/reshare-logo.png',
       alt: 'Opentown Libraries',
