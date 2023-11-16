@@ -50,7 +50,6 @@ jobs:
             -p ${{ secrets.OKAPI_ADMIN_PW }} \
 
       - name: upload builds
-        working-directory: ./rs_ui/platform-rs
         run: |
           ls &&
           aws s3 sync ./north s3://reshare-bundles/north --acl public-read --delete &&
