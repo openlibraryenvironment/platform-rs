@@ -1,5 +1,5 @@
 {
-  "name": "@reshare/platform-rs",
+  "name": "@projectreshare/platform-rs",
   "version": "1.15.0",
   "description": "Top-level platform for ReShare UI",
   "license": "Apache-2.0",
@@ -8,25 +8,25 @@
     "registry": "https://repository.folio.org/repository/npm-folio/"
   },
   "scripts": {
-    "build": "export STRIPES_TRANSPILE_TOKENS=\"@k-int @reshare\"; export NODE_OPTIONS=\"--max-old-space-size=4096 $NODE_OPTIONS\"; stripes build stripes.config.js",
+    "build": "export STRIPES_TRANSPILE_TOKENS=\"@k-int @projectreshare\"; export NODE_OPTIONS=\"--max-old-space-size=4096 $NODE_OPTIONS\"; stripes build stripes.config.js",
     "stripes": "stripes",
     "start": "stripes serve stripes.config.js",
     "cypress": "cypress",
     "build-module-descriptors": "node ./build-module-descriptors.js",
     "local": "f=stripes.config.js; test -f $f.local && f=$f.local; echo Using config $f; stripes serve $f",
-	"start-local-diku": " set STRIPES_TRANSPILE_TOKENS=\"@k-int @reshare\" && stripes serve ./stripes.config.js --okapi=http://localhost:9130 --tenant=diku"
+	"start-local-diku": " set STRIPES_TRANSPILE_TOKENS=\"@k-int @projectreshare\" && stripes serve ./stripes.config.js --okapi=http://localhost:9130 --tenant=diku"
   },
   "dependencies": {
     "@folio/developer": "~7.0.0",
     "@folio/stripes": "~8.0.0",
     "@folio/tenant-settings": "~7.4.0",
     "@folio/users": "~9.0.0",
-    "@reshare/directory": "^1.10.0",
-    "@reshare/plugin-rs-siquery-vufind": "^1.1.0",
-    "@reshare/request": "^1.6.0",
-    "@reshare/rs": "^1.13.0",
-    "@reshare/supply": "^1.6.0",
-    "@reshare/update": "^1.8.0",
+    "@projectreshare/directory": "^1.10.0",
+    "@projectreshare/plugin-rs-siquery-vufind": "^1.1.0",
+    "@projectreshare/request": "^1.6.0",
+    "@projectreshare/rs": "^1.13.0",
+    "@projectreshare/supply": "^1.6.0",
+    "@projectreshare/update": "^1.8.0",
     "moment": "~2.29.0",
     "react": "~17.0.2",
     "react-dom": "~17.0.0",
