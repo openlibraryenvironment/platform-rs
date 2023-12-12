@@ -1,0 +1,12 @@
+ReShare  1.14.0
+--------------------------------------------------------------------------------
+mod-directory-2.10.0
+mod-rs-2.14.0
+@projectreshare/directory ~1.11.0
+@projectreshare/plugin-rs-siquery-vufind ~1.1.0
+@projectreshare/request ~1.6.0
+@projectreshare/rs ~1.15.0
+@projectreshare/stripes-reshare ~1.11.0
+@projectreshare/supply ~1.6.0
+@projectreshare/update ~1.8.0
+
