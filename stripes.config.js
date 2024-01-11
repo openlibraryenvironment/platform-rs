@@ -1,14 +1,8 @@
 module.exports = {
-  okapi: { 'url':'http://localhost:9130', 'tenant':'diku' },
+  //okapi: { 'url':'http://localhost:9130', 'tenant':'diku' },
+  okapi: { 'url':'https://east-okapi.folio-dev.indexdata.com', 'tenant':'reshare_east' },
   config: {
-    // autoLogin: { username: 'diku_admin', password: 'admin' }
-    // logCategories: 'core,redux,connect,connect-fetch,substitute,path,mpath,mquery,action,event,perm,interface,xhr'
-    // logPrefix: 'stripes'
-    // logTimestamp: false
-    // showPerms: false
     showHomeLink: true,
-    // listInvisiblePerms: false
-    // disableAuth: false
     welcomeMessage: 'ui-rs.front.welcome',
     platformName: 'ReShare',
     platformDescription: 'ReShare platform',
@@ -27,12 +21,12 @@ module.exports = {
     '@folio/users': {},
     '@folio/developer': {},
     "@folio/tenant-settings": {},
-    '@reshare/directory': {},
-    "@reshare/plugin-rs-siquery-vufind": {},
-    '@reshare/request': {},
-    '@reshare/rs': {},
-    '@reshare/supply': {},
-    "@reshare/update": {},
+    '@projectreshare/directory': {},
+    "@projectreshare/plugin-rs-siquery-vufind": {},
+    '@projectreshare/request': {},
+    '@projectreshare/rs': {},
+    '@projectreshare/supply': {},
+    "@projectreshare/update": {},
   },
   branding: {
     style: {},
