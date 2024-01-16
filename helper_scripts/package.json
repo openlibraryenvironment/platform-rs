@@ -8,6 +8,7 @@
   "dependencies": {
   },
   "resolutions": {
+    "favicons": "7.1.4",
     "react": "^17.0.2",
     "postcss-nesting" : "^10.0.0",
     "@rehooks/local-storage": "2.4.4"

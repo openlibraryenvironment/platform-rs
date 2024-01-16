@@ -40,6 +40,7 @@
   },
   "resolutions": {
         "@rehooks/local-storage": "2.4.4",
+        "favicons": "7.1.4",
         "postcss-nesting" : "^10.0.0"
   },
   "devDependencies": {
