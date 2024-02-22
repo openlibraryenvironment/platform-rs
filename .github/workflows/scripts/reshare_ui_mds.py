@@ -17,8 +17,8 @@ RESHARE_MODULES = [
 ]
 
 TENANTS = [
-    "reshare_east",
-    "reshare_west"
+    "reshare_north",
+    "reshare_south"
 ]
 
 # main logic for this script goes here, functions used are defined below
@@ -54,11 +54,10 @@ def main():
     # post mods
     print("enable modules")
     enable = []
-    rs_glob = glob.glob("./reshare*.json")
+    rs_glob = glob.glob("./ModuleDescriptors/reshare*.json")
     for md_file in rs_glob:
         with open(md_file) as fh:
             md = json.load(fh)
-            md['id'] = md['id'] + '-dev'
             print("deleting {}".format(md['id']))
             try:
                 r = okapi_delete(okapi_url + '/_/proxy/modules/' + md['id'],
