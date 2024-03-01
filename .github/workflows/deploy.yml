@@ -30,7 +30,7 @@ jobs:
         run: yarn install
 
       - name: Upload yarn.lock
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: yarn.lock
           path: yarn.lock
