@@ -38,10 +38,10 @@ jobs:
       - name: run build scripts
         run: |
           ./node_modules/.bin/stripes mod descriptor stripes.config.js --output ./ModuleDescriptors &&
-          STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://north-okapi.folio-dev.indexdata.com --tenant reshare_north --sourcemap &&
-          mv output north &&
-          STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://south-okapi.folio-dev.indexdata.com --tenant reshare_south --sourcemap &&
-          mv output south
+          STRIPES_TRANSPILE_TOKENS=@k-int yarn build --tenant slnptest_one --okapi https://slnp-1-okapi.reshare-dev.indexdata.com --sourcemap &&
+          mv output one &&
+          STRIPES_TRANSPILE_TOKENS=@k-int yarn build --tenant slnptest_two --okapi https://slnp-2-okapi.reshare-dev.indexdata.com --sourcemap &&
+          mv output two
 
       - name: Post new module descriptors
         run: |
@@ -52,17 +52,17 @@ jobs:
       - name: upload builds
         run: |
           ls &&
-          aws s3 sync ./north s3://reshare-bundles/north --acl public-read --delete &&
-          aws s3 sync ./south s3://reshare-bundles/south --acl public-read --delete
+          aws s3 sync ./one s3://reshare-bundles/slnp_one --acl public-read --delete &&
+          aws s3 sync ./two s3://reshare-bundles/slnp_two --acl public-read --delete
 
-      - name: Invalidate CF South
+      - name: Invalidate CF One
         run: |
           aws cloudfront create-invalidation \
-              --distribution-id E1P6M0CBG3W8CN \
+              --distribution-id E3CYPB0489HZYL \
               --paths "/*"
 
-      - name: Invalidate CF North
+      - name: Invalidate CF Two
         run: |
           aws cloudfront create-invalidation \
-              --distribution-id E1VCWC3OJH59C9 \
+              --distribution-id E24JH9M01TF89Q \
               --paths "/*"

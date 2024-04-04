@@ -15,7 +15,7 @@ cd rs_ui
 wget https://raw.githubusercontent.com/openlibraryenvironment/platform-rs/master/helper_scripts/package.json
 
 git clone https://github.com/openlibraryenvironment/platform-rs.git
-git clone https://github.com/openlibraryenvironment/ui-rs.git
+git clone -b SLNP_INTEGRATION https://github.com/openlibraryenvironment/ui-rs.git
 git clone https://github.com/openlibraryenvironment/ui-directory.git
 git clone https://github.com/openlibraryenvironment/ui-request.git
 git clone https://github.com/openlibraryenvironment/ui-update.git

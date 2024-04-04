@@ -24,7 +24,7 @@
     "@projectreshare/directory": "~1.12.0",
     "@projectreshare/plugin-rs-siquery-vufind": "~1.2.0",
     "@projectreshare/request": "~1.6.0",
-    "@projectreshare/rs": "~1.16.0",
+    "@projectreshare/rs": "https://github.com/openlibraryenvironment/ui-rs.git#SLNP_INTEGRATION",
     "@projectreshare/supply": "~1.6.0",
     "@projectreshare/update": "~1.9.0",
     "moment": "~2.29.0",
