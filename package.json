@@ -41,6 +41,7 @@
   "resolutions": {
         "@rehooks/local-storage": "2.4.4",
         "@projectreshare/rs": "https://github.com/openlibraryenvironment/ui-rs.git#SLNP_INTEGRATION",
+        "@projectreshare/stripes-reshare": "https://github.com/openlibraryenvironment/stripes-reshare.git",
         "favicons": "7.1.4",
         "postcss-nesting" : "^10.0.0"
   },
