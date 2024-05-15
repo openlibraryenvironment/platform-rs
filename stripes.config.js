@@ -12,7 +12,8 @@ module.exports = {
         type: 'vufind',
         ui: 'https://vufind.reshare-dev.indexdata.com/east',
         query: 'https://vufind.reshare-dev.indexdata.com/east',
-      }
+      },
+      patronURL: '/users?qindex=barcode&query={patronid}',    
     },
     showDevInfo: true,
     staleBundleWarning: { path: '/index.html', header: 'last-modified', interval: 5 },
