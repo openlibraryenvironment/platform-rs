@@ -7,6 +7,10 @@ module.exports = {
     platformName: 'ReShare',
     platformDescription: 'ReShare platform',
     hasAllPerms: false,
+    logCategories: 'core,path,action,xhr',
+    logPrefix: '--',
+    maxUnpagedResourceCount: 2000,
+    showPerms: false,
     reshare: {
       sharedIndex: {
         type: 'vufind',
@@ -20,7 +24,10 @@ module.exports = {
   },
   modules: {
     '@folio/users': {},
-    '@folio/circulation': {},
+    '@folio/checkin' : {},
+    '@folio/checkout' : {},
+    '@folio/circulation' : {},
+    '@folio/circulation-log' : {},
     '@folio/developer': {},
     '@folio/inventory': {},
     "@folio/tenant-settings": {},

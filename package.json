@@ -17,7 +17,12 @@
 	"start-local-diku": " set STRIPES_TRANSPILE_TOKENS=\"@k-int @projectreshare\" && stripes serve ./stripes.config.js --okapi=http://localhost:9130 --tenant=diku"
   },
   "dependencies": {
+    "@folio/checkin": "9.0.3",
+    "@folio/checkout": "10.0.1",
+    "@folio/circulation": "9.0.5",
+    "@folio/circulation-log": "4.0.1",
     "@folio/developer": "8.0.1",
+    "@folio/inventory": "10.0.15",
     "@folio/stripes": "9.0.6",
     "@folio/tenant-settings": "8.0.0",
     "@folio/users": "10.0.5",
@@ -27,6 +32,7 @@
     "@projectreshare/rs": "https://github.com/openlibraryenvironment/ui-rs.git#SLNP_INTEGRATION",
     "@projectreshare/supply": "~1.6.0",
     "@projectreshare/update": "https://github.com/openlibraryenvironment/ui-update.git#poppy",
+    "inflected": "^2.0.4",
     "moment": "~2.29.0",
     "react": "~18.0.0",
     "react-dom": "~18.2.0",
