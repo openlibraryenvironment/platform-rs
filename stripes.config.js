@@ -20,7 +20,9 @@ module.exports = {
   },
   modules: {
     '@folio/users': {},
+    '@folio/circulation': {},
     '@folio/developer': {},
+    '@folio/inventory': {},
     "@folio/tenant-settings": {},
     '@projectreshare/directory': {},
     "@projectreshare/plugin-rs-siquery-vufind": {},
