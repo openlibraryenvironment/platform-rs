@@ -28,6 +28,7 @@ module.exports = {
     '@folio/checkout' : {},
     '@folio/circulation' : {},
     '@folio/circulation-log' : {},
+    '@folio/requests': {},
     '@folio/developer': {},
     '@folio/inventory': {},
     "@folio/tenant-settings": {},
