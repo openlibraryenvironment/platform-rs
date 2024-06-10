@@ -30,7 +30,7 @@
     "@projectreshare/directory": "https://github.com/openlibraryenvironment/ui-directory.git#poppy",
     "@projectreshare/plugin-rs-siquery-vufind": "https://github.com/openlibraryenvironment/ui-plugin-rs-siquery-vufind.git#poppy",
     "@projectreshare/supply": "openlibraryenvironment/ui-supply#master",
-    "@projectreshare/request": "openlibraryenvironment/ui-update#master",
+    "@projectreshare/request": "openlibraryenvironment/ui-request#master",
     "@projectreshare/rs": "https://github.com/openlibraryenvironment/ui-rs.git#SLNP_INTEGRATION",
     "@projectreshare/update": "https://github.com/openlibraryenvironment/ui-update.git#poppy",
     "inflected": "^2.0.4",
@@ -72,7 +72,7 @@
     "@projectreshare/update": "https://github.com/openlibraryenvironment/ui-update.git#poppy",
     "@projectreshare/stripes-reshare": "https://github.com/openlibraryenvironment/stripes-reshare.git#poppy",
     "@projectreshare/supply": "openlibraryenvironment/ui-supply#master",
-    "@projectreshare/request": "openlibraryenvironment/ui-update#master",
+    "@projectreshare/request": "openlibraryenvironment/ui-request#master",
     "@projectreshare/rs": "https://github.com/openlibraryenvironment/ui-rs.git#SLNP_INTEGRATION"
   },
   "devDependencies": {
