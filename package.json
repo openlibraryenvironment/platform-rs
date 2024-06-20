@@ -39,6 +39,7 @@
     "rrule": "2.6.4"
   },
   "resolutions": {
+        "@typescript-eslint/typescript-estree": "^6.2.1",
         "@rehooks/local-storage": "2.4.4",
         "favicons": "7.1.4",
         "postcss-nesting" : "^10.0.0"
@@ -49,5 +50,6 @@
     "@interactors/html": "^1.0.0-rc1.2",
     "@interactors/with-cypress": "^1.0.0-rc1.1",
     "cypress": "^9.6.1"
+
   }
 }
