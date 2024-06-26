@@ -24,7 +24,7 @@
     "@projectreshare/directory": "^1.10.0",
     "@projectreshare/plugin-rs-siquery-vufind": "^1.2.1",
     "@projectreshare/request": "^1.6.1",
-    "@projectreshare/rs": "^1.17.0",
+    "projectreshare/rs": "openlibraryenvironment/ui-rs#release-1.17.x",
     "@projectreshare/supply": "^1.6.1",
     "@projectreshare/update": "^1.9.1",
     "moment": "~2.29.0",
@@ -42,7 +42,8 @@
         "@typescript-eslint/typescript-estree": "^6.2.1",
         "@rehooks/local-storage": "2.4.4",
         "favicons": "7.1.4",
-        "postcss-nesting" : "^10.0.0"
+        "postcss-nesting" : "^10.0.0",
+        "projectreshare/rs": "openlibraryenvironment/ui-rs#release-1.17.x"
   },
   "devDependencies": {
     "@folio/stripes-cli": "~2.6.0",
