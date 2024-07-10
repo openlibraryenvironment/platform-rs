@@ -46,32 +46,37 @@ jobs:
         working-directory: ./rs_ui/platform-rs
         run: |
           ./node_modules/.bin/stripes mod descriptor stripes.config.js --output ./ModuleDescriptors &&
-          STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://east-okapi.folio-dev.indexdata.com --tenant reshare_east --sourcemap &&
-          mv output east &&
-          STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://west-okapi.folio-dev.indexdata.com --tenant reshare_west --sourcemap &&
-          mv output west
+          STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://north-okapi.folio-dev.indexdata.com --tenant reshare_north --sourcemap &&
+          mv output north &&
+          STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://south-okapi.folio-dev.indexdata.com --tenant reshare_south --sourcemap &&
+          mv output south
 
-      #- name: Post new module descriptors
-      #  run: |
-      #    /usr/bin/python3 .github/workflows/scripts/reshare_ui_mds.py \
-      #      -u "okapi_admin" \
-      #      -p ${{ secrets.OKAPI_ADMIN_PW }} \
+      - name: copy yarn.lock to builds
+        working-directory: ./rs_ui/platform-rs
+        run: |
+          cp yarn.lock north/ && cp yarn.lock south/
+
+      - name: add a timestamp
+        working-directory: ./rs_ui/platform-rs
+        run: |
+          echo "$GITHUB_ACTOR built this webpack on `date`" > north/date.txt &&
+          echo "$GITHUB_ACTOR built this webpack on `date`" > south/date.txt
 
       - name: upload builds
         working-directory: ./rs_ui/platform-rs
         run: |
           ls &&
-          aws s3 sync ./east s3://reshare-bundles/east --acl public-read --delete &&
-          aws s3 sync ./west s3://reshare-bundles/west --acl public-read --delete
+          aws s3 sync ./south s3://reshare-bundles/north --acl public-read --delete &&
+          aws s3 sync ./south s3://reshare-bundles/south --acl public-read --delete
 
-      - name: Invalidate CF East
+      - name: Invalidate CF North
         run: |
           aws cloudfront create-invalidation \
-              --distribution-id E10ONJ5UMHJSTF \
+              --distribution-id E1VCWC3OJH59C9 \
               --paths "/*"
 
-      - name: Invalidate CF West
+      - name: Invalidate CF South
         run: |
           aws cloudfront create-invalidation \
-              --distribution-id E21W57Y11ZF9P \
+              --distribution-id E1P6M0CBG3W8CN \
               --paths "/*"
