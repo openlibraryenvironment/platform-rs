@@ -54,7 +54,7 @@ jobs:
       - name: copy yarn.lock to builds
         working-directory: ./rs_ui/platform-rs
         run: |
-          cp yarn.lock north/ && cp yarn.lock south/
+          cp ../yarn.lock north/ && cp ../yarn.lock south/
 
       - name: add a timestamp
         working-directory: ./rs_ui/platform-rs
