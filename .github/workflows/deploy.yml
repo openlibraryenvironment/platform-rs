@@ -26,24 +26,16 @@ jobs:
       - name: prepare
         run: yarn config set @folio:registry https://repository.folio.org/repository/npm-folio/
 
-      - name: setup workspace
-        run: cp ./helper_scripts/* .
-
-      - name: run setup
-        run: chmod +x ./setup && ./setup
-
       - name: Do yarn install
-        working-directory: ./rs_ui/platform-rs
         run: yarn install
 
       - name: Upload yarn.lock
         uses: actions/upload-artifact@v4
         with:
           name: yarn.lock
-          path: ./rs_ui/yarn.lock
+          path: ./yarn.lock
 
       - name: run build scripts
-        working-directory: ./rs_ui/platform-rs
         run: |
           ./node_modules/.bin/stripes mod descriptor stripes.config.js --output ./ModuleDescriptors &&
           STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://north-okapi.folio-dev.indexdata.com --tenant reshare_north --sourcemap &&
@@ -52,18 +44,15 @@ jobs:
           mv output south
 
       - name: copy yarn.lock to builds
-        working-directory: ./rs_ui/platform-rs
         run: |
-          cp ../yarn.lock north/ && cp ../yarn.lock south/
+          cp yarn.lock north/ && cp yarn.lock south/
 
       - name: add a timestamp
-        working-directory: ./rs_ui/platform-rs
         run: |
           echo "$GITHUB_ACTOR built this webpack on `date`" > north/date.txt &&
           echo "$GITHUB_ACTOR built this webpack on `date`" > south/date.txt
 
       - name: upload builds
-        working-directory: ./rs_ui/platform-rs
         run: |
           ls &&
           aws s3 sync ./south s3://reshare-bundles/north --acl public-read --delete &&
