@@ -31,7 +31,7 @@
     "@projectreshare/plugin-rs-siquery-vufind": "https://github.com/openlibraryenvironment/ui-plugin-rs-siquery-vufind.git#main",
     "@projectreshare/supply": "openlibraryenvironment/ui-supply#master",
     "@projectreshare/request": "openlibraryenvironment/ui-request#master",
-    "@projectreshare/rs": "https://github.com/openlibraryenvironment/ui-rs.git#SLNP_INTEGRATION",
+    "@projectreshare/rs": "https://github.com/openlibraryenvironment/ui-rs.git#SLNP_INTEGRATION_2",
     "@projectreshare/update": "https://github.com/openlibraryenvironment/ui-update.git#master",
     "inflected": "^2.0.4",
     "moment": "~2.29.0",

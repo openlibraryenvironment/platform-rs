@@ -49,6 +49,10 @@ jobs:
             -u "okapi_admin" \
             -p ${{ secrets.OKAPI_ADMIN_PW }} \
 
+      - name: copy yarn lock to yarn text
+        run: cp yarn.lock one/yarn.txt &&
+             cp yarn.lock two/yarn.txt
+
       - name: upload builds
         run: |
           ls &&
