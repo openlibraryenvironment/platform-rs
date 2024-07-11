@@ -73,7 +73,7 @@
     "@projectreshare/stripes-reshare": "https://github.com/openlibraryenvironment/stripes-reshare.git#master",
     "@projectreshare/supply": "openlibraryenvironment/ui-supply#master",
     "@projectreshare/request": "openlibraryenvironment/ui-request#master",
-    "@projectreshare/rs": "https://github.com/openlibraryenvironment/ui-rs.git#SLNP_INTEGRATION"
+    "@projectreshare/rs": "https://github.com/openlibraryenvironment/ui-rs.git#SLNP_INTEGRATION_2"
   },
   "devDependencies": {
     "@folio/stripes-cli": "3.0.2",
