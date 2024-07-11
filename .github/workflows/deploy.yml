@@ -55,7 +55,7 @@ jobs:
       - name: upload builds
         run: |
           ls &&
-          aws s3 sync ./south s3://reshare-bundles/north --acl public-read --delete &&
+          aws s3 sync ./north s3://reshare-bundles/north --acl public-read --delete &&
           aws s3 sync ./south s3://reshare-bundles/south --acl public-read --delete
 
       - name: Invalidate CF North
