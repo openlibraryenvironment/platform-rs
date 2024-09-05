@@ -17,8 +17,8 @@ RESHARE_MODULES = [
 ]
 
 TENANTS = [
-    "reshare_east",
-    "reshare_west"
+    "back",
+    "forth"
 ]
 
 # main logic for this script goes here, functions used are defined below
