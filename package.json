@@ -49,7 +49,7 @@
         "@projectreshare/rs": "openlibraryenvironment/ui-rs#release-1.18.x",
         "@projectreshare/supply": "openlibraryenvironment/ui-supply#release-1.6.x",
         "@projectreshare/update": "openlibraryenvironment/ui-update#release-1.10.x",
-        "@projectreshare/stripes-reshare": "openlibraryenvironment/stripes-reshare#release-1.13.x"
+        "@projectreshare/stripes-reshare": "openlibraryenvironment/stripes-reshare#release-1.14.x"
   },
   "devDependencies": {
     "@folio/stripes-cli": "~2.6.0",
