@@ -32,6 +32,9 @@ The North and South tenants are currently running the release branches for ReSha
   * mod-rs: to deploy the latest version of mod-rs, manually run the deploy action from the release-2.17.x branch: https://github.com/openlibraryenvironment/mod-rs/actions/workflows/deploy.yml
   * UI modules: To deploy the latest of all UI modules, manually run the deploy action from the release-1.17.x branch of platform-rs: https://github.com/openlibraryenvironment/platform-rs/actions/workflows/deploy.yml
 
+### OpenURL Listener
+All tenants on the cardinal consortium share a single instance of the openurl listener. It is deployed from the master branch on commit.
+
 ## SLNP Project
 The SLNP environment does not share a directory with ReShare and comprises two tenatns, slnptest_one, and slnptest_two
 * SLNP One UI: https://slnp-one.reshare-dev.indexdata.com/
@@ -40,3 +43,4 @@ The SLNP environment does not share a directory with ReShare and comprises two t
   * mod-rs: to deploy the latest version of mod-rs, manually run the deploy action from the SLNP_INTEGRATION_2 branch: https://github.com/openlibraryenvironment/mod-rs/actions/workflows/deploy.yml
   * mod-directory: to deploy the latest version of mod-directory, manually run the deploy action from the main branch: https://github.com/openlibraryenvironment/mod-directory/actions/workflows/deploy.yml
   * UI modules: To deploy the latest of all UI modules, manually run the deploy action from the ci-slnp branch of platform-rs: https://github.com/openlibraryenvironment/platform-rs/actions/workflows/deploy.yml
+
