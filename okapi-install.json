@@ -1,26 +1,6 @@
 [
   {
-    "id": "mod-configuration-5.9.2",
-    "action": "enable"
-  },
-  {
-    "id": "mod-permissions-6.4.0",
-    "action": "enable"
-  },
-  {
-    "id": "mod-users-19.2.2",
-    "action": "enable"
-  },
-  {
-    "id": "mod-notes-5.1.0",
-    "action": "enable"
-  },
-  {
-    "id": "mod-password-validator-3.1.0",
-    "action": "enable"
-  },
-  {
-    "id": "mod-inventory-storage-27.0.6",
+    "id": "mod-audit-2.8.0",
     "action": "enable"
   },
   {
@@ -28,23 +8,135 @@
     "action": "enable"
   },
   {
+    "id": "mod-calendar-2.4.2",
+    "action": "enable"
+  },
+  {
+    "id": "mod-circulation-24.1.2",
+    "action": "enable"
+  },
+  {
+    "id": "mod-circulation-storage-17.1.8",
+    "action": "enable"
+  },
+  {
+    "id": "mod-configuration-5.9.2",
+    "action": "enable"
+  },
+  {
+    "id": "mod-data-export-4.8.7",
+    "action": "enable"
+  },
+  {
+    "id": "mod-data-import-3.0.7",
+    "action": "enable"
+  },
+  {
+    "id": "mod-di-converter-storage-2.1.9",
+    "action": "enable"
+  },
+  {
+    "id": "mod-directory-2.10.1",
+    "action": "enable"
+  },
+  {
+    "id": "mod-email-1.16.0",
+    "action": "enable"
+  },
+  {
+    "id": "mod-entities-links-2.0.6",
+    "action": "enable"
+  },
+  {
+    "id": "mod-event-config-2.6.0",
+    "action": "enable"
+  },
+  {
+    "id": "mod-feesfines-19.0.0",
+    "action": "enable"
+  },
+  {
+    "id": "mod-inventory-20.1.12",
+    "action": "enable"
+  },
+  {
+    "id": "mod-inventory-storage-27.0.6",
+    "action": "enable"
+  },
+  {
     "id": "mod-login-7.10.1",
     "action": "enable"
   },
   {
-    "id" : "mod-email-1.16.0",
+    "id": "mod-login-saml-2.7.2",
     "action": "enable"
   },
   {
-    "id" : "mod-login-saml-2.7.2",
+    "id": "mod-ncip-1.14.5",
     "action": "enable"
   },
   {
-    "id": "mod-users-bl-7.6.0",
+    "id": "mod-notes-5.1.0",
+    "action": "enable"
+  },
+  {
+    "id": "mod-notify-3.1.0",
+    "action": "enable"
+  },
+  {
+    "id": "mod-password-validator-3.1.0",
+    "action": "enable"
+  },
+  {
+    "id": "mod-patron-blocks-1.9.0",
+    "action": "enable"
+  },
+  {
+    "id": "mod-permissions-6.4.0",
+    "action": "enable"
+  },
+  {
+    "id": "mod-pubsub-2.11.3",
+    "action": "enable"
+  },
+  {
+    "id": "mod-rs-2.17.0-SLNP.001",
+    "action": "enable"
+  },
+  {
+    "id": "mod-search-3.0.9",
+    "action": "enable"
+  },
+  {
+    "id": "mod-sender-1.11.0",
+    "action": "enable"
+  },
+  {
+    "id": "mod-settings-1.0.3",
+    "action": "enable"
+  },
+  {
+    "id": "mod-source-record-manager-3.7.9",
+    "action": "enable"
+  },
+  {
+    "id": "mod-source-record-storage-5.7.7",
     "action": "enable"
   },
   {
     "id": "mod-tags-2.1.0",
+    "action": "enable"
+  },
+  {
+    "id": "mod-template-engine-1.19.1",
+    "action": "enable"
+  },
+  {
+    "id": "mod-users-19.2.2",
+    "action": "enable"
+  },
+  {
+    "id": "mod-users-bl-7.6.0",
     "action": "enable"
   }
 ]

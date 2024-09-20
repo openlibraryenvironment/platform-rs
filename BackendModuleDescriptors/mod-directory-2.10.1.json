@@ -1,0 +1,580 @@
+{
+  "id" : "mod-directory-2.10.1",
+  "name" : "mod-directory",
+  "requires" : [ ],
+  "provides" : [ {
+    "id" : "directory",
+    "version" : "2.10",
+    "handlers" : [ {
+      "methods" : [ "GET" ],
+      "pathPattern" : "/directory/entry",
+      "permissionsRequired" : [ "directory.entry.collection.get" ]
+    }, {
+      "methods" : [ "GET" ],
+      "pathPattern" : "/directory/entry/{id}/*",
+      "permissionsRequired" : [ "directory.entry.item.get" ]
+    }, {
+      "methods" : [ "GET" ],
+      "pathPattern" : "/directory/entry/{id}",
+      "permissionsRequired" : [ "directory.entry.item.get" ]
+    }, {
+      "methods" : [ "POST" ],
+      "pathPattern" : "/directory/entry*",
+      "permissionsRequired" : [ "directory.entry.item.post" ]
+    }, {
+      "methods" : [ "PUT" ],
+      "pathPattern" : "/directory/entry/{id}/*",
+      "permissionsRequired" : [ ],
+      "permissionsDesired" : [ "directory.entry.item.put", "directory.entry.managed-item.put", "directory.entry.item-local.put" ]
+    }, {
+      "methods" : [ "PUT" ],
+      "pathPattern" : "/directory/entry/{id}",
+      "permissionsRequired" : [ ],
+      "permissionsDesired" : [ "directory.entry.item.put", "directory.entry.managed-item.put", "directory.entry.item-local.put" ]
+    }, {
+      "methods" : [ "DELETE" ],
+      "pathPattern" : "/directory/entry/{id}/*",
+      "permissionsRequired" : [ "directory.entry.item.delete" ]
+    }, {
+      "methods" : [ "DELETE" ],
+      "pathPattern" : "/directory/entry/{id}",
+      "permissionsRequired" : [ "directory.entry.item.delete" ]
+    }, {
+      "methods" : [ "POST" ],
+      "pathPattern" : "/directory/entry/validate",
+      "permissionsRequired" : [ "directory.entry.item.post" ]
+    }, {
+      "methods" : [ "GET" ],
+      "pathPattern" : "/directory/symbol",
+      "permissionsRequired" : [ "directory.symbol.collection.get" ]
+    }, {
+      "methods" : [ "GET" ],
+      "pathPattern" : "/directory/symbol/{id}/*",
+      "permissionsRequired" : [ "directory.symbol.item.get" ]
+    }, {
+      "methods" : [ "GET" ],
+      "pathPattern" : "/directory/symbol/{id}",
+      "permissionsRequired" : [ "directory.symbol.item.get" ]
+    }, {
+      "methods" : [ "POST" ],
+      "pathPattern" : "/directory/symbol*",
+      "permissionsRequired" : [ "directory.symbol.item.post" ]
+    }, {
+      "methods" : [ "PUT" ],
+      "pathPattern" : "/directory/symbol/{id}/*",
+      "permissionsRequired" : [ "directory.symbol.item.put" ]
+    }, {
+      "methods" : [ "PUT" ],
+      "pathPattern" : "/directory/symbol/{id}",
+      "permissionsRequired" : [ "directory.symbol.item.put" ]
+    }, {
+      "methods" : [ "DELETE" ],
+      "pathPattern" : "/directory/symbol/{id}/*",
+      "permissionsRequired" : [ "directory.symbol.item.delete" ]
+    }, {
+      "methods" : [ "DELETE" ],
+      "pathPattern" : "/directory/symbol/{id}",
+      "permissionsRequired" : [ "directory.symbol.item.delete" ]
+    }, {
+      "methods" : [ "GET" ],
+      "pathPattern" : "/directory/service",
+      "permissionsRequired" : [ "directory.service.collection.get" ]
+    }, {
+      "methods" : [ "GET" ],
+      "pathPattern" : "/directory/service/{id}/*",
+      "permissionsRequired" : [ "directory.service.item.get" ]
+    }, {
+      "methods" : [ "GET" ],
+      "pathPattern" : "/directory/service/{id}",
+      "permissionsRequired" : [ "directory.service.item.get" ]
+    }, {
+      "methods" : [ "POST" ],
+      "pathPattern" : "/directory/service*",
+      "permissionsRequired" : [ "directory.service.item.post" ]
+    }, {
+      "methods" : [ "PUT" ],
+      "pathPattern" : "/directory/service/{id}/*",
+      "permissionsRequired" : [ "directory.service.item.put" ]
+    }, {
+      "methods" : [ "PUT" ],
+      "pathPattern" : "/directory/service/{id}",
+      "permissionsRequired" : [ "directory.service.item.put" ]
+    }, {
+      "methods" : [ "DELETE" ],
+      "pathPattern" : "/directory/service/{id}/*",
+      "permissionsRequired" : [ "directory.service.item.delete" ]
+    }, {
+      "methods" : [ "DELETE" ],
+      "pathPattern" : "/directory/service/{id}",
+      "permissionsRequired" : [ "directory.service.item.delete" ]
+    }, {
+      "methods" : [ "GET" ],
+      "pathPattern" : "/directory/serviceAccount",
+      "permissionsRequired" : [ "directory.serviceaccount.collection.get" ]
+    }, {
+      "methods" : [ "GET" ],
+      "pathPattern" : "/directory/serviceAccount/{id}/*",
+      "permissionsRequired" : [ "directory.serviceaccount.item.get" ]
+    }, {
+      "methods" : [ "GET" ],
+      "pathPattern" : "/directory/serviceAccount/{id}",
+      "permissionsRequired" : [ "directory.serviceaccount.item.get" ]
+    }, {
+      "methods" : [ "POST" ],
+      "pathPattern" : "/directory/serviceAccount*",
+      "permissionsRequired" : [ "directory.serviceaccount.item.post" ]
+    }, {
+      "methods" : [ "PUT" ],
+      "pathPattern" : "/directory/serviceAccount/{id}/*",
+      "permissionsRequired" : [ "directory.serviceaccount.item.put" ]
+    }, {
+      "methods" : [ "PUT" ],
+      "pathPattern" : "/directory/serviceAccount/{id}",
+      "permissionsRequired" : [ "directory.serviceaccount.item.put" ]
+    }, {
+      "methods" : [ "DELETE" ],
+      "pathPattern" : "/directory/serviceAccount/{id}/*",
+      "permissionsRequired" : [ "directory.serviceaccount.item.delete" ]
+    }, {
+      "methods" : [ "DELETE" ],
+      "pathPattern" : "/directory/serviceAccount/{id}",
+      "permissionsRequired" : [ "directory.serviceaccount.item.delete" ]
+    }, {
+      "methods" : [ "GET" ],
+      "pathPattern" : "/directory/namingAuthority",
+      "permissionsRequired" : [ "directory.namingauthority.collection.get" ]
+    }, {
+      "methods" : [ "GET" ],
+      "pathPattern" : "/directory/namingAuthority/{id}/*",
+      "permissionsRequired" : [ "directory.namingauthority.item.get" ]
+    }, {
+      "methods" : [ "GET" ],
+      "pathPattern" : "/directory/namingAuthority/{id}",
+      "permissionsRequired" : [ "directory.namingauthority.item.get" ]
+    }, {
+      "methods" : [ "POST" ],
+      "pathPattern" : "/directory/namingAuthority*",
+      "permissionsRequired" : [ "directory.namingauthority.item.post" ]
+    }, {
+      "methods" : [ "PUT" ],
+      "pathPattern" : "/directory/namingAuthority/{id}/*",
+      "permissionsRequired" : [ "directory.namingauthority.item.put" ]
+    }, {
+      "methods" : [ "PUT" ],
+      "pathPattern" : "/directory/namingAuthority/{id}",
+      "permissionsRequired" : [ "directory.namingauthority.item.put" ]
+    }, {
+      "methods" : [ "DELETE" ],
+      "pathPattern" : "/directory/namingAuthority/{id}/*",
+      "permissionsRequired" : [ "directory.namingauthority.item.delete" ]
+    }, {
+      "methods" : [ "DELETE" ],
+      "pathPattern" : "/directory/namingAuthority/{id}",
+      "permissionsRequired" : [ "directory.namingauthority.item.delete" ]
+    }, {
+      "methods" : [ "GET" ],
+      "pathPattern" : "/directory/api*",
+      "permissionsRequired" : [ "directory.api.get" ]
+    }, {
+      "methods" : [ "POST" ],
+      "pathPattern" : "/directory/api*",
+      "permissionsRequired" : [ "directory.api.post" ]
+    }, {
+      "methods" : [ "PUT" ],
+      "pathPattern" : "/directory/api*",
+      "permissionsRequired" : [ "directory.api.put" ]
+    }, {
+      "methods" : [ "DELETE" ],
+      "pathPattern" : "/directory/api*",
+      "permissionsRequired" : [ "directory.api.delete" ]
+    }, {
+      "methods" : [ "GET" ],
+      "pathPattern" : "/directory/externalApi*",
+      "permissionsRequired" : [ ]
+    }, {
+      "methods" : [ "POST" ],
+      "pathPattern" : "/directory/externalApi*",
+      "permissionsRequired" : [ "directory.externalapi.post" ]
+    }, {
+      "methods" : [ "PUT" ],
+      "pathPattern" : "/directory/externalApi*",
+      "permissionsRequired" : [ "directory.externalapi.put" ]
+    }, {
+      "methods" : [ "DELETE" ],
+      "pathPattern" : "/directory/externalApi*",
+      "permissionsRequired" : [ "directory.externalapi.delete" ]
+    }, {
+      "methods" : [ "GET", "POST", "PUT", "DELETE" ],
+      "pathPattern" : "/directory/kiwt*",
+      "permissionsRequired" : [ "directory.kiwt" ]
+    }, {
+      "methods" : [ "GET", "POST", "PUT", "DELETE" ],
+      "pathPattern" : "/directory/settings*",
+      "permissionsRequired" : [ "directory.settings" ]
+    }, {
+      "methods" : [ "GET", "POST", "PUT", "DELETE" ],
+      "pathPattern" : "/directory/refdata*",
+      "permissionsRequired" : [ "directory.refdata" ]
+    }, {
+      "methods" : [ "GET", "POST", "PUT", "DELETE" ],
+      "pathPattern" : "/directory/custprops*",
+      "permissionsRequired" : [ "directory.custprops" ]
+    }, {
+      "methods" : [ "GET", "POST", "PUT", "DELETE" ],
+      "pathPattern" : "/directory/tags*",
+      "permissionsRequired" : [ "directory.tags" ]
+    } ]
+  }, {
+    "id" : "_tenant",
+    "version" : "1.2",
+    "interfaceType" : "system",
+    "handlers" : [ {
+      "methods" : [ "POST", "DELETE" ],
+      "pathPattern" : "/_/tenant",
+      "permissionsRequired" : [ ]
+    }, {
+      "methods" : [ "POST" ],
+      "pathPattern" : "/_/tenant/disable",
+      "permissionsRequired" : [ ]
+    } ]
+  }, {
+    "id" : "_timer",
+    "version" : "1.0",
+    "interfaceType" : "system",
+    "handlers" : [ {
+      "methods" : [ "POST" ],
+      "pathPattern" : "/directory/settings/worker",
+      "unit" : "minute",
+      "delay" : "5",
+      "permissionsRequired" : [ ]
+    }, {
+      "methods" : [ "POST" ],
+      "pathPattern" : "/directory/settings/foaf",
+      "unit" : "hour",
+      "delay" : "4",
+      "permissionsRequired" : [ ]
+    } ]
+  } ],
+  "permissionSets" : [ {
+    "permissionName" : "directory.entry.collection.get",
+    "displayName" : "entry collection get",
+    "description" : "get entry list",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.entry.item.get",
+    "displayName" : "entry item get",
+    "description" : "get entry item",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.entry.item.post",
+    "displayName" : "entry item post",
+    "description" : "create entry item",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.entry.item.put",
+    "displayName" : "entry item put",
+    "description" : "update entry item",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.entry.managed-item.put",
+    "displayName" : "entry managed item put",
+    "description" : "PUT to a directory entry that has the 'managed' flag",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.entry.item-local.put",
+    "displayName" : "entry item local put",
+    "description" : "PUT local information to a directory entry",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.entry.item.delete",
+    "displayName" : "entry item delete",
+    "description" : "delete entry item",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.entry.read",
+    "displayName" : "entry read",
+    "description" : "read entry",
+    "subPermissions" : [ "directory.entry.collection.get", "directory.entry.item.get" ],
+    "visible" : false
+  }, {
+    "permissionName" : "directory.entry.write",
+    "displayName" : "entry write",
+    "description" : "write entry",
+    "subPermissions" : [ "directory.entry.read", "directory.entry.item.post", "directory.entry.item.put", "directory.entry.managed-item.put", "directory.entry.item-local.put", "directory.entry.item.delete" ],
+    "visible" : false
+  }, {
+    "permissionName" : "directory.symbol.collection.get",
+    "displayName" : "entry collection get",
+    "description" : "get entry list",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.symbol.item.get",
+    "displayName" : "symbol item get",
+    "description" : "get symbol item",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.symbol.item.post",
+    "displayName" : "symbol item post",
+    "description" : "create symbol item",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.symbol.item.put",
+    "displayName" : "symbol item put",
+    "description" : "update symbol item",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.symbol.item.delete",
+    "displayName" : "symbol item delete",
+    "description" : "delete symbol item",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.symbol.read",
+    "displayName" : "symbol read",
+    "description" : "read symbol",
+    "subPermissions" : [ "directory.symbol.collection.get", "directory.symbol.item.get" ],
+    "visible" : false
+  }, {
+    "permissionName" : "directory.symbol.write",
+    "displayName" : "symbol write",
+    "description" : "write symbol",
+    "subPermissions" : [ "directory.symbol.read", "directory.symbol.item.post", "directory.symbol.item.put", "directory.symbol.item.delete" ],
+    "visible" : false
+  }, {
+    "permissionName" : "directory.service.collection.get",
+    "displayName" : "service collection get",
+    "description" : "get service list",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.service.item.get",
+    "displayName" : "service item get",
+    "description" : "get service item",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.service.item.post",
+    "displayName" : "service item post",
+    "description" : "create service item",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.service.item.put",
+    "displayName" : "service item put",
+    "description" : "update service item",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.service.item.delete",
+    "displayName" : "service item delete",
+    "description" : "delete service item",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.service.read",
+    "displayName" : "service read",
+    "description" : "read service",
+    "subPermissions" : [ "directory.service.collection.get", "directory.service.item.get" ],
+    "visible" : false
+  }, {
+    "permissionName" : "directory.service.write",
+    "displayName" : "service write",
+    "description" : "write service",
+    "subPermissions" : [ "directory.service.read", "directory.service.item.post", "directory.service.item.put", "directory.service.item.delete" ],
+    "visible" : false
+  }, {
+    "permissionName" : "directory.serviceaccount.collection.get",
+    "displayName" : "serviceaccount collection get",
+    "description" : "get serviceaccount list",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.serviceaccount.item.get",
+    "displayName" : "serviceaccount item get",
+    "description" : "get serviceaccount item",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.serviceaccount.item.post",
+    "displayName" : "serviceaccount item post",
+    "description" : "create serviceaccount item",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.serviceaccount.item.put",
+    "displayName" : "serviceaccount item put",
+    "description" : "update serviceaccount item",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.serviceaccount.item.delete",
+    "displayName" : "serviceaccount item delete",
+    "description" : "delete serviceaccount item",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.serviceaccount.read",
+    "displayName" : "serviceaccount read",
+    "description" : "read serviceaccount",
+    "subPermissions" : [ "directory.serviceaccount.collection.get", "directory.serviceaccount.item.get" ],
+    "visible" : false
+  }, {
+    "permissionName" : "directory.serviceaccount.write",
+    "displayName" : "serviceaccount write",
+    "description" : "write serviceaccount",
+    "subPermissions" : [ "directory.serviceaccount.read", "directory.serviceaccount.item.post", "directory.serviceaccount.item.put", "directory.serviceaccount.item.delete" ],
+    "visible" : false
+  }, {
+    "permissionName" : "directory.namingauthority.collection.get",
+    "displayName" : "namingauthority collection get",
+    "description" : "get namingauthority list",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.namingauthority.item.get",
+    "displayName" : "namingauthority item get",
+    "description" : "get namingauthority item",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.namingauthority.item.post",
+    "displayName" : "namingauthority item post",
+    "description" : "create namingauthority item",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.namingauthority.item.put",
+    "displayName" : "namingauthority item put",
+    "description" : "update namingauthority item",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.namingauthority.item.delete",
+    "displayName" : "namingauthority item delete",
+    "description" : "delete namingauthority item",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.namingauthority.read",
+    "displayName" : "namingauthority read",
+    "description" : "read namingauthority",
+    "subPermissions" : [ "directory.namingauthority.collection.get", "directory.namingauthority.item.get" ],
+    "visible" : false
+  }, {
+    "permissionName" : "directory.namingauthority.write",
+    "displayName" : "namingauthority write",
+    "description" : "write namingauthority",
+    "subPermissions" : [ "directory.namingauthority.read", "directory.namingauthority.item.post", "directory.namingauthority.item.put", "directory.namingauthority.item.delete" ],
+    "visible" : false
+  }, {
+    "permissionName" : "directory.api.get",
+    "displayName" : "api get",
+    "description" : "get api",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.api.post",
+    "displayName" : "api post",
+    "description" : "create api",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.api.put",
+    "displayName" : "api put",
+    "description" : "update api",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.api.delete",
+    "displayName" : "api delete",
+    "description" : "delete api",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.api.write",
+    "displayName" : "api write",
+    "description" : "write api",
+    "subPermissions" : [ "directory.api.get", "directory.api.post", "directory.api.put", "directory.api.delete" ],
+    "visible" : false
+  }, {
+    "permissionName" : "directory.externalapi.get",
+    "displayName" : "externalapi get",
+    "description" : "get externalapi",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.externalapi.post",
+    "displayName" : "externalapi post",
+    "description" : "create externalapi",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.externalapi.put",
+    "displayName" : "externalapi put",
+    "description" : "update externalapi",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.externalapi.delete",
+    "displayName" : "externalapi delete",
+    "description" : "delete externalapi",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.externalapi.write",
+    "displayName" : "externalapi write",
+    "description" : "write externalapi",
+    "subPermissions" : [ "directory.externalapi.get", "directory.externalapi.post", "directory.externalapi.put", "directory.externalapi.delete" ],
+    "visible" : false
+  }, {
+    "permissionName" : "directory.kiwt",
+    "displayName" : "kiwt permissions",
+    "description" : "kiwt permissions",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.settings",
+    "displayName" : "settings permissions",
+    "description" : "settings permissions",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.refdata",
+    "displayName" : "refdata permissions",
+    "description" : "refdata permissions",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.custprops",
+    "displayName" : "custprops",
+    "description" : "customproperties",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.tags",
+    "displayName" : "tags",
+    "description" : "tags",
+    "visible" : false
+  }, {
+    "permissionName" : "directory.all.read",
+    "displayName" : "read all directory",
+    "description" : "all read permissions on directory",
+    "subPermissions" : [ "directory.entry.read", "directory.symbol.read", "directory.service.read", "directory.serviceaccount.read", "directory.namingauthority.read", "directory.api.get", "directory.externalapi.get", "directory.kiwt", "directory.settings", "directory.refdata", "directory.custprops", "directory.tags" ],
+    "visible" : false
+  }, {
+    "permissionName" : "directory.all",
+    "displayName" : "all directory",
+    "description" : "all directory permissions",
+    "subPermissions" : [ "directory.all.read", "directory.entry.write", "directory.symbol.write", "directory.service.write", "directory.serviceaccount.write", "directory.namingauthority.write", "directory.api.write", "directory.externalapi.write" ]
+  } ],
+  "launchDescriptor" : {
+    "dockerImage" : "mod-directory:2.10.1",
+    "dockerPull" : false,
+    "env" : [ {
+      "name" : "JAVA_OPTIONS",
+      "value" : "-server -XX:+UseContainerSupport -XX:MaxRAMPercentage=55.0 -XX:+PrintFlagsFinal"
+    }, {
+      "name" : "DB_HOST",
+      "value" : "postgres"
+    }, {
+      "name" : "DB_PORT",
+      "value" : "5432"
+    }, {
+      "name" : "DB_USERNAME",
+      "value" : "folio_admin"
+    }, {
+      "name" : "DB_PASSWORD",
+      "value" : "folio_admin"
+    }, {
+      "name" : "DB_DATABASE",
+      "value" : "okapi_modules"
+    }, {
+      "name" : "DB_MAXPOOLSIZE",
+      "value" : "50"
+    }, {
+      "name" : "FOLIO_DIRECTORY_DEFUALTTTL",
+      "value" : "120000"
+    } ],
+    "dockerArgs" : {
+      "HostConfig" : {
+        "PortBindings" : {
+          "8080/tcp" : [ {
+            "HostPort" : "%p"
+          } ]
+        }
+      }
+    }
+  }
+}
