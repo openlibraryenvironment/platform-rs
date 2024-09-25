@@ -1,0 +1,111 @@
+{
+  "id": "folio_requests-9.0.3",
+  "name": "Requests manager",
+  "permissionSets": [
+    {
+      "permissionName": "module.requests.enabled",
+      "displayName": "UI: Requests module is enabled"
+    },
+    {
+      "permissionName": "ui-requests.moveRequest",
+      "displayName": "Requests: Move to new item, reorder queue",
+      "visible": true,
+      "subPermissions": [
+        "circulation.requests.item.move.post",
+        "circulation.rules.request-policy.get",
+        "ui-requests.reorderQueue"
+      ]
+    },
+    {
+      "permissionName": "ui-requests.reorderQueue",
+      "displayName": "Requests: Reorder queue",
+      "visible": true,
+      "subPermissions": [
+        "circulation.requests.queue.collection.get",
+        "circulation.requests.queue.reorder.collection.post",
+        "circulation.requests.allowed-service-points.get",
+        "circulation.rules.request-policy.get"
+      ]
+    },
+    {
+      "permissionName": "ui-requests.all",
+      "displayName": "Requests: All permissions",
+      "description": "All permissions for the Requests app",
+      "subPermissions": [
+        "ui-requests.view",
+        "ui-requests.create",
+        "ui-requests.edit",
+        "ui-requests.moveRequest",
+        "ui-requests.reorderQueue"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-requests.view",
+      "displayName": "Requests: View",
+      "subPermissions": [
+        "module.requests.enabled",
+        "circulation.loans.collection.get",
+        "circulation.requests.collection.get",
+        "circulation.requests.item.get",
+        "circulation-storage.cancellation-reasons.collection.get",
+        "circulation-storage.loans.collection.get",
+        "circulation-storage.loans.item.get",
+        "circulation-storage.requests.collection.get",
+        "circulation-storage.requests.item.get",
+        "users.collection.get",
+        "users.item.get",
+        "proxiesfor.collection.get",
+        "inventory-storage.service-points.collection.get",
+        "inventory-storage.service-points.item.get",
+        "addresstypes.collection.get",
+        "usergroups.collection.get",
+        "configuration.entries.collection.get",
+        "inventory.items.collection.get",
+        "inventory.items.item.get",
+        "inventory.instances.item.get",
+        "inventory.instances.collection.get",
+        "inventory-storage.items.collection.get",
+        "inventory-storage.items.item.get",
+        "inventory-storage.holdings.collection.get",
+        "inventory-storage.holdings.item.get",
+        "inventory-storage.instances.item.get",
+        "inventory-storage.instances.collection.get",
+        "manualblocks.collection.get",
+        "circulation.requests.hold-shelf-clearance-report.get"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-requests.create",
+      "displayName": "Requests: View, create",
+      "subPermissions": [
+        "ui-requests.view",
+        "automated-patron-blocks.collection.get",
+        "circulation.requests.item.post",
+        "circulation.requests.allowed-service-points.get",
+        "circulation-storage.requests.item.post",
+        "circulation-storage.request-preferences.collection.get",
+        "circulation.pick-slips.get",
+        "inventory-storage.locations.item.get"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-requests.edit",
+      "displayName": "Requests: View, edit, cancel",
+      "subPermissions": [
+        "ui-requests.view",
+        "circulation.requests.item.put",
+        "circulation.requests.allowed-service-points.get",
+        "circulation-storage.requests.collection.delete",
+        "circulation-storage.requests.item.put",
+        "circulation-storage.requests.item.delete",
+        "circulation-storage.request-preferences.collection.get",
+        "tags.collection.get",
+        "tags.item.post"
+      ],
+      "visible": true
+    }
+  ]
+}

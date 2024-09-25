@@ -1,0 +1,33 @@
+{
+  "id": "folio_circulation-log-4.0.1",
+  "name": "Description for circulation logs",
+  "permissionSets": [
+    {
+      "permissionName": "module.circulation-log.enabled",
+      "displayName": "UI: Circulation logs module is enabled",
+      "visible": false
+    },
+    {
+      "permissionName": "ui-circulation-log.log-event.view",
+      "displayName": "Circulation log: View",
+      "description": "",
+      "visible": true,
+      "subPermissions": [
+        "module.circulation-log.enabled",
+        "inventory-storage.service-points.collection.get",
+        "circulation-logs.collection.get",
+        "data-export.job.item.get"
+      ]
+    },
+    {
+      "permissionName": "ui-circulation-log.log-event.all",
+      "displayName": "Circulation log: All",
+      "description": "",
+      "visible": true,
+      "subPermissions": [
+        "ui-circulation-log.log-event.view",
+        "data-export.job.item.post"
+      ]
+    }
+  ]
+}
