@@ -30,7 +30,7 @@ The SLNP test environment uses custom branches for the following backend modules
 | mod-rs | mod-rs-2.17.0-SLNP.001 | ghcr.io/openlibraryenvironment/mod-rs:SLNP_INTEGRATION_2 |
 | mod-directory | mod-directory-2.10.1 | ghcr.io/openlibraryenvironment/mod-directory:main | 
 | mod-circulation | mod-circulation-24.1.2 | ghcr.io/indexdata/mod-circulation:circ-2141-deploy |
-| mod-circulation | mod-circulation-24.1.2 | ghcr.io/indexdata/mod-circulation-storage:circ-2141-deploy |
+| mod-circulation-storage | mod-circulation-storage-17.1.8 | ghcr.io/indexdata/mod-circulation-storage:circ-2141-deploy |
 
 Directory and RS descriptors are in the BackendModuleDescriptors directory
 
