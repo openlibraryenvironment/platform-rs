@@ -5,7 +5,7 @@ known as the "Cardinal Consortium" comprising three pairs of ReShare tenants.
 Each pair of tenants is capable of running different versions of the ReShare
 software. All tenants are able to borrow and lend to one another.
 
-## Cardinal Consortium Tenants (Updated 09/17/24)
+## Cardinal Consortium Tenants (Updated 09/26/24)
 
 ### East/West (Master)
 The east west tenants run the master branch of the ReShare modules.
@@ -40,7 +40,7 @@ The SLNP environment does not share a directory with ReShare and comprises two t
 * SLNP One UI: https://slnp-one.reshare-dev.indexdata.com/
 * SLNP Two UI: https://slnp-two.reshare-dev.indexdata.com/
 * CI:
-  * mod-rs: to deploy the latest version of mod-rs, manually run the deploy action from the SLNP_INTEGRATION_2 branch: https://github.com/openlibraryenvironment/mod-rs/actions/workflows/deploy.yml
+  * mod-rs: to deploy the latest version of mod-rs, manually run the deploy action from the master branch: https://github.com/openlibraryenvironment/mod-rs/actions/workflows/deploy.yml
   * mod-directory: to deploy the latest version of mod-directory, manually run the deploy action from the main branch: https://github.com/openlibraryenvironment/mod-directory/actions/workflows/deploy.yml
-  * UI modules: To deploy the latest of all UI modules, manually run the deploy action from the ci-slnp branch of platform-rs: https://github.com/openlibraryenvironment/platform-rs/actions/workflows/deploy.yml
+  * UI modules: To deploy the latest of all UI modules, manually run the deploy action from the master branch of platform-rs: https://github.com/openlibraryenvironment/platform-rs/actions/workflows/deploy.yml
 
