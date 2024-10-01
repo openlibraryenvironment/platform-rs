@@ -26,7 +26,6 @@ module.exports = {
     '@projectreshare/request': {},
     '@projectreshare/rs': {},
     '@projectreshare/supply': {},
-    "@projectreshare/update": {},
   },
   branding: {
     style: {},

@@ -2813,10 +2813,10 @@
   dependencies:
     "@projectreshare/rs" "^1.6.0"
 
-"@projectreshare/rs@1.19.0":
-  version "1.19.0"
-  resolved "https://registry.npmjs.org/@projectreshare/rs/-/rs-1.19.0.tgz#433d90b835c14caaa6fe063da868c51bd04734ac"
-  integrity sha512-cy19Em5K4c5kSvNP5dxjMbOTM/RTznSF2Gcp7dt5Qw5vXPKl1Qv7DHlVhT6+eDxbGmWaDFAXHYu5ZmElZRVDtw==
+"@projectreshare/rs@1.19.1", "@projectreshare/rs@^1.6.0":
+  version "1.19.1"
+  resolved "https://registry.npmjs.org/@projectreshare/rs/-/rs-1.19.1.tgz#648144c8f38a7ac618a494b9dec8d2e034de14ea"
+  integrity sha512-3JwcwHhNTTuuzPHoPGyGDqk9yKiq9WosRhtZh6nRUmUP9Pi0coIAQeOiXJfCzN4IX8ji2aNtEAxD+lT3utWd0w==
   dependencies:
     "@folio/stripes-data-transfer-components" "~6.0.0"
     "@folio/stripes-erm-components" "~9.0.0"
@@ -2840,34 +2840,7 @@
     rrule "2.6.4"
     xml-beautify "^1.2.3"
 
-"@projectreshare/rs@^1.6.0":
-  version "1.18.0"
-  resolved "https://registry.npmjs.org/@projectreshare/rs/-/rs-1.18.0.tgz#512ca6c6904b9a39a1e7d255a79e94841f12164b"
-  integrity sha512-96NsW4EdYczvibmK3ljdiXi+TuIKF9n6oA7F8SDSc25/NHdhcXDt97yXJT4VCgrZWnV6hF4ddunJ4w4H9Ht9mg==
-  dependencies:
-    "@folio/stripes-data-transfer-components" "~6.0.0"
-    "@folio/stripes-erm-components" "~9.0.0"
-    "@folio/stripes-template-editor" "^3.0.0"
-    "@k-int/stripes-kint-components" "^5.4.0"
-    "@projectreshare/stripes-reshare" "^1.12.0"
-    classnames "^2.2.6"
-    final-form "^4.2.0"
-    final-form-arrays "^3.0.2"
-    graphql-tag "^2.5.0"
-    html-to-react "^1.4.2"
-    json-stable-stringify "^1.0.1"
-    ky "^0.23.0"
-    lodash "^4.17.4"
-    omit-deep-lodash "^1.1.7"
-    prop-types "^15.6.0"
-    query-string "^8.1.0"
-    react-final-form "^6.3.0"
-    react-final-form-arrays "^3.1.1"
-    react-syntax-highlighter "^15.5.0"
-    rrule "2.6.4"
-    xml-beautify "^1.2.3"
-
-"@projectreshare/stripes-reshare@^1.0.0", "@projectreshare/stripes-reshare@^1.11.0", "@projectreshare/stripes-reshare@^1.12.0":
+"@projectreshare/stripes-reshare@^1.11.0", "@projectreshare/stripes-reshare@^1.12.0":
   version "1.13.1"
   resolved "https://registry.npmjs.org/@projectreshare/stripes-reshare/-/stripes-reshare-1.13.1.tgz#51abe6256056e9067833fc945850d21c04399621"
   integrity sha512-PnCgeVM6bTMxaj5iW5pwuf6ognnxyihEUJzn6mherDjhBpe6wqTL4/f+HSApMvn8VIbl3IO31PovELVl5nv84A==
@@ -2881,17 +2854,6 @@
   integrity sha512-+DuMmhUqZwBtsKKp3m1ErAFX6zq9O+jTupyZoFdfAZ4j/03ZNO9yq3At3VnYYzTnzx9cEkWQ8x6i9jJXQjuIKw==
   dependencies:
     "@projectreshare/rs" "^1.6.0"
-
-"@projectreshare/update@1.9.3":
-  version "1.9.3"
-  resolved "https://registry.npmjs.org/@projectreshare/update/-/update-1.9.3.tgz#4d12c759f146586d767d5540e190199b1741206b"
-  integrity sha512-Owy+He0ka/WqwLDJZNlV538XVdi3QbxHyUWr1lMXAzw73x3JLOokxke2K1LmGDT2UrBCFC2TKvlUq0hsA5dNxA==
-  dependencies:
-    "@projectreshare/stripes-reshare" "^1.0.0"
-    classnames "^2.2.6"
-    lodash "^4.17.15"
-    prop-types "^15.6.0"
-    react-final-form "^6.3.0"
 
 "@rehooks/local-storage@2.4.0", "@rehooks/local-storage@2.4.4", "@rehooks/local-storage@^2.4.4":
   version "2.4.4"
@@ -13384,9 +13346,9 @@ tiny-warning@^1.0.0:
   integrity sha512-lBN9zLN/oAf68o3zNXYrdCt1kP8WsiGW8Oo2ka41b2IM5JL/S1CTyX1rW0mb/zSuJun0ZUrDxx4sqvYS2FWzPA==
 
 tinyglobby@^0.2.0:
-  version "0.2.7"
-  resolved "https://registry.npmjs.org/tinyglobby/-/tinyglobby-0.2.7.tgz#36f583c166ac2d91f47c799d6e2e256fdcfb3a56"
-  integrity sha512-qFWYeNxBQxrOTRHvGjlRdBamy8JFqu6c0bwRru9leE+q8J72tLtlT0L3v+2T7fbLXN7FGzDNBhXkWiJqHUHD9g==
+  version "0.2.9"
+  resolved "https://registry.npmjs.org/tinyglobby/-/tinyglobby-0.2.9.tgz#6baddd1b0fe416403efb0dd40442c7d7c03c1c66"
+  integrity sha512-8or1+BGEdk1Zkkw2ii16qSS7uVrQJPre5A9o/XkWPATkk23FZh/15BKFxPnlTy6vkljZxLqYCzzBMj30ZrSvjw==
   dependencies:
     fdir "^6.4.0"
     picomatch "^4.0.2"
