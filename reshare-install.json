@@ -1,0 +1,10 @@
+[
+  {
+    "id": "mod-directory-2.10.1",
+    "action": "enable"
+  },
+  {
+    "id": "mod-rs-2.18.0",
+    "action": "enable"
+  }
+]

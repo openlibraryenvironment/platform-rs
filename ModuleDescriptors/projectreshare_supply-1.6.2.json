@@ -1,0 +1,48 @@
+{
+  "id": "projectreshare_supply-1.6.2",
+  "name": "Supply resources for ILL",
+  "permissionSets": [
+    {
+      "permissionName": "module.supply.enabled",
+      "displayName": "UI: supply module is enabled",
+      "subPermissions": [
+        "ui-supply.view"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-supply.view",
+      "displayName": "Supply: View requests",
+      "subPermissions": [
+        "rs.batch.get",
+        "rs.hostlmslocations.get",
+        "rs.patronrequests.generateBatch",
+        "rs.patronrequests.read",
+        "rs.refdata.get",
+        "rs.report.execute",
+        "rs.status.get",
+        "configuration.entries.collection.get",
+        "tags.collection.get"
+      ],
+      "visible": "false"
+    },
+    {
+      "permissionName": "ui-supply.create",
+      "displayName": "Supply: Create requests",
+      "subPermissions": [
+        "rs.patronrequests.item.post"
+      ],
+      "visible": "false"
+    },
+    {
+      "permissionName": "ui-supply.edit",
+      "displayName": "Supply: Edit requests",
+      "subPermissions": [
+        "rs.patronrequests.item.put",
+        "rs.patronrequests.item.performaction",
+        "rs.patronrequests.markBatchPrinted"
+      ],
+      "visible": "true"
+    }
+  ]
+}

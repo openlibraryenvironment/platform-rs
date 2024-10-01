@@ -1,0 +1,69 @@
+{
+  "id": "projectreshare_rs-1.19.1",
+  "name": "Resource Sharing",
+  "permissionSets": [
+    {
+      "permissionName": "module.rs.enabled",
+      "displayName": "UI: resource-sharing module is enabled",
+      "visible": true
+    },
+    {
+      "permissionName": "settings.rs.enabled",
+      "displayName": "Settings (resource-sharing): settings enabled",
+      "subPermissions": [
+        "settings.enabled"
+      ],
+      "visible": false
+    },
+    {
+      "permissionName": "ui-rs.settings.system",
+      "displayName": "Settings (resource-sharing): can view and edit system settings that do not have separate permissions",
+      "subPermissions": [
+        "settings.rs.enabled",
+        "rs.settings.get",
+        "rs.settings.put",
+        "rs.refdata.get",
+        "rs.refdata.put"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-rs.settings.notices",
+      "displayName": "Settings (resource-sharing): Can create, edit and remove notices and notice policies",
+      "subPermissions": [
+        "settings.rs.enabled",
+        "rs.noticePolicies",
+        "rs.refdata.get",
+        "rs.template.write"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-rs.settings.hostlmslocations",
+      "displayName": "Settings (resource-sharing): Can edit host LMS locations and patron profiles",
+      "subPermissions": [
+        "settings.rs.enabled",
+        "rs.directoryentry.get",
+        "rs.hostlmslocations.write",
+        "rs.hostlmspatronprofiles.write",
+        "rs.hostlmsitemloanpolicies.write",
+        "rs.shelvingLocations.write"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-rs.settings.pullslip-notifications",
+      "displayName": "Settings (resource-sharing): Can create, edit and remove pullslip notifications and templates",
+      "subPermissions": [
+        "settings.rs.enabled",
+        "rs.file.upload",
+        "rs.hostlmslocations.get",
+        "rs.refdata.get",
+        "rs.report.admin",
+        "rs.template.write",
+        "rs.timers"
+      ],
+      "visible": true
+    }
+  ]
+}
