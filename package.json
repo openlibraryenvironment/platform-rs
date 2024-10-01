@@ -31,7 +31,7 @@
     "@projectreshare/plugin-rs-siquery-vufind": "https://github.com/openlibraryenvironment/ui-plugin-rs-siquery-vufind.git#main",
     "@projectreshare/supply": "openlibraryenvironment/ui-supply#master",
     "@projectreshare/request": "openlibraryenvironment/ui-request#master",
-    "@projectreshare/rs": "https://github.com/openlibraryenvironment/ui-rs.git#SLNP_INTEGRATION_2",
+    "@projectreshare/rs": "https://github.com/openlibraryenvironment/ui-rs.git#master",
     "inflected": "^2.0.4",
     "moment": "~2.29.0",
     "react": "~18.0.0",
@@ -68,11 +68,10 @@
     "@folio/stripes-webpack": "5.0.3",
     "@projectreshare/directory": "https://github.com/openlibraryenvironment/ui-directory.git#master",
     "@projectreshare/plugin-rs-siquery-vufind": "https://github.com/openlibraryenvironment/ui-plugin-rs-siquery-vufind.git#main",
-    "@projectreshare/update": "https://github.com/openlibraryenvironment/ui-update.git#master",
     "@projectreshare/stripes-reshare": "https://github.com/openlibraryenvironment/stripes-reshare.git#master",
     "@projectreshare/supply": "openlibraryenvironment/ui-supply#master",
     "@projectreshare/request": "openlibraryenvironment/ui-request#master",
-    "@projectreshare/rs": "https://github.com/openlibraryenvironment/ui-rs.git#SLNP_INTEGRATION_2"
+    "@projectreshare/rs": "https://github.com/openlibraryenvironment/ui-rs.git#master"
   },
   "devDependencies": {
     "@folio/stripes-cli": "3.0.2",
