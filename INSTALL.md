@@ -28,17 +28,23 @@ curl -w '\n' -X POST -d@/tmp/pull.json http://localhost:9130/_/proxy/pull/module
 ```
 ReShare specific Module descriptors have been included in the MoudleDescriptors directory on this branch.
 
-## Backend modules
-mod-rs and mod-directory are ReShare's unique backend modules. Versions are described here and in reshare-install.json. Additionally,
-Forks of mod-circulation and mod-circulation-storage are currently required for SLNP integration. Use the version numbers and images in the
+## ReShare backend modules
+mod-rs and mod-directory are ReShare's unique backend modules. Versions are described here and in reshare-install.json.
 table below.
 
 | module name | version | image | 
 | --- | --- | --- |
 | mod-rs | mod-rs-2.18.0 | ghcr.io/openlibraryenvironment/mod-rs:2.18.0 |
 | mod-directory | mod-directory-2.11.0 | ghcr.io/openlibraryenvironment/mod-directory:2.11.0 | 
-| mod-circulation | mod-circulation-24.1.2 | ghcr.io/indexdata/mod-circulation:circ-2141-deploy |
-| mod-circulation-storage | mod-circulation-storage-17.1.8 | ghcr.io/indexdata/mod-circulation-storage:circ-2141-deploy |
+
+#FOLIO backend modules
+Currently, its necessary to run forks of mod-circulation and mod-circualtion stroage. Those modules are descrbed here and in folio-overrides.json. 
+Using a different version name in the module descriptor will help identify the running version of the circulation modules as a fork. Module Descriptors
+with modified IDs are available in the ModuleDescriptors directory for convenience. 
+| module name | version | image | 
+| --- | --- | --- |
+| mod-circulation | mod-circulation-24.1.2-RESHARE | ghcr.io/indexdata/mod-circulation:circ-2141-deploy |
+| mod-circulation-storage | mod-circulation-storage-17.1.8-RESHARE | ghcr.io/indexdata/mod-circulation-storage:circ-2141-deploy |
 
 ## NCIP integration with FOLIO
 Edge ncip is required on the FOLIO system that will be communicating with reshare. Use the following versions for ncip:
