@@ -109,7 +109,8 @@ The following feature flags should be set by sending them as a post request to /
 - The "key" field serves as the representation of the section.
 
 - To hide a specific record when the section is expanded, the "key" is structured as follows: section.key.feature_flag.
-  For example, in 
+  For example, in:
+```
   {
       "vocab": "featureFlag",
       "section": "featureFlags",
@@ -117,8 +118,8 @@ The following feature flags should be set by sending them as a post request to /
       "value": "false",
       "settingType": "String",
       "key": "state_action_config.combine_fill_and_ship.feature_flag"
-  },
-  the key is constructed to represent the hierarchy "section.key.feature_flag".
+  }
+```
 
 ```
 [
