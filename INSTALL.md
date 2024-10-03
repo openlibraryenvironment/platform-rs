@@ -44,7 +44,7 @@ with modified IDs are available in the ModuleDescriptors directory for convenien
 | module name | version | image | 
 | --- | --- | --- |
 | mod-circulation | mod-circulation-24.1.2-RESHARE | ghcr.io/indexdata/mod-circulation:circ-2141-deploy |
-| mod-circulation-storage | mod-circulation-storage-17.1.8-RESHARE | ghcr.io/indexdata/mod-circulation-storage:circ-2141-deploy |
+| mod-circulation-storage | mod-circulation-storage-17.1.9-RESHARE | ghcr.io/indexdata/mod-circulation-storage:circ-2141-deploy |
 
 ## NCIP integration with FOLIO
 Edge ncip is required on the FOLIO system that will be communicating with reshare. Use the following versions for ncip:
