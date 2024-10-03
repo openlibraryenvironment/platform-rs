@@ -68,6 +68,37 @@ The following confugrations are required to enable ncip to communicate with ReSh
 | responder_returnables_state_model     | SLNPResponder              |
 | responder_non_returnables_state_model | SLNPNonReturnableResponder |
 
+```
+{
+        "value": "SLNPNonReturnableRequester",
+        "section": "state_model",
+        "hidden": true,
+        "settingType": "String",
+        "key": "requester_non_returnables_state_model"
+    },
+    {
+        "value": "SLNPRequester",
+        "section": "state_model",
+        "hidden": true,
+        "settingType": "String",
+        "key": "requester_returnables_state_model"
+    },
+    {
+        "value": "SLNPNonReturnableResponder",
+        "section": "state_model",
+        "hidden": true,
+        "settingType": "String",
+        "key": "responder_non_returnables_state_model"
+    },
+    {
+        "value": "SLNPResponder",
+        "section": "state_model",
+        "hidden": true,
+        "settingType": "String",
+        "key": "responder_returnables_state_model"
+    }
+```
+
 ## Feature flags
 The following feature flags should be set by sending them as a post request to /rs/settings/appSettings:
 
