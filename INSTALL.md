@@ -59,25 +59,169 @@ The following confugrations are required to enable ncip to communicate with ReSh
 
 ...
 
+## SLNP state model settings
+
+| Setting                               | State model                |
+| ---                                   | ---                        |
+| requester_returnables_state_model     | SLNPRequester              |
+| requester_non_returnables_state_model | SLNPNonReturnableRequester |
+| responder_returnables_state_model     | SLNPResponder              |
+| responder_non_returnables_state_model | SLNPNonReturnableResponder |
+
 ## Feature flags
 The following feature flags should be set by sending them as a post request to /rs/settings/appSettings:
+
+### Note: 
+- The "value" field determines the visibility of the section.
+  - If "value" is set to null or true, the section is visible.
+  - If "value" is set to "false", the section is disabled.
+- The "key" field serves as the representation of the section.
+
 ```
-{
-  "vocab": "featureFlag",
-  "section": "featureFlags",
-  "hidden": true,
-  "value": "true",
-  "settingType": "String",
-  "key": "feature_flag_automatic_fees"
-}
-```
-```
-{
-  "vocab": "featureFlag",
-  "section": "featureFlags",
-  "hidden": true,
-  "value": "false",
-  "settingType": "String",
-  "key": "state_action_config.combine_fill_and_ship.feature_flag"
-}
+[
+    {
+        "vocab": "featureFlag",
+        "section": "featureFlags",
+        "hidden": true,
+        "value": "false",
+        "settingType": "String",
+        "key": "state_action_config.combine_fill_and_ship.feature_flag"
+    },
+    {
+        "vocab": "featureFlag",
+        "section": "featureFlags",
+        "hidden": true,
+        "value": "false",
+        "settingType": "String",
+        "key": "sharedIndex.feature_flag"
+    },
+    {
+        "vocab": "featureFlag",
+        "section": "featureFlags",
+        "hidden": true,
+        "value": "false",
+        "settingType": "String",
+        "key": "chat.feature_flag"
+    },
+    {
+        "vocab": "featureFlag",
+        "section": "featureFlags",
+        "hidden": true,
+        "value": "false",
+        "settingType": "String",
+        "key": "fileStorage.feature_flag"
+    },
+    {
+        "vocab": "featureFlag",
+        "section": "featureFlags",
+        "hidden": true,
+        "value": "false",
+        "settingType": "String",
+        "key": "voyagerSettings.feature_flag"
+    },
+    {
+        "vocab": "featureFlag",
+        "section": "featureFlags",
+        "hidden": true,
+        "value": "false",
+        "settingType": "String",
+        "key": "patronStore.feature_flag"
+    },
+    {
+        "vocab": "featureFlag",
+        "section": "featureFlags",
+        "hidden": true,
+        "value": "false",
+        "settingType": "String",
+        "key": "wmsSettings.feature_flag"
+    },
+    {
+        "vocab": "featureFlag",
+        "section": "featureFlags",
+        "hidden": true,
+        "value": "false",
+        "settingType": "String",
+        "key": "Routing.feature_flag"
+    },
+    {
+        "vocab": "featureFlag",
+        "section": "featureFlags",
+        "hidden": true,
+        "value": "false",
+        "settingType": "String",
+        "key": "z3950.feature_flag"
+    },
+    {
+        "vocab": "featureFlag",
+        "section": "featureFlags",
+        "hidden": true,
+        "value": "false",
+        "settingType": "String",
+        "key": "hostLMSItemLoanPolicies.feature_flag"
+    },
+    {
+        "vocab": "featureFlag",
+        "section": "featureFlags",
+        "hidden": true,
+        "value": "false",
+        "settingType": "String",
+        "key": "hostLMSLocations.feature_flag"
+    },
+    {
+        "vocab": "featureFlag",
+        "section": "featureFlags",
+        "hidden": true,
+        "value": "false",
+        "settingType": "String",
+        "key": "hostLMSPatronProfiles.feature_flag"
+    },
+    {
+        "vocab": "featureFlag",
+        "section": "featureFlags",
+        "hidden": true,
+        "value": "false",
+        "settingType": "String",
+        "key": "noticePolicies.feature_flag"
+    },
+    {
+        "vocab": "featureFlag",
+        "section": "featureFlags",
+        "hidden": true,
+        "value": "false",
+        "settingType": "String",
+        "key": "automaticFees.feature_flag"
+    },
+    {
+        "vocab": "featureFlag",
+        "section": "featureFlags",
+        "hidden": true,
+        "value": "false",
+        "settingType": "String",
+        "key": "pullslipTemplates.feature_flag"
+    },
+    {
+        "vocab": "featureFlag",
+        "section": "featureFlags",
+        "hidden": true,
+        "value": "false",
+        "settingType": "String",
+        "key": "hostLMSShelvingLocations.feature_flag"
+    },
+    {
+        "vocab": "featureFlag",
+        "section": "featureFlags",
+        "hidden": true,
+        "value": "false",
+        "settingType": "String",
+        "key": "notices.feature_flag"
+    },
+    {
+        "vocab": "featureFlag",
+        "section": "featureFlags",
+        "hidden": true,
+        "value": "false",
+        "settingType": "String",
+        "key": "pullslipNotifications.feature_flag"
+    }
+]
 ```
