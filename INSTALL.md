@@ -152,6 +152,66 @@ State model settings should be configured by posting to "/rs/stateModel/import".
     }
 ```
 
+## Auto Responder Settings
+
+The Auto Responder Settings section allows administrators to configure automated responses for different types of document requests. Below are the detailed options available within this section:
+
+### Auto Responder Requester Non-Returnable
+
+This setting manages auto responder actions specific to the requester's side. Depending on the selected option, the request will transition as follows:
+
+- **On: Available**
+  - **Status Transition**: `SLNP_REQUESTER_DOCUMENT_AVAILABLE`
+  - **Description**: When enabled, this option triggers a status change indicating the requested document is available for the requester.
+
+- **On: Supplied**
+  - **Status Transition**: `SLNP_REQUESTER_DOCUMENT_SUPPLIED`
+  - **Description**: When this option is active, it signifies that the requested document has been fully supplied.
+
+### Auto Responder Status
+
+This setting is pertinent to loan-type requests. It controls the messaging to the requester based on the current configuration:
+
+- **On: Will Supply and Cannot Supply**
+  - **Behavior**: Sends a "Loaned" message to the requester if this option is enabled. Additionally, upon sending the "Loaned" message, the request status transitions to `SLNP_REQUESTER_SHIPPED`. Note that if other setting values are activated, this response is suppressed.
+
+### Copy Auto Responder Status
+
+This option is used for copy-type requests and influences the sending of loan-related messages:
+
+- **On: Loaned and Cannot Supply**
+  - **Behavior**: Dispatches a "Loaned" message to the requester under conditions defined by this setting. As with the previous setting, other enabled settings may prevent this auto response.
+
+## Custom ISO18626 Settings
+
+The Custom ISO18626 Settings section allows for the customization of ISO 18626 interoperability settings through specific options and identifiers. Follow the instructions below to properly configure these settings.
+
+## ISO18626 Custom Options
+
+This setting includes a dropdown menu that allows you to select specific custom identifiers for configuring ISO 18626 settings.
+
+- **Dropdown Option: Custom Identifiers**
+  - **Functionality**: Selecting "Custom Identifiers" from the dropdown enables further customization options within this section.
+
+### Adding Custom ISO18626 Settings
+
+When the "Custom Identifiers" option is selected, you will be prompted to add specific custom settings. Follow the steps below:
+
+1. **Set Value**: Enter `ZFL` as the value for the custom ISO 18626 setting.
+2. **Save**: Ensure to save your settings after entering the value to apply the changes.
+
+## State/Action Configuration
+
+The State/Action Configuration section is designed to streamline specific actions within the system, particularly for SLNP Returnable Requester. This section details the available settings and their impact on the workflow.
+
+## Combine Requester Actions
+
+This setting pertains to the SLNP Returnable Requester category and offers the ability to unify certain actions, enhancing process efficiency.
+
+- **Setting Name**: Combine Requester Actions 'Mark Returned by Patron' and 'Mark Return Shipped'
+  - **Configuration Option**: 
+    - **Yes**: When set to "Yes," the actions 'Mark Returned by Patron' and 'Mark Return Shipped' are combined into a single action. This effectively reduces the steps needed in processing, thereby improving workflow efficiency.
+
 ## Feature flags
 The following feature flags should be set by sending them as a post request to /rs/settings/appSettings:
 
