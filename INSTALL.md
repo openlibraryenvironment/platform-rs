@@ -34,7 +34,7 @@ table below.
 
 | module name | version | image | 
 | --- | --- | --- |
-| mod-rs | mod-rs-2.18.0 | ghcr.io/openlibraryenvironment/mod-rs:2.18.0 |
+| mod-rs | mod-rs-2.18.1 | ghcr.io/openlibraryenvironment/mod-rs:2.18.1 |
 | mod-directory | mod-directory-2.11.0 | ghcr.io/openlibraryenvironment/mod-directory:2.11.0 | 
 
 #FOLIO backend modules

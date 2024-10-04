@@ -1,6 +1,5 @@
 module.exports = {
-  //okapi: { 'url':'http://localhost:9130', 'tenant':'diku' },
-  okapi: { 'url':'https://east-okapi.folio-dev.indexdata.com', 'tenant':'reshare_east' },
+  okapi: { 'url':'https://slnp-4-okapi.reshare-dev.indexdata.com', 'tenant':'slnptest_four' },
   config: {
     showHomeLink: true,
     welcomeMessage: 'ui-rs.front.welcome',
@@ -19,7 +18,13 @@ module.exports = {
   },
   modules: {
     '@folio/users': {},
+    '@folio/checkin' : {},
+    '@folio/checkout' : {},
+    '@folio/circulation' : {},
+    '@folio/circulation-log' : {},
+    '@folio/requests': {},
     '@folio/developer': {},
+    '@folio/inventory': {},
     "@folio/tenant-settings": {},
     '@projectreshare/directory': {},
     "@projectreshare/plugin-rs-siquery-vufind": {},
