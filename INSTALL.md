@@ -60,6 +60,7 @@ The following confugrations are required to enable ncip to communicate with ReSh
 ...
 
 ## SLNP state model settings
+State model settings should be configured by posting to "/rs/stateModel/import".
 
 | Setting                               | State model                |
 | ---                                   | ---                        |
