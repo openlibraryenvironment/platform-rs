@@ -1,6 +1,18 @@
 # Installation instructions for ReShare 1.18
 
 ## Front end
+
+The SLNP gateway is installed via a helm [chart](https://github.com/indexdata/edge-slnp/pkgs/container/charts%2Fedge-slnp) and configured via ENV variables.
+
+The relevant config is:
+
+```
+ILL_ADDR: <address of the ReShare ISO18626 endpoint, e.g http://mod-rs-latest:8080/rs/externalApi/iso18626>
+OKAPI_TENANT: <name of the ReShare tenant>
+SLNP_ADDR: <ZFL address>
+```
+
+## Front end
 Front-end modules are described in package.json. Modules specific to reshare are scoped with the "projectreshare" scope and can be run alongside a FOLIO platform.
 
 Install dependencies:
