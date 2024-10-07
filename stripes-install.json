@@ -5,7 +5,7 @@
 {"action":"enable","id":"folio_circulation-log-4.0.1"},
 {"action":"enable","id":"folio_developer-8.0.1"},
 {"action":"enable","id":"folio_inventory-10.0.15"},
-{"action":"enable","id":"projectreshare_directory-1.13.0"},
+{"action":"enable","id":"projectreshare_directory-1.13.1"},
 {"action":"enable","id":"projectreshare_plugin-rs-siquery-vufind-1.2.0"},
 {"action":"enable","id":"projectreshare_request-1.6.2"},
 {"action":"enable","id":"projectreshare_rs-1.19.2"},
