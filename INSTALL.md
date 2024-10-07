@@ -74,29 +74,21 @@ The following configuration is required to enable ReShare to communicate with FO
 #### Institution user for NCIP connection
 You need to create an institutional user that will be used to send requests from ReShare to the FOLIO NCIP module. This user must have these permissions:
 ```
-ui-users.settings.owners
-ui-checkout.viewFeeFines
+circulation-storage.cancellation-reasons.collection.get
 circulation-storage.circulation-rules.get
-ui-users.manual_charge
 inventory-storage.items.collection.get
-ui-inventory.all-permissions.TEMPORARY
 manualblocks.collection.get
 ncip.all
-ui-notes.item.create
+note.types.collection.get
 automated-patron-blocks.collection.get
-patron-pin.validate
-ui-requests.edit
-login-saml.configuration.put
-login-saml.configuration.get
-ui-circulation.settings.cancellation-reasons
 ui-circulation.settings.lost-item-fees-policies
 ui-circulation.settings.overdue-fines-policies
-ui-circulation.settings.staff-slips
-ui-developer.settings.configuration
-ui-notes.settings.edit
-ui-notes.settings.view
-ui-users.settings.owners.all
-circulation.loans.add-info.post
+inventory.instances.collection.get
+inventory.items.collection.get
+circulation.requests.collection.get
+inventory.items.item.put
+inventory.items.item.delete
+inventory.instances.item.delete
 ```
 
 #### Connection settings
@@ -391,6 +383,14 @@ The following feature flags should be set by sending them as a post request to /
         "value": "false",
         "settingType": "String",
         "key": "pullslipNotifications.feature_flag"
+    },
+    {
+        "vocab": "featureFlag",
+        "section": "featureFlags",
+        "hidden": true,
+        "value": "true",
+        "settingType": "String",
+        "key": "relax-manged-edit.feature_flag"
     }
 ]
 ```
