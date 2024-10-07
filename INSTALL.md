@@ -33,8 +33,8 @@ mod-rs and mod-directory are ReShare's unique backend modules. 1.18 release-spec
 
 | module name | version | image | 
 | --- | --- | --- |
-| mod-rs | mod-rs-<version> | ghcr.io/openlibraryenvironment/mod-rs:<version> |
-| mod-directory | mod-directory-<version> | ghcr.io/openlibraryenvironment/mod-directory:<version> | 
+| mod-rs | mod-rs-{version} | ghcr.io/openlibraryenvironment/mod-rs:{version} |
+| mod-directory | mod-directory-{version>} | ghcr.io/openlibraryenvironment/mod-directory:{version} | 
 
 ## FOLIO backend modules
 Currently, it's necessary to run forks of mod-circulation and mod-circulation storage to include extensions required for the ZFL integration. 1.18 release-specific versions are described in [folio-overrides.json](folio-overrides.json). 
@@ -43,8 +43,8 @@ with modified IDs are available in the [ModuleDescriptors](ModuleDescriptors/) d
 
 | module name             | version                                | image                                                      | 
 |-------------------------|----------------------------------------|------------------------------------------------------------|
-| mod-circulation         | mod-circulation-<version>-RESHARE         | ghcr.io/indexdata/mod-circulation:circ-2141-deploy         |
-| mod-circulation-storage | mod-circulation-storage-<version>-RESHARE | ghcr.io/indexdata/mod-circulation-storage:circ-2141-deploy |
+| mod-circulation         | mod-circulation-{version}-RESHARE         | ghcr.io/indexdata/mod-circulation:circ-2141-deploy         |
+| mod-circulation-storage | mod-circulation-storage-{version}-RESHARE | ghcr.io/indexdata/mod-circulation-storage:circ-2141-deploy |
 
 ## NCIP integration with FOLIO
 Edge ncip is required on the FOLIO system that will be communicating with reshare. Use the following versions for ncip:
