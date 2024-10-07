@@ -1,4 +1,4 @@
-# Installation instructions for ReShare 1.18 RC1
+# Installation instructions for ReShare 1.18
 
 ## Front end
 Front end modules are described in package.json. Modules specific to reshare are scoped wiht the "projectreshare" scope, and can be run alongside a FOLIO platform.
