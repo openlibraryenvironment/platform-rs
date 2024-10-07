@@ -34,11 +34,11 @@ mod-rs and mod-directory are ReShare's unique backend modules. 1.18 release-spec
 | module name | version | image | 
 | --- | --- | --- |
 | mod-rs | mod-rs-{version} | ghcr.io/openlibraryenvironment/mod-rs:{version} |
-| mod-directory | mod-directory-{version>} | ghcr.io/openlibraryenvironment/mod-directory:{version} | 
+| mod-directory | mod-directory-{version} | ghcr.io/openlibraryenvironment/mod-directory:{version} | 
 
 ## FOLIO backend modules
-Currently, it's necessary to run forks of mod-circulation and mod-circulation storage to include extensions required for the ZFL integration. 1.18 release-specific versions are described in [folio-overrides.json](folio-overrides.json). 
-The module descriptors use a `-RESHARE` designator in module ID to help identify the versions at runtime. These module descriptors
+Currently, it's necessary to run custom versions of mod-circulation and mod-circulation storage to include extensions required for the ZFL integration. 1.18 release-specific versions are described in [folio-overrides.json](folio-overrides.json). 
+The module descriptors use a `-RESHARE` designator in module ID to help identify these custom versions at runtime. These module descriptors
 with modified IDs are available in the [ModuleDescriptors](ModuleDescriptors/) directory for convenience. 
 
 | module name             | version                                | image                                                      | 
