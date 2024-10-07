@@ -228,7 +228,7 @@ The following feature flags should be set by sending them as a post request to /
       "vocab": "featureFlag",
       "section": "featureFlags",
       "hidden": true,
-      "value": "false",
+      "value": "true",
       "settingType": "String",
       "key": "state_action_config.combine_fill_and_ship.feature_flag"
   }
@@ -344,7 +344,7 @@ The following feature flags should be set by sending them as a post request to /
         "vocab": "featureFlag",
         "section": "featureFlags",
         "hidden": true,
-        "value": "false",
+        "value": "true",
         "settingType": "String",
         "key": "automaticFees.feature_flag"
     },
