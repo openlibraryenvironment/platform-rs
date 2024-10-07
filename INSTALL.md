@@ -89,6 +89,9 @@ circulation.requests.collection.get
 inventory.items.item.put
 inventory.items.item.delete
 inventory.instances.item.delete
+owners.collection.get
+feefines.collection.get
+accounts.item.post
 ```
 
 #### Connection settings
@@ -114,6 +117,18 @@ Some NCIP settings are fetched from supplying directory entries. These settings 
 * LMS location code -> Service point code which is used in NCIP calls
 * Institutional patron ID -> User barcode used to check out items on the supplier side
 * FOLIO location filter -> It is the Institution/Campus/Library/Location code used to filter items when creating item requests on the supplier side
+
+#### NCIP-related fee configuration for automatic fees 
+There is option to add automatic fees to requester in Settings -> Resource Sharing -> Automatic fees.
+
+If that option is enabled then you need to also add predefined fees. It can be done
+by adding fee owner `Reshare-ILL` in Settings -> Fee/fine: Owners 
+
+When Fee Owner is added, you need to add fee for each patron group type: 
+* staff
+* faculty
+* undergrad
+* graduate
 
 ## SLNP state model settings
 State model settings should be configured by posting to "/rs/stateModel/import".
