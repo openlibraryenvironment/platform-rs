@@ -3056,15 +3056,6 @@
     react-final-form-arrays "^3.1.1"
     uuid "^7.0.3"
 
-"@projectreshare/plugin-rs-siquery-vufind@1.2.0":
-  version "1.2.0"
-  resolved "https://registry.npmjs.org/@projectreshare/plugin-rs-siquery-vufind/-/plugin-rs-siquery-vufind-1.2.0.tgz#feebf8f73b7de921185d397befbf928561fe124a"
-  integrity sha512-j+ftoILbp53wt1DDbSZ08C3TJPDHMo84CkEojLyJVVh4nMhZYMghBpZSVRdLoIu6aX/x9LhU7jE5O0D4c6hoqg==
-  dependencies:
-    "@projectreshare/stripes-reshare" "^1.11.0"
-    ky "^0.23.0"
-    query-string "^8.1.0"
-
 "@projectreshare/request@1.6.2":
   version "1.6.2"
   resolved "https://registry.npmjs.org/@projectreshare/request/-/request-1.6.2.tgz#baef5a6dd48397fdbc2b667fb8f9d935a71d11a4"
@@ -3072,16 +3063,16 @@
   dependencies:
     "@projectreshare/rs" "^1.6.0"
 
-"@projectreshare/rs@1.19.2", "@projectreshare/rs@^1.6.0":
-  version "1.19.2"
-  resolved "https://registry.npmjs.org/@projectreshare/rs/-/rs-1.19.2.tgz#393369fa404409078e89045e77214838feb77fd7"
-  integrity sha512-gvlNBonCdS5OdRg2hYq2eVgtjbJ+BUpFlwTdDQUpDhh0oSk3tzj0elRMOETBiykRVLygt9D4haskw3nYuqM4rQ==
+"@projectreshare/rs@1.19.3", "@projectreshare/rs@^1.6.0":
+  version "1.19.3"
+  resolved "https://registry.npmjs.org/@projectreshare/rs/-/rs-1.19.3.tgz#d8ac3f7520ccb4eeb20c12eb912ebaa6800797be"
+  integrity sha512-oviJCATMAwV2faqp9/P/6d0Fc3D8zgTLgb5yTdT6TcU9LJ75X0iMe4VERDgRCVq7K6H8KocBabeehc3iLpfZFQ==
   dependencies:
     "@folio/stripes-data-transfer-components" "~6.0.0"
     "@folio/stripes-erm-components" "~9.0.0"
     "@folio/stripes-template-editor" "^3.0.0"
     "@k-int/stripes-kint-components" "^5.4.0"
-    "@projectreshare/stripes-reshare" "^1.12.0"
+    "@projectreshare/stripes-reshare" "^2.0.0"
     classnames "^2.2.6"
     final-form "^4.2.0"
     final-form-arrays "^3.0.2"
@@ -3099,10 +3090,10 @@
     rrule "2.6.4"
     xml-beautify "^1.2.3"
 
-"@projectreshare/stripes-reshare@^1.11.0", "@projectreshare/stripes-reshare@^1.12.0":
-  version "1.13.1"
-  resolved "https://registry.npmjs.org/@projectreshare/stripes-reshare/-/stripes-reshare-1.13.1.tgz#51abe6256056e9067833fc945850d21c04399621"
-  integrity sha512-PnCgeVM6bTMxaj5iW5pwuf6ognnxyihEUJzn6mherDjhBpe6wqTL4/f+HSApMvn8VIbl3IO31PovELVl5nv84A==
+"@projectreshare/stripes-reshare@2.0.0", "@projectreshare/stripes-reshare@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/@projectreshare/stripes-reshare/-/stripes-reshare-2.0.0.tgz#95421fde765189010e646dae529d0b5ba324847c"
+  integrity sha512-qwo+KyMUktYLoOvErIn82RIG5hocwcIli62DNtJ2vCWhZlw4olcE7enuEBkoLxKgIO3v8x96l7yowVWXWi00jg==
   dependencies:
     lodash "^4.17.4"
     prop-types "^15.6.0"

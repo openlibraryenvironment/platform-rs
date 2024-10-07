@@ -28,9 +28,8 @@
     "@folio/tenant-settings": "8.0.0",
     "@folio/users": "10.0.5",
     "@projectreshare/directory": "1.13.1",
-    "@projectreshare/plugin-rs-siquery-vufind": "1.2.0",
     "@projectreshare/request": "1.6.2",
-    "@projectreshare/rs": "1.19.2",
+    "@projectreshare/rs": "1.19.3",
     "@projectreshare/supply": "1.6.2",
     "moment": "~2.29.0",
     "react": "~18.2.0",
@@ -50,7 +49,8 @@
     "minimist": "^1.2.3",
     "moment": "~2.29.0",
     "redux-form": "^8.0.0",
-    "@folio/inventory": "10.0.15"
+    "@folio/inventory": "10.0.15",
+    "@projectreshare/stripes-reshare": "2.0.0"
   },
   "devDependencies": {
     "@folio/stripes-cli": "~3.1.0",

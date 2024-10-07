@@ -8,7 +8,7 @@
 {"action":"enable","id":"projectreshare_directory-1.13.1"},
 {"action":"enable","id":"projectreshare_plugin-rs-siquery-vufind-1.2.0"},
 {"action":"enable","id":"projectreshare_request-1.6.2"},
-{"action":"enable","id":"projectreshare_rs-1.19.2"},
+{"action":"enable","id":"projectreshare_rs-1.19.3"},
 {"action":"enable","id":"projectreshare_supply-1.6.2"},
 {"action":"enable","id":"folio_requests-9.0.3"},
 {"action":"enable","id":"folio_stripes-core-10.0.4"},

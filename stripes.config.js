@@ -1,5 +1,5 @@
 module.exports = {
-  okapi: { 'url':'https://slnp-4-okapi.reshare-dev.indexdata.com', 'tenant':'slnptest_four' },
+  okapi: { 'url':'https://slnp-3-okapi.reshare-dev.indexdata.com', 'tenant':'slnptest_three' },
   config: {
     showHomeLink: true,
     welcomeMessage: 'ui-rs.front.welcome',
@@ -27,7 +27,6 @@ module.exports = {
     '@folio/inventory': {},
     "@folio/tenant-settings": {},
     '@projectreshare/directory': {},
-    "@projectreshare/plugin-rs-siquery-vufind": {},
     '@projectreshare/request': {},
     '@projectreshare/rs': {},
     '@projectreshare/supply': {},
