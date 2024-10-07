@@ -1,7 +1,7 @@
 # Installation instructions for ReShare 1.18
 
 ## Front end
-Front end modules are described in package.json. Modules specific to reshare are scoped wiht the "projectreshare" scope, and can be run alongside a FOLIO platform.
+Front-end modules are described in package.json. Modules specific to reshare are scoped with the "projectreshare" scope and can be run alongside a FOLIO platform.
 
 Install dependencies:
 ```
@@ -26,26 +26,25 @@ END
 
 curl -w '\n' -X POST -d@/tmp/pull.json http://localhost:9130/_/proxy/pull/modules
 ```
-ReShare specific Module descriptors have been included in the MoudleDescriptors directory on this branch.
+ReShare-specific Module descriptors have been included in the [ModuleDescriptors](ModuleDescriptors/) directory on this branch.
 
 ## ReShare backend modules
-mod-rs and mod-directory are ReShare's unique backend modules. Versions are described here and in reshare-install.json.
-table below.
+mod-rs and mod-directory are ReShare's unique backend modules. 1.18 release-specific versions are described in [reshare-install.json](reshare-install.json).
 
 | module name | version | image | 
 | --- | --- | --- |
-| mod-rs | mod-rs-2.18.1 | ghcr.io/openlibraryenvironment/mod-rs:2.18.1 |
-| mod-directory | mod-directory-2.11.0 | ghcr.io/openlibraryenvironment/mod-directory:2.11.0 | 
+| mod-rs | mod-rs-<version> | ghcr.io/openlibraryenvironment/mod-rs:<version> |
+| mod-directory | mod-directory-<version> | ghcr.io/openlibraryenvironment/mod-directory:<version> | 
 
-#FOLIO backend modules
-Currently, its necessary to run forks of mod-circulation and mod-circualtion stroage. Those modules are descrbed here and in folio-overrides.json. 
-Using a different version name in the module descriptor will help identify the running version of the circulation modules as a fork. Module Descriptors
-with modified IDs are available in the ModuleDescriptors directory for convenience. 
+## FOLIO backend modules
+Currently, it's necessary to run forks of mod-circulation and mod-circulation storage to include extensions required for the ZFL integration. 1.18 release-specific versions are described in [folio-overrides.json](folio-overrides.json). 
+The module descriptors use a `-RESHARE` designator in module ID to help identify the versions at runtime. These module descriptors
+with modified IDs are available in the [ModuleDescriptors](ModuleDescriptors/) directory for convenience. 
 
 | module name             | version                                | image                                                      | 
 |-------------------------|----------------------------------------|------------------------------------------------------------|
-| mod-circulation         | mod-circulation-24.1.2-RESHARE         | ghcr.io/indexdata/mod-circulation:circ-2141-deploy         |
-| mod-circulation-storage | mod-circulation-storage-17.1.9-RESHARE | ghcr.io/indexdata/mod-circulation-storage:circ-2141-deploy |
+| mod-circulation         | mod-circulation-<version>-RESHARE         | ghcr.io/indexdata/mod-circulation:circ-2141-deploy         |
+| mod-circulation-storage | mod-circulation-storage-<version>-RESHARE | ghcr.io/indexdata/mod-circulation-storage:circ-2141-deploy |
 
 ## NCIP integration with FOLIO
 Edge ncip is required on the FOLIO system that will be communicating with reshare. Use the following versions for ncip:
@@ -53,14 +52,15 @@ Edge ncip is required on the FOLIO system that will be communicating with reshar
 | module name   | version         | image                    | 
 |---------------|-----------------|--------------------------|
 | edge-ncip     | edge-ncip-1.9.2 | folioorg/edge-ncip:1.9.2 |
-| mod-ncip      | mod-ncip-1.15.1 | folioorg/mod-ncip:1.15.1 | 
+| mod-ncip      | mod-ncip-1.15.1 | folioorg/mod-ncip:1.15.1 |
+
 General configuration instructions for NCIP are in the [edge-ncip](https://github.com/folio-org/edge-ncip) repository and specific tenant configuration instructions are in the [mod-ncip](https://github.com/folio-org/mod-ncip).
 
-### ReShare specific ncip configurations
-The following confugrations are required to enable ncip to communicate with ReShare.
+### ReShare specific NCIP configuration
+The following configuration is required to enable ReShare to communicate with FOLIO via NCIP.
 
-#### Technical user for connection
-You need to create technical user which will be used to send request to NCIP module. This user must have these rights:
+#### Institution user for NCIP connection
+You need to create an institutional user that will be used to send requests from ReShare to the FOLIO NCIP module. This user must have these permissions:
 ```
 ui-users.settings.owners
 ui-checkout.viewFeeFines
@@ -89,7 +89,7 @@ circulation.loans.add-info.post
 
 #### Connection settings
 You need to specify connection settings.
-That can be done in Settings -> Resource Sharing -> Local NCIP settings: 
+This can be done in Settings -> Resource Sharing -> Local NCIP settings: 
 * NCIP from agency -> Insert agency directory slug 
 * NCIP to agency -> Insert agency directory slug
 * NCIP server address -> Insert NCIP server address with API key. It should be in format `{host}/ncip/{api_key}`
@@ -100,16 +100,16 @@ That can be done in Settings -> Resource Sharing -> Host LMS integration setting
 * Host LMS integration -> You need to select `FOLIO` as integration 
 * Then you can change settings for each method to `NCIP`
 
-#### Other NCIP related settings 
-There are other NCIP related setting which can be adjusted to specific needs. 
-These can be found in section Settings -> Resource Sharing. 
+#### Other NCIP-related settings 
+There are other NCIP-related settings that can be adjusted to specific needs. 
+These can be found in the section Settings -> Resource Sharing. 
 You should go over them if you need some specific configuration.
 
-#### NCIP related directory settings
-Some NCIP settings are fetch from supplying directory entry. These settings are:
-* LMS location code -> Service point slug which is used in NCIP calls
-* Institutional patron ID -> User barcode used to check out items on supplier side
-* FOLIO location filter -> It is Institution/Campus/Library/Location code used to filter items when creating item request on supplier side
+#### NCIP-related directory settings
+Some NCIP settings are fetched from supplying directory entries. These settings are:
+* LMS location code -> Service point code which is used in NCIP calls
+* Institutional patron ID -> User barcode used to check out items on the supplier side
+* FOLIO location filter -> It is the Institution/Campus/Library/Location code used to filter items when creating item requests on the supplier side
 
 ## SLNP state model settings
 State model settings should be configured by posting to "/rs/stateModel/import".
