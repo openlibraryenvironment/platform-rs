@@ -3,9 +3,9 @@
 
 
 "@actions/core@^1.10.0":
-  version "1.11.0"
-  resolved "https://registry.npmjs.org/@actions/core/-/core-1.11.0.tgz#fdbe19cfa12c6024ab75990b11c1192628864201"
-  integrity sha512-I21jQUzEjbZolw3jFZ/0iHGCb+rePCww9MaA0SbVFae4FpBTQWP1GIvr/m5Y6GVaxrDz7p3RhBtpBzwkA3rPSA==
+  version "1.11.1"
+  resolved "https://registry.npmjs.org/@actions/core/-/core-1.11.1.tgz#ae683aac5112438021588030efb53b1adb86f172"
+  integrity sha512-hXJCSrkwfA46Vd9Z3q4cpEpHB1rL5NG04+/rbqW9d3+CSvtB1tYe8UTpAlixa1vj0m/ULglfEK2UKxMGxCxv5A==
   dependencies:
     "@actions/exec" "^1.1.1"
     "@actions/http-client" "^2.0.1"
@@ -3037,10 +3037,10 @@
   resolved "https://registry.npmjs.org/@popperjs/core/-/core-2.11.8.tgz#6b79032e760a0899cd4204710beede972a3a185f"
   integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
 
-"@projectreshare/directory@1.13.0":
-  version "1.13.0"
-  resolved "https://registry.npmjs.org/@projectreshare/directory/-/directory-1.13.0.tgz#0dc23b2b068d2d4598bc66c6950b4a3ae83f479b"
-  integrity sha512-PxlD+6na+NTBH2/ZC2EZH1oTcjZfmi5ba6Lr+eiGO2cALsdJ0FDEu6tJUkTXcZ3dlVWurYlJXdAUlwRG4lCP9w==
+"@projectreshare/directory@1.13.1":
+  version "1.13.1"
+  resolved "https://registry.npmjs.org/@projectreshare/directory/-/directory-1.13.1.tgz#aca763c26aa4c81c2063211d283821aca6ec8998"
+  integrity sha512-4d4ftuSYwIJSg09FQkbrSLT8gTnGraF26zxN6mQwJPuBvGEnj2UywJbVdtCsNGmNTbG9oRPNbIkD/094CE12dw==
   dependencies:
     "@folio/stripes-erm-components" "^6.1.0"
     "@k-int/address-plugin-british-isles" "^1.1.0"
@@ -6392,9 +6392,9 @@ effection@^1.0.0:
   integrity sha512-ITAAnuI7sJqKhjvYlnm66NHaW7zrXzqgsGsjVaaqFHYDWPN8WylVj46xASfkrtwq5wmklbzy6tvRYaj2C4rDHw==
 
 electron-to-chromium@^1.5.28:
-  version "1.5.32"
-  resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.5.32.tgz#4a05ee78e29e240aabaf73a67ce9fe73f52e1bc7"
-  integrity sha512-M+7ph0VGBQqqpTT2YrabjNKSQ2fEl9PVx6AK3N558gDH9NO8O6XN9SXXFWRo9u9PbEg/bWq+tjXQr+eXmxubCw==
+  version "1.5.33"
+  resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.5.33.tgz#8f64698661240e70fdbc4b032e6085e391f05e09"
+  integrity sha512-+cYTcFB1QqD4j4LegwLfpCNxifb6dDFUAwk6RsLusCwIaZI6or2f+q8rs5tTB2YC53HhOlIbEaqHMAAC8IOIwA==
 
 element-is-visible@^1.0.0:
   version "1.0.0"
@@ -10149,9 +10149,9 @@ moment-range@^4.0.2:
     es6-symbol "^3.1.0"
 
 moment-timezone@^0.5.14, moment-timezone@^0.5.17, moment-timezone@^0.5.33, moment-timezone@^0.5.34, moment-timezone@^0.5.43:
-  version "0.5.45"
-  resolved "https://registry.npmjs.org/moment-timezone/-/moment-timezone-0.5.45.tgz#cb685acd56bac10e69d93c536366eb65aa6bcf5c"
-  integrity sha512-HIWmqA86KcmCAhnMAN0wuDOARV/525R2+lOLotuGFzn4HO+FH+/645z2wx0Dt3iDv6/p61SIvKnDstISainhLQ==
+  version "0.5.46"
+  resolved "https://registry.npmjs.org/moment-timezone/-/moment-timezone-0.5.46.tgz#a21aa6392b3c6b3ed916cd5e95858a28d893704a"
+  integrity sha512-ZXm9b36esbe7OmdABqIWJuBBiLLwAjrN7CE+7sYdCCx82Nabt1wHDj8TVseS59QIlfFPbOoiBPm6ca9BioG4hw==
   dependencies:
     moment "^2.29.4"
 
@@ -12356,9 +12356,9 @@ regjsgen@^0.8.0:
   integrity sha512-RvwtGe3d7LvWiDQXeQw8p5asZUmfU1G/l6WbUXeHta7Y2PEIvBTwH6E2EfmYUK8pxcxEdEmaomqyp0vZZ7C+3Q==
 
 regjsparser@^0.11.0:
-  version "0.11.0"
-  resolved "https://registry.npmjs.org/regjsparser/-/regjsparser-0.11.0.tgz#f01e6ccaba36d384fb0d00a06b78b372c8b681e8"
-  integrity sha512-vTbzVAjQDzwQdKuvj7qEq6OlAprCjE656khuGQ4QaBLg7abQ9I9ISpmLuc6inWe7zP75AECjqUa4g4sdQvOXhg==
+  version "0.11.1"
+  resolved "https://registry.npmjs.org/regjsparser/-/regjsparser-0.11.1.tgz#ae55c74f646db0c8fcb922d4da635e33da405149"
+  integrity sha512-1DHODs4B8p/mQHU9kr+jv8+wIC9mtG4eBHxWxIq5mhjE3D5oORhCc6deRKzTjs9DcfRFmj9BHSDguZklqCGFWQ==
   dependencies:
     jsesc "~3.0.2"
 

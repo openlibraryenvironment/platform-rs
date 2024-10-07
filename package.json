@@ -27,7 +27,7 @@
     "@folio/stripes": "9.0.6",
     "@folio/tenant-settings": "8.0.0",
     "@folio/users": "10.0.5",
-    "@projectreshare/directory": "1.13.0",
+    "@projectreshare/directory": "1.13.1",
     "@projectreshare/plugin-rs-siquery-vufind": "1.2.0",
     "@projectreshare/request": "1.6.2",
     "@projectreshare/rs": "1.19.2",
