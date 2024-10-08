@@ -49,17 +49,17 @@ mod-rs and mod-directory are ReShare's unique backend modules. 1.18 release-spec
 | mod-directory | mod-directory-{version} | ghcr.io/openlibraryenvironment/mod-directory:{version} | 
 
 ## FOLIO backend modules
-Currently, it's necessary to run custom versions of mod-circulation and mod-circulation storage to include extensions required for the ZFL integration. 1.18 release-specific versions are described in [folio-overrides.json](folio-overrides.json). 
-The module descriptors use a `-RESHARE` designator in module ID to help identify these custom versions at runtime. These module descriptors
+Currently, it's necessary to run custom versions of `mod-circulation` and `mod-circulation-storage` modules which include extensions required for the ZFL integration. 1.18 release-specific versions are described in [folio-overrides.json](folio-overrides.json). 
+The module descriptors use a `-RESHARE` designator in the module ID to help identify these custom versions at runtime. The module descriptors
 with modified IDs are available in the [ModuleDescriptors](ModuleDescriptors/) directory for convenience. 
 
 | module name             | version                                | image                                                      | 
 |-------------------------|----------------------------------------|------------------------------------------------------------|
-| mod-circulation         | mod-circulation-{version}-RESHARE         | ghcr.io/indexdata/mod-circulation:24.1.2-RESHARE         |
-| mod-circulation-storage | mod-circulation-storage-{version}-RESHARE | ghcr.io/indexdata/mod-circulation-storage:17.1.9-RESHARE |
+| mod-circulation         | mod-circulation-{version}-RESHARE         | ghcr.io/indexdata/mod-circulation:{version}-RESHARE         |
+| mod-circulation-storage | mod-circulation-storage-{version}-RESHARE | ghcr.io/indexdata/mod-circulation-storage:{version}-RESHARE |
 
 ## NCIP integration with FOLIO
-Edge ncip is required on the FOLIO system that will be communicating with reshare. Use the following versions for ncip:
+The latest `edge-ncip` and `mod-ncip` modules are required in the FOLIO system to allow communication with ReShare. These modules are not available in the Poppy release so use the versions specified in [folio-overrides.json](folio-overrides.json)
 
 | module name   | version         | image                    | 
 |---------------|-----------------|--------------------------|
@@ -72,7 +72,7 @@ General configuration instructions for NCIP are in the [edge-ncip](https://githu
 The following configuration is required to enable ReShare to communicate with FOLIO via NCIP.
 
 #### Institution user for NCIP connection
-You need to create an institutional user that will be used to send requests from ReShare to the FOLIO NCIP module. This user must have these permissions:
+Create an institutional user that will be used to send requests from ReShare to the FOLIO NCIP module. This user must have these permissions:
 ```
 circulation-storage.cancellation-reasons.collection.get
 circulation-storage.circulation-rules.get
@@ -95,34 +95,35 @@ accounts.item.post
 ```
 
 #### Connection settings
-You need to specify connection settings.
-This can be done in Settings -> Resource Sharing -> Local NCIP settings: 
+Specify the NCIP connection settings in ReShare. This can be done in _Settings -> Resource Sharing -> Local NCIP settings_: 
 * NCIP from agency -> Insert agency directory slug 
 * NCIP to agency -> Insert agency directory slug
-* NCIP server address -> Insert NCIP server address with API key. It should be in format `{host}/ncip/{api_key}`
+* NCIP server address -> Insert NCIP server address with API key. It should be in the format `{host}/ncip/{api_key}`, e.g `http://mod-ncip:8080/ncip/eKLJGLKG`
+* Use Title type for Request Item -> "Yes" to use title-level page requests
 
 #### Enable NCIP for requests
-When you have NCIP connection settings you can enable NCIP for specific methods. 
-That can be done in Settings -> Resource Sharing -> Host LMS integration settings:
-* Host LMS integration -> You need to select `FOLIO` as integration 
+With NCIP connection settings configured, you can enable NCIP for specific methods. 
+That can be done in _Settings -> Resource Sharing -> Host LMS integration settings_:
+* Host LMS integration -> You need to select `FOLIO` as the integration 
 * Then you can change settings for each method to `NCIP`
 
 #### Other NCIP-related settings 
-There are other NCIP-related settings that can be adjusted to specific needs. 
-These can be found in the section Settings -> Resource Sharing. 
-You should go over them if you need some specific configuration.
+Other NCIP-related settings can be adjusted to specific needs. 
+These can be found in the section _Settings -> Resource Sharing_. 
+Review them if you need some specific configuration.
 
 #### NCIP-related directory settings
 Some NCIP settings are fetched from supplying directory entries. These settings are:
-* LMS location code -> Service point code which is used in NCIP calls
-* Institutional patron ID -> User barcode used to check out items on the supplier side
-* FOLIO location filter -> It is the Institution/Campus/Library/Location code used to filter items when creating item requests on the supplier side
+
+* `LMS location code` -> service point code which is used in the NCIP calls as the pickup location (NCIP AcceptItem and RequestItem). E.g when a special _ILL Office_ service point, without any locations assigned, is used, it will ensure that items are always set to `In transit`.
+* `Institutional patron ID` -> user barcode used to check out items on the supplier side
+* FOLIO location filter -> It is the Institution/Campus/Library/Location code used to filter items when creating title-level requests on the supplier side (RequestItem)
 
 #### NCIP-related fee configuration for automatic fees 
-There is option to add automatic fees to requester in Settings -> Resource Sharing -> Automatic fees.
+There is an option to add automatic fees on the requester in Settings -> Resource Sharing -> Automatic fees.
 
-If that option is enabled then you need to also add predefined fees. It can be done
-by adding fee owner `Reshare-ILL` in Settings -> Fee/fine: Owners 
+If that option is enabled, you must configure predefined fees in FOLIO. It can be done
+by adding fee owner `Reshare-ILL` in _Settings -> Fee/fine: Owners_ 
 
 When Fee Owner is added, you need to add fee for each patron group type: 
 * staff
