@@ -105,7 +105,7 @@ Specify the NCIP connection settings in ReShare. This can be done in _Settings -
 With NCIP connection settings configured, you can enable NCIP for specific methods. 
 That can be done in _Settings -> Resource Sharing -> Host LMS integration settings_:
 * Host LMS integration -> You need to select `FOLIO` as the integration 
-* Then you can change settings for each method to `NCIP`
+* Change settings for each method to `NCIP`
 
 #### Other NCIP-related settings 
 Other NCIP-related settings can be adjusted to specific needs. 
@@ -125,7 +125,7 @@ There is an option to add automatic fees on the requester in Settings -> Resourc
 If that option is enabled, you must configure predefined fees in FOLIO. It can be done
 by adding fee owner `Reshare-ILL` in _Settings -> Fee/fine: Owners_ 
 
-When Fee Owner is added, you need to add fee for each patron group type: 
+When Fee Owner is added, you need to add a fee for each patron group type: 
 * staff
 * faculty
 * undergrad
@@ -178,7 +178,7 @@ The Auto Responder Settings section allows administrators to configure automated
 
 ### Auto Responder Requester Non-Returnable
 
-This setting manages auto responder actions specific to the requester's side. Depending on the selected option, the request will transition as follows:
+This setting manages auto-responder actions specific to the requester's side. Depending on the selected option, the request will transition as follows:
 
 - **On: Available**
   - **Status Transition**: `SLNP_REQUESTER_DOCUMENT_AVAILABLE`
@@ -192,21 +192,19 @@ This setting manages auto responder actions specific to the requester's side. De
 
 This setting is pertinent to loan-type requests. It controls the messaging to the requester based on the current configuration:
 
-- **On: Will Supply and Cannot Supply**
-  - **Behavior**: Sends a "Loaned" message to the requester if this option is enabled. Additionally, upon sending the "Loaned" message, the request status transitions to `SLNP_REQUESTER_SHIPPED`. Note that if other setting values are activated, this response is suppressed.
+- **On: Loaned and Cannot Supply**
+  - **Behavior**: Sends a "Loaned" message to the requester if the item is paged successfully or "Unfilled" otherwise. Additionally, upon sending the "Loaned" or "Unfilled" message, the request status transitions to `SLNP_REQUESTER_SHIPPED` or `SLNP_REQUESTER_UNFILLED`.
 
 ### Copy Auto Responder Status
 
 This option is used for copy-type requests and influences the sending of loan-related messages:
 
 - **On: Loaned and Cannot Supply**
-  - **Behavior**: Dispatches a "Loaned" message to the requester under conditions defined by this setting. As with the previous setting, other enabled settings may prevent this auto response.
-
+  - **Behavior**: automatically dispatches a "Loaned" message to the requester when the request is received.
+  - 
 ## Custom ISO18626 Settings
 
-The Custom ISO18626 Settings section allows for the customization of ISO 18626 interoperability settings through specific options and identifiers. Follow the instructions below to properly configure these settings.
-
-## ISO18626 Custom Options
+The Custom ISO18626 Settings section allows for the customization of ISO 18626 interoperability settings through specific options and identifiers. 
 
 This setting includes a dropdown menu that allows you to select specific custom identifiers for configuring ISO 18626 settings.
 
