@@ -1,6 +1,6 @@
 # Installation instructions for ReShare 1.18
 
-## Front end
+## Edge
 
 The SLNP gateway is installed via a helm [chart](https://github.com/indexdata/edge-slnp/pkgs/container/charts%2Fedge-slnp) and configured via ENV variables.
 
