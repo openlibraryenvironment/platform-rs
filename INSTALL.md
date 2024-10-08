@@ -2,13 +2,13 @@
 
 ## Edge
 
-The SLNP gateway is installed via a helm [chart](https://github.com/indexdata/edge-slnp/pkgs/container/charts%2Fedge-slnp) and configured via ENV variables.
+The SLNP gateway is installed with a helm [chart](https://github.com/indexdata/edge-slnp/pkgs/container/charts%2Fedge-slnp) and configured via ENV variables.
 
 The relevant config is:
 
 ```
 ILL_ADDR: <address of the ReShare ISO18626 endpoint, e.g http://mod-rs-latest:8080/rs/externalApi/iso18626>
-OKAPI_TENANT: <name of the ReShare tenant>
+OKAPI_TENANT: <name of the ReShare/FOLIO tenant>
 SLNP_ADDR: <ZFL address>
 ```
 
