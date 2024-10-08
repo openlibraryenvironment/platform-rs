@@ -115,9 +115,9 @@ Review them if you need some specific configuration.
 #### NCIP-related directory settings
 Some NCIP settings are fetched from supplying directory entries. These settings are:
 
-* `LMS location code` -> service point code which is used in the NCIP calls as the pickup location (NCIP AcceptItem and RequestItem). E.g when a special _ILL Office_ service point, without any locations assigned, is used, it will ensure that items are always set to `In transit`.
+* `LMS location code` -> service point code which is used in the NCIP calls as the pickup location (for AcceptItem on the requester and RequestItem on the supplier side). E.g when a special _ILL Office_ service point, without any locations assigned, is used, it will ensure that items are always set to `In transit`.
 * `Institutional patron ID` -> user barcode used to check out items on the supplier side
-* FOLIO location filter -> It is the Institution/Campus/Library/Location code used to filter items when creating title-level requests on the supplier side (RequestItem)
+* `FOLIO location filter` -> it is the Institution/Campus/Library/Location code used to filter items when creating title-level requests on the supplier side (for RequestItem)
 
 #### NCIP-related fee configuration for automatic fees 
 There is an option to add automatic fees on the requester in Settings -> Resource Sharing -> Automatic fees.
@@ -142,7 +142,7 @@ State model settings should be configured by posting to "/rs/stateModel/import".
 | responder_non_returnables_state_model | SLNPNonReturnableResponder |
 
 ```
-{
+    {
         "value": "SLNPNonReturnableRequester",
         "section": "state_model",
         "hidden": true,
