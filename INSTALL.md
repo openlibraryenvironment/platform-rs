@@ -190,7 +190,7 @@ Here is an example of needed entries which you need to POST to the endpoint `/co
     "value": "reshare_service"
 }
 ```
-These settings can be specific for each Symbol or tenant defaults
+These settings should be set for specific `agencyId`/`configName` used in the ReShare config.
 
 ### ReShare specific NCIP configuration
 The following configuration is required to enable ReShare to communicate with FOLIO via NCIP.
