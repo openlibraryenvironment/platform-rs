@@ -72,119 +72,119 @@ Here is example of needed entries which you need to POST to endpoint `/configura
 ```
 {
     "module": "NCIP",
-    "configName": "munich_laim",
+    "configName": "reshare",
     "code": "instance.source",
     "enabled": true,
     "value": "RESHARE"
 }
 {
     "module": "NCIP",
-    "configName": "munich_laim",
+    "configName": "reshare",
     "code": "user.priv.ok.status",
     "enabled": true,
     "value": "OK"
 }
 {
     "module": "NCIP",
-    "configName": "munich_laim",
+    "configName": "reshare",
     "code": "item.material.type.name",
     "enabled": true,
     "value": "text"
 }
 {
     "module": "NCIP",
-    "configName": "munich_laim",
+    "configName": "reshare",
     "code": "user.priv.blocked.status",
     "enabled": true,
     "value": "DO NOT LOAN"
 }
 {
     "module": "NCIP",
-    "configName": "munich_laim",
+    "configName": "reshare",
     "code": "item.status.name",
     "enabled": true,
     "value": "Available"
 }
 {
     "module": "NCIP",
-    "configName": "munich_laim",
+    "configName": "reshare",
     "code": "item.perm.loan.type.name",
     "enabled": true,
     "value": "Can circulate"
 }
 {
     "module": "NCIP",
-    "configName": "munich_laim",
+    "configName": "reshare",
     "code": "instance.type.name",
     "enabled": true,
     "value": "text"
 }
 {
     "module": "NCIP",
-    "configName": "munich_laim",
+    "configName": "reshare",
     "code": "holdings.source.name",
     "enabled": true,
     "value": "FOLIO"
 }
 {
     "module": "NCIP",
-    "configName": "munich_laim",
+    "configName": "reshare",
     "code": "instance.custom.identifier.name",
     "enabled": true,
     "value": "Other standard identifier"
 }
 {
     "module": "NCIP",
-    "configName": "munich_laim",
+    "configName": "reshare",
     "code": "holdings.perm.location.code",
     "enabled": true,
     "value": "ms/ml/ll/main"
 }
 {
     "module": "NCIP",
-    "configName": "munich_laim",
+    "configName": "reshare",
     "code": "item.perm.location.code",
     "enabled": true,
     "value": "ms/ml/ll/main"
 }
 {
     "module": "NCIP",
-    "configName": "munich_laim",
+    "configName": "reshare",
     "code": "cancel.request.reason.patron.name",
     "enabled": true,
     "value": "Item not picked by patron"
 }
 {
     "module": "NCIP",
-    "configName": "munich_laim",
+    "configName": "reshare",
     "code": "cancel.request.reason.name",
     "enabled": true,
     "value": "Different Item Checkout"
 }
 {
     "module": "NCIP",
-    "configName": "munich_laim",
+    "configName": "reshare",
     "code": "request.note.enabled",
     "enabled": true,
     "value": "true"
 }
 {
     "module": "NCIP",
-    "configName": "munich_laim",
+    "configName": "reshare",
     "code": "item.soft.delete",
     "enabled": true,
     "value": "true"
 }
 {
     "module": "NCIP",
-    "configName": "munich_laim",
+    "configName": "reshare",
     "code": "checkin.service.point.code",
     "enabled": true,
     "value": "reshare_service"
 }
 {
     "module": "NCIP",
-    "configName": "munich_laim",
+    "configName": "reshare",
     "code": "checkout.service.point.code",
     "enabled": true,
     "value": "reshare_service"
@@ -220,8 +220,8 @@ accounts.item.post
 
 #### Connection settings
 Specify the NCIP connection settings in ReShare. This can be done in _Settings -> Resource Sharing -> Local NCIP settings_: 
-* NCIP from agency -> Insert agency directory slug 
-* NCIP to agency -> Insert agency directory slug
+* NCIP from agency -> set this to the agencyId you used in the mod-ncip config (aka `configName`) in this example it's `reshare` 
+* NCIP to agency -> this can be whatever
 * NCIP server address -> Insert NCIP server address with API key. It should be in the format `{host}/ncip/{api_key}`, e.g `http://mod-ncip:8080/ncip/eKLJGLKG`
 * Use Title type for Request Item -> "Yes" to use title-level page requests
 
