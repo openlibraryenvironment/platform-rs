@@ -1,5 +1,5 @@
 {
-  "id" : "mod-rs-2.18.1",
+  "id" : "mod-rs-2.18.2",
   "name" : "mod-rs",
   "requires" : [ {
     "id" : "email",
@@ -791,7 +791,7 @@
     "visible" : true
   } ],
   "launchDescriptor" : {
-    "dockerImage" : "mod-rs:2.18.0",
+    "dockerImage" : "mod-rs:2.18.2",
     "dockerPull" : false,
     "env" : [ {
       "name" : "JAVA_OPTIONS",

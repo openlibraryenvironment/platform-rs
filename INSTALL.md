@@ -7,7 +7,7 @@ The SLNP gateway is installed with a helm [chart](https://github.com/indexdata/e
 The relevant config is:
 
 ```
-ILL_ADDR: <address of the ReShare ISO18626 endpoint, e.g http://mod-rs-2-18-1:8080/rs/externalApi/iso18626>
+ILL_ADDR: <address of the ReShare ISO18626 endpoint, e.g http://mod-rs-2-18-2:8080/rs/externalApi/iso18626>
 OKAPI_TENANT: <name of the ReShare/FOLIO tenant>
 SLNP_ADDR: <ZFL address>
 ```

@@ -29,7 +29,7 @@
     "@folio/users": "10.0.5",
     "@projectreshare/directory": "1.13.1",
     "@projectreshare/request": "1.6.2",
-    "@projectreshare/rs": "1.19.3",
+    "@projectreshare/rs": "1.19.4",
     "@projectreshare/supply": "1.6.2",
     "moment": "~2.29.0",
     "react": "~18.2.0",
