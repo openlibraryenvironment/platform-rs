@@ -64,9 +64,133 @@ The latest `edge-ncip` and `mod-ncip` modules are required in the FOLIO system t
 | module name   | version         | image                    | 
 |---------------|-----------------|--------------------------|
 | edge-ncip     | edge-ncip-1.9.2 | folioorg/edge-ncip:1.9.2 |
-| mod-ncip      | mod-ncip-1.15.1 | folioorg/mod-ncip:1.15.1 |
+| mod-ncip      | mod-ncip-1.15.2 | folioorg/mod-ncip:1.15.2 |
 
 General configuration instructions for NCIP are in the [edge-ncip](https://github.com/folio-org/edge-ncip) repository and specific tenant configuration instructions are in the [mod-ncip](https://github.com/folio-org/mod-ncip).
+
+Here is example of needed entries which you need to POST to endpoint `/configurations/entries`:
+```
+{
+    "module": "NCIP",
+    "configName": "munich_laim",
+    "code": "instance.source",
+    "enabled": true,
+    "value": "RESHARE"
+}
+{
+    "module": "NCIP",
+    "configName": "munich_laim",
+    "code": "user.priv.ok.status",
+    "enabled": true,
+    "value": "OK"
+}
+{
+    "module": "NCIP",
+    "configName": "munich_laim",
+    "code": "item.material.type.name",
+    "enabled": true,
+    "value": "text"
+}
+{
+    "module": "NCIP",
+    "configName": "munich_laim",
+    "code": "user.priv.blocked.status",
+    "enabled": true,
+    "value": "DO NOT LOAN"
+}
+{
+    "module": "NCIP",
+    "configName": "munich_laim",
+    "code": "item.status.name",
+    "enabled": true,
+    "value": "Available"
+}
+{
+    "module": "NCIP",
+    "configName": "munich_laim",
+    "code": "item.perm.loan.type.name",
+    "enabled": true,
+    "value": "Can circulate"
+}
+{
+    "module": "NCIP",
+    "configName": "munich_laim",
+    "code": "instance.type.name",
+    "enabled": true,
+    "value": "text"
+}
+{
+    "module": "NCIP",
+    "configName": "munich_laim",
+    "code": "holdings.source.name",
+    "enabled": true,
+    "value": "FOLIO"
+}
+{
+    "module": "NCIP",
+    "configName": "munich_laim",
+    "code": "instance.custom.identifier.name",
+    "enabled": true,
+    "value": "Other standard identifier"
+}
+{
+    "module": "NCIP",
+    "configName": "munich_laim",
+    "code": "holdings.perm.location.code",
+    "enabled": true,
+    "value": "ms/ml/ll/main"
+}
+{
+    "module": "NCIP",
+    "configName": "munich_laim",
+    "code": "item.perm.location.code",
+    "enabled": true,
+    "value": "ms/ml/ll/main"
+}
+{
+    "module": "NCIP",
+    "configName": "munich_laim",
+    "code": "cancel.request.reason.patron.name",
+    "enabled": true,
+    "value": "Item not picked by patron"
+}
+{
+    "module": "NCIP",
+    "configName": "munich_laim",
+    "code": "cancel.request.reason.name",
+    "enabled": true,
+    "value": "Different Item Checkout"
+}
+{
+    "module": "NCIP",
+    "configName": "munich_laim",
+    "code": "request.note.enabled",
+    "enabled": true,
+    "value": "true"
+}
+{
+    "module": "NCIP",
+    "configName": "munich_laim",
+    "code": "item.soft.delete",
+    "enabled": true,
+    "value": "true"
+}
+{
+    "module": "NCIP",
+    "configName": "munich_laim",
+    "code": "checkin.service.point.code",
+    "enabled": true,
+    "value": "reshare_service"
+}
+{
+    "module": "NCIP",
+    "configName": "munich_laim",
+    "code": "checkout.service.point.code",
+    "enabled": true,
+    "value": "reshare_service"
+}
+```
+These settings can be specific for each Symbol or tenant defaults
 
 ### ReShare specific NCIP configuration
 The following configuration is required to enable ReShare to communicate with FOLIO via NCIP.
