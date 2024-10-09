@@ -68,7 +68,7 @@ The latest `edge-ncip` and `mod-ncip` modules are required in the FOLIO system t
 
 General configuration instructions for NCIP are in the [edge-ncip](https://github.com/folio-org/edge-ncip) repository and specific tenant configuration instructions are in the [mod-ncip](https://github.com/folio-org/mod-ncip).
 
-Here is example of needed entries which you need to POST to endpoint `/configurations/entries`:
+Here is an example of needed entries which you need to POST to the endpoint `/configurations/entries`:
 ```
 {
     "module": "NCIP",
@@ -221,7 +221,7 @@ accounts.item.post
 #### Connection settings
 Specify the NCIP connection settings in ReShare. This can be done in _Settings -> Resource Sharing -> Local NCIP settings_: 
 * NCIP from agency -> set this to the agencyId you used in the mod-ncip config (aka `configName`) in this example it's `reshare` 
-* NCIP to agency -> this can be whatever
+* NCIP to agency -> this can be left unset to use the same value as for _from Agency_
 * NCIP server address -> Insert NCIP server address with API key. It should be in the format `{host}/ncip/{api_key}`, e.g `http://mod-ncip:8080/ncip/eKLJGLKG`
 * Use Title type for Request Item -> "Yes" to use title-level page requests
 
