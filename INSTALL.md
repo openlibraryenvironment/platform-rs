@@ -355,7 +355,7 @@ This setting pertains to the SLNP Returnable Requester category and offers the a
     - **Yes**: When set to "Yes," the actions 'Mark Returned by Patron' and 'Mark Return Shipped' are combined into a single action. This effectively reduces the steps needed in processing, thereby improving workflow efficiency.
 
 ## Feature flags
-The following feature flags can be previewed by sending a GET request to /rs/settings/appSettings?filters=section%3D%3DfeatureFlags&filters=hidden%3Dtrue&sort=key%3D%3Dasc&perPage=100
+The following feature flags can be previewed by sending a **GET** request to: /rs/settings/appSettings?filters=section%3D%3DfeatureFlags&filters=hidden%3Dtrue&sort=key%3D%3Dasc&perPage=100
 
 ```
 [
@@ -513,7 +513,7 @@ The following feature flags can be previewed by sending a GET request to /rs/set
     }
 ]
 ```
-The following feature flags can be modified by sending them as a PUT request to /rs/settings/appSettings/{id} - in this case: 2c91253992580561019266d3145b0030
+The following feature flags can be modified by sending them as a **PUT** request to: /rs/settings/appSettings/{id} - in this case: **2c91253992580561019266d3145b0030**
 
 ```
 {
