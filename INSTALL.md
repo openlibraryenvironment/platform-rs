@@ -355,26 +355,7 @@ This setting pertains to the SLNP Returnable Requester category and offers the a
     - **Yes**: When set to "Yes," the actions 'Mark Returned by Patron' and 'Mark Return Shipped' are combined into a single action. This effectively reduces the steps needed in processing, thereby improving workflow efficiency.
 
 ## Feature flags
-The following feature flags should be set by sending them as a post request to /rs/settings/appSettings:
-
-### Note: 
-- The "value" field determines the visibility of the section.
-  - If "value" is set to null or true, the section is visible.
-  - If "value" is set to "false", the section is disabled.
-- The "key" field serves as the representation of the section.
-
-- To hide a specific record when the section is expanded, the "key" is structured as follows: section.key.feature_flag.
-  For example, in:
-```
-  {
-      "vocab": "featureFlag",
-      "section": "featureFlags",
-      "hidden": true,
-      "value": "true",
-      "settingType": "String",
-      "key": "state_action_config.combine_fill_and_ship.feature_flag"
-  }
-```
+The following feature flags can be previewed by sending a GET request to /rs/settings/appSettings?filters=section%3D%3DfeatureFlags&filters=hidden%3Dtrue&sort=key%3D%3Dasc&perPage=100
 
 ```
 [
@@ -531,4 +512,36 @@ The following feature flags should be set by sending them as a post request to /
         "key": "relax-manged-edit.feature_flag"
     }
 ]
+```
+The following feature flags can be modified by sending them as a PUT request to /rs/settings/appSettings/{id} - in this case: 2c91253992580561019266d3145b0030
+
+```
+{
+    "id": "2c91253992580561019266d3145b0030",
+    "vocab": "featureFlag",
+    "section": "featureFlags",
+    "hidden": true,
+    "value": "true",
+    "settingType": "String",
+    "key": "relax-manged-edit.feature_flag"
+}
+```
+
+### Note: 
+- The "value" field determines the visibility of the section.
+  - If "value" is set to null or true, the section is visible.
+  - If "value" is set to "false", the section is disabled.
+- The "key" field serves as the representation of the section.
+
+- To hide a specific record when the section is expanded, the "key" is structured as follows: section.key.feature_flag.
+  For example, in:
+```
+  {
+      "vocab": "featureFlag",
+      "section": "featureFlags",
+      "hidden": true,
+      "value": "true",
+      "settingType": "String",
+      "key": "state_action_config.combine_fill_and_ship.feature_flag"
+  }
 ```
