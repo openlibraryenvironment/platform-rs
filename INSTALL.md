@@ -216,6 +216,8 @@ inventory.instances.item.delete
 owners.collection.get
 feefines.collection.get
 accounts.item.post
+circulation.requests.item.get
+circulation.requests.item.put
 ```
 
 #### Connection settings
