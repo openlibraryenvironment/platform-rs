@@ -58,6 +58,21 @@ with modified IDs are available in the [ModuleDescriptors](ModuleDescriptors/) d
 | mod-circulation         | mod-circulation-{version}-RESHARE         | ghcr.io/indexdata/mod-circulation:{version}-RESHARE         |
 | mod-circulation-storage | mod-circulation-storage-{version}-RESHARE | ghcr.io/indexdata/mod-circulation-storage:{version}-RESHARE |
 
+### Backend module environment variables.
+Both mod-rs and mod-directory need access to a module databae, and to a kafka instance. Use the following environment variables for both modules:
+| Variable | Description |
+| ------- | ------  |
+|  DB_DATABASE | name of database (e.g. "reshare_modules") |
+|  DB_HOST |  database hostname (e.g.) postgres.reshare-dev.indexdata.com |
+| DB_USERNAME | database user username |
+| DB_PASSWORD | database user password |
+| DB_PORT | Postgres port (e.g. 5432) |
+| OKAPI_SERVICE_HOST | hostname of okapi service (e.g. "okapi"), do not include scheme or port. |
+| OKAPI_SERVICE_PORT | port of okapi service (e.g. 9130)
+| EVENTS_PUBLISHER_BOOTSTRAP_SERVERS | kafka hostname and port. (e.g. kafka-reshare:9092) |
+| EVENTS_CONSUMER_BOOTSTRAP_SERVERS | kafka hostname and port. (e.g. kafka-reshare:9092) |
+
+
 ## NCIP integration with FOLIO
 The latest `edge-ncip` and `mod-ncip` modules are required in the FOLIO system to allow communication with ReShare. These modules are not available in the Poppy release so use the versions specified in [folio-overrides.json](folio-overrides.json)
 
