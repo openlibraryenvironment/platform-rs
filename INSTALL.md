@@ -59,7 +59,7 @@ with modified IDs are available in the [ModuleDescriptors](ModuleDescriptors/) d
 | mod-circulation-storage | mod-circulation-storage-{version}-RESHARE | ghcr.io/indexdata/mod-circulation-storage:{version}-RESHARE |
 
 ### Backend module environment variables.
-Both mod-rs and mod-directory need access to a module databae, and to a kafka instance. Use the following environment variables for both modules:
+Both mod-rs and mod-directory need access to a module database, okapi, and to a kafka instance. Use the following environment variables for both modules:
 | Variable | Description |
 | ------- | ------  |
 |  DB_DATABASE | name of database (e.g. "reshare_modules") |
