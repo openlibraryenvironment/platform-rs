@@ -62,7 +62,7 @@ jobs:
         run: |
           ls &&
           aws s3 sync ./east s3://reshare-bundles/east --acl public-read --delete &&
-          aws s3 sync ./west s3://reshare-bundles/west --acl public-read --delete &&
+          aws s3 sync ./west s3://reshare-bundles/west --acl public-read --delete
 
       - name: Invalidate CF East
         run: |
