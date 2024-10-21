@@ -273,13 +273,12 @@ When Fee Owner is added, you need to add a fee for each patron group type:
 * graduate
 
 ## SLNP state model settings
-There are settings for state model with default values. These settings must be updated. 
+The system has default State Model settings that must be updated after deployment. 
 
-To find current settings value you can query this `/rs/settings/appSettings?filters=hidden==true%26%26key==requester_returnables_state_model`. You just need to change key value depending on which settings value you want to check
+Query the `/rs/settings/appSettings?filters=hidden==true%26%26key=={SETTING_KEY}` endpoint to find the default value and UUID for each setting. 
+Copy the response, change the value and `PUT` it to the `/rs/settings/appSettings/{settingsUUID}` endpoint to update.
 
-Then you can copy response, change value and put it to endpoint `/rs/settings/appSettings/{settingsUUID}`
-
-| Setting                               | State model                |
+| Setting key                           | Setting value              |
 | ---                                   | ---                        |
 | requester_returnables_state_model     | SLNPRequester              |
 | requester_non_returnables_state_model | SLNPNonReturnableRequester |
