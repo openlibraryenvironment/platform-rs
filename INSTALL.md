@@ -225,9 +225,17 @@ Here is more detailed description for each of settings:
 14. `holdings.source.name` - Holdings source name used during `AcceptItem`. Muste be defined under `Settings > Inventory > Holdings sources`. Optional, defaults to _FOLIO_.
 15. `user.email.type` - Optional, defaults to "electronic mail address". Used during `LookupUser` response.
 16. `cancel.request.reason.name` - Reason for request cancellation if an item with a different barcode is checked out.  Used during `CancelRequestItem`. Must be defined under _Settings > Circulation > Request cancellation reasons_
-17. `cancel.request.reason.patron.name` - Reason for request cancellation when a patron did not check out the item. Used during `DeleteItem` Must be defined under _Settings > Circulation > Request cancellation reasons_
-18. `request.note.name` - Request note name. Default value "ILL note". Make sure that such note exists. Can be checked by endpoint `/note-types` and if needed added with post to same endpoint
-19. `request.note.enabled` - Used during `RequestItem`, adds ILL request ID to the loan and the request record. Boolean, defaults to _false_.
+17. `cancel.request.reason.patron.name` - Reason for request cancellation when a patron did not check out the item. Used during `DeleteItem` if there's an open request. Must be defined under _Settings > Circulation > Request cancellation reasons_
+18. `request.note.name` - Note type name used during `RequetItem` and `AcceptItem` if notes are enabled. The default value is _ILL note_. Must be defined under `/note-types`. There is no Settings UI for this so it must be set by POST:
+```
+    {
+            "name": "ILL note",
+            "usage": {
+                "isAssigned": false
+            }
+    }
+```
+19. `request.note.enabled` - Controls if request notes should be added during `RequestItem` and `AcceptItem`. Boolean, defaults to _false_.
 20. `item.soft.delete` - Used during `DeleteItem`. Suppresses rather than deletes the item record. Boolean, defaults to `true`.
 
 ### ReShare specific NCIP configuration
