@@ -116,7 +116,7 @@ Specific description for each of the settings:
 19. `request.note.enabled` - Controls if request notes should be added during `RequestItem` and `AcceptItem`. Boolean, defaults to _false_.
 20. `item.soft.delete` - Used during `DeleteItem`. Suppresses rather than deletes the item record. Boolean, defaults to `true`.
 
-Here is an example of needed entries which you need to POST to the endpoint `/configurations/entries`:
+Here is an example JSON of these entries which you need to POST to the endpoint `/configurations/entries`:
 ```
 {
     "module": "NCIP",
