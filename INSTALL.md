@@ -207,6 +207,28 @@ Here is an example of needed entries which you need to POST to the endpoint `/co
 ```
 These settings should be set for specific `agencyId`/`configName` used in the ReShare config.
 
+Here is more detailed description for each of settings: 
+  * (1) instance.type.name - (Settings > Inventory > Instances > Resource Types) Find name in given path or create one
+  * (2) instance.source - Will be used as source when creating instance
+  * (3) item.material.type.name - (Settings > Inventory > Items > Material Types) Find name in given path or create one
+  * (4) item.perm.loan.type.name - (Settings > Inventory > Items > Loan Types) Find name in given path or create one
+  * (5) item.status.name - Item status name. Used when accepting item. Available values (Available, Awaiting pickup, Awaiting delivery, Checked out, In transit, Missing, Paged, On order, In process, Declared lost, Claimed returned, Withdrawn, Lost and paid, Aged to lost)
+  * (6) item.perm.location.code - Location code used to find location where to create item. (Settings > Tenant > Locations)
+  * (7) holdings.perm.location.code - Location code used to find location where to create holding. (Settings > Tenant > Locations)
+  * (8) instance.custom.identifier.name - (Settings -> Inventory -> Instances -> Resource Identifier Types) Find name in given path or create one
+  * (9) checkout.service.point.code - Service point code for checkout (Settings > Tenant > Service points)
+  * (10) checkin.service.point.code - Service point code for checkin (Settings > Tenant > Service points)
+  * (11) response.includes.physical.address -  Boolean value to include address (optional - will default to false. For LookupUser response)
+  * (12) user.priv.ok.status - User status code (optional - will default to "ACTIVE") Available values (ACTIVE, INACTIVE)
+  * (13) user.priv.blocked.status - User  (optional - will default to "BLOCKED")
+  * (14) holdings.source.name - Holdings source name (optional - will default to "FOLIO")
+  * (15) user.email.type - (optional - will default to "electronic mail address" For LookupUser response)
+  * (16) cancel.request.reason.name - Reason for request cancellation when different item is checkout (Settings > Circulation > Request cancellation reasons)
+  * (17) cancel.request.reason.patron.name - Reason for request cancellation when patron did not checkout item (Settings > Circulation > Request cancellation reasons)
+  * (18) request.note.name - Request note name. Default value "ILL note". Make sure that such note exists. Can be checked by endpoint `/note-types` and if needed added with post to same endpoint
+  * (19) request.note.enabled - Request note enabled. Will add ILL request ID to loan and ILS request. Default value `false`
+  * (20) item.soft.delete - DeleteItem will use soft delete or delete entities. Default value `true`
+
 ### ReShare specific NCIP configuration
 The following configuration is required to enable ReShare to communicate with FOLIO via NCIP.
 
