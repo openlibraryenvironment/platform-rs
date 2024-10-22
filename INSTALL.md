@@ -208,26 +208,27 @@ Here is an example of needed entries which you need to POST to the endpoint `/co
 These settings should be set for specific `agencyId`/`configName` used in the ReShare config.
 
 Here is more detailed description for each of settings: 
-    1. `instance.type.name` - must be defined under _Settings > Inventory > Instances > Resource Types_. Used during `AcceptItem` when creating the instance record.
-    2. `instance.source` - any text value, used during `AcceptItem` when creating the instance record.
-    3. `item.material.type.name` - must be defined under _Settings > Inventory > Items > Material Types_. Used during `AcceptItem` when creating the item record.
-    4. `item.perm.loan.type.name` - must be defined under _Settings > Inventory > Items > Loan Types_. Used during `AcceptItem` when creating the item record.
-    5. `item.status.name` - Used during `AcceptItem` when creating the item record. Use one of the available values: _Available, Awaiting pickup, Awaiting delivery, Checked out, In transit, Missing, Paged, On order, In process, Declared lost, Claimed returned, Withdrawn, Lost and paid, Aged to lost_
-    6. `item.perm.location.code` - Used during `AcceptItem` when creating the item record. Must be defined under _Settings > Tenant > Locations_
-    7. `holdings.perm.location.code` - Used during `AcceptItem` when creating the holding record. Must be defined under _Settings > Tenant > Locations_
-    8. `instance.custom.identifier.name` - Used during `AcceptItem` when creating the instance record. Must be defined under _Settings -> Inventory -> Instances -> Resource Identifier Types_
-    9. `checkout.service.point.code` - Service point code used during `CheckOutItem` and as default during `RequestItem`. Must be defined under _Settings > Tenant > Service points_
-    10. `checkin.service.point.code` - Service point code used during `CheckInItem`. Must be defined under _Settings > Tenant > Service points
-    11. `response.includes.physical.address` -  Boolean value to include address. Optional, defaults to false. Used during `LookupUser` response.
-    12. `user.priv.ok.status` - Status code used during `LookupUser`. Optional, defaults to _ACTIVE_, any text value.
-    13. `user.priv.blocked.status` - Status code used during `LookupUser`. Optional, defaults to _BLOCKED_, any text value.
-    14. `holdings.source.name` - Holdings source name used during `AcceptItem`. Muste be defined under `Settings > Inventory > Holdings sources`. Optional, defaults to _FOLIO_.
-    15. `user.email.type` - Optional, defaults to "electronic mail address". Used during `LookupUser` response.
-    16. `cancel.request.reason.name` - Reason for request cancellation if an item with a different barcode is checked out.  Used during `CancelRequestItem`. Must be defined under _Settings > Circulation > Request cancellation reasons_
-    17. `cancel.request.reason.patron.name` - Reason for request cancellation when a patron did not check out the item. Used during `DeleteItem` Must be defined under _Settings > Circulation > Request cancellation reasons_
-    18. `request.note.name` - Request note name. Default value "ILL note". Make sure that such note exists. Can be checked by endpoint `/note-types` and if needed added with post to same endpoint
-    19. `request.note.enabled` - Used during `RequestItem`, adds ILL request ID to the loan and the request record. Boolean, defaults to _false_.
-    20. `item.soft.delete` - Used during `DeleteItem`. Suppresses rather than deletes the item record. Boolean, defaults to `true`.
+
+1. `instance.type.name` - must be defined under _Settings > Inventory > Instances > Resource Types_. Used during `AcceptItem` when creating the instance record.
+2. `instance.source` - any text value, used during `AcceptItem` when creating the instance record.
+3. `item.material.type.name` - must be defined under _Settings > Inventory > Items > Material Types_. Used during `AcceptItem` when creating the item record.
+4. `item.perm.loan.type.name` - must be defined under _Settings > Inventory > Items > Loan Types_. Used during `AcceptItem` when creating the item record.
+5. `item.status.name` - Used during `AcceptItem` when creating the item record. Use one of the available values: _Available, Awaiting pickup, Awaiting delivery, Checked out, In transit, Missing, Paged, On order, In process, Declared lost, Claimed returned, Withdrawn, Lost and paid, Aged to lost_
+6. `item.perm.location.code` - Used during `AcceptItem` when creating the item record. Must be defined under _Settings > Tenant > Locations_
+7. `holdings.perm.location.code` - Used during `AcceptItem` when creating the holding record. Must be defined under _Settings > Tenant > Locations_
+8. `instance.custom.identifier.name` - Used during `AcceptItem` when creating the instance record. Must be defined under _Settings -> Inventory -> Instances -> Resource Identifier Types_
+9. `checkout.service.point.code` - Service point code used during `CheckOutItem` and as default during `RequestItem`. Must be defined under _Settings > Tenant > Service points_
+10. `checkin.service.point.code` - Service point code used during `CheckInItem`. Must be defined under _Settings > Tenant > Service points
+11. `response.includes.physical.address` -  Boolean value to include address. Optional, defaults to false. Used during `LookupUser` response.
+12. `user.priv.ok.status` - Status code used during `LookupUser`. Optional, defaults to _ACTIVE_, any text value.
+13. `user.priv.blocked.status` - Status code used during `LookupUser`. Optional, defaults to _BLOCKED_, any text value.
+14. `holdings.source.name` - Holdings source name used during `AcceptItem`. Muste be defined under `Settings > Inventory > Holdings sources`. Optional, defaults to _FOLIO_.
+15. `user.email.type` - Optional, defaults to "electronic mail address". Used during `LookupUser` response.
+16. `cancel.request.reason.name` - Reason for request cancellation if an item with a different barcode is checked out.  Used during `CancelRequestItem`. Must be defined under _Settings > Circulation > Request cancellation reasons_
+17. `cancel.request.reason.patron.name` - Reason for request cancellation when a patron did not check out the item. Used during `DeleteItem` Must be defined under _Settings > Circulation > Request cancellation reasons_
+18. `request.note.name` - Request note name. Default value "ILL note". Make sure that such note exists. Can be checked by endpoint `/note-types` and if needed added with post to same endpoint
+19. `request.note.enabled` - Used during `RequestItem`, adds ILL request ID to the loan and the request record. Boolean, defaults to _false_.
+20. `item.soft.delete` - Used during `DeleteItem`. Suppresses rather than deletes the item record. Boolean, defaults to `true`.
 
 ### ReShare specific NCIP configuration
 The following configuration is required to enable ReShare to communicate with FOLIO via NCIP.
