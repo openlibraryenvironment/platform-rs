@@ -83,7 +83,7 @@ The latest `edge-ncip` and `mod-ncip` modules are required in the FOLIO system t
 
 General configuration instructions for NCIP are in the [edge-ncip](https://github.com/folio-org/edge-ncip) repository and specific tenant configuration instructions are in the [mod-ncip](https://github.com/folio-org/mod-ncip).
 
-These settings should be set for specific `agencyId`/`configName` used in the ReShare config.
+These settings should be set for a specific `agencyId`/`configName` used in the ReShare config, for example `RESHARE`.
 
 Specific description for each of the settings: 
 
