@@ -96,11 +96,11 @@ Specific description for each of the settings:
 7. `holdings.perm.location.code` - Used during `AcceptItem` when creating the holding record. Must be defined under _Settings > Tenant > Locations_
 8. `instance.custom.identifier.name` - Used during `AcceptItem` when creating the instance record. Must be defined under _Settings -> Inventory -> Instances -> Resource Identifier Types_
 9. `checkout.service.point.code` - Service point code used during `CheckOutItem` and as default during `RequestItem`. Must be defined under _Settings > Tenant > Service points_
-10. `checkin.service.point.code` - Service point code used during `CheckInItem`. Must be defined under _Settings > Tenant > Service points
+10. `checkin.service.point.code` - Service point code used during `CheckInItem`. Must be defined under _Settings > Tenant > Service points_
 11. `response.includes.physical.address` -  Boolean value to include address. Optional, defaults to false. Used during `LookupUser` response.
 12. `user.priv.ok.status` - Status code used during `LookupUser`. Optional, defaults to _ACTIVE_, any text value.
 13. `user.priv.blocked.status` - Status code used during `LookupUser`. Optional, defaults to _BLOCKED_, any text value.
-14. `holdings.source.name` - Holdings source name used during `AcceptItem`. Muste be defined under `Settings > Inventory > Holdings sources`. Optional, defaults to _FOLIO_.
+14. `holdings.source.name` - Holdings source name used during `AcceptItem`. Muste be defined under _Settings > Inventory > Holdings sources_. Optional, defaults to _FOLIO_.
 15. `user.email.type` - Optional, defaults to "electronic mail address". Used during `LookupUser` response.
 16. `cancel.request.reason.name` - Reason for request cancellation if an item with a different barcode is checked out.  Used during `CancelRequestItem`. Must be defined under _Settings > Circulation > Request cancellation reasons_
 17. `cancel.request.reason.patron.name` - Reason for request cancellation when a patron did not check out the item. Used during `DeleteItem` if there's an open request. Must be defined under _Settings > Circulation > Request cancellation reasons_
