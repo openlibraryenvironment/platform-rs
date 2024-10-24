@@ -304,10 +304,14 @@ When Fee Owner is added, you need to add a fee for each patron group type:
 * undergrad
 * graduate
 
+## ReShare settings
+
+You can query all settings with ``/rs/settings/appSettings?filters=hidden==true&offset=0&max=1000``
+
 ## SLNP state model settings
 The system has default State Model settings that must be updated after deployment. 
 
-Query the `/rs/settings/appSettings?filters=hidden==true%26%26key=={SETTING_KEY}&offset=0&max=1000` endpoint to find the default value and UUID for each setting (replace `{SETTING_KEY}` placeholder with the name of the setting). 
+Query the `/rs/settings/appSettings?filters=hidden==true%26%26key=={SETTING_KEY}` endpoint to find the default value and UUID for each setting (replace `{SETTING_KEY}` placeholder with the name of the setting). 
 Copy the response, change the value and `PUT` it to the `/rs/settings/appSettings/{SETTING_UUID}` endpoint to update.
 
 | Setting key                           | Setting value              |
