@@ -605,3 +605,23 @@ The following feature flags can be modified by sending them as a **PUT** request
       "key": "state_action_config.combine_fill_and_ship.feature_flag"
   }
 ```
+
+# Directory config
+
+* supplier:
+    * the supplier directory entry is looked up by the supplier’s ISIL (SigelGB) and two fields are important when creating the FOLIO request:
+        * FOLIO location filter -> used to ensure that the item belongs to the specified location
+        * LMS location code -> used for the pickup location of the FOLIO request, this should be the “ILL Office” service point that does not have any physical FOLIO locations assigned. It’s “virtual” and it used to make sure item are put ’In transit” in the supplier’s FOLIO system
+    * the requester directory entry is looked up by the requester’s ISIL (SigelNB) and one field is important when creating the FOLIO request:
+        * Institutional patron ID -> the barcode of the institutional user that will be used on the FOLIO request
+* requester:
+    * the directory entry for the physical pick-up location on the requester side (e.g selected by by patron) is looked up by name (AusgabeOrt) and not by ISIL and one field is important to create the temporary item and request in the requester’s FOLIO system:
+        * LMS location code -> should be a FOLIO service point code of the actual physical pick-up location
+
+
+
+
+
+
+
+
