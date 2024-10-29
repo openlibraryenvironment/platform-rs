@@ -1,46 +1,46 @@
 [
   {
-    "id": "folio_developer-6.3.0",
+    "id": "folio_developer-7.0.0",
     "action": "enable"
   },
   {
-    "id": "reshare_directory-1.10.10000038",
+    "id": "projectreshare_directory-1.12.0",
     "action": "enable"
   },
   {
-    "id": "reshare_plugin-rs-siquery-vufind-1.0.0",
+    "id": "projectreshare_plugin-rs-siquery-vufind-1.2.1",
     "action": "enable"
   },
   {
-    "id": "reshare_request-1.6.1000005",
+    "id": "projectreshare_request-1.6.2",
     "action": "enable"
   },
   {
-    "id": "reshare_rs-1.15.100000162",
+    "id": "projectreshare_rs-1.18.1",
     "action": "enable"
   },
   {
-    "id": "reshare_supply-1.6.1000004",
+    "id": "projectreshare_supply-1.6.2",
     "action": "enable"
   },
   {
-    "id": "reshare_update-1.8.1000008",
+    "id": "projectreshare_update-1.10.0",
     "action": "enable"
   },
   {
-    "id": "folio_stripes-core-8.3.2",
+    "id": "folio_stripes-core-9.0.8",
     "action": "enable"
   },
   {
-    "id": "folio_stripes-smart-components-7.3.3",
+    "id": "folio_stripes-smart-components-8.0.3",
     "action": "enable"
   },
   {
-    "id": "folio_tenant-settings-7.3.0",
+    "id": "folio_tenant-settings-7.4.0",
     "action": "enable"
   },
   {
-    "id": "folio_users-8.2.5",
+    "id": "folio_users-9.0.3",
     "action": "enable"
   }
 ]
