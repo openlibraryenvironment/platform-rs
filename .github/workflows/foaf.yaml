@@ -3,9 +3,6 @@ name: foaf
 on:
   workflow_dispatch:
 
-env:
-  CARDINAL_CREDS: ${{ secrets.CARDINAL_CREDS }}
-
 jobs:
   foaf:
 
@@ -16,7 +13,7 @@ jobs:
 
       - name: Create credential config
         run: |
-          echo ${{ CARDINAL_CREDS }} | base64 -d > credentials.json
+          echo ${{ secrets.CARDINAL_CREDS }} | base64 -d > credentials.json
 
       - name: Ask for FOAF crawl
         run: |
