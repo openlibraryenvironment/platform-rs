@@ -1,0 +1,24 @@
+name: foaf
+
+on:
+  workflow_dispatch:
+
+env:
+  CARDINAL_CREDS: ${{ secrets.CARDINAL_CREDS }}
+
+jobs:
+  foaf:
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout module
+        uses: actions/checkout@v4
+
+      - name: Create credential config
+        run: |
+          echo ${{ CARDINAL_CREDS }} | base64 -d > credentials.json
+
+      - name: Ask for FOAF crawl
+        run: |
+          /usr/bin/python3 .github/workflows/scripts/foaf.py \
+            -c credentials.json 
