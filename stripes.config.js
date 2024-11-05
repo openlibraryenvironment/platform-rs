@@ -8,6 +8,7 @@ module.exports = {
     platformDescription: 'ReShare platform',
     hasAllPerms: false,
     reshare: {
+      showRefresh: true,
       sharedIndex: {
         type: 'vufind',
         ui: 'https://vufind.reshare-dev.indexdata.com/east',
