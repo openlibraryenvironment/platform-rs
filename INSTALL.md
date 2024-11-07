@@ -11,7 +11,7 @@ ILL_ADDR: <address of the ReShare ISO18626 endpoint, e.g http://mod-rs-2-18-2:80
 OKAPI_TENANT: <name of the ReShare/FOLIO tenant>
 SLNP_ADDR: <ZFL address>
 AGENCY_TYPE: <value used for Directory entries, eg. ISIL>
-REC_ID_PREFIX: <value>
+REC_ID_PREFIX: <value> e.g. isil symbol for tenant (MUNICH_STATE)
 ```
 
 ## Front end
