@@ -38,10 +38,14 @@ jobs:
       - name: run build scripts
         run: |
           ./node_modules/.bin/stripes mod descriptor stripes.config.js --output ./ModuleDescriptors &&
-          STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://back-okapi.reshare-dev.indexdata.com --tenant back --sourcemap &&
-          mv output back &&
-          STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://forth-okapi.reshare-dev.indexdata.com --tenant forth --sourcemap &&
-          mv output forth
+          # STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://back-okapi.reshare-dev.indexdata.com --tenant back --sourcemap &&
+          # mv output back &&
+          # STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://forth-okapi.reshare-dev.indexdata.com --tenant forth --sourcemap &&
+          # mv output forth
+          STRIPES_TRANSPILE_TOKENS=@k-int yarn build --tenant slnptest_three --okapi https://slnp-3-okapi.reshare-dev.indexdata.com --sourcemap &&
+          mv output three &&
+          STRIPES_TRANSPILE_TOKENS=@k-int yarn build --tenant slnptest_four --okapi https://slnp-4-okapi.reshare-dev.indexdata.com --sourcemap &&
+          mv output four
 
       - name: copy yarn.lock to builds
         run: |
@@ -55,17 +59,31 @@ jobs:
       - name: upload builds
         run: |
           ls &&
-          aws s3 sync ./back s3://reshare-bundles/back --acl public-read --delete &&
-          aws s3 sync ./forth s3://reshare-bundles/forth --acl public-read --delete
+          # aws s3 sync ./back s3://reshare-bundles/back --acl public-read --delete &&
+          # aws s3 sync ./forth s3://reshare-bundles/forth --acl public-read --delete
+          aws s3 sync ./three s3://reshare-bundles/slnp_three --acl public-read --delete &&
+          aws s3 sync ./four s3://reshare-bundles/slnp_four --acl public-read --delete
 
-      - name: Invalidate CF Back
+      # - name: Invalidate CF Back
+      #   run: |
+      #     aws cloudfront create-invalidation \
+      #         --distribution-id E8EDX09LVCH4C \
+      #         --paths "/*"
+
+      # - name: Invalidate CF Forth
+      #   run: |
+      #     aws cloudfront create-invalidation \
+      #         --distribution-id EWKGQD0EOK4VN \
+      #         --paths "/*"
+
+      - name: Invalidate SLNP THREE
         run: |
           aws cloudfront create-invalidation \
-              --distribution-id E8EDX09LVCH4C \
+              --distribution-id E1O6T9G81LBOIZ \
               --paths "/*"
 
-      - name: Invalidate CF Forth
+      - name: Invalidate SLNP FOUR
         run: |
           aws cloudfront create-invalidation \
-              --distribution-id EWKGQD0EOK4VN \
+              --distribution-id E1VZSPSDIUNHGW \
               --paths "/*"
