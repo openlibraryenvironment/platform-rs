@@ -17,6 +17,55 @@ REC_ID_PREFIX: <value> e.g. isil symbol for tenant (MUNICH_STATE)
 ## Front end
 Front-end modules are described in package.json. Modules specific to reshare are scoped with the "projectreshare" scope and can be run alongside a FOLIO platform.
 
+Configure stripes.config.js. Add required FOLIO and ReShare frontend modules to `modules` section. Add `sharedIndex` and `patronURL` details to `reshare` section. `patronURL` is required to enable the Requesting User section.
+```
+module.exports = {
+  okapi: { 'url':'https://my-okapi.myorg.tld', 'tenant':'tenantid' },
+  config: {
+    showHomeLink: true,
+    welcomeMessage: 'ui-rs.front.welcome',
+    platformName: 'ReShare',
+    platformDescription: 'ReShare platform',
+    hasAllPerms: false,
+    reshare: {
+      sharedIndex: {
+        type: 'vufind',
+        ui: 'https://vufind.myorg.ltd',
+        query: 'https://vufind.myorg.ltd',
+      },
+      patronURL: '/users?qindex=barcode&query={patronid}',
+    },
+    showDevInfo: true,
+    staleBundleWarning: { path: '/index.html', header: 'last-modified', interval: 5 },
+  },
+  modules: {
+    '@folio/users': {},
+    '@folio/checkin' : {},
+    '@folio/checkout' : {},
+    '@folio/circulation' : {},
+    '@folio/circulation-log' : {},
+    '@folio/requests': {},
+    '@folio/developer': {},
+    '@folio/inventory': {},
+    "@folio/tenant-settings": {},
+    '@projectreshare/directory': {},
+    '@projectreshare/request': {},
+    '@projectreshare/rs': {},
+    '@projectreshare/supply': {},
+  },
+  branding: {
+    style: {},
+    logo: {
+      src: './tenant-assets/reshare-logo.png',
+      alt: 'Opentown Libraries',
+    },
+    favicon: {
+      src: './tenant-assets/reshare-favicon.jpg',
+    },
+  },
+};
+```
+
 Install dependencies:
 ```
 yarn install
