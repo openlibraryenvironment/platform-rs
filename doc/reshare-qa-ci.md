@@ -5,7 +5,7 @@ known as the "Cardinal Consortium" comprising three pairs of ReShare tenants.
 Each pair of tenants is capable of running different versions of the ReShare
 software. All tenants are able to borrow and lend to one another.
 
-## Cardinal Consortium Tenants (Updated 09/30/24)
+## Cardinal Consortium Tenants (Updated 11/12/24)
 
 ### East/West (Master)
 The east west tenants run the master branch of the ReShare modules.
