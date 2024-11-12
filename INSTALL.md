@@ -318,6 +318,7 @@ feefines.collection.get
 accounts.item.post
 circulation.requests.item.get
 circulation.requests.item.put
+circulation.loans.add-info.post
 ```
 
 #### Connection settings
