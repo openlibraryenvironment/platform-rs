@@ -15,7 +15,7 @@ REC_ID_PREFIX: <value> e.g. isil symbol for tenant (MUNICH_STATE)
 ```
 
 ## Front end
-Front-end modules are described in package.json. Modules specific to reshare are scoped with the "projectreshare" scope and can be run alongside a FOLIO platform.
+Front-end modules are described in package.json. Modules specific to reshare are scoped with the "projectreshare" scope and can be run alongside a FOLIO platform. If using a custom package.json, be sure the versions match what is specified in the package.json in this repository.
 
 Configure stripes.config.js. Add required FOLIO and ReShare frontend modules to `modules` section. Add `sharedIndex` and `patronURL` details to `reshare` section. `patronURL` is required to enable the Requesting User section.
 ```
