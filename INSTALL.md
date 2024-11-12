@@ -130,7 +130,7 @@ The latest `edge-ncip` and `mod-ncip` modules are required in the FOLIO system t
 | module name   | version         | image                    | 
 |---------------|-----------------|--------------------------|
 | edge-ncip     | edge-ncip-1.9.2 | folioorg/edge-ncip:1.9.2 |
-| mod-ncip      | mod-ncip-1.15.2 | folioorg/mod-ncip:1.15.2 |
+| mod-ncip      | mod-ncip-1.15.4 | folioorg/mod-ncip:1.15.4 |
 
 NCIP settings are configured via mod-configuration. You can retrieve them via `/configurations/entries?query=module=NCIP&limit=1000`
 
