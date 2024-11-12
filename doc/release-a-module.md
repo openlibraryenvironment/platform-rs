@@ -33,7 +33,7 @@ To release the moudle, use GitHub's release management feature: https://github.c
 2. Choose the tag you just created. For preivous tag, select the appropriate value (1.19.4 in this case).
 3. Use the generate release notes feature to create a list of commits since the last release (optional)
 4. Enter the tag name (v1.19.5 in this case) for the release name.
-5. Leave "Set as the latest release" checked if this is indeed the latest. You may want to un-select this option if you are releasing a patch ot an older release branch.
+5. Leave "Set as the latest release" checked if this is indeed the latest. You may want to un-select this option if you are releasing a patch to an older release branch.
 6. Click publish release--this will trigger a relase job in the repo's actoins tab: https://github.com/openlibraryenvironment/ui-rs/actions. Keep an eye on that to make sure it passes.
 
 ## Notes
