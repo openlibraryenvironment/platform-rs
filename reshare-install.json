@@ -1,10 +1,10 @@
 [
   {
-    "id": "mod-directory-2.11.0",
+    "id": "mod-directory-2.11.1",
     "action": "enable"
   },
   {
-    "id": "mod-rs-2.18.2",
+    "id": "mod-rs-2.18.3",
     "action": "enable"
   }
 ]

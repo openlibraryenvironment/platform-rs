@@ -291,6 +291,19 @@ Here is an example JSON of these entries which you need to POST to the endpoint 
     "value": "reshare_service"
 }
 ```
+### Disable all staff notice policies (optional)
+Notice policies can be retreived from the `/rs/noticePolicies` API. To set them as inactive, make set the "active" property to False. 
+There is an included script to do this in the scripts directory. Replace admin_username, admin_password, okapi_url, and tenant_id with appropriate
+values for the tenant you wish to disable notices for. Example invocation and output:
+```
+$ ./scripts/disable_notices.py -u admin_username -p admin_password -o okapi_url -t tenant_id
+Updating notice policy with id 2245cfc6-66ac-41c4-8594-cc2bfe8592fd
+Result: policy with id 2245cfc6-66ac-41c4-8594-cc2bfe8592fd has active set to False
+Updating notice policy with id 6b7d0824-322d-4642-abba-a12a1274a83a
+Result: policy with id 6b7d0824-322d-4642-abba-a12a1274a83a has active set to False
+Updating notice policy with id 8ec3d1b6-30bb-4261-bcce-d5286641d51a
+Result: policy with id 8ec3d1b6-30bb-4261-bcce-d5286641d51a has active set to False
+``` 
 
 ### ReShare specific NCIP configuration
 The following configuration is required to enable ReShare to communicate with FOLIO via NCIP.
