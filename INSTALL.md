@@ -1,6 +1,6 @@
-# Installation instructions for ReShare 1.18
+# Installation and configuration instructions for ReShare 1.18
 
-## Directory config
+## Directory
 
 ### General configuration
 
@@ -26,9 +26,7 @@ For the units representing physical pick-up locations on the requester, it's imp
      
 For all directory entries, both requester institutions and supplying institutions, the __Service Account__ (ISO18626 endpoint) should be configured to point at the local SLNP gateway. __NOTE:__ once defining a default Service Account is possible, assigning them to individual entries will not be needed.
 
-# ReShare deployment and settings
-
-## Edge
+## Edge gateway
 
 The SLNP gateway is installed with a helm [chart](https://github.com/indexdata/edge-slnp/pkgs/container/charts%2Fedge-slnp) and configured via ENV variables.
 
@@ -137,7 +135,7 @@ with modified IDs are available in the [ModuleDescriptors](ModuleDescriptors/) d
 | mod-circulation         | mod-circulation-{version}-RESHARE         | ghcr.io/indexdata/mod-circulation:{version}-RESHARE         |
 | mod-circulation-storage | mod-circulation-storage-{version}-RESHARE | ghcr.io/indexdata/mod-circulation-storage:{version}-RESHARE |
 
-### Backend module environment variables.
+## Backend module environment variables.
 Both mod-rs and mod-directory need access to a module database, okapi, and to a kafka instance. Use the following environment variables for both modules:
 | Variable | Description |
 | ------- | ------  |
@@ -319,24 +317,8 @@ Here is an example JSON of these entries which you need to POST to the endpoint 
     "value": "reshare_service"
 }
 ```
-### Disable all staff notice policies (optional)
-Notice policies can be retreived from the `/rs/noticePolicies` API. To set them as inactive, make set the "active" property to False. 
-There is an included script to do this in the scripts directory. Replace admin_username, admin_password, okapi_url, and tenant_id with appropriate
-values for the tenant you wish to disable notices for. Example invocation and output:
-```
-$ ./scripts/disable_notices.py -u admin_username -p admin_password -o okapi_url -t tenant_id
-Updating notice policy with id 2245cfc6-66ac-41c4-8594-cc2bfe8592fd
-Result: policy with id 2245cfc6-66ac-41c4-8594-cc2bfe8592fd has active set to False
-Updating notice policy with id 6b7d0824-322d-4642-abba-a12a1274a83a
-Result: policy with id 6b7d0824-322d-4642-abba-a12a1274a83a has active set to False
-Updating notice policy with id 8ec3d1b6-30bb-4261-bcce-d5286641d51a
-Result: policy with id 8ec3d1b6-30bb-4261-bcce-d5286641d51a has active set to False
-``` 
 
-### ReShare specific NCIP configuration
-The following configuration is required to enable ReShare to communicate with FOLIO via NCIP.
-
-#### Institution user for NCIP connection
+### Institutional user for NCIP connection
 Create an institutional user that will be used to send requests from ReShare to the FOLIO NCIP module. This user must have these permissions:
 ```
 accounts.item.post
@@ -362,6 +344,10 @@ owners.collection.get
 ui-circulation.settings.lost-item-fees-policies
 ui-circulation.settings.overdue-fines-policies
 ```
+
+
+### ReShare NCIP configuration
+The following configuration is required to enable ReShare to communicate with FOLIO via NCIP.
 
 #### Connection settings
 Specify the NCIP connection settings in ReShare. This can be done in _Settings -> Resource Sharing -> Local NCIP settings_: 
@@ -400,7 +386,7 @@ When Fee Owner is added, you need to add a fee for each patron group type:
 * undergrad
 * graduate
 
-## ReShare settings
+## Other ReShare settings
 
 You can query all settings with ``/rs/settings/appSettings?filters=hidden==true&offset=0&max=1000``
 
@@ -505,6 +491,20 @@ This setting pertains to the SLNP Returnable Requester category and offers the a
 - **Setting Name**: Combine Requester Actions 'Mark Returned by Patron' and 'Mark Return Shipped'
   - **Configuration Option**: 
     - **Yes**: When set to "Yes," the actions 'Mark Returned by Patron' and 'Mark Return Shipped' are combined into a single action. This effectively reduces the steps needed in processing, thereby improving workflow efficiency.
+
+## Disable all staff notice policies (optional)
+Notice policies can be retrieved from the `/rs/noticePolicies` API. To set them as inactive, set the "active" property to False. 
+There is an included script to do this in the `scripts` directory. Replace admin_username, admin_password, okapi_url, and tenant_id with appropriate
+values for the tenant you wish to disable notices for. Example invocation and output:
+```
+$ ./scripts/disable_notices.py -u admin_username -p admin_password -o okapi_url -t tenant_id
+Updating notice policy with id 2245cfc6-66ac-41c4-8594-cc2bfe8592fd
+Result: policy with id 2245cfc6-66ac-41c4-8594-cc2bfe8592fd has active set to False
+Updating notice policy with id 6b7d0824-322d-4642-abba-a12a1274a83a
+Result: policy with id 6b7d0824-322d-4642-abba-a12a1274a83a has active set to False
+Updating notice policy with id 8ec3d1b6-30bb-4261-bcce-d5286641d51a
+Result: policy with id 8ec3d1b6-30bb-4261-bcce-d5286641d51a has active set to False
+``` 
 
 ## Feature flags
 The following feature flags can be previewed by sending a **GET** request to: /rs/settings/appSettings?filters=section%3D%3DfeatureFlags&filters=hidden%3Dtrue&sort=key%3D%3Dasc&perPage=100
