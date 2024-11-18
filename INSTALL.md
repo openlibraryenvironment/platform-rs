@@ -311,27 +311,28 @@ The following configuration is required to enable ReShare to communicate with FO
 #### Institution user for NCIP connection
 Create an institutional user that will be used to send requests from ReShare to the FOLIO NCIP module. This user must have these permissions:
 ```
+accounts.item.post
+automated-patron-blocks.collection.get
+circulation.loans.add-info.post
+circulation.requests.collection.get
+circulation.requests.item.get
+circulation.requests.item.put
 circulation-storage.cancellation-reasons.collection.get
 circulation-storage.circulation-rules.get
+feefines.collection.get
+inventory.instances.item.delete
+inventory.instances.collection.get
+inventory.items.collection.get
+inventory.items.item.put
+inventory.items.item.delete
 inventory-storage.items.collection.get
 manualblocks.collection.get
 ncip.all
 note.types.collection.get
-automated-patron-blocks.collection.get
+notes.domain.all
+owners.collection.get
 ui-circulation.settings.lost-item-fees-policies
 ui-circulation.settings.overdue-fines-policies
-inventory.instances.collection.get
-inventory.items.collection.get
-circulation.requests.collection.get
-inventory.items.item.put
-inventory.items.item.delete
-inventory.instances.item.delete
-owners.collection.get
-feefines.collection.get
-accounts.item.post
-circulation.requests.item.get
-circulation.requests.item.put
-circulation.loans.add-info.post
 ```
 
 #### Connection settings
