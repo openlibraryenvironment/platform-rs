@@ -1,5 +1,33 @@
 # Installation instructions for ReShare 1.18
 
+## Directory config
+
+### General configuration
+
+We recommend that every campus in FOLIO with its own ISIL is represented as a separate __Institution__ in the directory and every pick-up location is specified as a __Unit__. 
+
+When the institution acts as a supplier, it's important that the `FOLIO location filter` and the `LMS location code` are specified. 
+
+When the institution acts as a requester, it's important that the `Institutional patron ID` is specified.
+
+For the units representing physical pick-up locations on the requester, it's important that the `LMS location code` is specified.
+
+### How the entries are used
+
+* when the tenant acts as a supplier:
+    * __supplier directory entry__ is looked up by the supplier’s ISIL (`SigelGB`) and two fields are important when creating the FOLIO request via NCIP `RequestItem`:
+        * `FOLIO location filter` -> used to ensure that the request will page items in the specified location only
+        * `LMS location code` -> used for the pickup location in the FOLIO request. This should be a special __ILL Office__ service point without any physical FOLIO locations assigned. It will ensure the requested items are always marked `In transit` in the supplier’s FOLIO system.
+    * __requester directory entry__ is looked up by the requester’s ISIL (`SigelNB`) and one field is important when creating the FOLIO request via NCIP `RequestItem`:
+        * `Institutional patron ID` -> the barcode of the institutional user that will be used in the FOLIO request
+* when the tenant acts as a requester:
+    * __directory entry for the physical pick-up location__ on the requester side (as selected by patron) is looked up by name (`AusgabeOrt`) and not by ISIL and one field is important to create the temporary item and request in the requester’s FOLIO system via NCIP `AcceptItem`:
+        * `LMS location code` -> should be a FOLIO service point code of the actual physical pick-up location
+     
+For all directory entries, both requester institutions and supplying institutions, the __Service Account__ (ISO18626 endpoint) should be configured to point at the local SLNP gateway. __NOTE:__ once defining a default Service Account is possible, assigning them to individual entries will not be needed.
+
+# ReShare deployment and settings
+
 ## Edge
 
 The SLNP gateway is installed with a helm [chart](https://github.com/indexdata/edge-slnp/pkgs/container/charts%2Fedge-slnp) and configured via ENV variables.
@@ -669,32 +697,6 @@ The following feature flags can be modified by sending them as a **PUT** request
       "key": "state_action_config.combine_fill_and_ship.feature_flag"
   }
 ```
-
-# Directory config
-
-## General configuration
-
-We recommend that every campus in FOLIO with its own ISIL is represented as a separate __Institution__ in the directory and every pick-up location is specified as a __Unit__. 
-
-When the institution acts as a supplier, it's important that the `FOLIO location filter` and the `LMS location code` are specified. 
-
-When the institution acts as a requester, it's important that the `Institutional patron ID` is specified.
-
-For the units representing physical pick-up locations on the requester, it's important that the `LMS location code` is specified.
-
-## How the entries are used
-
-* when the tenant acts as a supplier:
-    * __supplier directory entry__ is looked up by the supplier’s ISIL (`SigelGB`) and two fields are important when creating the FOLIO request via NCIP `RequestItem`:
-        * `FOLIO location filter` -> used to ensure that the request will page items in the specified location only
-        * `LMS location code` -> used for the pickup location in the FOLIO request. This should be a special __ILL Office__ service point without any physical FOLIO locations assigned. It will ensure the requested items are always marked `In transit` in the supplier’s FOLIO system.
-    * __requester directory entry__ is looked up by the requester’s ISIL (`SigelNB`) and one field is important when creating the FOLIO request via NCIP `RequestItem`:
-        * `Institutional patron ID` -> the barcode of the institutional user that will be used in the FOLIO request
-* when the tenant acts as a requester:
-    * __directory entry for the physical pick-up location__ on the requester side (as selected by patron) is looked up by name (`AusgabeOrt`) and not by ISIL and one field is important to create the temporary item and request in the requester’s FOLIO system via NCIP `AcceptItem`:
-        * `LMS location code` -> should be a FOLIO service point code of the actual physical pick-up location
-     
-For all directory entries, both requester institutions and supplying institutions, the __Service Account__ (ISO18626 endpoint) should be configured to point at the local SLNP gateway. __NOTE:__ once defining a default Service Account is possible, assigning them to individual entries will not be needed.
 
 
 
