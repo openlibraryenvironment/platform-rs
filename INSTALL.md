@@ -23,8 +23,10 @@ For the units representing physical pick-up locations on the requester, it's imp
 * when the tenant acts as a requester:
     * __directory entry for the physical pick-up location__ on the requester side (as selected by patron) is looked up by name (`AusgabeOrt`) and not by ISIL and one field is important to create the temporary item and request in the requester’s FOLIO system via NCIP `AcceptItem`:
         * `LMS location code` -> should be a FOLIO service point code of the actual physical pick-up location
+
+### Service Account
      
-For all directory entries, both requester institutions and supplying institutions, the __Service Account__ (ISO18626 endpoint) should be configured to point at the local SLNP gateway. __NOTE:__ once defining a default Service Account is possible, assigning them to individual entries will not be needed.
+For all directory entries representing requesting and supplying institutions, the __Service Account__ (ISO18626 endpoint) must be configured to point at the local SLNP gateway. __NOTE:__ Once available, create a Service Account with the function `SLNP gateway`. It will be used automatically for all directory entries that have no Service Accounts assigned. It's the preferred way to configure Service Accounts for the ZFL tenants.
 
 ## Edge gateway
 
