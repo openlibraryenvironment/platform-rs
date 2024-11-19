@@ -8,6 +8,14 @@
     "action": "enable"
   },
   {
+    "id": "mod-circulation-storage-17.2.4",
+    "action": "enable"
+  },
+  {
+    "id": "mod-pubsub-2.13.1",
+    "action": "enable"
+  },
+  {
     "id": "mod-users-19.3.2",
     "action": "enable"
   },
