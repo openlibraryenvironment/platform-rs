@@ -28,6 +28,190 @@ For the units representing physical pick-up locations on the requester, it's imp
      
 For all directory entries representing requesting and supplying institutions, the __Service Account__ (ISO18626 endpoint) must be configured to point at the local SLNP gateway. __NOTE:__ Once available, create a Service Account with the function `SLNP gateway`. It will be used automatically for all directory entries that have no Service Accounts assigned. It's the preferred way to configure Service Accounts for the ZFL tenants.
 
+### Creating directory entries
+
+Here's an example of how to create a directory entry using curl
+```
+curl --location '{{baseURL}}/directory/entry' \
+--header 'x-okapi-tenant: {{tenant}}' \
+--header 'x-okapi-token: {{tenantToken}}' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "name": "TestName",
+    "type": "{{typeUuid}}", 
+    "slug": "TestSlug",
+    "lmsLocationCode": "TestLMS",
+    "symbols": [
+        {
+            "_delete": false,
+            "authority": {
+                "id": "{{authorityUuid}}"
+            },
+            "symbol": "TestSymbol",
+            "priority": "TestPriority"
+        }
+    ],
+    "phoneNumber": "testPhone",
+    "emailAddress": "TestEmail@mail.com",
+    "contactName": "TestContact",
+    "addresses": [
+        {
+            "addressLabel": "TestAddress",
+            "lines": [
+                {
+                    "type": {
+                        "value": "Department"
+                    },
+                    "value": "TestDepartment",
+                    "seq": 0
+                },
+                {
+                    "type": {
+                        "value": "Premise"
+                    },
+                    "value": "TestPremise",
+                    "seq": 1
+                },
+                {
+                    "type": {
+                        "value": "Thoroughfare"
+                    },
+                    "value": "TestThoroughfare",
+                    "seq": 2
+                },
+                {
+                    "type": {
+                        "value": "PostalCodeOrTown"
+                    },
+                    "value": "TestTown",
+                    "seq": 3
+                },
+                {
+                    "type": {
+                        "value": "Locality"
+                    },
+                    "value": "TestLocality",
+                    "seq": 4
+                },
+                {
+                    "type": {
+                        "value": "AdministrativeArea"
+                    },
+                    "value": "TestArea",
+                    "seq": 5
+                },
+                {
+                    "type": {
+                        "value": "PostalCode"
+                    },
+                    "value": "TestPostalCode",
+                    "seq": 6
+                },
+                {
+                    "type": {
+                        "value": "PostBox"
+                    },
+                    "value": "TestBoc",
+                    "seq": 7
+                },
+                {
+                    "type": {
+                        "value": "PostOffice"
+                    },
+                    "value": "TestOffice",
+                    "seq": 8
+                },
+                {
+                    "type": {
+                        "value": "Country"
+                    },
+                    "value": "Generic",
+                    "seq": 9
+                }
+            ],
+            "id": null,
+            "countryCode": "generic"
+        }
+    ],
+    "services": [
+        {
+            "_delete": false,
+            "slug": "TestServiceSlug",
+            "service": {
+                "id": "{{serviceUuid}}"
+            },
+            "accountDetails": "TestAccountDetails"
+        }
+    ],
+    "customProperties": {
+        "ILLPreferredNamespaces": [
+            {
+                "value": "TestIllPref"
+            }
+        ],
+        "url": [
+            {
+                "value": "TestUrl"
+            }
+        ],
+        "Z3950BaseName": [
+            {
+                "value": "TestZ3950"
+            }
+        ],
+        "policy.ill.returns": [
+            {
+                "value": "yes"
+            }
+        ],
+        "policy.ill.loan_policy": [
+            {
+                "value": "lending_all_types"
+            }
+        ],
+        "policy.ill.last_resort": [
+            {
+                "value": "yes"
+            }
+        ],
+        "policy.ill.InstitutionalLoanToBorrowRatio": [
+            {
+                "value": "TestRotation"
+            }
+        ],
+        "local_institutionalPatronId": [
+            {
+                "value": "TestInstutionalPatronId"
+            }
+        ],
+        "ALMA_AGENCY_ID": [
+            {
+                "value": "TestAlmaAgencyId"
+            }
+        ],
+        "folio_location_filter": [
+            {
+                "value": "TestFolioLocationFilter"
+            }
+        ]
+    },
+    "status": "{{statusUuid}}",
+    "id": "{{randomUuid}}"
+}'
+```
+| Value         | Description                                                                       |   |   |   |   |   |   |
+|---------------|-----------------------------------------------------------------------------------|---|---|---|---|---|---|
+| baseURL       | Okapi base URL                                                                    |   |   |   |   |   |   |
+| tenant        | tenant for header                                                                 |   |   |   |   |   |   |
+| tenantToken   | tenant token in header                                                            |   |   |   |   |   |   |
+| typeUuid      | fetch using /directory/refdata?perPage=100&filters=desc=DirectoryEntry.Type       |   |   |   |   |   |   |
+| authorityUuid | fetch using /directory/namingAuthority?perPage=100                                |   |   |   |   |   |   |
+| serviceUuid   | fetch using /directory/service?filters=status.value%3Dmanaged&perPage=100&sort=id |   |   |   |   |   |   |
+| statusUuid    | fetch using /directory/refdata?perPage=100&filters=desc=Service.Status            |   |   |   |   |   |   |
+| randomUuid    | simply generate a random UUID                             
+
+for custom properties values can be found here /directory/custprops?perPage=100
+
 ## Edge gateway
 
 The SLNP gateway is installed with a helm [chart](https://github.com/indexdata/edge-slnp/pkgs/container/charts%2Fedge-slnp) and configured via ENV variables.
@@ -44,7 +228,7 @@ REC_ID_PREFIX: <appends a prefix to the TitelId, should be set to the main ISIL 
 ## Front end
 Front-end modules are described in package.json. Modules specific to reshare are scoped with the "projectreshare" scope and can be run alongside a FOLIO platform. If using a custom package.json, be sure the versions match what is specified in the package.json in this repository.
 
-Configure stripes.config.js. Add required FOLIO and ReShare frontend modules to `modules` section. Add `sharedIndex` and `patronURL` details to `reshare` section. `patronURL` is required to enable the Requesting User section.
+Configure stripes.config.js. Add required FOLIO and ReShare frontend modules to `modules` section. Add `patronURL` details to `reshare` section. `patronURL` is required to enable the Requesting User section.
 ```
 module.exports = {
   okapi: { 'url':'https://my-okapi.myorg.tld', 'tenant':'tenantid' },
@@ -55,11 +239,6 @@ module.exports = {
     platformDescription: 'ReShare platform',
     hasAllPerms: false,
     reshare: {
-      sharedIndex: {
-        type: 'vufind',
-        ui: 'https://vufind.myorg.ltd',
-        query: 'https://vufind.myorg.ltd',
-      },
       patronURL: '/users?qindex=barcode&query={patronid}',
     },
     showDevInfo: true,
