@@ -32,14 +32,13 @@ For all directory entries representing requesting and supplying institutions, th
 
 The SLNP gateway is installed with a helm [chart](https://github.com/indexdata/edge-slnp/pkgs/container/charts%2Fedge-slnp) and configured via ENV variables.
 
-The relevant config is:
+The required config is (for all other settings see the [edge-slnp](https://github.com/indexdata/edge-slnp) repo):
 
 ```
 ILL_ADDR: <address of the ReShare ISO18626 endpoint, e.g http://mod-rs-2-18-2:8080/rs/externalApi/iso18626>
 OKAPI_TENANT: <name of the ReShare/FOLIO tenant>
 SLNP_ADDR: <ZFL address>
-REC_ID_PREFIX: <appends a prefix to the TitelId, should be set to the main ISIL symbol of the tenant (e.g 'DE-91.1')
-AGENCY_TYPE: <optional, must match the Authority setting for Directory entries, default is 'ISIL'>
+REC_ID_PREFIX: <appends a prefix to the TitelId, should be set to the main ISIL symbol of the tenant, e.g 'DE-91.'>
 ```
 
 ## Front end
