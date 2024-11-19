@@ -4,6 +4,14 @@
     "action": "enable"
   },
   {
+    "id": "mod-pubsub-2.13.1",
+    "action": "enable"
+  },
+  {
+    "id": "mod-circulation-storage-17.2.4",
+    "action": "enable"
+  },
+  {
     "id": "mod-permissions-6.5.0",
     "action": "enable"
   },
