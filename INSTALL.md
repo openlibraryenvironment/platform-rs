@@ -38,8 +38,8 @@ The relevant config is:
 ILL_ADDR: <address of the ReShare ISO18626 endpoint, e.g http://mod-rs-2-18-2:8080/rs/externalApi/iso18626>
 OKAPI_TENANT: <name of the ReShare/FOLIO tenant>
 SLNP_ADDR: <ZFL address>
-AGENCY_TYPE: <value used for Directory entries, eg. ISIL>
-REC_ID_PREFIX: <value> e.g. isil symbol for tenant (MUNICH_STATE)
+REC_ID_PREFIX: <appends a prefix to the TitelId, should be set to the main ISIL symbol of the tenant (e.g 'DE-91.1')
+AGENCY_TYPE: <optional, must match the Authority setting for Directory entries, default is 'ISIL'>
 ```
 
 ## Front end
