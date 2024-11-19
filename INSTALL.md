@@ -195,6 +195,9 @@ Specific description for each of the settings:
 ```
 19. `request.note.enabled` - Controls if request notes should be added during `RequestItem` and `AcceptItem`. Boolean, defaults to _false_. We recommend this is enabled.
 20. `item.soft.delete` - Used during `DeleteItem`. Suppresses rather than deletes the item record. Boolean, defaults to `true`. Keep the default.
+21. `request.fulfillment_preference` ILS request fulfillment preference for `RequestItem`. Keep the default value `Hold Shelf`
+22. `request.accept.fulfillment_preference` ILS request fulfillment preference for `AcceptItem`. Keep the default value `Hold Shelf`
+23. `checkout.loan.info.type` Type of the loan note action for checkout. Keep the default value `patronInfoAdded`, the other possible value is `staffInfoAdded`
 
 Here is an example JSON of these entries which you need to POST to the endpoint `/configurations/entries`:
 ```
