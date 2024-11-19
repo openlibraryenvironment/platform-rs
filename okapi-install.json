@@ -1,50 +1,50 @@
 [
   {
-    "id": "mod-configuration-5.9.0",
+    "id": "mod-configuration-5.10.0",
     "action": "enable"
   },
   {
-    "id": "mod-permissions-6.2.0",
+    "id": "mod-permissions-6.5.0",
     "action": "enable"
   },
   {
-    "id": "mod-users-19.0.0",
+    "id": "mod-users-19.3.2",
     "action": "enable"
   },
   {
-    "id": "mod-notes-4.0.0",
+    "id": "mod-notes-5.2.0",
     "action": "enable"
   },
   {
-    "id": "mod-password-validator-2.5.0",
+    "id": "mod-password-validator-3.2.1",
     "action": "enable"
   },
   {
-    "id": "mod-inventory-storage-25.0.4",
+    "id": "mod-inventory-storage-27.1.4",
     "action": "enable"
   },
   {
-    "id": "mod-authtoken-2.12.0",
+    "id": "mod-authtoken-2.15.2",
     "action": "enable"
   },
   {
-    "id": "mod-login-7.8.0",
+    "id": "mod-login-7.11.2",
     "action": "enable"
   },
   {
-    "id" : "mod-email-1.15.3",
+    "id" : "mod-email-1.17.0",
     "action": "enable"
   },
   {
-    "id" : "mod-login-saml-2.5.1",
+    "id" : "mod-login-saml-2.8.4",
     "action": "enable"
   },
   {
-    "id": "mod-users-bl-7.4.0",
+    "id": "mod-users-bl-7.7.4",
     "action": "enable"
   },
   {
-    "id": "mod-tags-1.3.0",
+    "id": "mod-tags-2.2.0",
     "action": "enable"
   }
 ]
