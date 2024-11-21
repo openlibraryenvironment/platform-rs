@@ -27,10 +27,10 @@
     "@folio/stripes": "9.0.6",
     "@folio/tenant-settings": "8.0.0",
     "@folio/users": "10.0.5",
-    "@projectreshare/directory": "1.13.2",
-    "@projectreshare/request": "1.6.2",
-    "@projectreshare/rs": "1.19.6",
-    "@projectreshare/supply": "1.6.2",
+    "@projectreshare/directory": "1.13.3",
+    "@projectreshare/request": "1.6.3",
+    "@projectreshare/rs": "1.19.7",
+    "@projectreshare/supply": "1.6.3",
     "moment": "~2.29.0",
     "react": "~18.2.0",
     "react-dom": "~18.2.0",
@@ -50,7 +50,7 @@
     "moment": "~2.29.0",
     "redux-form": "^8.0.0",
     "@folio/inventory": "10.0.15",
-    "@projectreshare/stripes-reshare": "2.0.0"
+    "@projectreshare/stripes-reshare": "2.0.1"
   },
   "devDependencies": {
     "@folio/stripes-cli": "~3.1.0",

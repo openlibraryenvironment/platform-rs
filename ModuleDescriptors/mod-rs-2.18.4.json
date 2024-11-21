@@ -1,5 +1,5 @@
 {
-  "id" : "mod-rs-2.18.2",
+  "id" : "mod-rs-2.18.4",
   "name" : "mod-rs",
   "requires" : [ {
     "id" : "email",

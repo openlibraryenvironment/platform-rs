@@ -1,18 +1,18 @@
 {
-  "id": "projectreshare_request-1.6.2",
-  "name": "Request resources for ILL",
+  "id": "projectreshare_supply-1.6.3",
+  "name": "Supply resources for ILL",
   "permissionSets": [
     {
-      "permissionName": "module.request.enabled",
-      "displayName": "UI: request module is enabled",
+      "permissionName": "module.supply.enabled",
+      "displayName": "UI: supply module is enabled",
       "subPermissions": [
-        "ui-request.view"
+        "ui-supply.view"
       ],
       "visible": true
     },
     {
-      "permissionName": "ui-request.view",
-      "displayName": "Request: View requests",
+      "permissionName": "ui-supply.view",
+      "displayName": "Supply: View requests",
       "subPermissions": [
         "rs.batch.get",
         "rs.hostlmslocations.get",
@@ -27,16 +27,16 @@
       "visible": "false"
     },
     {
-      "permissionName": "ui-request.create",
-      "displayName": "Request: Create requests",
+      "permissionName": "ui-supply.create",
+      "displayName": "Supply: Create requests",
       "subPermissions": [
         "rs.patronrequests.item.post"
       ],
-      "visible": "true"
+      "visible": "false"
     },
     {
-      "permissionName": "ui-request.edit",
-      "displayName": "Request: Edit requests",
+      "permissionName": "ui-supply.edit",
+      "displayName": "Supply: Edit requests",
       "subPermissions": [
         "rs.patronrequests.item.put",
         "rs.patronrequests.item.performaction",
