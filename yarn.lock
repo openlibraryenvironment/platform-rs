@@ -3033,10 +3033,10 @@
   resolved "https://registry.npmjs.org/@popperjs/core/-/core-2.11.8.tgz#6b79032e760a0899cd4204710beede972a3a185f"
   integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
 
-"@projectreshare/directory@1.13.2":
-  version "1.13.2"
-  resolved "https://registry.yarnpkg.com/@projectreshare/directory/-/directory-1.13.2.tgz#672de71004c139af7a26623907105ccd61136ea1"
-  integrity sha512-9JWcnFQ4e6OD1nG38TaPZ9QvqqFA3DKIjTgY0sAy2QFqDZ6cnsWJW7lrHXSH1QTa4Ts5jWPdDnOkTuCcX8BvcQ==
+"@projectreshare/directory@1.13.3":
+  version "1.13.3"
+  resolved "https://registry.yarnpkg.com/@projectreshare/directory/-/directory-1.13.3.tgz#aa6edd56ecaf20fc6e158219b4627c0110ba2fc6"
+  integrity sha512-e9Mi70Bo6tFznFcP61G2MRQa5+kOZB2mPAFlAq+zKBgVwzylkGd1JL9nZ/ujTtVR/KTh+HnLb+YjaA1gXMIiSw==
   dependencies:
     "@folio/stripes-erm-components" "^6.1.0"
     "@k-int/address-plugin-british-isles" "^1.1.0"
@@ -3052,17 +3052,17 @@
     react-final-form-arrays "^3.1.1"
     uuid "^7.0.3"
 
-"@projectreshare/request@1.6.2":
-  version "1.6.2"
-  resolved "https://registry.npmjs.org/@projectreshare/request/-/request-1.6.2.tgz#baef5a6dd48397fdbc2b667fb8f9d935a71d11a4"
-  integrity sha512-46ee1usMjlGNk4GFTjr0X2YFW5iICqKPFtqPlgpPfgM2umTxBOcGn/CdnZZ5kRJ2vaSKP/wCvMRibYuyLwSKjQ==
+"@projectreshare/request@1.6.3":
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/@projectreshare/request/-/request-1.6.3.tgz#6f71f26edbfc899cdcb60f80839004c0c72d27ea"
+  integrity sha512-+0NIcfogkmpIBNdN7R/5JBidpOL7/n15XNlxp40u31RXOMwKRH+KEhl5SYObkD1fi+CryiTORYN+hPdDMAW1rw==
   dependencies:
     "@projectreshare/rs" "^1.6.0"
 
-"@projectreshare/rs@1.19.6":
-  version "1.19.6"
-  resolved "https://registry.yarnpkg.com/@projectreshare/rs/-/rs-1.19.6.tgz#9cc49f4201b58d3b1d7a015d0cadbfb1d0599eca"
-  integrity sha512-QhZsoWzWkdmGHX6EF4UjLmLYiIsI1gcBF5GH07yMmhENM75XGhD24Fq/NPt5+L07R0bbDWdKYBTqe+li9U5ldA==
+"@projectreshare/rs@1.19.7":
+  version "1.19.7"
+  resolved "https://registry.yarnpkg.com/@projectreshare/rs/-/rs-1.19.7.tgz#374fa531af6fa29b8759376b2938886e96657a11"
+  integrity sha512-ppbUGDDARud6u/F5mDBfMSH3GLpuLrtuXHQOODBPLqklMZS4gQBl9Upt+DhHvY4Z9WCUGHf0eYRt1jDPN1CpEw==
   dependencies:
     "@folio/stripes-data-transfer-components" "~6.0.0"
     "@folio/stripes-erm-components" "~9.0.0"
@@ -3113,18 +3113,18 @@
     rrule "2.6.4"
     xml-beautify "^1.2.3"
 
-"@projectreshare/stripes-reshare@2.0.0", "@projectreshare/stripes-reshare@^1.12.0", "@projectreshare/stripes-reshare@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/@projectreshare/stripes-reshare/-/stripes-reshare-2.0.0.tgz#95421fde765189010e646dae529d0b5ba324847c"
-  integrity sha512-qwo+KyMUktYLoOvErIn82RIG5hocwcIli62DNtJ2vCWhZlw4olcE7enuEBkoLxKgIO3v8x96l7yowVWXWi00jg==
+"@projectreshare/stripes-reshare@2.0.1", "@projectreshare/stripes-reshare@^1.12.0", "@projectreshare/stripes-reshare@^2.0.0":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@projectreshare/stripes-reshare/-/stripes-reshare-2.0.1.tgz#cc467d7684b8f58f9c5e4782423dfa896ef9f158"
+  integrity sha512-E9ACuMfhC9TzTR1AVYgl7Qj22ZOgJnwKpABeGelvkkUZlBTwW4tuKdRaYDSpGtt7iPJLwoDwfjN/dfsQkC2gDw==
   dependencies:
     lodash "^4.17.4"
     prop-types "^15.6.0"
 
-"@projectreshare/supply@1.6.2":
-  version "1.6.2"
-  resolved "https://registry.npmjs.org/@projectreshare/supply/-/supply-1.6.2.tgz#2f9c1ddcee97708b1d717b72f5f413a8b5274fc7"
-  integrity sha512-+DuMmhUqZwBtsKKp3m1ErAFX6zq9O+jTupyZoFdfAZ4j/03ZNO9yq3At3VnYYzTnzx9cEkWQ8x6i9jJXQjuIKw==
+"@projectreshare/supply@1.6.3":
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/@projectreshare/supply/-/supply-1.6.3.tgz#668fc86dd976231531df856c7f957714225e8fd8"
+  integrity sha512-EwLdgeK739SVFUlDkcc0ens2p/P6faaxZ71rqkd0MLXbUTNKMpghpxA/CJS7LLe2DGyuOeEmw4sfPSdN2kkqFQ==
   dependencies:
     "@projectreshare/rs" "^1.6.0"
 
