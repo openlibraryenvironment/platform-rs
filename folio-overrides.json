@@ -6,5 +6,9 @@
   {
     "id": "mod-circulation-storage-17.1.9-RESHARE",
     "action": "enable"
+  },
+  {
+    "id": "mod-ncip-1.15.6",
+    "action": "enable"
   }
 ]
