@@ -24,9 +24,9 @@ For the units representing physical pick-up locations on the requester, it's imp
     * __directory entry for the physical pick-up location__ on the requester side (as selected by patron) is looked up by name (`AusgabeOrt`) and not by ISIL and one field is important to create the temporary item and request in the requester’s FOLIO system via NCIP `AcceptItem`:
         * `LMS location code` -> should be a FOLIO service point code of the actual physical pick-up location
 
-### Service Account
+### Service Accounts
 
-ReShare ZFL tenants do not send ILL messages to their peers but rather use an ISO18626 gateway to send them to the central ZFL server. This means that no __Service Accounts__ should be created and assigned to the Directory entries but instead, the ISO18626 address should be provided via _Settings > Resource Sharing > Networking > ISO18626 gateway address_. This will ensure that all outgoing messages from the particular tenant will be sent via the gateway to ZFL. 
+ReShare ZFL tenants do not send ILL messages to their peers but rather use an ISO18626 gateway to send a message to the central ZFL server. This means that no __Service Accounts__ should be created and assigned to the Directory entries but instead, the ISO18626 address should be provided via _Settings > Resource Sharing > Networking > ISO18626 gateway address_. This will ensure that all outgoing messages from the particular tenant are via the gateway to ZFL. 
 
 ### Creating directory entries
 
