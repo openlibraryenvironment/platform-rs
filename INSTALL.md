@@ -28,7 +28,7 @@ For the units representing physical pick-up locations on the requester, it's imp
 
 ReShare ZFL tenants do not send ILL messages to their peers but rather use an ISO18626 gateway to send a message to the central ZFL server. This means that no __Service Accounts__ should be created and assigned to the Directory entries but instead, the ISO18626 address should be provided via _Settings > Resource Sharing > Networking > ISO18626 gateway address_. This will ensure that all outgoing messages from the particular tenant are via the gateway to ZFL. 
 
-### Creating directory entries
+### Creating directory entries via API
 
 Here's an example of how to create a directory entry using curl
 ```
