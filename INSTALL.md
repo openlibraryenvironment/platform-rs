@@ -219,7 +219,7 @@ The SLNP gateway is installed with a helm [chart](https://github.com/indexdata/e
 The required config is (for all other settings see the [edge-slnp](https://github.com/indexdata/edge-slnp) repo):
 
 ```
-ILL_ADDR: <address of the ReShare ISO18626 endpoint, e.g http://mod-rs-2-18-2:8080/rs/externalApi/iso18626>
+ILL_ADDR: <address of the ReShare ISO18626 endpoint, e.g http://mod-rs-2-18-X:8080/rs/externalApi/iso18626>
 OKAPI_TENANT: <name of the ReShare/FOLIO tenant>
 SLNP_ADDR: <ZFL address>
 REC_ID_PREFIX: <appends a prefix to the TitelId, should be set to the main ISIL symbol of the tenant, e.g 'DE-91.'>
