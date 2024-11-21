@@ -25,8 +25,8 @@ For the units representing physical pick-up locations on the requester, it's imp
         * `LMS location code` -> should be a FOLIO service point code of the actual physical pick-up location
 
 ### Service Account
-     
-For all directory entries representing requesting and supplying institutions, the __Service Account__ (ISO18626 endpoint) must be configured to point at the local SLNP gateway. __NOTE:__ Once available, create a Service Account with the function `SLNP gateway`. It will be used automatically for all directory entries that have no Service Accounts assigned. It's the preferred way to configure Service Accounts for the ZFL tenants.
+
+ReShare ZFL tenants do not send ILL messages to their peers but rather use an ISO18626 gateway to send them to the central ZFL server. This means that no __Service Accounts__ should be created and assigned to the Directory entries but instead, the ISO18626 address should be provided via _Settings > Resource Sharing > Networking > ISO18626 gateway address_. This will ensure that all outgoing messages from the particular tenant will be sent via the gateway to ZFL. 
 
 ### Creating directory entries
 
