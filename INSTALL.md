@@ -4,7 +4,7 @@
 
 ### General configuration
 
-We recommend that every campus in FOLIO with its own ISIL is represented as a separate __Institution__ in the directory and every pick-up location is specified as a __Unit__. 
+We recommend that every campus in FOLIO with its own ISIL is represented as a separate __Institution__ in the directory and every pick-up location is specified as a __Unit__ with the `pickup` tag. 
 
 When the institution acts as a supplier, it's important that the `FOLIO location filter` and the `LMS location code` are specified. 
 
