@@ -22,7 +22,7 @@
     "@folio/tenant-settings": "~8.1.0",
     "@folio/users": "~10.1.0",
     "@projectreshare/directory": "^1.10.0",
-    "@projectreshare/plugin-rs-siquery-vufind": "^1.1.0",
+    "@projectreshare/plugin-rs-siquery-vufind": "^2.0.0",
     "@projectreshare/request": "^1.6.0",
     "@projectreshare/rs": "^1.13.0",
     "@projectreshare/supply": "^1.6.0",
