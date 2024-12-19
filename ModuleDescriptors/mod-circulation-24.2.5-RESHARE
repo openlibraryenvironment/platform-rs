@@ -1,5 +1,5 @@
 {
-  "id" : "mod-circulation-24.1.2-RESHARE",
+  "id" : "mod-circulation-24.2.5-RESHARE",
   "name" : "Circulation Module",
   "requires" : [ {
     "id" : "loan-storage",

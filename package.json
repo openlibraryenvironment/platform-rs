@@ -1,6 +1,6 @@
 {
   "name": "@projectreshare/platform-rs",
-  "version": "1.18.0",
+  "version": "1.18.1",
   "description": "Top-level platform for ReShare UI",
   "license": "Apache-2.0",
   "repository": "openlibraryenvironment/platform-rs",
@@ -8,7 +8,7 @@
     "registry": "https://repository.folio.org/repository/npm-folio/"
   },
   "scripts": {
-    "build": "export STRIPES_TRANSPILE_TOKENS=\"@k-int @projectreshare\"; export NODE_OPTIONS=\"--max-old-space-size=4096 $NODE_OPTIONS\"; stripes build stripes.config.js",
+    "build": "export STRIPES_TRANSPILE_TOKENS=\"@k-int @projectreshare\"; export NODE_OPTIONS=\"--max-old-space-size=4096 $NODE_OPTIONS\"; ./node_modules/.bin/stripes build stripes.config.js",
     "stripes": "./node_modules/.bin/stripes",
     "start": "stripes serve stripes.config.js",
     "cypress": "cypress",
@@ -17,17 +17,18 @@
 	"start-local-diku": " set STRIPES_TRANSPILE_TOKENS=\"@k-int @projectreshare\" && stripes serve ./stripes.config.js --okapi=http://localhost:9130 --tenant=diku"
   },
   "dependencies": {
-    "@folio/checkin": "9.0.3",
-    "@folio/checkout": "10.0.1",
-    "@folio/circulation": "9.0.5",
-    "@folio/circulation-log": "4.0.1",
+    "@folio/checkin": "9.1.1",
+    "@folio/checkout": "10.1.0",
+    "@folio/circulation": "9.1.0",
+    "@folio/circulation-log": "4.1.0",
     "@folio/developer": "8.0.1",
-    "@folio/inventory": "10.0.15",
-    "@folio/requests": "9.0.3",
-    "@folio/stripes": "9.0.6",
-    "@folio/tenant-settings": "8.0.0",
-    "@folio/users": "10.0.5",
-    "@projectreshare/directory": "1.13.3",
+    "@folio/inventory": "11.0.5",
+    "@folio/requests": "10.0.2",
+    "@folio/stripes": "9.1.8",
+    "@folio/stripes-marc-components": "1.0.1",
+    "@folio/tenant-settings": "8.1.0",
+    "@folio/users": "10.1.2",
+    "@projectreshare/directory": "1.13.4",
     "@projectreshare/request": "1.6.3",
     "@projectreshare/rs": "1.19.7",
     "@projectreshare/supply": "1.6.3",
@@ -39,7 +40,7 @@
     "react-redux": "^8.0.5",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "redux": "^4.0.5",
+    "redux": "^4.2.1",
     "rrule": "2.6.4",
     "inflected":" ^2.0.4"
   },
@@ -49,12 +50,12 @@
     "minimist": "^1.2.3",
     "moment": "~2.29.0",
     "redux-form": "^8.0.0",
-    "@folio/inventory": "10.0.15",
     "@projectreshare/stripes-reshare": "2.0.1"
   },
   "devDependencies": {
     "@folio/stripes-cli": "~3.1.0",
     "@folio/stripes-testing": "4.2.1",
+    "@folio/requests": "10.0.2",
     "@interactors/html": "^1.0.0-rc1.2",
     "@interactors/with-cypress": "^1.0.0-rc1.1",
     "cypress": "^9.6.1"
