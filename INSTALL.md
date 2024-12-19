@@ -331,7 +331,7 @@ Both mod-rs and mod-directory need access to a module database, okapi, and to a 
 
 
 ## NCIP integration with FOLIO
-The latest `edge-ncip` and `mod-ncip` modules are required in the FOLIO system to allow communication with ReShare. These modules are not available in the Poppy release so use the versions specified in [folio-overrides.json](folio-overrides.json)
+The latest `edge-ncip` and `mod-ncip` modules are required in the FOLIO system to allow communication with ReShare. These modules are not available in the Quesnelia release so use the versions specified in [folio-overrides.json](folio-overrides.json)
 
 | module name   | version         | image                    | 
 |---------------|-----------------|--------------------------|
