@@ -28,7 +28,7 @@
     "@folio/stripes-marc-components": "1.0.1",
     "@folio/tenant-settings": "8.1.0",
     "@folio/users": "10.1.2",
-    "@projectreshare/directory": "1.13.3",
+    "@projectreshare/directory": "1.13.4",
     "@projectreshare/request": "1.6.3",
     "@projectreshare/rs": "1.19.7",
     "@projectreshare/supply": "1.6.3",

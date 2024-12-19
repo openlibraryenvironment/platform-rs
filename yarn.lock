@@ -3327,10 +3327,10 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.8.tgz#6b79032e760a0899cd4204710beede972a3a185f"
   integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
 
-"@projectreshare/directory@1.13.3":
-  version "1.13.3"
-  resolved "https://registry.yarnpkg.com/@projectreshare/directory/-/directory-1.13.3.tgz#aa6edd56ecaf20fc6e158219b4627c0110ba2fc6"
-  integrity sha512-e9Mi70Bo6tFznFcP61G2MRQa5+kOZB2mPAFlAq+zKBgVwzylkGd1JL9nZ/ujTtVR/KTh+HnLb+YjaA1gXMIiSw==
+"@projectreshare/directory@1.13.4":
+  version "1.13.4"
+  resolved "https://registry.yarnpkg.com/@projectreshare/directory/-/directory-1.13.4.tgz#bb81ed8e20405f1df3d43b143878a5b64bc4a904"
+  integrity sha512-w4RmVICLRqvYpcfChb682aJVl9kFPSRwCSvWSX0oahyPYFJUPwk1nbKHJX3gqvntWz5vYjpnOGaXKAoYRB6szQ==
   dependencies:
     "@folio/stripes-erm-components" "^6.1.0"
     "@k-int/address-plugin-british-isles" "^1.1.0"
