@@ -3353,10 +3353,10 @@
   dependencies:
     "@projectreshare/rs" "^1.6.0"
 
-"@projectreshare/rs@1.19.7":
-  version "1.19.7"
-  resolved "https://registry.yarnpkg.com/@projectreshare/rs/-/rs-1.19.7.tgz#374fa531af6fa29b8759376b2938886e96657a11"
-  integrity sha512-ppbUGDDARud6u/F5mDBfMSH3GLpuLrtuXHQOODBPLqklMZS4gQBl9Upt+DhHvY4Z9WCUGHf0eYRt1jDPN1CpEw==
+"@projectreshare/rs@1.19.8":
+  version "1.19.8"
+  resolved "https://registry.yarnpkg.com/@projectreshare/rs/-/rs-1.19.8.tgz#c1a6ffdaf460c1fd3706060e992e6bc2923e9dc4"
+  integrity sha512-izZzw/+SkxY7rwHuFyHjEiKEuhAdAen5P/k2MvEeftmZFYujc+XB2hSINe7MS0SmDmCpulnK3lHOJ63e0sAomQ==
   dependencies:
     "@folio/stripes-data-transfer-components" "~6.0.0"
     "@folio/stripes-erm-components" "~9.0.0"
