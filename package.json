@@ -1,6 +1,6 @@
 {
   "name": "@projectreshare/platform-rs",
-  "version": "1.18.1",
+  "version": "1.18.2",
   "description": "Top-level platform for ReShare UI",
   "license": "Apache-2.0",
   "repository": "openlibraryenvironment/platform-rs",
@@ -28,9 +28,9 @@
     "@folio/stripes-marc-components": "1.0.1",
     "@folio/tenant-settings": "8.1.0",
     "@folio/users": "10.1.2",
-    "@projectreshare/directory": "1.13.4",
+    "@projectreshare/directory": "1.13.5",
     "@projectreshare/request": "1.6.3",
-    "@projectreshare/rs": "1.19.8",
+    "@projectreshare/rs": "1.19.9",
     "@projectreshare/supply": "1.6.3",
     "moment": "~2.29.0",
     "react": "~18.2.0",
@@ -50,7 +50,7 @@
     "minimist": "^1.2.3",
     "moment": "~2.29.0",
     "redux-form": "^8.0.0",
-    "@projectreshare/stripes-reshare": "2.0.1"
+    "@projectreshare/stripes-reshare": "2.0.2"
   },
   "devDependencies": {
     "@folio/stripes-cli": "~3.1.0",
