@@ -880,9 +880,30 @@ The following feature flags can be modified by sending them as a **PUT** request
       "key": "state_action_config.combine_fill_and_ship.feature_flag"
   }
 ```
-
-
-
+### Creating feature flags to hide and unhide fields.
+Feature flags can be created to hide fields within sections, to do this `POST` to `{{okapi_url}}/rs/settings/appSettings` with body
+```
+   {
+        "vocab": "featureFlag",
+        "section": "featureFlags",
+        "hidden": true,
+        "value": "false",
+        "settingType": "String",
+        "key": "[section_name].[key_name].feature_flag"
+   }
+```
+To hide, ensure value is set to “false” as a string not boolean. To unhide, simply change value to "true" as a string. For example, to hide Settings > Resource Sharing > Request > Default institutional patron ID
+```
+   {
+        "vocab": "featureFlag",
+        "section": "featureFlags",
+        "hidden": true,
+        "value": "false",
+        "settingType": "String",
+        "key": "requests.default_institutional_patron_id.feature_flag"
+   }
+```
+`requests` is the section name while `default_institutional_patron_id` is the key name. For a full list of section and key names that can be used to create feature flags, see [reference](https://github.com/openlibraryenvironment/mod-rs/blob/18ccfd0e5f799a09aa95122072d679e86cd8c5f1/service/src/main/groovy/org/olf/rs/referenceData/SettingsData.groovy#L94).
 
 
 
