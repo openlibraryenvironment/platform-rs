@@ -892,7 +892,7 @@ Feature flags can be created to hide fields within sections, to do this `POST` t
         "key": "[section_name].[key_name].feature_flag"
    }
 ```
-To hide, ensure value is set to “false” as a string not boolean. To unhide, simply change value to "true" as a string. For example, to hide Settings > Resource Sharing > Request > Default institutional patron ID
+To hide, ensure value is set to “false” as a string not boolean. To unhide, simply change value to "true" as a string and make a `PUT` request to `{{okapi_url}}/rs/settings/appSettings/{{id}}` to update it. For example, to hide Settings > Resource Sharing > Request > Default institutional patron ID
 ```
    {
         "vocab": "featureFlag",
