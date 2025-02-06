@@ -9,10 +9,15 @@ module.exports = {
     hasAllPerms: false,
     reshare: {
       showRefresh: true,
+      //sharedIndex: {
+      //  type: 'vufind',
+      //  ui: 'https://vufind.reshare-dev.indexdata.com/east',
+      //  query: 'https://vufind.reshare-dev.indexdata.com/east',
+      //}
       sharedIndex: {
-        type: 'vufind',
+        type: 'metaproxy',
         ui: 'https://vufind.reshare-dev.indexdata.com/east',
-        query: 'https://vufind.reshare-dev.indexdata.com/east',
+        query: 'http://z3950-test.librariesaustralia.nla.gov.au:210/Bibliographic',
       }
     },
     showDevInfo: true,
@@ -23,7 +28,8 @@ module.exports = {
     '@folio/developer': {},
     "@folio/tenant-settings": {},
     '@projectreshare/directory': {},
-    "@projectreshare/plugin-rs-siquery-vufind": {},
+    //"@projectreshare/plugin-rs-siquery-vufind": {},
+    "@projectreshare/plugin-rs-siquery-metaproxy": {},
     '@projectreshare/request': {},
     '@projectreshare/rs': {},
     '@projectreshare/supply': {},
