@@ -1,0 +1,29 @@
+[
+    
+    
+    
+    {
+        "id": "projectreshare_directory-1.13.5",
+        "action": "enable"
+},
+    {
+        "id": "projectreshare_plugin-rs-siquery-vufind-1.2.0",
+        "action": "enable"
+},
+    {
+        "id": "projectreshare_request-1.6.3",
+        "action": "enable"
+},
+    {
+        "id": "projectreshare_rs-1.19.9",
+        "action": "enable"
+},
+    {
+        "id": "projectreshare_supply-1.6.3",
+        "action": "enable"
+},
+    {
+        "id": "projectreshare_update-1.9.1",
+        "action": "enable"
+}
+]
