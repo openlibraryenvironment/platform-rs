@@ -1,10 +1,10 @@
 [
   {
-    "id": "mod-circulation-24.2.5-RESHARE",
+    "id": "mod-circulation-24.2.6-RESHARE",
     "action": "enable"
   },
   {
-    "id": "mod-circulation-storage-17.2.4-RESHARE",
+    "id": "mod-circulation-storage-17.2.6-RESHARE",
     "action": "enable"
   },
   {

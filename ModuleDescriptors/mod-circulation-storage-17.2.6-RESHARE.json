@@ -1,5 +1,5 @@
 {
-  "id" : "mod-circulation-storage-17.2.4-RESHARE",
+  "id" : "mod-circulation-storage-17.2.6-RESHARE",
   "name" : "Circulation Storage Module",
   "requires" : [ {
     "id" : "item-storage",
@@ -280,7 +280,7 @@
     } ]
   }, {
     "id" : "actual-cost-record-storage",
-    "version" : "0.8",
+    "version" : "0.9",
     "handlers" : [ {
       "methods" : [ "GET" ],
       "pathPattern" : "/actual-cost-record-storage/actual-cost-records",
@@ -827,7 +827,7 @@
     "description" : "get locks"
   } ],
   "launchDescriptor" : {
-    "dockerImage" : "folioorg/mod-circulation-storage:17.1.8",
+    "dockerImage" : "folioorg/mod-circulation-storage:17.2.6",
     "dockerPull" : true,
     "env" : [ {
       "name" : "JAVA_OPTIONS",
