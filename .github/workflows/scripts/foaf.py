@@ -41,7 +41,7 @@ def parse_command_line_args():
     parser.add_argument('-o', '--okapi-url', help='okapi url',
                         default='https://okapi-reshare-1.folio-dev-us-east-1-1.folio-dev.indexdata.com', required=False)
     parser.add_argument('-f', '--foaf-url', help='foaf url',
-                        default='https%3A%2F%2Fgithub.com%2Fopenlibraryenvironment%2Fmod-directory%2Fblob%2Fmain%2Fseed_data%2Fcardinal%2Fcardinal_local_management.json')
+                        default='https%3A%2F%2Fraw.githubusercontent.com%2Fopenlibraryenvironment%2Fmod-directory%2Frefs%2Fheads%2Fmain%2Fseed_data%2Fcardinal%2Fcardinal_local_management.json')
 
     args = parser.parse_args()
 
