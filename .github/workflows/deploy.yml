@@ -51,11 +51,11 @@ jobs:
           STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://west-okapi.folio-dev.indexdata.com --tenant reshare_west --sourcemap &&
           mv output west
 
-      #- name: Post new module descriptors
-      #  run: |
-      #    /usr/bin/python3 .github/workflows/scripts/reshare_ui_mds.py \
-      #      -u "okapi_admin" \
-      #      -p ${{ secrets.OKAPI_ADMIN_PW }} \
+      - name: Post new module descriptors
+        run: |
+          /usr/bin/python3 .github/workflows/scripts/reshare_ui_mds.py \
+            -u "okapi_admin" \
+            -p ${{ secrets.OKAPI_ADMIN_PW }} \
 
       - name: upload builds
         working-directory: ./rs_ui/platform-rs
