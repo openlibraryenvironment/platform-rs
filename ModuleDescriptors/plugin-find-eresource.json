@@ -1,0 +1,18 @@
+{
+  "id": "folio_plugin-find-eresource-7.0.1",
+  "name": "ERM-eresource-finder for Stripes",
+  "permissionSets": [
+    {
+      "permissionName": "ui-plugin-find-eresource.search",
+      "displayName": "Find E-resource Plugin: Search e-resources",
+      "description": "A user with this permission can search and view existing e-resources in the Agreements local knowledgebase via the find eresources plugin (used to search for eresources from within other Folio apps). This does not include the permission to see and access the Agreements app in the Folio interface.",
+      "visible": true,
+      "subPermissions": [
+        "erm.packages.view",
+        "erm.titles.view",
+        "erm.resources.view",
+        "erm.pci.view"
+      ]
+    }
+  ]
+}

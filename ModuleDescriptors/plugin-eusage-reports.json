@@ -1,0 +1,36 @@
+{
+  "id": "folio_plugin-eusage-reports-3.1.0",
+  "name": "Stripes plugin module to View eUsage reports",
+  "permissionSets": [
+    {
+      "permissionName": "module.ui-plugin-eusage-reports.enabled",
+      "displayName": "UI: eusage-reports plugin is enabled"
+    },
+    {
+      "permissionName": "plugin-eusage-reports.view-charts",
+      "displayName": "eUsage reports: charts may be viewed",
+      "subPermissions": [
+        "module.ui-plugin-eusage-reports.enabled",
+        "eusage-reports-report-use-over-time.get",
+        "eusage-reports-report-reqs-by-date-of-use.get",
+        "eusage-reports-report-reqs-by-pub-year.get",
+        "eusage-reports-report-cost-per-use.get",
+        "eusage-reports-report-status.get",
+        "eusage-reports-report-data-from-agreement.post"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "plugin-eusage-reports.edit-matches",
+      "displayName": "eUsage reports: title matches may be viewed and edited",
+      "subPermissions": [
+        "module.ui-plugin-eusage-reports.enabled",
+        "eusage-reports-report-status.get",
+        "eusage-reports-report-titles.collection.get",
+        "eusage-reports-report-titles.collection.post",
+        "eusage-reports-report-titles-from-counter.post"
+      ],
+      "visible": true
+    }
+  ]
+}

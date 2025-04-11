@@ -1,0 +1,31 @@
+{
+  "id": "bib-bvb_bvb-dvs-1.4.2",
+  "name": "Synchronisation of inventory data for Bavarian Library Network",
+  "permissionSets": [
+    {
+      "permissionName": "module.bvb-dvs.enabled",
+      "displayName": "UI: BVB DVS module is enabled",
+      "visible": true
+    },
+    {
+      "permissionName": "settings.bvb-dvs.enabled",
+      "displayName": "Settings (BVB DVS): display settings page",
+      "subPermissions": [
+        "settings.enabled"
+      ]
+    },
+    {
+      "permissionName": "ui-bvb-dvs.override-marc-record-fetch-url",
+      "displayName": "BVB DVS module: Allow to override URL to fetch MARC records from",
+      "visible": true
+    },
+    {
+      "permissionName": "mod-settings.global.read.bvb-dvs",
+      "displayName": "BVB DVS module: Allow to read settings for dvs configuration"
+    },
+    {
+      "permissionName": "mod-settings.global.write.bvb-dvs",
+      "displayName": "BVB DVS module: Allow to alter settings for dvs configuration"
+    }
+  ]
+}

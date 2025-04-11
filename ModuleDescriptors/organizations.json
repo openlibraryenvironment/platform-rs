@@ -1,0 +1,253 @@
+{
+  "id": "folio_organizations-5.1.1",
+  "name": "Organizations",
+  "permissionSets": [
+    {
+      "permissionName": "module.organizations.enabled",
+      "displayName": "UI: Organizations module is enabled"
+    },
+    {
+      "permissionName": "settings.organizations.enabled",
+      "displayName": "Settings (Organization): Display list of settings for Organization",
+      "visible": false,
+      "subPermissions": [
+        "settings.enabled"
+      ]
+    },
+    {
+      "permissionName": "ui-organizations.third-party-services",
+      "displayName": "Organizations: Permissions required to call services apart from mod-organizations-storage",
+      "visible": false,
+      "subPermissions": [
+        "acquisitions-units.memberships.collection.get",
+        "acquisitions-units.units.collection.get",
+        "configuration.entries.collection.get",
+        "tags.collection.get",
+        "users.collection.get",
+        "usergroups.collection.get"
+      ]
+    },
+    {
+      "permissionName": "ui-organizations.view",
+      "displayName": "Organizations: View",
+      "visible": true,
+      "subPermissions": [
+        "module.organizations.enabled",
+        "data-export.config.collection.get",
+        "data-export.config.item.get",
+        "erm.agreements.collection.get",
+        "orders.acquisition-methods.collection.get",
+        "orders.acquisition-method.item.get",
+        "organizations.organizations.collection.get",
+        "organizations.organizations.item.get",
+        "organizations-storage.addresses.collection.get",
+        "organizations-storage.addresses.item.get",
+        "organizations-storage.categories.collection.get",
+        "organizations-storage.organization-types.collection.get",
+        "organizations-storage.categories.item.get",
+        "organizations-storage.contacts.item.get",
+        "organizations-storage.contacts.collection.get",
+        "organizations-storage.emails.collection.get",
+        "organizations-storage.emails.item.get",
+        "organizations-storage.interfaces.item.get",
+        "organizations-storage.interfaces.collection.get",
+        "organizations-storage.phone-numbers.collection.get",
+        "organizations-storage.phone-numbers.item.get",
+        "organizations-storage.settings.collection.get",
+        "organizations-storage.urls.collection.get",
+        "organizations-storage.urls.item.get",
+        "ui-organizations.third-party-services"
+      ]
+    },
+    {
+      "permissionName": "ui-organizations.edit",
+      "displayName": "Organizations: View, edit",
+      "visible": true,
+      "subPermissions": [
+        "data-export.config.item.delete",
+        "data-export.config.item.post",
+        "data-export.config.item.put",
+        "organizations.organizations.item.put",
+        "organizations-storage.addresses.item.put",
+        "organizations-storage.emails.item.put",
+        "organizations-storage.phone-numbers.item.put",
+        "organizations-storage.urls.item.put",
+        "organizations-storage.contacts.item.post",
+        "organizations-storage.contacts.item.put",
+        "organizations-storage.contacts.item.delete",
+        "organizations-storage.interfaces.item.post",
+        "organizations-storage.interfaces.item.put",
+        "organizations-storage.interfaces.item.delete",
+        "ui-organizations.view"
+      ]
+    },
+    {
+      "permissionName": "ui-organizations.create",
+      "displayName": "Organizations: View, edit, create",
+      "visible": true,
+      "subPermissions": [
+        "organizations.organizations.item.post",
+        "organizations-storage.addresses.item.post",
+        "organizations-storage.emails.item.post",
+        "organizations-storage.phone-numbers.item.post",
+        "organizations-storage.urls.item.post",
+        "ui-organizations.edit"
+      ]
+    },
+    {
+      "permissionName": "ui-organizations.delete",
+      "displayName": "Organizations: View, edit, delete",
+      "visible": true,
+      "subPermissions": [
+        "organizations.organizations.item.delete",
+        "organizations-storage.addresses.item.delete",
+        "organizations-storage.emails.item.delete",
+        "organizations-storage.phone-numbers.item.delete",
+        "organizations-storage.urls.item.delete",
+        "ui-organizations.edit"
+      ]
+    },
+    {
+      "permissionName": "ui-organizations.privileged-contacts.view",
+      "displayName": "Organizations: can view privileged donor information",
+      "visible": true,
+      "subPermissions": [
+        "organizations-storage.privileged-contacts.collection.get",
+        "organizations-storage.privileged-contacts.item.get"
+      ]
+    },
+    {
+      "permissionName": "ui-organizations.privileged-contacts.edit",
+      "displayName": "Organizations: can view, create, edit, delete privileged donor information",
+      "visible": true,
+      "subPermissions": [
+        "ui-organizations.privileged-contacts.view",
+        "organizations-storage.privileged-contacts.item.post",
+        "organizations-storage.privileged-contacts.item.put",
+        "organizations-storage.privileged-contacts.item.delete"
+      ]
+    },
+    {
+      "permissionName": "ui-organizations.banking-information.view",
+      "displayName": "Organizations: View banking information",
+      "visible": true,
+      "subPermissions": [
+        "organizations.banking-information.collection.get",
+        "organizations.banking-information.item.get",
+        "organizations-storage.banking-account-types.collection.get"
+      ]
+    },
+    {
+      "permissionName": "ui-organizations.banking-information.edit",
+      "displayName": "Organizations: View and edit banking information",
+      "visible": true,
+      "subPermissions": [
+        "ui-organizations.banking-information.view",
+        "organizations.banking-information.item.put"
+      ]
+    },
+    {
+      "permissionName": "ui-organizations.banking-information.create",
+      "displayName": "Organizations: View, edit and create banking information",
+      "visible": true,
+      "subPermissions": [
+        "ui-organizations.banking-information.edit",
+        "organizations.banking-information.item.post"
+      ]
+    },
+    {
+      "permissionName": "ui-organizations.banking-information.delete",
+      "displayName": "Organizations: View, edit, create and delete banking information",
+      "visible": true,
+      "subPermissions": [
+        "ui-organizations.banking-information.create",
+        "organizations.banking-information.item.delete"
+      ]
+    },
+    {
+      "permissionName": "ui-organizations.creds.view",
+      "displayName": "Organizations: Interface usernames and passwords: view",
+      "visible": true,
+      "subPermissions": [
+        "organizations-storage.interfaces.credentials.item.get",
+        "ui-organizations.view"
+      ]
+    },
+    {
+      "permissionName": "ui-organizations.creds.manage",
+      "displayName": "Organizations: Interface usernames and passwords: view, edit, create, delete",
+      "visible": true,
+      "subPermissions": [
+        "organizations-storage.interfaces.credentials.item.put",
+        "organizations-storage.interfaces.credentials.item.post",
+        "organizations-storage.interfaces.credentials.item.delete",
+        "ui-organizations.creds.view"
+      ]
+    },
+    {
+      "permissionName": "ui-organizations.integrations.creds.view",
+      "displayName": "Organizations: Integration usernames and passwords: view",
+      "visible": true,
+      "subPermissions": []
+    },
+    {
+      "permissionName": "ui-organizations.integrations.creds.edit",
+      "displayName": "Organizations: Integration usernames and passwords: view, edit",
+      "visible": true,
+      "subPermissions": [
+        "ui-organizations.integrations.creds.view"
+      ]
+    },
+    {
+      "permissionName": "ui-organizations.acqUnits.assign",
+      "displayName": "Organizations: Assign acquisition units to new organization",
+      "description": "",
+      "visible": true,
+      "subPermissions": [
+        "organizations.acquisitions-units-assignments.assign"
+      ]
+    },
+    {
+      "permissionName": "ui-organizations.acqUnits.manage",
+      "displayName": "Organizations: Manage acquisition units",
+      "description": "",
+      "visible": true,
+      "subPermissions": [
+        "organizations.acquisitions-units-assignments.manage"
+      ]
+    },
+    {
+      "permissionName": "ui-organizations.settings.view",
+      "displayName": "Settings (Organizations): View settings",
+      "visible": true,
+      "subPermissions": [
+        "settings.organizations.enabled",
+        "organizations-storage.organization-types.collection.get",
+        "organizations-storage.organization-types.item.get",
+        "organizations-storage.categories.collection.get",
+        "organizations-storage.settings.collection.get",
+        "organizations-storage.settings.item.get",
+        "organizations-storage.banking-account-types.collection.get",
+        "organizations-storage.banking-account-types.item.get"
+      ]
+    },
+    {
+      "permissionName": "ui-organizations.settings",
+      "displayName": "Settings (Organizations): Can view and edit settings",
+      "visible": true,
+      "subPermissions": [
+        "ui-organizations.settings.view",
+        "organizations-storage.organization-types.item.post",
+        "organizations-storage.organization-types.item.put",
+        "organizations-storage.organization-types.item.delete",
+        "organizations-storage.categories.item.delete",
+        "organizations-storage.categories.item.post",
+        "organizations-storage.categories.item.put",
+        "organizations-storage.settings.item.put",
+        "organizations-storage.banking-account-types.item.post",
+        "organizations-storage.banking-account-types.item.put",
+        "organizations-storage.banking-account-types.item.delete"
+      ]
+    }
+  ]
+}

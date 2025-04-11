@@ -1,0 +1,165 @@
+{
+  "id": "anexia_bvb-reminder-0.4.0",
+  "name": "Frontend module for BVB-reminders",
+  "permissionSets": [
+    {
+      "permissionName": "module.bvb-reminder.enabled",
+      "displayName": "BVB Reminder: ui-bvb-reminder module is enabled",
+      "visible": false
+    },
+    {
+      "permissionName": "settings.bvb-reminder.enabled",
+      "displayName": "Settings (BVB Reminder): display list of settings pages",
+      "subPermissions": [
+        "module.bvb-reminder.enabled",
+        "settings.enabled"
+      ],
+      "visible": false
+    },
+    {
+      "permissionName": "ui-bvb-reminder.settings.offices.view",
+      "displayName": "Settings (BVB Reminder): can view reminder offices",
+      "subPermissions": [
+        "settings.bvb-reminder.enabled",
+        "bvb-reminder.offices.collection.get",
+        "bvb-reminder.offices.item.get",
+        "owners.collection.get",
+        "owners.item.get"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-bvb-reminder.settings.offices.all",
+      "displayName": "Settings (BVB Reminder): can view, create, edit and remove reminder offices",
+      "subPermissions": [
+        "ui-bvb-reminder.settings.offices.view",
+        "bvb-reminder.offices.item.post",
+        "bvb-reminder.offices.item.put",
+        "bvb-reminder.offices.item.delete"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-bvb-reminder.settings.fee-policies.view",
+      "displayName": "Settings (BVB Reminder): can view reminder fee policies",
+      "subPermissions": [
+        "settings.bvb-reminder.enabled",
+        "ui-bvb-reminder.settings.offices.view",
+        "bvb-reminder.fee_policies.collection.get",
+        "bvb-reminder.fee_policies.item.get",
+        "inventory-storage.loan-types.collection.get",
+        "inventory-storage.loan-types.item.get",
+        "inventory-storage.material-types.collection.get",
+        "inventory-storage.material-types.item.get",
+        "templates.collection.get",
+        "templates.item.get",
+        "usergroups.collection.get",
+        "usergroups.item.get"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-bvb-reminder.settings.fee-policies.all",
+      "displayName": "Settings (BVB Reminder): can view, create, edit and remove reminder fee policies",
+      "subPermissions": [
+        "ui-bvb-reminder.settings.offices.all",
+        "ui-bvb-reminder.settings.fee-policies.view",
+        "bvb-reminder.fee_policies.item.post",
+        "bvb-reminder.fee_policies.item.put",
+        "bvb-reminder.fee_policies.item.delete"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-bvb-reminder.settings.templates.view",
+      "displayName": "Settings (BVB Reminder): can view reminder templates",
+      "subPermissions": [
+        "settings.bvb-reminder.enabled",
+        "templates.collection.get",
+        "templates.item.get",
+        "bvb-reminder.reminders.item.get",
+        "template-request.post"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-bvb-reminder.settings.templates.all",
+      "displayName": "Settings (BVB Reminder): can view, create, edit and remove reminder templates",
+      "subPermissions": [
+        "ui-bvb-reminder.settings.templates.view",
+        "templates.item.post",
+        "templates.item.put",
+        "templates.item.delete"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-bvb-reminder.settings.transaction-codes.view",
+      "displayName": "Settings (BVB Reminder): can view transaction codes",
+      "subPermissions": [
+        "settings.bvb-reminder.enabled",
+        "bvb-reminder.transaction_codes.collection.get",
+        "bvb-reminder.transaction_codes.item.get"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-bvb-reminder.settings.transaction-codes.all",
+      "displayName": "Settings (BVB Reminder): can view, create, edit and remove transaction codes",
+      "subPermissions": [
+        "ui-bvb-reminder.settings.transaction-codes.view",
+        "bvb-reminder.transaction_codes.item.post",
+        "bvb-reminder.transaction_codes.item.put",
+        "bvb-reminder.transaction_codes.item.delete"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-bvb-reminder.reminders.view",
+      "displayName": "BVB Reminder: can view reminders and reminder records",
+      "subPermissions": [
+        "module.bvb-reminder.enabled",
+        "bvb-reminder.reminders.collection.get",
+        "bvb-reminder.reminders.item.get",
+        "addresstypes.collection.get",
+        "addresstypes.item.get",
+        "circulation.loans.collection.get",
+        "circulation.loans.item.get",
+        "circulation-storage.loan-policies.collection.get",
+        "circulation-storage.loan-policies.item.get",
+        "inventory.items.collection.get",
+        "inventory.items.item.get",
+        "manualblocks.collection.get",
+        "manualblocks.item.get",
+        "template-request.post",
+        "users.collection.get",
+        "users.item.get",
+        "users.basic-read.execute",
+        "users.restricted-read.execute"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-bvb-reminder.reminders.all",
+      "displayName": "BVB Reminder: can change reminder status and view reminders and reminder records",
+      "subPermissions": [
+        "ui-bvb-reminder.reminders.view",
+        "bvb-reminder.reminders.item.put",
+        "manualblocks.item.delete"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-bvb-reminder.all",
+      "displayName": "BVB Reminder: All permissions",
+      "subPermissions": [
+        "ui-bvb-reminder.settings.offices.all",
+        "ui-bvb-reminder.settings.fee-policies.all",
+        "ui-bvb-reminder.settings.templates.all",
+        "ui-bvb-reminder.settings.transaction-codes.all",
+        "ui-bvb-reminder.reminders.all"
+      ],
+      "visible": true
+    }
+  ]
+}

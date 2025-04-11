@@ -1,0 +1,29 @@
+{
+  "id": "folio_gobi-settings-3.1.0",
+  "name": "GOBI integration settings",
+  "permissionSets": [
+    {
+      "permissionName": "settings.gobi-settings.enabled",
+      "displayName": "GOBI Integration: display list of settings pages",
+      "subPermissions": [
+        "settings.enabled"
+      ],
+      "visible": false
+    },
+    {
+      "permissionName": "ui-gobi-settings.permission.settings",
+      "displayName": "GOBI Integration: view and edit settings",
+      "subPermissions": [
+        "settings.gobi-settings.enabled",
+        "gobi.mappings.translators.collection.get",
+        "gobi.mappings.types.collection.get",
+        "gobi.custom-mappings.collection.get",
+        "gobi.custom-mappings.item.get",
+        "gobi.custom-mappings.item.post",
+        "gobi.custom-mappings.item.put",
+        "gobi.custom-mappings.item.delete"
+      ],
+      "visible": true
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "folio_plugin-find-package-title-6.1.0",
+  "name": "Stripes plugin to find packages and titles",
+  "permissionSets": [
+    {
+      "permissionName": "module.ui-plugin-find-package-title.enabled",
+      "displayName": "UI: find packages and titles plugin is enabled"
+    }
+  ]
+}

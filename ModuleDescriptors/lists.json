@@ -1,0 +1,65 @@
+{
+  "id": "folio_lists-3.0.2",
+  "name": "FOLIO Reporting Machine Lists",
+  "permissionSets": [
+    {
+      "permissionName": "module.lists.enabled",
+      "displayName": "Lists (Enable): Can view lists",
+      "visible": true,
+      "subPermissions": [
+        "fqm.entityTypes.collection.get",
+        "fqm.entityTypes.item.get",
+        "fqm.entityTypes.item.columnValues.get",
+        "fqm.query.async.results.get",
+        "lists.collection.get",
+        "lists.item.get",
+        "lists.item.contents.get",
+        "lists.configuration.get"
+      ]
+    },
+    {
+      "permissionName": "module.lists.refresh",
+      "displayName": "Lists (Edit): Can create, edit, and refresh lists",
+      "visible": true,
+      "subPermissions": [
+        "module.lists.enabled",
+        "fqm.query.async.post",
+        "fqm.query.async.delete",
+        "lists.item.refresh",
+        "lists.item.refresh.cancel",
+        "lists.collection.post",
+        "lists.item.update"
+      ]
+    },
+    {
+      "permissionName": "module.lists.delete",
+      "displayName": "Lists (Delete): Can create, edit, refresh, and delete lists",
+      "visible": true,
+      "subPermissions": [
+        "module.lists.refresh",
+        "lists.item.delete"
+      ]
+    },
+    {
+      "permissionName": "module.lists.export",
+      "displayName": "Lists (Export): Can create, edit, refresh, and export lists",
+      "visible": true,
+      "subPermissions": [
+        "module.lists.refresh",
+        "lists.item.export.download.get",
+        "lists.item.export.post",
+        "lists.item.export.get",
+        "lists.item.export.cancel"
+      ]
+    },
+    {
+      "permissionName": "module.lists.all",
+      "displayName": "Lists (Admin): All permissions",
+      "visible": true,
+      "subPermissions": [
+        "module.lists.export",
+        "module.lists.delete"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "folio_calendar-11.0.1",
+  "name": "Calendar settings",
+  "permissionSets": [
+    {
+      "permissionName": "module.calendar.enabled",
+      "displayName": "UI: Calendar module is enabled",
+      "visible": false
+    },
+    {
+      "permissionName": "settings.calendar.enabled",
+      "displayName": "Settings (Calendar): Display calendar in the settings list",
+      "subPermissions": [
+        "settings.enabled"
+      ],
+      "visible": false
+    },
+    {
+      "permissionName": "ui-calendar.view",
+      "displayName": "Settings (Calendar): Can view existing calendars",
+      "description": "User can view existing calendars",
+      "subPermissions": [
+        "module.calendar.enabled",
+        "settings.calendar.enabled",
+        "calendar.view",
+        "configuration.entries.collection.get",
+        "inventory-storage.service-points.collection.get",
+        "users.item.get"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-calendar.create",
+      "displayName": "Settings (Calendar): Can create and assign new calendars",
+      "description": "User can create and assign new calendars",
+      "subPermissions": [
+        "ui-calendar.view",
+        "calendar.create"
+      ],
+      "replaces": [
+        "ui-calendar.edit",
+        "ui-calendar.all"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-calendar.update",
+      "displayName": "Settings (Calendar): Can edit and reassign existing calendars",
+      "description": "User can edit and reassign existing calendars",
+      "subPermissions": [
+        "ui-calendar.view",
+        "calendar.update"
+      ],
+      "replaces": [
+        "ui-calendar.edit",
+        "ui-calendar.all"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-calendar.delete",
+      "displayName": "Settings (Calendar): Can delete existing calendars",
+      "description": "User can delete existing calendars",
+      "subPermissions": [
+        "ui-calendar.view",
+        "calendar.delete"
+      ],
+      "replaces": [
+        "ui-calendar.all"
+      ],
+      "visible": true
+    }
+  ]
+}

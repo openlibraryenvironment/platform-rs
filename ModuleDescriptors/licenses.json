@@ -1,0 +1,129 @@
+{
+  "id": "folio_licenses-11.0.2",
+  "name": "ERM License functionality for Stripes",
+  "permissionSets": [
+    {
+      "permissionName": "module.licenses.enabled",
+      "displayName": "UI: ui-licenses module is enabled",
+      "subPermissions": [
+        "configuration.entries.collection.get",
+        "tags.collection.get",
+        "licenses.refdata.view",
+        "note.types.collection.get"
+      ]
+    },
+    {
+      "permissionName": "ui-licenses.licenses.view",
+      "displayName": "Licenses: Search & view licenses",
+      "description": "A user with this permission can search and view existing licenses and amendments. This includes the permission to see and access the License app in the Folio interface.",
+      "visible": true,
+      "subPermissions": [
+        "module.licenses.enabled",
+        "tags.item.post",
+        "licenses.licenses.view",
+        "licenses.files.view",
+        "licenses.contacts.view",
+        "licenses.custprops.view",
+        "licenses.orgs.view"
+      ]
+    },
+    {
+      "permissionName": "ui-licenses.licenses.file.download",
+      "displayName": "Licenses: File download",
+      "description": "A user with this permission is able to download and view the content of License document files",
+      "visible": true,
+      "subPermissions": [
+        "licenses.files.item.download",
+        "licenses.files.view"
+      ]
+    },
+    {
+      "permissionName": "ui-licenses.licenses.edit",
+      "displayName": "Licenses: Edit licenses",
+      "description": "Grants all permissions included in \"Licenses: Search & view licenses\" plus the ability to edit licenses and amendments, including the ability to add and edit documents and view, add and edit tags on a license.",
+      "visible": true,
+      "subPermissions": [
+        "ui-licenses.licenses.view",
+        "licenses.licenses.edit",
+        "licenses.files.edit"
+      ]
+    },
+    {
+      "permissionName": "ui-licenses.licenses.delete",
+      "displayName": "Licenses: Delete licenses",
+      "description": "Grants all permissions included in \"Licenses: Search & view licenses\" plus the ability to delete licenses and amendments.",
+      "visible": true,
+      "subPermissions": [
+        "ui-licenses.licenses.view",
+        "licenses.licenses.item.delete"
+      ]
+    },
+    {
+      "permissionName": "settings.licenses.enabled",
+      "displayName": "Settings (Licenses): display list of settings pages",
+      "subPermissions": [
+        "settings.enabled"
+      ]
+    },
+    {
+      "permissionName": "ui-licenses.picklists.view",
+      "displayName": "Settings (Licenses): View pick lists and values",
+      "description": "Grants permissions to access the License settings and the ability to view pick lists and pick list values.",
+      "visible": true,
+      "subPermissions": [
+        "settings.licenses.enabled",
+        "licenses.refdata.view"
+      ]
+    },
+    {
+      "permissionName": "ui-licenses.picklists.manage",
+      "displayName": "Settings (Licenses): Manage pick lists and values",
+      "description": "Grants permissions to access the License settings and the ability to manage pick lists and pick list values.",
+      "visible": true,
+      "subPermissions": [
+        "ui-licenses.picklists.view",
+        "licenses.refdata.manage"
+      ]
+    },
+    {
+      "permissionName": "ui-licenses.terms.view",
+      "displayName": "Settings (Licenses): View license terms",
+      "description": "Grants permissions to access the License settings and the ability to view the available terms.",
+      "visible": true,
+      "subPermissions": [
+        "settings.licenses.enabled",
+        "licenses.custprops.view"
+      ]
+    },
+    {
+      "permissionName": "ui-licenses.terms.manage",
+      "displayName": "Settings (Licenses): Manage license terms",
+      "description": "Grants permissions to access the License settings and the ability to manage the available terms.",
+      "visible": true,
+      "subPermissions": [
+        "ui-licenses.terms.view",
+        "licenses.custprops.manage"
+      ]
+    },
+    {
+      "permissionName": "ui-licenses.appSettings.view",
+      "displayName": "Settings (Licenses): Can view app settings",
+      "description": "Grants permission to view the Licenses application settings",
+      "visible": true,
+      "subPermissions": [
+        "settings.licenses.enabled",
+        "licenses.settings.read"
+      ]
+    },
+    {
+      "permissionName": "ui-licenses.appSettings.manage",
+      "displayName": "Settings (Licenses): Can view and edit app settings",
+      "description": "Grants permission to view and edit the Licenses application settings",
+      "visible": true,
+      "subPermissions": [
+        "ui-licenses.appSettings.view",
+        "licenses.settings.manage"
+      ]
+    }
+  ]
+}

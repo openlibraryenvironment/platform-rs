@@ -1,0 +1,362 @@
+{
+  "id": "folio_finance-6.0.0",
+  "name": "Description for ui-finance",
+  "permissionSets": [
+    {
+      "permissionName": "module.finance.enabled",
+      "displayName": "UI: Finance module is enabled",
+      "visible": false
+    },
+    {
+      "permissionName": "ui-finance.settings.view",
+      "displayName": "Settings (Finance): View settings",
+      "visible": true,
+      "subPermissions": [
+        "settings.finance.enabled",
+        "finance.expense-classes.collection.get",
+        "finance.fiscal-years.collection.get",
+        "finance.fund-codes-expense-classes.collection.get",
+        "finance.fund-types.collection.get",
+        "users.collection.get"
+      ]
+    },
+    {
+      "permissionName": "ui-finance.settings.exportFundAndExpenseClassCodes",
+      "displayName": "Settings (Finance): Export fund and expense class codes",
+      "visible": true,
+      "subPermissions": [
+        "settings.finance.enabled",
+        "finance.expense-classes.collection.get",
+        "finance.fiscal-years.collection.get",
+        "finance.fund-codes-expense-classes.collection.get",
+        "users.collection.get"
+      ]
+    },
+    {
+      "permissionName": "settings.finance.enabled",
+      "displayName": "Settings (Finance): Can view and edit settings",
+      "subPermissions": [
+        "settings.enabled"
+      ],
+      "visible": false
+    },
+    {
+      "permissionName": "ui-finance.fiscal-year.view",
+      "displayName": "Finance: View fiscal year",
+      "visible": true,
+      "subPermissions": [
+        "module.finance.enabled",
+        "acquisitions-units.units.collection.get",
+        "finance.budgets.collection.get",
+        "finance.fiscal-years.collection.get",
+        "finance.fiscal-years.item.get",
+        "finance.funds.collection.get",
+        "finance.group-fiscal-year-summaries.collection.get",
+        "finance.groups.collection.get",
+        "finance.ledgers.collection.get",
+        "users.collection.get"
+      ]
+    },
+    {
+      "permissionName": "ui-finance.fiscal-year.edit",
+      "displayName": "Finance: View, edit fiscal year",
+      "visible": true,
+      "subPermissions": [
+        "ui-finance.fiscal-year.view",
+        "acquisitions-units.memberships.collection.get",
+        "finance.fiscal-years.item.put"
+      ]
+    },
+    {
+      "permissionName": "ui-finance.fiscal-year.create",
+      "displayName": "Finance: View, edit, create fiscal year",
+      "visible": true,
+      "subPermissions": [
+        "ui-finance.fiscal-year.edit",
+        "finance.fiscal-years.item.post"
+      ]
+    },
+    {
+      "permissionName": "ui-finance.fiscal-year.delete",
+      "displayName": "Finance: View, edit, delete fiscal year",
+      "visible": true,
+      "subPermissions": [
+        "ui-finance.fiscal-year.edit",
+        "finance.fiscal-years.item.delete"
+      ]
+    },
+    {
+      "permissionName": "ui-finance.settings.all",
+      "displayName": "Settings (Finance): View, edit, create, delete",
+      "visible": true,
+      "subPermissions": [
+        "ui-finance.settings.view",
+        "finance.expense-classes.item.delete",
+        "finance.expense-classes.item.post",
+        "finance.expense-classes.item.put",
+        "finance.fund-types.item.delete",
+        "finance.fund-types.item.post",
+        "finance.fund-types.item.put"
+      ]
+    },
+    {
+      "permissionName": "ui-finance.ledger.view",
+      "displayName": "Finance: View ledger",
+      "visible": true,
+      "subPermissions": [
+        "module.finance.enabled",
+        "acquisitions-units.units.collection.get",
+        "finance.budgets.collection.get",
+        "finance.funds.collection.get",
+        "finance.group-fiscal-year-summaries.collection.get",
+        "finance.group-fund-fiscal-years.collection.get",
+        "finance.groups.collection.get",
+        "finance.ledger-rollovers-errors.collection.get",
+        "finance.ledgers.collection.get",
+        "finance.ledgers.current-fiscal-year.item.get",
+        "finance.ledgers.item.get",
+        "users.collection.get"
+      ]
+    },
+    {
+      "permissionName": "ui-finance.ledger.edit",
+      "displayName": "Finance: View, edit ledger",
+      "visible": true,
+      "subPermissions": [
+        "ui-finance.ledger.view",
+        "acquisitions-units.memberships.collection.get",
+        "finance.fiscal-years.collection.get",
+        "finance.ledgers.item.put"
+      ]
+    },
+    {
+      "permissionName": "ui-finance.ledger.create",
+      "displayName": "Finance: View, edit, create ledger",
+      "visible": true,
+      "subPermissions": [
+        "ui-finance.ledger.edit",
+        "finance.ledgers.item.post"
+      ]
+    },
+    {
+      "permissionName": "ui-finance.ledger.delete",
+      "displayName": "Finance: View, edit, delete ledger",
+      "visible": true,
+      "subPermissions": [
+        "ui-finance.ledger.edit",
+        "finance.ledgers.item.delete"
+      ]
+    },
+    {
+      "permissionName": "ui-finance.ledger.rollover",
+      "displayName": "Finance: Execute fiscal year rollover",
+      "visible": true,
+      "subPermissions": [
+        "finance.ledger-rollovers-errors.collection.get",
+        "finance.ledger-rollovers-progress.collection.get",
+        "finance.ledger-rollovers-progress.item.get",
+        "finance.ledger-rollovers.collection.get",
+        "finance.ledger-rollovers.item.get",
+        "finance.ledger-rollovers.item.post",
+        "finance.ledgers.current-fiscal-year.item.get",
+        "finance.ledger-rollovers-logs.collection.get",
+        "finance.ledger-rollovers-budgets.collection.get"
+      ]
+    },
+    {
+      "permissionName": "ui-finance.group.view",
+      "displayName": "Finance: View group",
+      "visible": true,
+      "subPermissions": [
+        "module.finance.enabled",
+        "acquisitions-units.units.collection.get",
+        "finance.budgets.collection.get",
+        "finance.fiscal-years.collection.get",
+        "finance.funds.collection.get",
+        "finance.group-fiscal-year-summaries.collection.get",
+        "finance.groups-expense-classes-totals.collection.get",
+        "finance.groups.collection.get",
+        "finance.groups.item.get",
+        "finance.ledgers.collection.get",
+        "users.collection.get"
+      ]
+    },
+    {
+      "permissionName": "ui-finance.group.edit",
+      "displayName": "Finance: View, edit group",
+      "visible": true,
+      "subPermissions": [
+        "ui-finance.group.view",
+        "acquisitions-units.memberships.collection.get",
+        "finance.groups.item.put"
+      ]
+    },
+    {
+      "permissionName": "ui-finance.group.create",
+      "displayName": "Finance: View, edit, create group",
+      "visible": true,
+      "subPermissions": [
+        "ui-finance.group.edit",
+        "finance.groups.item.post"
+      ]
+    },
+    {
+      "permissionName": "ui-finance.group.delete",
+      "displayName": "Finance: View, edit, delete group",
+      "visible": true,
+      "subPermissions": [
+        "ui-finance.group.edit",
+        "finance.groups.item.delete"
+      ]
+    },
+    {
+      "permissionName": "ui-finance.fund-budget.view",
+      "displayName": "Finance: View fund and budget",
+      "visible": true,
+      "subPermissions": [
+        "module.finance.enabled",
+        "acquisitions-units.units.collection.get",
+        "configuration.entries.collection.get",
+        "finance.budgets-expense-classes-totals.collection.get",
+        "finance.budgets.collection.get",
+        "finance.budgets.item.get",
+        "finance.expense-classes.collection.get",
+        "finance.expense-classes.item.get",
+        "finance.fiscal-years.collection.get",
+        "finance.fiscal-years.item.get",
+        "finance.fund-types.collection.get",
+        "finance.fund-types.item.get",
+        "finance.funds.budget.item.get",
+        "finance.funds.collection.get",
+        "finance.funds.item.get",
+        "finance.groups.collection.get",
+        "finance.ledgers.collection.get",
+        "finance.ledgers.current-fiscal-year.item.get",
+        "finance.ledgers.item.get",
+        "finance.transactions.collection.get",
+        "finance.transactions.item.get",
+        "invoice.invoices.collection.get",
+        "invoice.invoices.item.get",
+        "orders.item.get",
+        "orders.po-lines.collection.get",
+        "orders.po-lines.item.get",
+        "organizations.organizations.collection.get",
+        "tags.collection.get",
+        "users.collection.get"
+      ]
+    },
+    {
+      "permissionName": "ui-finance.fund-budget.edit",
+      "displayName": "Finance: View, edit fund and budget",
+      "visible": true,
+      "subPermissions": [
+        "ui-finance.fund-budget.view",
+        "acquisitions-units.memberships.collection.get",
+        "finance.budgets.item.put",
+        "finance.funds.item.put",
+        "inventory-storage.locations.collection.get",
+        "inventory-storage.location-units.campuses.collection.get",
+        "inventory-storage.location-units.institutions.collection.get",
+        "inventory-storage.location-units.libraries.collection.get",
+        "tags.item.post"
+      ]
+    },
+    {
+      "permissionName": "ui-finance.fund-budget.create",
+      "displayName": "Finance: View, edit, create fund and budget",
+      "visible": true,
+      "subPermissions": [
+        "ui-finance.fund-budget.edit",
+        "finance.budgets.item.post",
+        "finance.funds.item.post"
+      ]
+    },
+    {
+      "permissionName": "ui-finance.fund-budget.delete",
+      "displayName": "Finance: View, edit, delete fund and budget",
+      "visible": true,
+      "subPermissions": [
+        "ui-finance.fund-budget.edit",
+        "finance.budgets.item.delete",
+        "finance.funds.item.delete"
+      ]
+    },
+    {
+      "permissionName": "ui-finance.fund-budget.recalculateTotals",
+      "displayName": "Finance: Recalculate budget totals",
+      "visible": true,
+      "subPermissions": [
+        "ui-finance.fund-budget.view",
+        "finance.budgets-recalculate.item.post"
+      ]
+    },
+    {
+      "permissionName": "ui-finance.acq.unit.assignment.assign",
+      "displayName": "Finance: Assign acquisition units to new record",
+      "description": "",
+      "visible": true,
+      "subPermissions": [
+        "finance.acquisitions-units-assignments.assign"
+      ]
+    },
+    {
+      "permissionName": "ui-finance.acq.unit.assignment.manage",
+      "displayName": "Finance: Manage acquisition units",
+      "description": "",
+      "visible": true,
+      "subPermissions": [
+        "finance.acquisitions-units-assignments.manage"
+      ]
+    },
+    {
+      "permissionName": "ui-finance.allocations.create",
+      "displayName": "Finance: Create allocations",
+      "description": "",
+      "visible": true,
+      "subPermissions": [
+        "ui-finance.fund-budget.edit",
+        "finance.allocations.item.post"
+      ]
+    },
+    {
+      "permissionName": "ui-finance.transfers.create",
+      "displayName": "Finance: Create transfers",
+      "description": "",
+      "visible": true,
+      "subPermissions": [
+        "ui-finance.fund-budget.edit",
+        "finance.transfers.item.post"
+      ]
+    },
+    {
+      "permissionName": "ui-finance.manually-release-encumbrances",
+      "displayName": "Finance: Manually release encumbrance",
+      "description": "",
+      "visible": true,
+      "subPermissions": [
+        "finance.release-encumbrance.item.post"
+      ]
+    },
+    {
+      "permissionName": "ui-finance.encumbrance.unrelease",
+      "displayName": "Finance: Unrelease encumbrance",
+      "visible": true,
+      "subPermissions": [
+        "finance.unrelease-encumbrance.item.post"
+      ]
+    },
+    {
+      "permissionName": "ui-finance.exportCSV",
+      "displayName": "Finance: Export finance records",
+      "description": "",
+      "visible": true,
+      "subPermissions": [
+        "finance.budgets-expense-classes-totals.collection.get",
+        "finance.expense-classes.collection.get",
+        "finance.fiscal-years.collection.get",
+        "finance.fiscal-years.item.get",
+        "finance.fund-types.collection.get"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "folio_plugin-find-agreement-11.0.1",
+  "name": "ERM-agreement-finder for Stripes",
+  "permissionSets": [
+    {
+      "permissionName": "ui-plugin-find-agreement.search",
+      "displayName": "Find Agreement Plugin: Search agreements",
+      "description": "A user with this permission can search and view existing agreements via the find agreements plugin (used to search for agreements from within other Folio apps). This does not include the permission to see and access the Agreements app in the Folio interface.",
+      "visible": true,
+      "subPermissions": [
+        "erm.agreements.view",
+        "erm.orgs.view",
+        "erm.refdata.view"
+      ]
+    }
+  ]
+}

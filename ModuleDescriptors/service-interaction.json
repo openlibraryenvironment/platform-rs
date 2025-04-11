@@ -1,0 +1,36 @@
+{
+  "id": "folio_service-interaction-3.0.1",
+  "name": "FOLIO app for service-interaction",
+  "permissionSets": [
+    {
+      "permissionName": "module.service-interaction.enabled",
+      "displayName": "UI: ui-service-interaction module is enabled",
+      "visible": true
+    },
+    {
+      "permissionName": "settings.service-interaction.enabled",
+      "displayName": "Settings (service-interaction): display list of settings pages",
+      "subPermissions": [
+        "settings.enabled"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-service-interaction.numberGenerator.view",
+      "displayName": "Settings (Service-interaction): View number generator settings and use number generators within apps",
+      "subPermissions": [
+        "servint.numberGenerator.use"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-service-interaction.numberGenerator.manage",
+      "displayName": "Settings (Service-interaction): Manage number generator settings and use number generators within apps",
+      "subPermissions": [
+        "ui-service-interaction.numberGenerator.view",
+        "servint.numberGenerator.manage"
+      ],
+      "visible": true
+    }
+  ]
+}

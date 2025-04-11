@@ -1,0 +1,255 @@
+{
+  "id": "folio_invoice-6.0.3",
+  "name": "Invoice",
+  "permissionSets": [
+    {
+      "permissionName": "module.invoice.enabled",
+      "displayName": "UI: invoice module is enabled",
+      "visible": false
+    },
+    {
+      "permissionName": "settings.invoice.enabled",
+      "displayName": "Settings (Invoice): Can view and edit settings",
+      "subPermissions": [
+        "settings.enabled"
+      ],
+      "visible": false
+    },
+    {
+      "permissionName": "ui-invoice.invoice.view",
+      "displayName": "Invoice: Can view Invoices and Invoice lines",
+      "visible": true,
+      "subPermissions": [
+        "module.invoice.enabled",
+        "acquisitions-units.units.collection.get",
+        "batch-groups.item.get",
+        "batch-voucher.batch-voucher-exports.collection.get",
+        "batch-voucher.export-configurations.collection.get",
+        "configuration.entries.collection.get",
+        "finance.budgets.collection.get",
+        "finance.calculate-exchange.item.get",
+        "finance.fiscal-years.collection.get",
+        "finance.fiscal-years.item.get",
+        "finance.funds.collection.get",
+        "finance.funds.expense-classes.collection.get",
+        "finance.transactions.collection.get",
+        "inventory-storage.location-units.campuses.collection.get",
+        "inventory-storage.location-units.institutions.collection.get",
+        "inventory-storage.location-units.libraries.collection.get",
+        "inventory-storage.locations.collection.get",
+        "invoice.invoice-lines.collection.get",
+        "invoice.invoice-lines.item.get",
+        "invoice.invoices.collection.get",
+        "invoice.invoices.documents.collection.get",
+        "invoice.invoices.documents.item.get",
+        "invoice.invoices.item.get",
+        "orders.pieces.collection.get",
+        "orders.po-lines.collection.get",
+        "orders.po-lines.item.get",
+        "organizations-storage.categories.collection.get",
+        "organizations.organizations.collection.get",
+        "organizations.organizations.item.get",
+        "tags.collection.get",
+        "usergroups.collection.get",
+        "users.collection.get",
+        "users.item.get",
+        "voucher.voucher-lines.collection.get",
+        "voucher.vouchers.collection.get",
+        "voucher.vouchers.item.get"
+      ]
+    },
+    {
+      "permissionName": "ui-invoice.invoice.edit",
+      "displayName": "Invoice: Can view and edit Invoices and Invoice lines",
+      "visible": true,
+      "subPermissions": [
+        "ui-invoice.invoice.view",
+        "acquisitions-units.memberships.collection.get",
+        "batch-groups.collection.get",
+        "finance.exchange-rate.item.get",
+        "finance.expense-classes.collection.get",
+        "finance.expense-classes.item.get",
+        "finance.funds.item.get",
+        "invoice.invoice-lines.fund-distributions.validate",
+        "invoice.invoice-lines.item.put",
+        "invoice.invoices.documents.item.post",
+        "invoice.invoices.documents.item.delete",
+        "invoice.invoices.item.put",
+        "orders.acquisition-methods.collection.get",
+        "orders.configuration.prefixes.collection.get",
+        "orders.configuration.suffixes.collection.get",
+        "tags.item.post",
+        "voucher.vouchers.item.put"
+      ]
+    },
+    {
+      "permissionName": "ui-invoice.invoice.create",
+      "displayName": "Invoice: Can view, edit and create new Invoices and Invoice lines",
+      "visible": true,
+      "subPermissions": [
+        "ui-invoice.invoice.edit",
+        "inventory-storage.contributor-name-types.collection.get",
+        "inventory-storage.identifier-types.collection.get",
+        "inventory-storage.material-types.collection.get",
+        "invoice.invoice-lines.item.post",
+        "invoice.invoices.item.post",
+        "orders.collection.get"
+      ]
+    },
+    {
+      "permissionName": "ui-invoice.invoice.delete",
+      "displayName": "Invoice: Can view, edit and delete Invoices and Invoice lines",
+      "visible": true,
+      "subPermissions": [
+        "ui-invoice.invoice.edit",
+        "invoice.invoice-lines.item.delete",
+        "invoice.invoices.item.delete"
+      ]
+    },
+    {
+      "permissionName": "ui-invoice.approve",
+      "displayName": "Invoice: Approve invoices",
+      "visible": true,
+      "description": "",
+      "subPermissions": [
+        "finance.expense-classes.item.get",
+        "finance.funds.item.get",
+        "invoice.item.approve"
+      ]
+    },
+    {
+      "permissionName": "ui-invoice.pay",
+      "displayName": "Invoice: Pay invoices",
+      "visible": true,
+      "description": "",
+      "subPermissions": [
+        "finance.expense-classes.item.get",
+        "finance.funds.item.get",
+        "invoice.item.pay"
+      ]
+    },
+    {
+      "permissionName": "ui-invoice.payDifferentFY",
+      "displayName": "Invoice: Pay invoices in a different fiscal year",
+      "visible": true,
+      "subPermissions": [
+        "ui-invoice.pay",
+        "invoices.fiscal-year.update"
+      ]
+    },
+    {
+      "permissionName": "ui-invoice.cancel",
+      "displayName": "Invoice: Cancel invoices",
+      "visible": true,
+      "description": "",
+      "subPermissions": [
+        "invoice.invoices.item.put",
+        "invoice.item.cancel"
+      ]
+    },
+    {
+      "permissionName": "ui-invoice.voucherExport",
+      "displayName": "Invoice: Voucher export",
+      "visible": true,
+      "description": "",
+      "subPermissions": [
+        "batch-groups.collection.get",
+        "batch-voucher.batch-voucher-exports.collection.get",
+        "batch-voucher.batch-voucher-exports.item.get",
+        "batch-voucher.batch-voucher-exports.item.post",
+        "batch-voucher.batch-voucher-exports.upload.item.post",
+        "batch-voucher.batch-vouchers.item.get"
+      ]
+    },
+    {
+      "permissionName": "ui-invoice.exportCSV",
+      "displayName": "Invoice: Export search results",
+      "description": "",
+      "visible": true,
+      "subPermissions": [
+        "batch-groups.collection.get",
+        "finance.exchange-rate.item.get"
+      ]
+    },
+    {
+      "permissionName": "ui-invoice.batchVoucher.exportConfigs.credentials.view",
+      "displayName": "Settings (Invoices): Batch group usernames and passwords: view",
+      "visible": true,
+      "subPermissions": [
+        "batch-voucher.export-configurations.credentials.item.get",
+        "batch-voucher.export-configurations.credentials.test"
+      ]
+    },
+    {
+      "permissionName": "ui-invoice.batchVoucher.exportConfigs.credentials.edit",
+      "displayName": "Settings (Invoices): Batch group usernames and passwords: view and edit",
+      "visible": true,
+      "subPermissions": [
+        "ui-invoice.batchVoucher.exportConfigs.credentials.view",
+        "batch-voucher.export-configurations.credentials.item.post",
+        "batch-voucher.export-configurations.credentials.item.put"
+      ]
+    },
+    {
+      "permissionName": "ui-invoice.settings.view",
+      "displayName": "Settings (Invoices): View settings",
+      "visible": true,
+      "subPermissions": [
+        "settings.invoice.enabled",
+        "batch-groups.collection.get",
+        "batch-groups.item.get",
+        "batch-voucher.export-configurations.collection.get",
+        "batch-voucher.export-configurations.item.get",
+        "configuration.entries.collection.get",
+        "configuration.entries.item.get",
+        "voucher-number.start.get",
+        "users.collection.get"
+      ]
+    },
+    {
+      "permissionName": "ui-invoice.settings.all",
+      "displayName": "Settings (Invoices): Can view and edit settings",
+      "visible": true,
+      "subPermissions": [
+        "ui-invoice.settings.view",
+        "batch-groups.item.delete",
+        "batch-groups.item.post",
+        "batch-groups.item.put",
+        "batch-voucher.export-configurations.item.delete",
+        "batch-voucher.export-configurations.item.post",
+        "batch-voucher.export-configurations.item.put",
+        "configuration.entries.item.delete",
+        "configuration.entries.item.post",
+        "configuration.entries.item.put",
+        "voucher-number.start.post"
+      ]
+    },
+    {
+      "permissionName": "ui-invoice.acq.unit.assignment.assign",
+      "displayName": "Invoice: Assign acquisition units to new invoice",
+      "description": "",
+      "visible": true,
+      "subPermissions": [
+        "invoices.acquisitions-units-assignments.assign"
+      ]
+    },
+    {
+      "permissionName": "ui-invoice.acq.unit.assignment.manage",
+      "displayName": "Invoice: Manage acquisition units",
+      "description": "",
+      "visible": true,
+      "subPermissions": [
+        "invoices.acquisitions-units-assignments.manage"
+      ]
+    },
+    {
+      "permissionName": "ui-invoice.batchVoucher.download",
+      "displayName": "Invoice: Download batch file from invoice record",
+      "description": "",
+      "visible": true,
+      "subPermissions": [
+        "batch-voucher.batch-vouchers.item.get"
+      ]
+    }
+  ]
+}

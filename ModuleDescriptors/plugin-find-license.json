@@ -1,0 +1,17 @@
+{
+  "id": "folio_plugin-find-license-11.0.1",
+  "name": "License-finder for Stripes",
+  "permissionSets": [
+    {
+      "permissionName": "ui-plugin-find-license.search",
+      "displayName": "Find License Plugin: Search licenses",
+      "description": "A user with this permission can search and view existing licenses via the find license plugin (used to search for licenses from within other Folio apps). This does not include the permission to see and access the License app in the Folio interface.",
+      "visible": true,
+      "subPermissions": [
+        "licenses.licenses.view",
+        "licenses.orgs.view",
+        "licenses.refdata.view"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "folio_myprofile-9.1.0",
+  "name": "My profile",
+  "permissionSets": [
+    {
+      "permissionName": "module.myprofile.enabled",
+      "displayName": "UI: My-profile module is enabled"
+    },
+    {
+      "permissionName": "settings.myprofile.enabled",
+      "displayName": "Settings (My profile): display list of settings pages",
+      "subPermissions": [
+        "settings.enabled"
+      ]
+    },
+    {
+      "permissionName": "ui-myprofile.settings.change-password",
+      "displayName": "Settings (My profile): Can change your local password",
+      "description": "Some subperms can be deleted later when submodules use modern permission names",
+      "subPermissions": [
+        "settings.myprofile.enabled",
+        "users.collection.get",
+        "users-bl.item.get",
+        "users.item.get"
+      ],
+      "visible": true
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "folio_notes-9.1.0",
+  "name": "Note types manager",
+  "permissionSets": [
+    {
+      "permissionName": "module.notes.enabled",
+      "displayName": "UI: ui-notes module is enabled",
+      "visible": false
+    },
+    {
+      "permissionName": "settings.notes.enabled",
+      "visible": false,
+      "subPermissions": [
+        "settings.enabled"
+      ]
+    },
+    {
+      "permissionName": "ui-notes.settings.edit",
+      "displayName": "Settings (Notes): Edit and View General settings",
+      "subPermissions": [
+        "settings.notes.enabled",
+        "settings.notes.view",
+        "note.types.item.post",
+        "note.types.item.put",
+        "note.types.item.delete",
+        "note.types.item.get",
+        "note.types.collection.get"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-notes.settings.view",
+      "displayName": "Settings (Notes): View General settings",
+      "subPermissions": [
+        "settings.notes.enabled",
+        "note.types.item.get",
+        "note.types.collection.get"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-notes.item.view",
+      "displayName": "Notes: Can view a note",
+      "subPermissions": [
+        "note.types.collection.get",
+        "note.types.item.get",
+        "notes.item.get",
+        "notes.collection.get",
+        "notes.collection.get.by.status",
+        "notes.domain.all",
+        "module.notes.enabled"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-notes.item.create",
+      "displayName": "Notes: Can create a note",
+      "subPermissions": [
+        "notes.item.post",
+        "note.types.item.post",
+        "notes.domain.all",
+        "ui-notes.item.view"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-notes.item.edit",
+      "displayName": "Notes: Can edit a note",
+      "subPermissions": [
+        "notes.item.put",
+        "note.types.item.put",
+        "notes.domain.all",
+        "ui-notes.item.view"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-notes.item.delete",
+      "displayName": "Notes: Can delete a note",
+      "subPermissions": [
+        "notes.item.delete",
+        "note.types.item.delete",
+        "notes.domain.all",
+        "ui-notes.item.view"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-notes.item.assign-unassign",
+      "displayName": "Notes: Can assign and unassign a note",
+      "subPermissions": [
+        "note.links.collection.put",
+        "ui-notes.item.view"
+      ],
+      "visible": true
+    }
+  ]
+}

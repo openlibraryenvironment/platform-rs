@@ -1,0 +1,100 @@
+{
+  "id": "folio_marc-authorities-5.0.1",
+  "name": "MARC Authorities module",
+  "permissionSets": [
+    {
+      "permissionName": "module.marc-authorities.enabled",
+      "displayName": "UI: MARC Authorities module is enabled",
+      "visible": false
+    },
+    {
+      "permissionName": "ui-marc-authorities.authority-record.view",
+      "displayName": "MARC Authority: View MARC authority record",
+      "subPermissions": [
+        "module.marc-authorities.enabled",
+        "browse.authorities.collection.get",
+        "marc-records-editor.item.get",
+        "marc-records-editor.links.suggestion.post",
+        "search.authorities.collection.get",
+        "search.facets.collection.get",
+        "source-storage.records.get",
+        "inventory-storage.authorities.item.get",
+        "data-export.quick.export.post",
+        "instance-authority.linking-rules.collection.get",
+        "instance-authority-links.authority-statistics.collection.get",
+        "instance-authority-links.instance-statistics.collection.get",
+        "inventory-storage.authorities.collection.get",
+        "inventory-storage.authority-source-files.collection.get",
+        "inventory-storage.authority-source-files.item.get",
+        "perms.users.get",
+        "mapping-rules.get"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-marc-authorities.authority-record.create",
+      "displayName": "MARC Authority: Create new MARC authority record",
+      "subPermissions": [
+        "ui-marc-authorities.authority-record.view",
+        "inventory-storage.authority-source-files.hrid.post",
+        "marc-records-editor.item.post",
+        "instance-authority-links.instances.collection.post",
+        "instance-authority-links.authorities.bulk.post",
+        "marc-records-editor.status.item.get",
+        "marc-specifications.item.get"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-marc-authorities.authority-record.edit",
+      "displayName": "MARC Authority: Edit MARC authority record",
+      "subPermissions": [
+        "ui-marc-authorities.authority-record.view",
+        "marc-records-editor.item.put",
+        "instance-authority-links.authorities.bulk.post"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-marc-authorities.authority-record.delete",
+      "displayName": "MARC Authority: Delete MARC authority record",
+      "subPermissions": [
+        "inventory-storage.authorities.item.delete"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "settings.marc-authorities.enabled",
+      "displayName": "Settings (MARC authority): Module is enabled.",
+      "subPermissions": [
+        "settings.enabled"
+      ],
+      "visible": false
+    },
+    {
+      "permissionName": "ui-marc-authorities.settings.authority-files.view",
+      "displayName": "Settings (MARC authority): View authority files",
+      "subPermissions": [
+        "settings.marc-authorities.enabled",
+        "inventory-storage.authority-source-files.collection.get",
+        "inventory-storage.authority-source-files.item.get",
+        "perms.users.get",
+        "users.collection.get"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-marc-authorities.settings.authority-files.all",
+      "displayName": "Settings (MARC authority): View, create, edit, delete authority files",
+      "subPermissions": [
+        "settings.marc-authorities.enabled",
+        "ui-marc-authorities.settings.authority-files.view",
+        "inventory-storage.authority-source-files.item.post",
+        "inventory-storage.authority-source-files.item.put",
+        "inventory-storage.authority-source-files.item.patch",
+        "inventory-storage.authority-source-files.item.delete"
+      ],
+      "visible": true
+    }
+  ]
+}

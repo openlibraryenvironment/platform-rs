@@ -1,0 +1,125 @@
+{
+  "id": "folio_quick-marc-8.0.1",
+  "name": "Quick MARC editor",
+  "permissionSets": [
+    {
+      "permissionName": "ui-quick-marc.quick-marc-editor.view",
+      "displayName": "quickMARC: View MARC bibliographic record",
+      "subPermissions": [
+        "marc-records-editor.item.get",
+        "inventory.instances.item.get",
+        "instance-authority-links.instances.collection.get",
+        "instance-authority.linking-rules.collection.get"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-quick-marc.quick-marc-editor.create",
+      "displayName": "quickMARC: Create a new MARC bibliographic record",
+      "subPermissions": [
+        "ui-quick-marc.quick-marc-editor.view",
+        "marc-records-editor.item.put",
+        "marc-records-editor.item.post",
+        "marc-records-editor.links.suggestion.post",
+        "instance-authority-links.instances.collection.post",
+        "marc-records-editor.status.item.get",
+        "marc-specifications.item.get"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-quick-marc.quick-marc-editor.all",
+      "displayName": "quickMARC: View, edit MARC bibliographic record",
+      "subPermissions": [
+        "ui-quick-marc.quick-marc-editor.view",
+        "perms.users.get",
+        "marc-records-editor.item.put",
+        "marc-records-editor.links.suggestion.post",
+        "instance-authority-links.instances.collection.put",
+        "marc-specifications.item.get"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-quick-marc.quick-marc-holdings-editor.view",
+      "displayName": "quickMARC: View MARC holdings record",
+      "subPermissions": [
+        "marc-records-editor.item.get",
+        "inventory.instances.item.get",
+        "instance-authority.linking-rules.collection.get"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-quick-marc.quick-marc-holdings-editor.all",
+      "displayName": "quickMARC: View, edit MARC holdings record",
+      "subPermissions": [
+        "ui-quick-marc.quick-marc-holdings-editor.view",
+        "marc-records-editor.item.put",
+        "marc-specifications.item.get"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-quick-marc.quick-marc-holdings-editor.create",
+      "displayName": "quickMARC: Create a new MARC holdings record",
+      "subPermissions": [
+        "ui-quick-marc.quick-marc-holdings-editor.view",
+        "marc-records-editor.status.item.get",
+        "marc-records-editor.item.post",
+        "marc-specifications.item.get"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-quick-marc.quick-marc-editor.duplicate",
+      "displayName": "quickMARC: Derive new MARC bibliographic record",
+      "subPermissions": [
+        "ui-quick-marc.quick-marc-editor.view",
+        "marc-records-editor.status.item.get",
+        "marc-records-editor.item.put",
+        "marc-records-editor.item.post",
+        "marc-records-editor.links.suggestion.post",
+        "instance-authority-links.instances.collection.put",
+        "marc-specifications.item.get"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-quick-marc.quick-marc-authorities-editor.create",
+      "displayName": "quickMARC: Create a new MARC authority record",
+      "subPermissions": [
+        "ui-marc-authorities.authority-record.view",
+        "inventory-storage.authority-source-files.hrid.post",
+        "marc-records-editor.item.post",
+        "instance-authority-links.instances.collection.post",
+        "instance-authority-links.authorities.bulk.post",
+        "marc-records-editor.status.item.get",
+        "marc-specifications.item.get"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-quick-marc.quick-marc-authorities-editor.all",
+      "displayName": "quickMARC: View, edit MARC authorities record",
+      "subPermissions": [
+        "marc-records-editor.item.get",
+        "marc-records-editor.item.put",
+        "inventory-storage.locations.collection.get",
+        "marc-specifications.item.get",
+        "search.authorities.collection.get"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-quick-marc.quick-marc-authority-records.linkUnlink",
+      "displayName": "quickMARC: Can Link/unlink authority records to bib records",
+      "subPermissions": [
+        "instance-authority.linking-rules.collection.get",
+        "inventory-storage.authority-source-files.collection.get",
+        "marc-records-editor.links.suggestion.post"
+      ],
+      "visible": true
+    }
+  ]
+}
