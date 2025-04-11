@@ -1726,10 +1726,10 @@
   resolved "https://registry.yarnpkg.com/@ffmpeg-installer/win32-x64/-/win32-x64-4.1.0.tgz#17e8699b5798d4c60e36e2d6326a8ebe5e95a2c5"
   integrity sha512-Drt5u2vzDnIONf4ZEkKtFlbvwj6rI3kxw1Ck9fpudmtgaZIHD4ucsWB2lCZBXRxJgXR+2IMSti+4rtM4C4rXgg==
 
-"@folio/checkin@9.1.1":
-  version "9.1.1"
-  resolved "https://repository.folio.org/repository/npm-folio/@folio/checkin/-/checkin-9.1.1.tgz#f82164d333a5592ab7002e137baf25d49bd4ff1c"
-  integrity sha512-QacwK8L00riBfhwgwMZiU+Jf3bg++xYtOegVtieV+WFSnA4bgUXqXwvpHj03oDUk41GeCWflqrgTEjFsgaF02Q==
+"@folio/checkin@9.2.1":
+  version "9.2.1"
+  resolved "https://repository.folio.org/repository/npm-folio/@folio/checkin/-/checkin-9.2.1.tgz#aa7128ad8438bd2fc4cdbe0ecec9bbc523567585"
+  integrity sha512-9DyRi5jKsqnpQu/y65td8bpjqyQGD2HO8fwEhwl7h8ebny/h7TeaBPaHIX6qy9O4YAMxmu1YTqWLWQZAkOJfDg==
   dependencies:
     dateformat "^2.0.0"
     dompurify "^3.0.9"
