@@ -62,3 +62,9 @@ typings/
 
 # next.js build output
 .next
+
+node_modules
+bundle
+output
+stripes.config.js.local
+ModuleDescriptors
