@@ -1726,10 +1726,10 @@
   resolved "https://registry.yarnpkg.com/@ffmpeg-installer/win32-x64/-/win32-x64-4.1.0.tgz#17e8699b5798d4c60e36e2d6326a8ebe5e95a2c5"
   integrity sha512-Drt5u2vzDnIONf4ZEkKtFlbvwj6rI3kxw1Ck9fpudmtgaZIHD4ucsWB2lCZBXRxJgXR+2IMSti+4rtM4C4rXgg==
 
-"@folio/checkin@9.2.0":
-  version "9.2.0"
-  resolved "https://repository.folio.org/repository/npm-folio/@folio/checkin/-/checkin-9.2.0.tgz#4ddf675ce3adf1d0e1f1aa2e0c8b34f5b1a030f3"
-  integrity sha512-40W6ZzzR++uvMDK2+8j3oMUJzuCiN+4i1IysJCdL049GxcnSGfrAmQHMsH0DIWM9nTXRqZbGUP/zuwHgeulUOQ==
+"@folio/checkin@9.1.1":
+  version "9.1.1"
+  resolved "https://repository.folio.org/repository/npm-folio/@folio/checkin/-/checkin-9.1.1.tgz#f82164d333a5592ab7002e137baf25d49bd4ff1c"
+  integrity sha512-QacwK8L00riBfhwgwMZiU+Jf3bg++xYtOegVtieV+WFSnA4bgUXqXwvpHj03oDUk41GeCWflqrgTEjFsgaF02Q==
   dependencies:
     dateformat "^2.0.0"
     dompurify "^3.0.9"
@@ -1744,10 +1744,10 @@
     react-to-print "^2.3.2"
     uuid "^9.0.0"
 
-"@folio/checkout@11.0.0":
-  version "11.0.0"
-  resolved "https://repository.folio.org/repository/npm-folio/@folio/checkout/-/checkout-11.0.0.tgz#df0c7daffcc20e3c3a59ecbdf85acbc738192e56"
-  integrity sha512-UMZYbvySeamrRRKgxXh9gwadCdBE2BdZZqCBKqLeIw/FkcsSLCDcnQvVYL5lqqXID33n0FH71U0mgtrzgnyoHg==
+"@folio/checkout@10.1.0":
+  version "10.1.0"
+  resolved "https://repository.folio.org/repository/npm-folio/@folio/checkout/-/checkout-10.1.0.tgz#3a3936709cf564a38ac02841e81e4e63ea4bb154"
+  integrity sha512-otJKiqrnh5SzWJ61C7hbla/KfhMVH1kDeIu1eg9khZJtSDpNtbJB02QQiA38MuFvDFpwgRUQE3/iMO1TPnG/Fg==
   dependencies:
     final-form "^4.19.1"
     inactivity-timer "^1.0.0"
@@ -1758,7 +1758,7 @@
     react-final-form "^6.4.0"
   optionalDependencies:
     "@folio/circulation" "^9.0.0"
-    "@folio/plugin-create-inventory-records" "^5.0.0"
+    "@folio/plugin-create-inventory-records" "^4.0.0"
     "@folio/plugin-find-user" "^7.0.0"
 
 "@folio/circulation-log@4.1.0":
@@ -1885,20 +1885,6 @@
   version "4.1.0"
   resolved "https://repository.folio.org/repository/npm-folio/@folio/plugin-create-inventory-records/-/plugin-create-inventory-records-4.1.0.tgz#bc997797fca0979b1ff6007ac56daed54621da16"
   integrity sha512-ZZpFDGsJquynEjXsIEi+crYY1N3IWFCD2owpY8x5RYj/Y2bN7wTJfI+jsA6X/hW9qa3aCueZyf6DZ2XD4BOiIg==
-  dependencies:
-    classnames "^2.2.5"
-    final-form "^4.18.2"
-    final-form-arrays "^3.0.1"
-    lodash "^4.17.4"
-    prop-types "^15.6.0"
-    react-final-form "^6.3.0"
-    react-final-form-arrays "^3.1.0"
-    react-final-form-listeners "^1.0.2"
-
-"@folio/plugin-create-inventory-records@^5.0.0":
-  version "5.0.1"
-  resolved "https://repository.folio.org/repository/npm-folio/@folio/plugin-create-inventory-records/-/plugin-create-inventory-records-5.0.1.tgz#9b871c9d841e975bd601bfffc0845aba52712084"
-  integrity sha512-8xysBznyHHm9lTpCT5oFM7h5pXPs9vK0rjSPj3ijsMqvUF3RHIUmdTusXKpyLPYNDb/DBtY3tIh3BZDRbnUtQQ==
   dependencies:
     classnames "^2.2.5"
     final-form "^4.18.2"

@@ -5,7 +5,7 @@
   },
   {
     "action": "enable",
-    "id": "folio_checkout-10.0.1"
+    "id": "folio_checkout-10.1.0"
   },
   {
     "action": "enable",
@@ -25,7 +25,7 @@
   },
   {
     "action": "enable",
-    "id": "projectreshare_directory-1.13.3"
+    "id": "projectreshare_directory-1.13.5"
   },
   {
     "action": "enable",
@@ -37,7 +37,7 @@
   },
   {
     "action": "enable",
-    "id": "projectreshare_rs-1.19.7"
+    "id": "projectreshare_rs-1.19.9"
   },
   {
     "action": "enable",
