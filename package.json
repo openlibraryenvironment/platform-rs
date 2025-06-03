@@ -30,7 +30,7 @@
     "@folio/users": "10.1.2",
     "@projectreshare/directory": "1.13.5",
     "@projectreshare/request": "1.6.3",
-    "@projectreshare/rs": "~1.19.9",
+    "@projectreshare/rs": "https://github.com/openlibraryenvironment/ui-rs#release-1.19.x",
     "@projectreshare/supply": "1.6.3",
     "moment": "~2.29.0",
     "react": "~18.2.0",
@@ -50,6 +50,7 @@
     "minimist": "^1.2.3",
     "moment": "~2.29.0",
     "redux-form": "^8.0.0",
+    "@projectreshare/rs": "https://github.com/openlibraryenvironment/ui-rs#release-1.19.x",
     "@projectreshare/stripes-reshare": "2.0.2"
   },
   "devDependencies": {
