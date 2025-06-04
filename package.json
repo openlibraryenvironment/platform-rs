@@ -28,9 +28,9 @@
     "@folio/stripes-marc-components": "1.0.1",
     "@folio/tenant-settings": "8.1.0",
     "@folio/users": "10.1.2",
-    "@projectreshare/directory": "https://github.com/openlibraryenvironment/ui-directory#release-1.13.x",
+    "@projectreshare/directory": "1.13.6",
     "@projectreshare/request": "1.6.3",
-    "@projectreshare/rs": "https://github.com/openlibraryenvironment/ui-rs#release-1.19.x",
+    "@projectreshare/rs": "1.19.10",
     "@projectreshare/supply": "1.6.3",
     "moment": "~2.29.0",
     "react": "~18.2.0",
@@ -50,7 +50,7 @@
     "minimist": "^1.2.3",
     "moment": "~2.29.0",
     "redux-form": "^8.0.0",
-    "@projectreshare/rs": "https://github.com/openlibraryenvironment/ui-rs#release-1.19.x",
+    "@projectreshare/rs": "1.19.10",
     "@projectreshare/stripes-reshare": "2.0.2"
   },
   "devDependencies": {
