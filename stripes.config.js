@@ -5,6 +5,7 @@ module.exports = {
     welcomeMessage: 'ui-rs.front.welcome',
     platformName: 'ReShare',
     platformDescription: 'ReShare platform',
+    aboutInstallDate: "2025-06-04T13:53-05:00",
     hasAllPerms: false,
     reshare: {
       sharedIndex: {
