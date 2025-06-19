@@ -25,7 +25,7 @@
   },
   {
     "action": "enable",
-    "id": "projectreshare_directory-1.13.5"
+    "id": "projectreshare_directory-1.13.7"
   },
   {
     "action": "enable",
@@ -33,15 +33,15 @@
   },
   {
     "action": "enable",
-    "id": "projectreshare_request-1.6.3"
+    "id": "projectreshare_request-1.6.5"
   },
   {
     "action": "enable",
-    "id": "projectreshare_rs-1.19.9"
+    "id": "projectreshare_rs-1.20.8"
   },
   {
     "action": "enable",
-    "id": "projectreshare_supply-1.6.3"
+    "id": "projectreshare_supply-1.6.5"
   },
   {
     "action": "enable",
