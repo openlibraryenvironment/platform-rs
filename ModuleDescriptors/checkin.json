@@ -1,0 +1,32 @@
+{
+  "id": "folio_checkin-9.2.1",
+  "name": "Item Check-in",
+  "permissionSets": [
+    {
+      "permissionName": "module.checkin.enabled",
+      "displayName": "UI: Check in module is enabled"
+    },
+    {
+      "permissionName": "ui-checkin.all",
+      "displayName": "Check in: All permissions",
+      "description": "Entire set of permissions needed to use Checkin",
+      "visible": true,
+      "subPermissions": [
+        "users.collection.get",
+        "usergroups.collection.get",
+        "module.checkin.enabled",
+        "inventory.items.collection.get",
+        "inventory-storage.service-points.collection.get",
+        "accounts.collection.get",
+        "accounts.item.get",
+        "lost-item-fees-policies.collection.get",
+        "circulation.check-in-by-barcode.post",
+        "circulation.requests.collection.get",
+        "feefineactions.collection.get",
+        "configuration.entries.collection.get",
+        "circulation.end-patron-action-session.post",
+        "circulation-storage.staff-slips.collection.get"
+      ]
+    }
+  ]
+}
