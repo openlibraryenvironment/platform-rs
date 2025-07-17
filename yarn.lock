@@ -1971,7 +1971,7 @@
     "@folio/plugin-find-instance" "^8.0.0"
     "@folio/plugin-find-user" "^7.0.0"
 
-"@folio/stripes-acq-components@6.0.5", "@folio/stripes-acq-components@~6.0.0":
+"@folio/stripes-acq-components@6.0.5", "@folio/stripes-acq-components@^6.0.0", "@folio/stripes-acq-components@~6.0.0":
   version "6.0.5"
   resolved "https://repository.folio.org/repository/npm-folio/@folio/stripes-acq-components/-/stripes-acq-components-6.0.5.tgz#65d9e5d576efad5a2c21d77419dcf6168c927ad6"
   integrity sha512-cx/tjCzvlBKuYUU3ad1ZLjNHzJ8L9CiTnnHPxduyTysvYA+1wy9xCgv25wLoLy3+2f3LwcWaf+aS+Jl5ctiaOQ==
@@ -2215,10 +2215,33 @@
     prop-types "^15.5.10"
     redux-form "^8.3.0"
 
+"@folio/stripes-inventory-components@1.0.2":
+  version "1.0.2"
+  resolved "https://repository.folio.org/repository/npm-folio/@folio/stripes-inventory-components/-/stripes-inventory-components-1.0.2.tgz#b29566b02cfa15ee3a61adddbc93c9be7e56574c"
+  integrity sha512-KJT3UaU+FJCRhbYak3+ndwm2/nbraP0DUI3LnL0b/awFrhzQ5uy8ps18uJ/souW0/hOkZIkY7EuhPA6pAc27EA==
+  dependencies:
+    "@folio/stripes-acq-components" "^6.0.0"
+    history "^4.10.0"
+    lodash "^4.17.4"
+    prop-types "^15.5.10"
+    query-string "^5.0.0"
+    zustand "^4.1.1"
+
 "@folio/stripes-logger@~1.0.0":
   version "1.0.0"
   resolved "https://repository.folio.org/repository/npm-folio/@folio/stripes-logger/-/stripes-logger-1.0.0.tgz#588cdf4d27f90ce99389ccbb87a221fa6dd9e683"
   integrity sha512-YPd1NKDvEpr5d35o/P5Z1aCT37lujH0FR1CrJMJ9hiqe/qtva5ACte3BQdGGV02+M5sC13gBiITs6Vcx7A+GEg==
+
+"@folio/stripes-marc-components@1.1.0":
+  version "1.1.0"
+  resolved "https://repository.folio.org/repository/npm-folio/@folio/stripes-marc-components/-/stripes-marc-components-1.1.0.tgz#c08b4c4665309398ff9805591673a0cd2ee9d5fb"
+  integrity sha512-iNDjHW+w7OZu6QsMTdcw6HkclNE2hLkMHutuWG3KrZJNpbnocqPIEbD+7iJIL0x9Iwx4VnUUMebW7as2pHId4A==
+  dependencies:
+    classnames "^2.3.2"
+    prop-types "^15.6.0"
+    query-string "^7.0.1"
+    react-query "^3.39.3"
+    react-to-print "^2.14.15"
 
 "@folio/stripes-react-hotkeys@^3.0.0", "@folio/stripes-react-hotkeys@^3.2.1":
   version "3.2.1"
@@ -13516,7 +13539,7 @@ query-string@^6.1.0, query-string@^6.8.1:
     split-on-first "^1.0.0"
     strict-uri-encode "^2.0.0"
 
-query-string@^7.1.1, query-string@^7.1.2:
+query-string@^7.0.1, query-string@^7.1.1, query-string@^7.1.2:
   version "7.1.3"
   resolved "https://registry.yarnpkg.com/query-string/-/query-string-7.1.3.tgz#a1cf90e994abb113a325804a972d98276fe02328"
   integrity sha512-hh2WYhq4fi8+b+/2Kg9CEge4fDPvHS534aOOvOZeQ3+Vf2mCFsaFBYj0i+iXcAq6I9Vzp5fjMFBlONvayDC1qg==
@@ -13956,7 +13979,7 @@ react-titled@^2.0.0:
   resolved "https://registry.yarnpkg.com/react-titled/-/react-titled-2.1.0.tgz#718f1dd01c19b891f20de33febe136b840232554"
   integrity sha512-ZK6V5h7ahPNFaXWccC/CXXMnr9KOeoEND20XAICfwhB3utpfRyx69nPksDKW+zAHZw/ZCHrPANyblKKzw8BHhA==
 
-react-to-print@^2.15.1, react-to-print@^2.3.2, react-to-print@^2.9.0:
+react-to-print@^2.14.15, react-to-print@^2.15.1, react-to-print@^2.3.2, react-to-print@^2.9.0:
   version "2.15.1"
   resolved "https://registry.yarnpkg.com/react-to-print/-/react-to-print-2.15.1.tgz#c9a6732cadf1118fc90d886b54a9388c419561b9"
   integrity sha512-1foogIFbCpzAVxydkhBiDfMiFYhIMphiagDOfcG4X/EcQ+fBPqJ0rby9Wv/emzY1YLkIQy/rEgOrWQT+rBKhjw==
@@ -16968,7 +16991,7 @@ zen-observable@0.8.15:
   resolved "https://registry.yarnpkg.com/zen-observable/-/zen-observable-0.8.15.tgz#96415c512d8e3ffd920afd3889604e30b9eaac15"
   integrity sha512-PQ2PC7R9rslx84ndNBZB/Dkv8V8fZEpk83RLgXtYd0fwUgEjseMn1Dgajh2x6S8QbZAFa9p2qVCEuYZNgve0dQ==
 
-zustand@^4.0.0:
+zustand@^4.0.0, zustand@^4.1.1:
   version "4.5.7"
   resolved "https://registry.yarnpkg.com/zustand/-/zustand-4.5.7.tgz#7d6bb2026a142415dd8be8891d7870e6dbe65f55"
   integrity sha512-CHOUy7mu3lbD6o6LJLfllpjkzhHXSBlX8B9+qPddUsIfeF5S/UZ5q0kmCsnRqT1UHFQZchNFDDzMbQsuesHWlw==

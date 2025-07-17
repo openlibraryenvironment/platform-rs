@@ -27,6 +27,8 @@
     "@folio/stripes": "9.2.15",
     "@folio/tenant-settings": "9.0.0",
     "@folio/users": "11.0.13",
+    "@folio/stripes-inventory-components": "1.0.2",
+    "@folio/stripes-marc-components": "1.1.0",
     "@projectreshare/directory": "https://github.com/openlibraryenvironment/ui-directory.git#release-1.13.x",
     "@projectreshare/plugin-rs-siquery-vufind": "https://github.com/openlibraryenvironment/ui-plugin-rs-siquery-vufind.git#main",
     "@projectreshare/supply": "openlibraryenvironment/ui-supply#release-1.6.x",
