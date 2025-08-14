@@ -50,7 +50,7 @@
     "minimist": "^1.2.3",
     "moment": "~2.29.0",
     "redux-form": "^8.0.0",
-    "@projectreshare/rs": "1.20.8",
+    "@projectreshare/rs": "1.19.10",
     "@projectreshare/stripes-reshare": "2.0.4"
   },
   "devDependencies": {
