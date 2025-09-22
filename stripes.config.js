@@ -20,6 +20,8 @@ module.exports = {
         query: 'http://z3950-test.librariesaustralia.nla.gov.au:210/Bibliographic',
       }
     },
+    disableStrictMode: true,
+    suppressIntlErrors: true,
     showDevInfo: true,
     staleBundleWarning: { path: '/index.html', header: 'last-modified', interval: 5 },
   },
