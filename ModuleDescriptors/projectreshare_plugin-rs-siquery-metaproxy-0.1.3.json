@@ -1,0 +1,5 @@
+{
+  "id": "projectreshare_plugin-rs-siquery-metaproxy-0.1.3",
+  "name": "Plugin to find an instance from an SI via Metaproxy",
+  "permissionSets": []
+}

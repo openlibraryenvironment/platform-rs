@@ -1,0 +1,48 @@
+{
+  "id": "projectreshare_request-1.6.5",
+  "name": "Request resources for ILL",
+  "permissionSets": [
+    {
+      "permissionName": "module.request.enabled",
+      "displayName": "UI: request module is enabled",
+      "subPermissions": [
+        "ui-request.view"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "ui-request.view",
+      "displayName": "ILL Request: View requests",
+      "subPermissions": [
+        "rs.batch.get",
+        "rs.hostlmslocations.get",
+        "rs.patronrequests.generateBatch",
+        "rs.patronrequests.read",
+        "rs.refdata.get",
+        "rs.report.execute",
+        "rs.status.get",
+        "configuration.entries.collection.get",
+        "tags.collection.get"
+      ],
+      "visible": "true"
+    },
+    {
+      "permissionName": "ui-request.create",
+      "displayName": "ILL Request: Create requests",
+      "subPermissions": [
+        "rs.patronrequests.item.post"
+      ],
+      "visible": "true"
+    },
+    {
+      "permissionName": "ui-request.edit",
+      "displayName": "ILL Request: Edit requests",
+      "subPermissions": [
+        "rs.patronrequests.item.put",
+        "rs.patronrequests.item.performaction",
+        "rs.patronrequests.markBatchPrinted"
+      ],
+      "visible": "true"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "folio_stripes-core-10.2.9",
+  "name": "The starting point for Stripes applications",
+  "permissionSets": [
+    {
+      "permissionName": "settings.enabled",
+      "displayName": "UI: settings area is enabled"
+    }
+  ]
+}
