@@ -17,7 +17,13 @@
 	"start-local-diku": " set STRIPES_TRANSPILE_TOKENS=\"@k-int @projectreshare\" && stripes serve ./stripes.config.js --okapi=http://localhost:9130 --tenant=diku"
   },
   "dependencies": {
+    "@folio/checkin": "10.0.2",
+    "@folio/checkout": "11.0.3",
+    "@folio/circulation": "10.0.1",
+    "@folio/circulation-log": "5.0.1",
     "@folio/developer": "~9.0.0",
+    "@folio/inventory": "12.0.16",
+    "@folio/requests": "11.0.9",
     "@folio/stripes": "~9.2.0",
     "@folio/tenant-settings": "~9.0.0",
     "@folio/users": "~11.0.0",

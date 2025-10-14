@@ -29,6 +29,12 @@ module.exports = {
   },
   modules: {
     '@folio/users': {},
+    '@folio/checkin' : {},
+    '@folio/checkout' : {},
+    '@folio/circulation' : {},
+    '@folio/circulation-log' : {},
+    '@folio/requests': {},
+    '@folio/inventory': {},
     '@folio/developer': {},
     "@folio/tenant-settings": {},
     '@projectreshare/directory': {},
