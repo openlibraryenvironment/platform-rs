@@ -26,52 +26,68 @@ jobs:
       - name: prepare
         run: yarn config set @folio:registry https://repository.folio.org/repository/npm-folio/
 
-      - name: setup workspace
-        run: cp ./helper_scripts/* .
-
-      - name: run setup
-        run: chmod +x ./setup && ./setup
-
       - name: Do yarn install
-        working-directory: ./rs_ui/platform-rs
         run: yarn install
 
       - name: Upload yarn.lock
         uses: actions/upload-artifact@v4
         with:
           name: yarn.lock
-          path: ./rs_ui/yarn.lock
+          path: ./yarn.lock
 
       - name: run build scripts
-        working-directory: ./rs_ui/platform-rs
         run: |
           ./node_modules/.bin/stripes mod descriptor stripes.config.js --output ./ModuleDescriptors &&
-          STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://east-okapi.folio-dev.indexdata.com --tenant reshare_east --sourcemap &&
-          mv output east &&
-          STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://west-okapi.folio-dev.indexdata.com --tenant reshare_west --sourcemap &&
-          mv output west
+          STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://slnp-5-okapi.reshare-dev.indexdata.com --tenant slnptest_five --sourcemap &&
+          mv output five &&
+          STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://slnp-6-okapi.reshare-dev.indexdata.com --tenant slnptest_six --sourcemap &&
+          mv output six &&
+          STRIPES_TRANSPILE_TOKENS=@k-int yarn build --tenant slnptestseven --okapi https://slnp-7-okapi.reshare-dev.indexdata.com --sourcemap &&
+          mv output seven &&
+          STRIPES_TRANSPILE_TOKENS=@k-int yarn build --tenant slnptesteight --okapi https://slnp-8-okapi.reshare-dev.indexdata.com --sourcemap &&
+          mv output eight
 
-      - name: Post new module descriptors
+      - name: copy yarn.lock to builds
         run: |
-          /usr/bin/python3 .github/workflows/scripts/reshare_ui_mds.py \
-            -u "okapi_admin" \
-            -p ${{ secrets.OKAPI_ADMIN_PW }} \
+          cp yarn.lock five/ && cp yarn.lock six/
+          cp yarn.lock seven/ && cp yarn.lock eight/
+
+
+      - name: add a timestamp
+        run: |
+          echo "$GITHUB_ACTOR built this webpack on `date`" > five/date.txt &&
+          echo "$GITHUB_ACTOR built this webpack on `date`" > six/date.txt
+          echo "$GITHUB_ACTOR built this webpack on `date`" > seven/date.txt &&
+          echo "$GITHUB_ACTOR built this webpack on `date`" > eight/date.txt
 
       - name: upload builds
-        working-directory: ./rs_ui/platform-rs
         run: |
           ls &&
-          aws s3 sync ./east s3://reshare-bundles/east --acl public-read --delete &&
-          aws s3 sync ./west s3://reshare-bundles/west --acl public-read --delete
+          aws s3 sync ./five s3://reshare-bundles/slnp_five --acl public-read --delete &&
+          aws s3 sync ./six s3://reshare-bundles/slnp_six --acl public-read --delete
+          aws s3 sync ./seven s3://reshare-bundles/slnp_seven --acl public-read --delete &&
+          aws s3 sync ./eight s3://reshare-bundles/slnp_eight --acl public-read --delete
 
-      - name: Invalidate CF East
+      - name: Invalidate SLNP FIVE
         run: |
           aws cloudfront create-invalidation \
-              --distribution-id E10ONJ5UMHJSTF \
+              --distribution-id E3HFKPA9NC5CGV \
               --paths "/*"
 
-      - name: Invalidate CF West
+      - name: Invalidate SLNP SIX
         run: |
           aws cloudfront create-invalidation \
-              --distribution-id E21W57Y11ZF9P \
+              --distribution-id E2MW5P4BHI7R8J \
+              --paths "/*"
+
+      - name: Invalidate SLNP SEVEN
+        run: |
+          aws cloudfront create-invalidation \
+              --distribution-id E1QGXYA1MACRL3 \
+              --paths "/*"
+
+      - name: Invalidate SLNP EIGHT
+        run: |
+          aws cloudfront create-invalidation \
+              --distribution-id E2MGEOMWHE17X6 \
               --paths "/*"
