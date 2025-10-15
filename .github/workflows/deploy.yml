@@ -80,14 +80,14 @@ jobs:
               --distribution-id E2MW5P4BHI7R8J \
               --paths "/*"
 
-      # - name: Invalidate CF Back
-      #   run: |
-      #     aws cloudfront create-invalidation \
-      #         --distribution-id E8EDX09LVCH4C \
-      #         --paths "/*"
+      - name: Invalidate SLNP SEVEN
+        run: |
+          aws cloudfront create-invalidation \
+              --distribution-id E1QGXYA1MACRL3 \
+              --paths "/*"
 
-      # - name: Invalidate CF Forth
-      #   run: |
-      #     aws cloudfront create-invalidation \
-      #         --distribution-id EWKGQD0EOK4VN \
-      #         --paths "/*"
+      - name: Invalidate SLNP EIGHT
+        run: |
+          aws cloudfront create-invalidation \
+              --distribution-id E2MGEOMWHE17X6 \
+              --paths "/*"
