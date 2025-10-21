@@ -9,16 +9,16 @@ module.exports = {
     hasAllPerms: false,
     reshare: {
       showRefresh: true,
-      //sharedIndex: {
-      //  type: 'vufind',
-      //  ui: 'https://vufind.reshare-dev.indexdata.com/east',
-      //  query: 'https://vufind.reshare-dev.indexdata.com/east',
-      //}
       sharedIndex: {
-        type: 'metaproxy',
-        ui: 'https://vufind.reshare-dev.indexdata.com/east',
-        query: 'http://z3950-test.librariesaustralia.nla.gov.au:210/Bibliographic',
+        type: 'vufind',
+        ui: 'https://cardinal.reshare-dev.indexdata.com',
+        query: 'https://cardinal.reshare-dev.indexdata.com',
       }
+      //sharedIndex: {
+      //  type: 'metaproxy',
+      //  ui: 'https://vufind.reshare-dev.indexdata.com/east',
+      //  query: 'http://z3950-test.librariesaustralia.nla.gov.au:210/Bibliographic',
+      //}
     },
     showDevInfo: true,
     staleBundleWarning: { path: '/index.html', header: 'last-modified', interval: 5 },
