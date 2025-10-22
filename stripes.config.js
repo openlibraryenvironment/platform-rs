@@ -10,8 +10,8 @@ module.exports = {
     reshare: {
       sharedIndex: {
         type: 'vufind',
-        ui: 'https://vufind.reshare-dev.indexdata.com/east',
-        query: 'https://vufind.reshare-dev.indexdata.com/east',
+        ui: 'https://cardinal.reshare-dev.indexdata.com',
+        query: 'https://cardinal.reshare-dev.indexdata.com',
       },
       patronURL: '/users?qindex=barcode&query={patronid}',
     },
