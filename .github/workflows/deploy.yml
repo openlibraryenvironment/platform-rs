@@ -26,24 +26,16 @@ jobs:
       - name: prepare
         run: yarn config set @folio:registry https://repository.folio.org/repository/npm-folio/
 
-      - name: setup workspace
-        run: cp ./helper_scripts/* .
-
-      - name: run setup
-        run: chmod +x ./setup && ./setup
-
       - name: Do yarn install
-        working-directory: ./rs_ui/platform-rs
         run: yarn install
 
       - name: Upload yarn.lock
         uses: actions/upload-artifact@v4
         with:
           name: yarn.lock
-          path: ./rs_ui/yarn.lock
+          path: yarn.lock
 
       - name: run build scripts
-        working-directory: ./rs_ui/platform-rs
         run: |
           ./node_modules/.bin/stripes mod descriptor stripes.config.js --output ./ModuleDescriptors &&
           STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://east-okapi.folio-dev.indexdata.com --tenant reshare_east --sourcemap &&
@@ -58,7 +50,6 @@ jobs:
             -p ${{ secrets.OKAPI_ADMIN_PW }} \
 
       - name: upload builds
-        working-directory: ./rs_ui/platform-rs
         run: |
           ls &&
           aws s3 sync ./east s3://reshare-bundles/east --acl public-read --delete &&
