@@ -3289,7 +3289,7 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.8.tgz#6b79032e760a0899cd4204710beede972a3a185f"
   integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
 
-"@projectreshare/directory@^1.10.0":
+"@projectreshare/directory@^1.10.0", "@projectreshare/directory@^1.13.0":
   version "1.13.7"
   resolved "https://registry.yarnpkg.com/@projectreshare/directory/-/directory-1.13.7.tgz#5ad6a5d06948c5fd3482d92dd517072383fbdde9"
   integrity sha512-tlLAEvTPPsgdG6CJL0YTxQuBz3GwdO1ikfzmYIrDTLzxM9NirBSgEe1tV/v/207PV615/53MO4iRse6yU1r/Yg==
@@ -3318,11 +3318,12 @@
     ky "^0.23.0"
     query-string "^8.1.0"
 
-"@projectreshare/request@^1.6.0":
-  version "1.6.5"
-  resolved "https://registry.yarnpkg.com/@projectreshare/request/-/request-1.6.5.tgz#f5a6c9deb393f2b412b80a437c145cb5fc368112"
-  integrity sha512-+4Mph+JvXO0tyybwHKH8PDbqYOIwK+3e7DeOdpn05qtA9n/TAnV6t79OSWR3bue2VRV5gfFIpUcUkG/bXg1Guw==
+"@projectreshare/request@1.6.6":
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/@projectreshare/request/-/request-1.6.6.tgz#abb62c3e0cf9f35983cdd11ff03145aaf4268101"
+  integrity sha512-xDy5j29Bb4lul0ZVaOzvnz3p9ih/MqVxVu+8dGdFC230gPjvsIAUf/m8wG44qei+BApnaW7a/JoYPo71ULLLVg==
   dependencies:
+    "@projectreshare/directory" "^1.13.0"
     "@projectreshare/rs" "^1.6.0"
 
 "@projectreshare/rs@^1.13.0", "@projectreshare/rs@^1.6.0":
@@ -3368,11 +3369,12 @@
     lodash "^4.17.4"
     prop-types "^15.6.0"
 
-"@projectreshare/supply@^1.6.0":
-  version "1.6.5"
-  resolved "https://registry.yarnpkg.com/@projectreshare/supply/-/supply-1.6.5.tgz#41b17315adac5ea68a427d8f37d92ce3dfde52dc"
-  integrity sha512-AOyRCPtIU/3P2bFzWuOXWupRiMGme7ejErXVqPzi+zDL0DRZ7/9D8l8GWtEY85u/v7NPqihvi0FQyDcejgdgNg==
+"@projectreshare/supply@1.6.6":
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/@projectreshare/supply/-/supply-1.6.6.tgz#9d81d18c7c425c3a768aff6f7906731c1b2a3fa9"
+  integrity sha512-RaS+8FPLZ5caJKUwEeY1jftwluwbwL6Q8M0nMhQ12y9Ybrv8EAOX3SEGbUQcOjAZQ4TxNUY3fyyUzbpp7hmUzg==
   dependencies:
+    "@projectreshare/directory" "^1.13.0"
     "@projectreshare/rs" "^1.6.0"
 
 "@projectreshare/update@^1.8.0":
