@@ -70,7 +70,8 @@
     "@projectreshare/plugin-rs-siquery-vufind": "https://github.com/openlibraryenvironment/ui-plugin-rs-siquery-vufind.git#main",
     "@projectreshare/supply": "openlibraryenvironment/ui-supply#release-1.6.x",
     "@projectreshare/request": "openlibraryenvironment/ui-request#release-1.6.x",
-    "@projectreshare/rs": "https://github.com/openlibraryenvironment/ui-rs.git#release-1.19.x"
+    "@projectreshare/rs": "https://github.com/openlibraryenvironment/ui-rs.git#release-1.19.x",
+    "@projectreshare/stripes-reshare": "2.1.0"
   },
   "devDependencies": {
     "@folio/stripes-cli": "3.0.2",
