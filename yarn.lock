@@ -3353,15 +3353,7 @@
     rrule "2.6.4"
     xml-beautify "^1.2.3"
 
-"@projectreshare/stripes-reshare@^1.11.0":
-  version "1.13.1"
-  resolved "https://registry.yarnpkg.com/@projectreshare/stripes-reshare/-/stripes-reshare-1.13.1.tgz#51abe6256056e9067833fc945850d21c04399621"
-  integrity sha512-PnCgeVM6bTMxaj5iW5pwuf6ognnxyihEUJzn6mherDjhBpe6wqTL4/f+HSApMvn8VIbl3IO31PovELVl5nv84A==
-  dependencies:
-    lodash "^4.17.4"
-    prop-types "^15.6.0"
-
-"@projectreshare/stripes-reshare@^2.0.0":
+"@projectreshare/stripes-reshare@2.1.0", "@projectreshare/stripes-reshare@^1.11.0", "@projectreshare/stripes-reshare@^2.0.0":
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@projectreshare/stripes-reshare/-/stripes-reshare-2.1.0.tgz#32f9f286eb18dd3a8e4aa5c49020a2d184f8c8c3"
   integrity sha512-qtcRqHGP3+WYOuTxwztOXJ5o9yfWG8LdasyD2UhVfEElg085vE1wKp+TTjL2F3IfB2h1yOe4/oxtqaVyGN8y3A==

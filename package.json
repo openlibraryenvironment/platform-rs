@@ -52,7 +52,8 @@
         "@rehooks/local-storage": "2.4.4",
         "@apollo/client": "3.13.9",
         "favicons": "7.1.4",
-        "postcss-nesting" : "^10.0.0"
+        "postcss-nesting" : "^10.0.0",
+        "@projectreshare/stripes-reshare": "2.1.0"
   },
   "devDependencies": {
     "@folio/stripes-cli": "~3.2.0"
