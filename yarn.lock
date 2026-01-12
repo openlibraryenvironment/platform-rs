@@ -3303,10 +3303,10 @@
     "@projectreshare/directory" "^1.13.0"
     "@projectreshare/rs" "^1.6.0"
 
-"@projectreshare/rs@1.19.10", "@projectreshare/rs@^1.6.0":
-  version "1.19.10"
-  resolved "https://registry.yarnpkg.com/@projectreshare/rs/-/rs-1.19.10.tgz#f31ca7f9c51e66f14e7edd3a3ab47e270e72ac8b"
-  integrity sha512-e9d8GS09ZIxaVXnvFVmkhSndIAC5Dh8lmPdDaPmadq3GYMDE8BLKOFH/cdR7AlvEddFMtEq2+JjryM1a1Yvhvw==
+"@projectreshare/rs@1.19.11", "@projectreshare/rs@^1.6.0":
+  version "1.19.11"
+  resolved "https://registry.yarnpkg.com/@projectreshare/rs/-/rs-1.19.11.tgz#99e5ee2572749f934afe76e60347170c27aedee9"
+  integrity sha512-Tn3Ol3LYSGZjRDGjob0FtMkDYaZqbXaHRfKu3PcQXVKUMF7WqbNJ0gKD4rhOOkhTILCxsgSAS41EiKpaZNCR9g==
   dependencies:
     "@folio/stripes-data-transfer-components" "~6.0.0"
     "@folio/stripes-erm-components" "~9.0.0"
@@ -3330,10 +3330,10 @@
     rrule "2.6.4"
     xml-beautify "^1.2.3"
 
-"@projectreshare/stripes-reshare@2.0.4", "@projectreshare/stripes-reshare@^1.12.0":
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@projectreshare/stripes-reshare/-/stripes-reshare-2.0.4.tgz#c34066172ac37871126cdaeb5f3a327f9f67bb14"
-  integrity sha512-CS07wD0puhVlzE/AjoSFis+rcqPFeVKu0N5MbCJj2rR8kG1AYANiWBWujCtdByplyOhsic5mGCrLwQ53bwESig==
+"@projectreshare/stripes-reshare@2.1.0", "@projectreshare/stripes-reshare@^1.12.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@projectreshare/stripes-reshare/-/stripes-reshare-2.1.0.tgz#32f9f286eb18dd3a8e4aa5c49020a2d184f8c8c3"
+  integrity sha512-qtcRqHGP3+WYOuTxwztOXJ5o9yfWG8LdasyD2UhVfEElg085vE1wKp+TTjL2F3IfB2h1yOe4/oxtqaVyGN8y3A==
   dependencies:
     lodash "^4.17.4"
     prop-types "^15.6.0"

@@ -51,7 +51,7 @@
     "moment": "~2.29.0",
     "redux-form": "^8.0.0",
     "@projectreshare/rs": "1.19.11",
-    "@projectreshare/stripes-reshare": "2.0.4"
+    "@projectreshare/stripes-reshare": "2.1.0"
   },
   "devDependencies": {
     "@folio/stripes-cli": "~3.1.0",
