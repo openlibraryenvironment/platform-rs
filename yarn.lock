@@ -3276,7 +3276,26 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.8.tgz#6b79032e760a0899cd4204710beede972a3a185f"
   integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
 
-"@projectreshare/directory@1.13.7", "@projectreshare/directory@^1.13.0":
+"@projectreshare/directory@1.13.8":
+  version "1.13.8"
+  resolved "https://registry.yarnpkg.com/@projectreshare/directory/-/directory-1.13.8.tgz#7b1e7f3ce2ab1bd33b90f46d716c4f2adc9e42af"
+  integrity sha512-FS3x1/R/MJIxmaUPp7Y1H40gl4lJ5310XXc3rOrvm73uXl/epX4JvZ7WLqutQjosl1+NbL7NUjV9y88nPzQ81g==
+  dependencies:
+    "@folio/stripes-erm-components" "^6.1.0"
+    "@k-int/address-plugin-british-isles" "^1.1.0"
+    "@k-int/address-plugin-generic" "^1.1.0"
+    "@k-int/address-plugin-north-america" "^1.1.0"
+    "@k-int/stripes-kint-components" "^2.5.1"
+    compose-function "^3.0.3"
+    final-form-arrays "^3.0.2"
+    final-form-set-field-data "^1.0.2"
+    lodash "^4.17.4"
+    prop-types "^15.6.0"
+    react-final-form "^6.4.0"
+    react-final-form-arrays "^3.1.1"
+    uuid "^7.0.3"
+
+"@projectreshare/directory@^1.13.0":
   version "1.13.7"
   resolved "https://registry.yarnpkg.com/@projectreshare/directory/-/directory-1.13.7.tgz#5ad6a5d06948c5fd3482d92dd517072383fbdde9"
   integrity sha512-tlLAEvTPPsgdG6CJL0YTxQuBz3GwdO1ikfzmYIrDTLzxM9NirBSgEe1tV/v/207PV615/53MO4iRse6yU1r/Yg==
