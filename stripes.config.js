@@ -24,8 +24,8 @@ module.exports = {
     suppressIntlErrors: true,
     showDevInfo: true,
     staleBundleWarning: { path: '/index.html', header: 'last-modified', interval: 5 },
-    aboutInstallDate: "2025-10-09T22:16-05:00",
-    aboutInstallVersion: "Ramsons CSP 4",
+    aboutInstallDate: "2026-02-25T22:16-05:00",
+    aboutInstallVersion: "Sunflower on Okapi CSP 5",
   },
   modules: {
     '@folio/users': {},
