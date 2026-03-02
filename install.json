@@ -48,6 +48,10 @@
         "action": "enable"
     },
     {
+        "id" : "mod-service-interaction-4.2.3",
+        "action" : "enable"
+    },
+    {
         "id": "mod-inventory-storage-29.0.16",
         "action": "enable"
     },
