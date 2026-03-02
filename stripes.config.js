@@ -36,6 +36,7 @@ module.exports = {
     '@folio/requests': {},
     '@folio/inventory': {},
     '@folio/developer': {},
+    '@folio/service-interaction': {},
     "@folio/tenant-settings": {},
     '@projectreshare/directory': {},
     //"@projectreshare/plugin-rs-siquery-vufind": {},

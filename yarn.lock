@@ -1953,6 +1953,17 @@
     "@folio/plugin-find-instance" "^9.0.0"
     "@folio/plugin-find-user" "^8.0.0"
 
+"@folio/service-interaction@4.0.0":
+  version "4.0.0"
+  resolved "https://repository.folio.org/repository/npm-folio/@folio/service-interaction/-/service-interaction-4.0.0.tgz#e02c15e38065ec3e78f38b93c6ba4ab2a692c285"
+  integrity sha512-aR44GvehvC14bm13halmR5B2WWjkaEI8uS9jQLvp0AaxueXXxLzhqWY+ObryqqZ2OhPyMUywTVtTWwkuCjCVwQ==
+  dependencies:
+    "@k-int/stripes-kint-components" "^5.11.0"
+    dom-helpers "^3.4.0"
+    lodash "^4.17.11"
+    prop-types "^15.6.0"
+    react-final-form "^6.3.0"
+
 "@folio/stripes-acq-components@^7.0.0", "@folio/stripes-acq-components@~7.0.0":
   version "7.0.5"
   resolved "https://repository.folio.org/repository/npm-folio/@folio/stripes-acq-components/-/stripes-acq-components-7.0.5.tgz#5b321817bba3d5123ffe0e19739352d11c8676ee"
@@ -2822,6 +2833,16 @@
   version "5.25.3"
   resolved "https://registry.yarnpkg.com/@k-int/stripes-kint-components/-/stripes-kint-components-5.25.3.tgz#b2af73c17e85be8dca735376b723c56d6211760f"
   integrity sha512-MNDJxSUxzEHrB3WDDLzCWmdlMY3hKPLynf4Lz4EXEBtU76N/Qz5FLXlyhVMWW0OAIvA6LYi9/gh98yDLDwFBaQ==
+  dependencies:
+    "@rehooks/local-storage" "^2.4.4"
+    compose-function "^3.0.3"
+    react-resize-detector "^11.0.0"
+    zustand "^5.0.0"
+
+"@k-int/stripes-kint-components@^5.11.0":
+  version "5.32.0"
+  resolved "https://registry.yarnpkg.com/@k-int/stripes-kint-components/-/stripes-kint-components-5.32.0.tgz#f7b3a4bf86a99fd27606101146aa8d76fdd6d447"
+  integrity sha512-Qir0yxeHCwevCb9RvXyg7uFfDASOkoafY4iwhYXCVsEQG6nSgr5UO6UnODP6+vWM+eyhBnd2/9XDJt2EZWDTKA==
   dependencies:
     "@rehooks/local-storage" "^2.4.4"
     compose-function "^3.0.3"
