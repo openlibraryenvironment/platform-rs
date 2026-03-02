@@ -63,10 +63,10 @@ jobs:
       - name: upload builds
         run: |
           ls &&
-          aws s3 sync ./five s3://reshare-bundles/slnp_nine --acl public-read --delete &&
-          aws s3 sync ./six s3://reshare-bundles/slnp_ten --acl public-read --delete
-          aws s3 sync ./seven s3://reshare-bundles/slnp_eleven --acl public-read --delete &&
-          aws s3 sync ./eight s3://reshare-bundles/slnp_twelve --acl public-read --delete
+          aws s3 sync ./nine s3://reshare-bundles/slnp_nine --acl public-read --delete &&
+          aws s3 sync ./ten s3://reshare-bundles/slnp_ten --acl public-read --delete
+          aws s3 sync ./eleven s3://reshare-bundles/slnp_eleven --acl public-read --delete &&
+          aws s3 sync ./twelve s3://reshare-bundles/slnp_twelve --acl public-read --delete
 
       # - name: Invalidate SLNP NINE
       #   run: |
