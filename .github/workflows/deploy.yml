@@ -14,11 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout module
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Install Yarn
         run: npm install -g yarn
@@ -38,56 +38,56 @@ jobs:
       - name: run build scripts
         run: |
           ./node_modules/.bin/stripes mod descriptor stripes.config.js --output ./ModuleDescriptors &&
-          STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://slnp-5-okapi.reshare-dev.indexdata.com --tenant slnptest_five --sourcemap &&
-          mv output five &&
-          STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://slnp-6-okapi.reshare-dev.indexdata.com --tenant slnptest_six --sourcemap &&
-          mv output six &&
-          STRIPES_TRANSPILE_TOKENS=@k-int yarn build --tenant slnptestseven --okapi https://slnp-7-okapi.reshare-dev.indexdata.com --sourcemap &&
-          mv output seven &&
-          STRIPES_TRANSPILE_TOKENS=@k-int yarn build --tenant slnptesteight --okapi https://slnp-8-okapi.reshare-dev.indexdata.com --sourcemap &&
-          mv output eight
+          STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://slnp-9-okapi.reshare-dev.indexdata.com --tenant slnptestnine --sourcemap &&
+          mv output nine &&
+          STRIPES_TRANSPILE_TOKENS=@k-int yarn build output --okapi https://slnp-10-okapi.reshare-dev.indexdata.com --tenant slnptestten --sourcemap &&
+          mv output ten &&
+          STRIPES_TRANSPILE_TOKENS=@k-int yarn build --tenant slnptesteleven --okapi https://slnp-11-okapi.reshare-dev.indexdata.com --sourcemap &&
+          mv output eleven &&
+          STRIPES_TRANSPILE_TOKENS=@k-int yarn build --tenant slnptesttwelve --okapi https://slnp-12-okapi.reshare-dev.indexdata.com --sourcemap &&
+          mv output twelve
 
       - name: copy yarn.lock to builds
         run: |
-          cp yarn.lock five/ && cp yarn.lock six/
-          cp yarn.lock seven/ && cp yarn.lock eight/
+          cp yarn.lock nine/ && cp yarn.lock ten/
+          cp yarn.lock eleven/ && cp yarn.lock twelve/
 
 
       - name: add a timestamp
         run: |
-          echo "$GITHUB_ACTOR built this webpack on `date`" > five/date.txt &&
-          echo "$GITHUB_ACTOR built this webpack on `date`" > six/date.txt
-          echo "$GITHUB_ACTOR built this webpack on `date`" > seven/date.txt &&
-          echo "$GITHUB_ACTOR built this webpack on `date`" > eight/date.txt
+          echo "$GITHUB_ACTOR built this webpack on `date`" > nine/date.txt &&
+          echo "$GITHUB_ACTOR built this webpack on `date`" > ten/date.txt
+          echo "$GITHUB_ACTOR built this webpack on `date`" > eleven/date.txt &&
+          echo "$GITHUB_ACTOR built this webpack on `date`" > twelve/date.txt
 
       - name: upload builds
         run: |
           ls &&
-          aws s3 sync ./five s3://reshare-bundles/slnp_five --acl public-read --delete &&
-          aws s3 sync ./six s3://reshare-bundles/slnp_six --acl public-read --delete
-          aws s3 sync ./seven s3://reshare-bundles/slnp_seven --acl public-read --delete &&
-          aws s3 sync ./eight s3://reshare-bundles/slnp_eight --acl public-read --delete
+          aws s3 sync ./five s3://reshare-bundles/slnp_nine --acl public-read --delete &&
+          aws s3 sync ./six s3://reshare-bundles/slnp_ten --acl public-read --delete
+          aws s3 sync ./seven s3://reshare-bundles/slnp_eleven --acl public-read --delete &&
+          aws s3 sync ./eight s3://reshare-bundles/slnp_twelve --acl public-read --delete
 
-      - name: Invalidate SLNP FIVE
-        run: |
-          aws cloudfront create-invalidation \
-              --distribution-id E3HFKPA9NC5CGV \
-              --paths "/*"
+      # - name: Invalidate SLNP NINE
+      #   run: |
+      #     aws cloudfront create-invalidation \
+      #         --distribution-id E3HFKPA9NC5CGV \
+      #         --paths "/*"
 
-      - name: Invalidate SLNP SIX
-        run: |
-          aws cloudfront create-invalidation \
-              --distribution-id E2MW5P4BHI7R8J \
-              --paths "/*"
+      # - name: Invalidate SLNP TEN
+      #   run: |
+      #     aws cloudfront create-invalidation \
+      #         --distribution-id E2MW5P4BHI7R8J \
+      #         --paths "/*"
 
-      - name: Invalidate SLNP SEVEN
-        run: |
-          aws cloudfront create-invalidation \
-              --distribution-id E1QGXYA1MACRL3 \
-              --paths "/*"
+      # - name: Invalidate SLNP ELEVEN
+      #   run: |
+      #     aws cloudfront create-invalidation \
+      #         --distribution-id E1QGXYA1MACRL3 \
+      #         --paths "/*"
 
-      - name: Invalidate SLNP EIGHT
-        run: |
-          aws cloudfront create-invalidation \
-              --distribution-id E2MGEOMWHE17X6 \
-              --paths "/*"
+      # - name: Invalidate SLNP TWELVE
+      #   run: |
+      #     aws cloudfront create-invalidation \
+      #         --distribution-id E2MGEOMWHE17X6 \
+      #         --paths "/*"
