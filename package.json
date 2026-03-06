@@ -42,7 +42,8 @@
     "react-redux": "^8.0.5",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "redux": "^4.2.1"
+    "redux": "^4.2.1",
+    "rrule": "2.6.4"
   },
   "resolutions": {
     "@rehooks/local-storage": "2.4.5",
@@ -75,7 +76,9 @@
     "@projectreshare/stripes-reshare": "2.1.0"
   },
   "devDependencies": {
-    "@folio/stripes-cli": "3.0.2",
+    "@folio/stripes-cli": "~3.1.0",
+    "@folio/stripes-testing": "4.2.1",
+    "@folio/requests": "10.0.2",
     "@interactors/html": "^1.0.0-rc1.2",
     "@interactors/with-cypress": "^1.0.0-rc1.1",
     "cypress": "^9.6.1"
