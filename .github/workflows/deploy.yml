@@ -65,20 +65,20 @@ jobs:
           ls &&
           aws s3 sync ./nine s3://reshare-bundles/slnp_nine --acl public-read --delete &&
           aws s3 sync ./ten s3://reshare-bundles/slnp_ten --acl public-read --delete
-          aws s3 sync ./eleven s3://reshare-bundles/slnp_eleven --acl public-read --delete &&
-          aws s3 sync ./twelve s3://reshare-bundles/slnp_twelve --acl public-read --delete
+          # aws s3 sync ./eleven s3://reshare-bundles/slnp_eleven --acl public-read --delete &&
+          # aws s3 sync ./twelve s3://reshare-bundles/slnp_twelve --acl public-read --delete
 
-      # - name: Invalidate SLNP NINE
-      #   run: |
-      #     aws cloudfront create-invalidation \
-      #         --distribution-id E3HFKPA9NC5CGV \
-      #         --paths "/*"
+      - name: Invalidate SLNP NINE
+        run: |
+          aws cloudfront create-invalidation \
+              --distribution-id E33VJM0K839B74 \
+              --paths "/*"
 
-      # - name: Invalidate SLNP TEN
-      #   run: |
-      #     aws cloudfront create-invalidation \
-      #         --distribution-id E2MW5P4BHI7R8J \
-      #         --paths "/*"
+      - name: Invalidate SLNP TEN
+        run: |
+          aws cloudfront create-invalidation \
+              --distribution-id EL7IM3X2LSD0K \
+              --paths "/*"
 
       # - name: Invalidate SLNP ELEVEN
       #   run: |
