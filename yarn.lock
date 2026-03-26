@@ -1007,7 +1007,12 @@
   dependencies:
     core-js-pure "^3.43.0"
 
-"@babel/runtime@^7.1.2", "@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.15.4", "@babel/runtime@^7.16.3", "@babel/runtime@^7.18.9", "@babel/runtime@^7.19.4", "@babel/runtime@^7.21.0", "@babel/runtime@^7.23.8", "@babel/runtime@^7.24.5", "@babel/runtime@^7.25.0", "@babel/runtime@^7.3.1", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.2", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.1.2", "@babel/runtime@^7.10.0", "@babel/runtime@^7.15.4", "@babel/runtime@^7.19.4", "@babel/runtime@^7.3.1":
+  version "7.29.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.29.2.tgz#9a6e2d05f4b6692e1801cd4fb176ad823930ed5e"
+  integrity sha512-JiDShH45zKHWyGe4ZNVRrCjBz8Nh9TMmZG1kh4QTK8hCBTWBi8Da+i7s1fJw7/lYpM4ccepSNfqzZ/QvABBi5g==
+
+"@babel/runtime@^7.10.2", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.16.3", "@babel/runtime@^7.18.9", "@babel/runtime@^7.21.0", "@babel/runtime@^7.23.8", "@babel/runtime@^7.24.5", "@babel/runtime@^7.25.0", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.2", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
   version "7.28.4"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.28.4.tgz#a70226016fabe25c5783b2f22d3e1c9bc5ca3326"
   integrity sha512-Q/N6JNWvIvPnLDvjlE1OUBLPQHH6l3CltCEsHIujp45zQUSSh8K+gHnaEX45yAT1nyngnINhvWtzN+Nb9D8RAQ==
@@ -3082,9 +3087,9 @@
     semantic-release "^22.0.6"
 
 "@k-int/stripes-kint-components@^5.1.1", "@k-int/stripes-kint-components@^5.4.0":
-  version "5.25.3"
-  resolved "https://registry.yarnpkg.com/@k-int/stripes-kint-components/-/stripes-kint-components-5.25.3.tgz#b2af73c17e85be8dca735376b723c56d6211760f"
-  integrity sha512-MNDJxSUxzEHrB3WDDLzCWmdlMY3hKPLynf4Lz4EXEBtU76N/Qz5FLXlyhVMWW0OAIvA6LYi9/gh98yDLDwFBaQ==
+  version "5.34.1"
+  resolved "https://registry.yarnpkg.com/@k-int/stripes-kint-components/-/stripes-kint-components-5.34.1.tgz#ebe75056b58e24bf6b9b609cc760e85f8344f723"
+  integrity sha512-s93kENWPjO8hINOuGhHpR01C4iCr3Hq0KntPwYRvlPdmpvsJtUcC033tzZSQbnLDXzpHjjmJ0iwye/k6MA/laQ==
   dependencies:
     "@rehooks/local-storage" "^2.4.4"
     compose-function "^3.0.3"
@@ -3573,7 +3578,7 @@
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.29.tgz#5a40109a1ab5f84d6fd8fc928b19f367cbe7e7b1"
   integrity sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==
 
-"@projectreshare/directory@https://github.com/openlibraryenvironment/ui-directory.git#release-1.13.x":
+"@projectreshare/directory@^1.13.0", "@projectreshare/directory@https://github.com/openlibraryenvironment/ui-directory.git#release-1.13.x":
   version "1.13.8"
   resolved "https://github.com/openlibraryenvironment/ui-directory.git#fdafd7f098fe1f56cff73b1cfff92f4451dd9231"
   dependencies:
@@ -3601,10 +3606,12 @@
     ky "^0.23.0"
     query-string "^8.1.0"
 
-"@projectreshare/request@openlibraryenvironment/ui-request#release-1.6.x":
-  version "1.6.5"
-  resolved "https://codeload.github.com/openlibraryenvironment/ui-request/tar.gz/d8894118689fafa7bcdebeb3f96e68587c4dbae5"
+"@projectreshare/request@1.6.6":
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/@projectreshare/request/-/request-1.6.6.tgz#abb62c3e0cf9f35983cdd11ff03145aaf4268101"
+  integrity sha512-xDy5j29Bb4lul0ZVaOzvnz3p9ih/MqVxVu+8dGdFC230gPjvsIAUf/m8wG44qei+BApnaW7a/JoYPo71ULLLVg==
   dependencies:
+    "@projectreshare/directory" "^1.13.0"
     "@projectreshare/rs" "^1.6.0"
 
 "@projectreshare/rs@^1.6.0":
@@ -3635,8 +3642,8 @@
     xml-beautify "^1.2.3"
 
 "@projectreshare/rs@https://github.com/openlibraryenvironment/ui-rs.git#release-1.19.x":
-  version "1.19.11"
-  resolved "https://github.com/openlibraryenvironment/ui-rs.git#21de390182a0bf1fb98d59c661f29259941efa4c"
+  version "1.19.13"
+  resolved "https://github.com/openlibraryenvironment/ui-rs.git#5950c021c3974ff1255b31b1bfa0becc0b8e5a76"
   dependencies:
     "@folio/stripes-data-transfer-components" "~6.0.0"
     "@folio/stripes-erm-components" "~9.0.0"
@@ -3676,10 +3683,12 @@
     lodash "^4.17.4"
     prop-types "^15.6.0"
 
-"@projectreshare/supply@openlibraryenvironment/ui-supply#release-1.6.x":
-  version "1.6.3"
-  resolved "https://codeload.github.com/openlibraryenvironment/ui-supply/tar.gz/0767c7f457d245efdf34d3256c21d05ce5cb8607"
+"@projectreshare/supply@1.6.6":
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/@projectreshare/supply/-/supply-1.6.6.tgz#9d81d18c7c425c3a768aff6f7906731c1b2a3fa9"
+  integrity sha512-RaS+8FPLZ5caJKUwEeY1jftwluwbwL6Q8M0nMhQ12y9Ybrv8EAOX3SEGbUQcOjAZQ4TxNUY3fyyUzbpp7hmUzg==
   dependencies:
+    "@projectreshare/directory" "^1.13.0"
     "@projectreshare/rs" "^1.6.0"
 
 "@projectreshare/update@^1.8.0":
@@ -7268,10 +7277,17 @@ domhandler@^5.0, domhandler@^5.0.2, domhandler@^5.0.3:
   dependencies:
     domelementtype "^2.3.0"
 
-dompurify@^3.0.9, dompurify@^3.1.3, dompurify@^3.2.0:
+dompurify@^3.0.9, dompurify@^3.2.0:
   version "3.2.7"
   resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-3.2.7.tgz#721d63913db5111dd6dfda8d3a748cfd7982d44a"
   integrity sha512-WhL/YuveyGXJaerVlMYGWhvQswa7myDG17P7Vu65EWC05o8vfeNbvNf4d/BOvH99+ZW+LlQsc1GDKMa1vNK6dw==
+  optionalDependencies:
+    "@types/trusted-types" "^2.0.7"
+
+dompurify@^3.1.3:
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-3.3.3.tgz#680cae8af3e61320ddf3666a3bc843f7b291b2b6"
+  integrity sha512-Oj6pzI2+RqBfFG+qOaOLbFXLQ90ARpcGG6UePL82bJLtdsa6CYJD7nmiU8MW9nQNOtCHV3lZ/Bzq1X0QYbBZCA==
   optionalDependencies:
     "@types/trusted-types" "^2.0.7"
 
@@ -10739,9 +10755,9 @@ js-yaml@^4.1.0:
     argparse "^2.0.1"
 
 jsbarcode@^3.8.0:
-  version "3.12.1"
-  resolved "https://registry.yarnpkg.com/jsbarcode/-/jsbarcode-3.12.1.tgz#9ee84826efd8112e017aaf00f72217eae81823b9"
-  integrity sha512-QZQSqIknC2Rr/YOUyOkCBqsoiBAOTYK+7yNN3JsqfoUtJtkazxNw1dmPpxuv7VVvqW13kA3/mKiLq+s/e3o9hQ==
+  version "3.12.3"
+  resolved "https://registry.yarnpkg.com/jsbarcode/-/jsbarcode-3.12.3.tgz#c2c903f1fe91873853f81f524ca496c4dbf20120"
+  integrity sha512-CuHU9hC6dPsHF5oVFMo8NW76uQVjH4L22CsP4hW+dNnGywJHC/B0ThA1CTDVLnxKLrrpYdicBLnd2xsgTfRnvg==
 
 jsbn@~0.1.0:
   version "0.1.1"
@@ -11437,7 +11453,12 @@ lodash.uniqby@^4.7.0:
   resolved "https://registry.yarnpkg.com/lodash.uniqby/-/lodash.uniqby-4.7.0.tgz#d99c07a669e9e6d24e1362dfe266c67616af1302"
   integrity sha512-e/zcLx6CSbmaEgFHCA7BnoQKyCtKMxnuWrJygbwPs/AIn+IMKl66L8/s+wBUn5LRw2pZx3bUHibiV1b6aTWIww==
 
-lodash@^4.16.4, lodash@^4.17.11, lodash@^4.17.15, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.17.4, lodash@^4.17.5, lodash@~4.17.21:
+lodash@^4.16.4, lodash@^4.17.21, lodash@^4.17.4, lodash@~4.17.21:
+  version "4.17.23"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.23.tgz#f113b0378386103be4f6893388c73d0bde7f2c5a"
+  integrity sha512-LgVTMpQtIopCi79SJeDiP0TfWi5CNEc/L/aRdTh3yIvmZXTnheWpKjSZhnvMl8iXbC1tFg9gdHHDMLoV7CnG+w==
+
+lodash@^4.17.11, lodash@^4.17.15, lodash@^4.17.20, lodash@^4.17.5:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -17039,6 +17060,6 @@ zustand@^4.1.1:
     use-sync-external-store "^1.2.2"
 
 zustand@^5.0.0:
-  version "5.0.8"
-  resolved "https://registry.yarnpkg.com/zustand/-/zustand-5.0.8.tgz#b998a0c088c7027a20f2709141a91cb07ac57f8a"
-  integrity sha512-gyPKpIaxY9XcO2vSMrLbiER7QMAMGOQZVRdJ6Zi782jkbzZygq5GI9nG8g+sMgitRtndwaBSl7uiqC49o1SSiw==
+  version "5.0.12"
+  resolved "https://registry.yarnpkg.com/zustand/-/zustand-5.0.12.tgz#ed36f647aa89965c4019b671dfc23ef6c6e3af8c"
+  integrity sha512-i77ae3aZq4dhMlRhJVCYgMLKuSiZAaUPAct2AksxQ+gOtimhGMdXljRT21P5BNpeT4kXlLIckvkPM029OljD7g==

@@ -14,7 +14,7 @@
     "cypress": "cypress",
     "build-module-descriptors": "node ./build-module-descriptors.js",
     "local": "f=stripes.config.js; test -f $f.local && f=$f.local; echo Using config $f; stripes serve $f",
-	"start-local-diku": " set STRIPES_TRANSPILE_TOKENS=\"@k-int @projectreshare\" && stripes serve ./stripes.config.js --okapi=http://localhost:9130 --tenant=diku"
+    "start-local-diku": " set STRIPES_TRANSPILE_TOKENS=\"@k-int @projectreshare\" && stripes serve ./stripes.config.js --okapi=http://localhost:9130 --tenant=diku"
   },
   "dependencies": {
     "@folio/checkin": "11.0.3",
@@ -26,15 +26,15 @@
     "@folio/requests": "12.0.4",
     "@folio/service-interaction": "4.0.0",
     "@folio/stripes": "10.0.22",
-    "@folio/tenant-settings": "10.0.0",
-    "@folio/users": "12.1.16",
     "@folio/stripes-inventory-components": "2.0.9",
     "@folio/stripes-marc-components": "2.0.2",
+    "@folio/tenant-settings": "10.0.0",
+    "@folio/users": "12.1.16",
     "@projectreshare/directory": "https://github.com/openlibraryenvironment/ui-directory.git#release-1.13.x",
     "@projectreshare/plugin-rs-siquery-metaproxy": "0.1.3",
-    "@projectreshare/request": "openlibraryenvironment/ui-request#release-1.6.x",
+    "@projectreshare/request": "1.6.6",
     "@projectreshare/rs": "https://github.com/openlibraryenvironment/ui-rs.git#release-1.19.x",
-    "@projectreshare/supply": "openlibraryenvironment/ui-supply#release-1.6.x",
+    "@projectreshare/supply": "1.6.6",
     "@projectreshare/update": "^1.8.0",
     "inflected": "^2.0.4",
     "moment": "~2.29.0",
@@ -49,12 +49,12 @@
     "rrule": "2.6.4"
   },
   "resolutions": {
-        "@typescript-eslint/typescript-estree": "^6.2.1",
-        "@rehooks/local-storage": "2.4.4",
-        "@apollo/client": "3.13.9",
-        "favicons": "7.1.4",
-        "postcss-nesting" : "^10.0.0",
-        "downshift": "9.0.13"
+    "@typescript-eslint/typescript-estree": "^6.2.1",
+    "@rehooks/local-storage": "2.4.4",
+    "@apollo/client": "3.13.9",
+    "favicons": "7.1.4",
+    "postcss-nesting": "^10.0.0",
+    "downshift": "9.0.13"
   },
   "devDependencies": {
     "@folio/stripes-cli": "~4.0.0"
