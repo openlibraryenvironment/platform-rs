@@ -54,7 +54,8 @@
     "@apollo/client": "3.13.9",
     "favicons": "7.1.4",
     "postcss-nesting": "^10.0.0",
-    "downshift": "9.0.13"
+    "downshift": "9.0.13",
+    "@k-int/stripes-kint-components": "5.25.3"
   },
   "devDependencies": {
     "@folio/stripes-cli": "~4.0.0"
