@@ -33,7 +33,7 @@
     "@projectreshare/directory": "https://github.com/openlibraryenvironment/ui-directory.git#release-1.13.x",
     "@projectreshare/plugin-rs-siquery-metaproxy": "0.1.3",
     "@projectreshare/request": "1.6.6",
-    "@projectreshare/rs": "https://github.com/openlibraryenvironment/ui-rs.git#release-1.19.x",
+    "@projectreshare/rs": "1.19.12",
     "@projectreshare/supply": "1.6.6",
     "@projectreshare/update": "^1.8.0",
     "inflected": "^2.0.4",
