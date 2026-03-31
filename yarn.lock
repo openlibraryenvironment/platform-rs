@@ -3310,16 +3310,15 @@
     "@projectreshare/directory" "^1.13.0"
     "@projectreshare/rs" "^1.6.0"
 
-"@projectreshare/rs@1.19.12":
-  version "1.19.12"
-  resolved "https://registry.yarnpkg.com/@projectreshare/rs/-/rs-1.19.12.tgz#624f5a39864117b3345b6e76bc3e977a6fc3a8ef"
-  integrity sha512-RxCcV+ud7eR+rvMT1tYblX40wHnQyeBgJ+bFyrq224TQsnS02kscluJ3hFh0btDMCuXLV+lSoUHDtr4UZcWanw==
+"@projectreshare/rs@^1.6.0", "@projectreshare/rs@https://github.com/openlibraryenvironment/ui-rs.git#release-1.19.x":
+  version "1.19.13"
+  resolved "https://github.com/openlibraryenvironment/ui-rs.git#5950c021c3974ff1255b31b1bfa0becc0b8e5a76"
   dependencies:
     "@folio/stripes-data-transfer-components" "~6.0.0"
     "@folio/stripes-erm-components" "~9.0.0"
     "@folio/stripes-template-editor" "^3.0.0"
     "@k-int/stripes-kint-components" "^5.4.0"
-    "@projectreshare/stripes-reshare" "^1.12.0"
+    "@projectreshare/stripes-reshare" "^2.1.0"
     classnames "^2.2.6"
     final-form "^4.2.0"
     final-form-arrays "^3.0.2"
@@ -3337,42 +3336,7 @@
     rrule "2.6.4"
     xml-beautify "^1.2.3"
 
-"@projectreshare/rs@^1.6.0":
-  version "1.20.17"
-  resolved "https://registry.yarnpkg.com/@projectreshare/rs/-/rs-1.20.17.tgz#3d34a7a2c8fdb5ac7a3c79c7ec1717bd193bcd3b"
-  integrity sha512-CE3bcPqJ5iIAHduvM+A3WOostxm1M2N2I/9Z5NV4PudGc5HYFMv6r1T8JLHakeMBXeLzGnJx3APU7CXwjBDZxg==
-  dependencies:
-    "@folio/stripes-data-transfer-components" "~6.0.0"
-    "@folio/stripes-erm-components" "~9.0.0"
-    "@folio/stripes-template-editor" "^3.0.0"
-    "@k-int/stripes-kint-components" "^5.4.0"
-    "@projectreshare/stripes-reshare" "^2.0.0"
-    classnames "^2.2.6"
-    final-form "^4.2.0"
-    final-form-arrays "^3.0.2"
-    graphql-tag "^2.5.0"
-    html-to-react "^1.4.2"
-    json-stable-stringify "^1.0.1"
-    ky "^0.23.0"
-    lodash "^4.17.4"
-    omit-deep-lodash "^1.1.7"
-    prop-types "^15.6.0"
-    query-string "^8.1.0"
-    react-final-form "^6.3.0"
-    react-final-form-arrays "^3.1.1"
-    react-syntax-highlighter "^15.5.0"
-    rrule "2.6.4"
-    xml-beautify "^1.2.3"
-
-"@projectreshare/stripes-reshare@^1.11.0", "@projectreshare/stripes-reshare@^1.12.0":
-  version "1.13.1"
-  resolved "https://registry.yarnpkg.com/@projectreshare/stripes-reshare/-/stripes-reshare-1.13.1.tgz#51abe6256056e9067833fc945850d21c04399621"
-  integrity sha512-PnCgeVM6bTMxaj5iW5pwuf6ognnxyihEUJzn6mherDjhBpe6wqTL4/f+HSApMvn8VIbl3IO31PovELVl5nv84A==
-  dependencies:
-    lodash "^4.17.4"
-    prop-types "^15.6.0"
-
-"@projectreshare/stripes-reshare@^2.0.0":
+"@projectreshare/stripes-reshare@2.1.0", "@projectreshare/stripes-reshare@^1.11.0", "@projectreshare/stripes-reshare@^2.0.0", "@projectreshare/stripes-reshare@^2.1.0":
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@projectreshare/stripes-reshare/-/stripes-reshare-2.1.0.tgz#32f9f286eb18dd3a8e4aa5c49020a2d184f8c8c3"
   integrity sha512-qtcRqHGP3+WYOuTxwztOXJ5o9yfWG8LdasyD2UhVfEElg085vE1wKp+TTjL2F3IfB2h1yOe4/oxtqaVyGN8y3A==

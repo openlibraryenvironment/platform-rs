@@ -33,7 +33,7 @@
     "@projectreshare/directory": "https://github.com/openlibraryenvironment/ui-directory.git#release-1.13.x",
     "@projectreshare/plugin-rs-siquery-metaproxy": "0.1.3",
     "@projectreshare/request": "1.6.6",
-    "@projectreshare/rs": "1.19.12",
+    "@projectreshare/rs": "https://github.com/openlibraryenvironment/ui-rs.git#release-1.19.x",
     "@projectreshare/supply": "1.6.6",
     "@projectreshare/update": "^1.8.0",
     "inflected": "^2.0.4",
@@ -55,7 +55,9 @@
     "favicons": "7.1.4",
     "postcss-nesting": "^10.0.0",
     "downshift": "9.0.13",
-    "@k-int/stripes-kint-components": "5.25.3"
+    "@k-int/stripes-kint-components": "5.25.3",
+    "@projectreshare/rs": "https://github.com/openlibraryenvironment/ui-rs.git#release-1.19.x",
+    "@projectreshare/stripes-reshare": "2.1.0"
   },
   "devDependencies": {
     "@folio/stripes-cli": "~4.0.0"
