@@ -76,9 +76,9 @@
     "@projectreshare/stripes-reshare": "2.1.0"
   },
   "devDependencies": {
+    "@folio/requests": "10.0.2",
     "@folio/stripes-cli": "~3.1.0",
     "@folio/stripes-testing": "4.2.1",
-    "@folio/requests": "10.0.2",
     "@interactors/html": "^1.0.0-rc1.2",
     "@interactors/with-cypress": "^1.0.0-rc1.1",
     "cypress": "^9.6.1"
