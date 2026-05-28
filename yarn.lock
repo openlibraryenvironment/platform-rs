@@ -3322,16 +3322,16 @@
     "@projectreshare/directory" "^1.13.0"
     "@projectreshare/rs" "^1.6.0"
 
-"@projectreshare/rs@1.19.12", "@projectreshare/rs@^1.6.0":
-  version "1.19.12"
-  resolved "https://registry.yarnpkg.com/@projectreshare/rs/-/rs-1.19.12.tgz#624f5a39864117b3345b6e76bc3e977a6fc3a8ef"
-  integrity sha512-RxCcV+ud7eR+rvMT1tYblX40wHnQyeBgJ+bFyrq224TQsnS02kscluJ3hFh0btDMCuXLV+lSoUHDtr4UZcWanw==
+"@projectreshare/rs@1.19.14", "@projectreshare/rs@^1.6.0":
+  version "1.19.14"
+  resolved "https://registry.yarnpkg.com/@projectreshare/rs/-/rs-1.19.14.tgz#b61644fe4c621723dc01f3d2acb9aec113cbde53"
+  integrity sha512-WWkIFzuIgJxloLB9LBoRtoW4GhsBiBrDKOrbOhLjSlgAUXPBgkX0ABdbyPhiIK4VQ+e/3x4ZQwURo5gt5XWQpg==
   dependencies:
     "@folio/stripes-data-transfer-components" "~6.0.0"
     "@folio/stripes-erm-components" "~9.0.0"
     "@folio/stripes-template-editor" "^3.0.0"
     "@k-int/stripes-kint-components" "^5.4.0"
-    "@projectreshare/stripes-reshare" "^1.12.0"
+    "@projectreshare/stripes-reshare" "^2.1.0"
     classnames "^2.2.6"
     final-form "^4.2.0"
     final-form-arrays "^3.0.2"
@@ -3349,7 +3349,7 @@
     rrule "2.6.4"
     xml-beautify "^1.2.3"
 
-"@projectreshare/stripes-reshare@2.1.0", "@projectreshare/stripes-reshare@^1.12.0":
+"@projectreshare/stripes-reshare@2.1.0", "@projectreshare/stripes-reshare@^2.1.0":
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@projectreshare/stripes-reshare/-/stripes-reshare-2.1.0.tgz#32f9f286eb18dd3a8e4aa5c49020a2d184f8c8c3"
   integrity sha512-qtcRqHGP3+WYOuTxwztOXJ5o9yfWG8LdasyD2UhVfEElg085vE1wKp+TTjL2F3IfB2h1yOe4/oxtqaVyGN8y3A==
