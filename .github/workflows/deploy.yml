@@ -43,11 +43,11 @@ jobs:
           STRIPES_TRANSPILE_TOKENS=@k-int yarn build --tenant slnptest_two --okapi https://slnp-2-okapi.reshare-dev.indexdata.com --sourcemap &&
           mv output two
 
-      - name: Post new module descriptors
-        run: |
-          /usr/bin/python3 .github/workflows/scripts/reshare_ui_mds.py \
-            -u "okapi_admin" \
-            -p ${{ secrets.OKAPI_ADMIN_PW }} \
+      # - name: Post new module descriptors
+      #   run: |
+      #     /usr/bin/python3 .github/workflows/scripts/reshare_ui_mds.py \
+      #       -u "okapi_admin" \
+      #       -p ${{ secrets.OKAPI_ADMIN_PW }} \
 
       - name: copy yarn lock to yarn text
         run: cp yarn.lock one/yarn.txt &&
